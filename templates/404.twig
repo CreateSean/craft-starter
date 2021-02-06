@@ -1,0 +1,34 @@
+{# homepage #}
+{% extends '_layout' %}
+
+
+  {% set env = getenv('ENVIRONMENT') %}
+  {% if env == 'production' %}
+    {% block criticalCss %}
+      <style>
+        {{ source ('criticalCss/home_critical.min.css', ignore_missing = true) }}
+      </style>
+    {% endblock %}
+  {% endif %}
+
+
+{% block content %}
+
+	{# hero block #}
+	{# {% include '_includes/split-hero' %} #}
+	{# end hero block #}
+  {% if error404.alternateTitle|length %}
+  <section class="border-t border-gray-200">
+    <div class="container py-68">
+
+        <h1 class="text-center">{{ error404.alternateTitle }}</h1>
+
+    </div><!-- /.container py-68 -->
+  </section>
+  {% endif %}
+
+  {% for block in error404.contentBuilder.all() %}
+    {% include '_blocks/' ~ block.type %}
+  {% endfor %}
+
+{% endblock %}

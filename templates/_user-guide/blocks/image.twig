@@ -1,0 +1,8 @@
+{% if block.sectionTitle|length %}
+  <h2>{{ block.sectionTitle }}</h2>
+{% endif %}
+
+{% set image = block.screenshots.one() %}
+
+  <img src="{{ image.url ?? null }}" alt="">
+   {% if block.caption|length %}{{ block.caption }}{% endif %}

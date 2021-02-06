@@ -1,0 +1,48 @@
+{
+  "name": "createsean/craft-starter",
+  "description": "A Craft CMS starter project by Sean Smith",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "project"
+  ],
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {    "craftcms/cms": "^3.6.4",
+    "craftcms/redactor": "^2.8",
+    "hillholliday/craft-user-manual": "^2.0",
+    "mmikkel/retcon": "^2.2",
+    "nystudio107/craft-minify": "^1.2",
+    "nystudio107/craft-seomatic": "^3.3",
+    "nystudio107/craft-templatecomments": "^1.1",
+    "spacecatninja/imager-x": "^3.3",
+    "topshelfcraft/environment-label": "^3.2",
+    "vlucas/phpdotenv": "^3.4.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.2.5"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php craft setup/security-key",
+      "@php craft setup/app-id"
+    ]
+  }
+}

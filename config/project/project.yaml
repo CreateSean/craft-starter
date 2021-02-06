@@ -1,0 +1,61 @@
+dateModified: 1612641166
+email:
+  fromEmail: $SYSTEM_EMAIL
+  fromName: $SENDER_NAME
+  replyToEmail: $FROM_EMAIL
+  template: null
+  transportSettings:
+    encryptionMethod: ''
+    host: $EMAIL_HOSTNAME
+    password: $EMAIL_PASSWORD
+    port: $EMAIL_PORT
+    timeout: '10'
+    useAuthentication: '1'
+    username: $EMAIL_USERNAME
+  transportType: craft\mail\transportadapters\Smtp
+plugins:
+  environment-label:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  imager-x:
+    edition: lite
+    enabled: true
+    licenseKey: 11OZ7R7WGA627CATMDDGXZZH
+    schemaVersion: 3.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: GAGO3GIITAF1YMQ8JZWMIUYU
+    schemaVersion: 3.0.9
+  templatecomments:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  usermanual:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+    settings:
+      pluginNameOverride: 'User Manual'
+      section: '3'
+      templateOverride: _user-guide/_entry
+system:
+  edition: pro
+  live: true
+  name: $SITE_NAME
+  retryDuration: null
+  schemaVersion: 3.6.1
+  timeZone: America/Toronto

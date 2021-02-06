@@ -1,0 +1,136 @@
+{
+  "name": "craft-starter",
+  "version": "1.0.0",
+  "description": "Craft Starter",
+  "main": "webpack.mix.js",
+  "author": "Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>",
+  "copyright": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "paths": {
+    "src": {
+      "base": "./src/",
+      "css": "./src/css/",
+      "fonts": "./src/fonts/",
+      "img": "./src/img/",
+      "json": "./src/json/",
+      "js": "./src/js/",
+      "scss": "./src/scss/"
+    },
+    "dist": {
+      "base": "./public/",
+      "assets": "./public/assets/",
+      "css": "./public/assets/css/",
+      "js": "./public/assets/js/",
+      "fonts": "./public/assets/fonts/",
+      "img": "./public/assets/img/"
+    },
+    "favicon": {
+      "src": "./src/img/favicon.png",
+      "dest": "./public/img/site/",
+      "path": "/img/site/"
+    },
+    "tailwindcss": {
+      "src": "./src/css/tailwind.css",
+      "build": "./build/css/tailwind/",
+      "conf": "./tailwind.js"
+    },
+    "scss": [],
+    "craftConfig": "./config/",
+    "templates": "./templates/"
+  },
+  "urls": {
+    "live": "https://craft-starter.ddev.site/",
+    "local": "https://craft-starter.ddev.site/",
+    "critical": "https://domain.com/"
+  },
+  "vars": {
+    "siteCssName": "site.combined.min.css",
+    "scssName": "style.scss",
+    "cssName": "style.css"
+  },
+  "globs": {
+    "distCss": [
+      "./build/css/tailwind/*.css",
+      "./src/css/site.css"
+    ],
+    "img": [
+      "./public/img/"
+    ],
+    "components": [],
+    "fonts": [
+      "./src/fonts/*.{eot,ttf,woff,woff2}"
+    ],
+    "critical": [
+      {
+        "url": "",
+        "template": "index"
+      },
+      {
+        "url": "error",
+        "template": "error"
+      },
+      {
+        "url": "503",
+        "template": "503"
+      },
+      {
+        "url": "404",
+        "template": "404"
+      }
+    ],
+    "criticalWhitelist": [],
+    "distJs": [
+      "./build/js/*.js"
+    ],
+    "babelJs": [
+      "./src/js/*.js"
+    ],
+    "inlineJs": [],
+    "siteIcon": "./public/img/site/favicon.*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "copy-webpack-plugin": "^5.0.2",
+    "cssnano": "^4.1.10",
+    "git-rev-sync": "^1.12.0",
+    "glob-all": "^3.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "laravel-mix-banner": "^0.1.4",
+    "laravel-mix-criticalcss": "^1.0.0",
+    "laravel-mix-tailwind": "^0.1.0",
+    "moment": "^2.24.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-hexrgba": "^1.0.2",
+    "postcss-preset-env": "^6.6.0",
+    "resolve-url-loader": "^3.0.1",
+    "stylelint-config-recommended": "^2.2.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^6.0.3",
+    "es6-promise": "^4.2.6",
+    "hover.css": "^2.3.2",
+    "instantsearch.js": "2.10.4",
+    "laravel-mix": "^5.0.0",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+  },
+  "browserslist": [
+    "> .5% or last 2 versions"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
+}

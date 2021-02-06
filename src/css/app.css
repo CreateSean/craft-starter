@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+
+/*
+// add more base styles for tailwind before adding
+// tailwind utilities
+// https://tailwindcss.com/docs/preflight/#extending-preflight
+*/
+
+
+
+[x-cloak] {
+  display: none;
+}
+
+
+
+.responsive-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.responsive-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.testing {
+  @apply p-8 my-8 text-xl text-white bg-red-700;
+  clear: both;
+  font-family: sans-serif;
+}
+
+.testing:before {
+  @apply block mb-4 text-lg text-yellow-400 uppercase;
+  content: 'Testing Note';
+}
+
+.testing:after {
+  @apply block mt-4 text-lg text-yellow-400 uppercase;
+  content: 'remove once testing complete';
+}
+
+h1, h2, h3, h4, h5, h6, .h4, .h5 {
+  @apply leading-tight;
+}
+
+
+.hero-overlay {
+  @apply absolute bottom-0 z-30 flex flex-row justify-between w-screen h-full overflow-hidden opacity-50 from-black bg-gradient-to-t via-transparent;
+
+}
+@screen sm {
+    .hero-overlay {
+      width:60vw;
+    }
+}
+/**** end hero image split ****/
+
+
+
+
+@tailwind utilities;

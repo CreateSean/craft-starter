@@ -1,0 +1,34 @@
+contentColumnType: text
+fieldGroup: 45625a48-7140-46aa-8d2c-e4a043c680a3
+handle: seo
+instructions: ''
+name: SEO
+searchable: false
+settings:
+  elementDisplayPreviewType: google
+  facebookEnabledFields:
+    - seoPreview
+    - ogTitle
+    - ogDescription
+    - ogImage
+  facebookTabEnabled: '1'
+  generalEnabledFields:
+    - seoPreview
+    - seoTitle
+    - seoDescription
+    - seoImage
+  generalTabEnabled: '1'
+  sitemapEnabledFields:
+    - sitemapUrls
+    - sitemapChangeFreq
+    - sitemapPriority
+  sitemapTabEnabled: '1'
+  twitterEnabledFields:
+    - seoPreview
+    - twitterTitle
+    - twitterDescription
+    - twitterImage
+  twitterTabEnabled: '1'
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\seomatic\fields\SeoSettings

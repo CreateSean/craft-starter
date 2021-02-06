@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: userGuide
+name: 'User Guide'
+propagationMethod: all
+siteSettings:
+  1a78d395-d81a-4b77-8da7-30a49123bbee:
+    enabledByDefault: true
+    hasUrls: true
+    template: user-guide/_entry
+    uriFormat: 'user-guide/{slug}'
+structure:
+  maxLevels: null
+  uid: a998bd9e-f13e-4af0-b105-e9cdf72d6151
+type: structure

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {# google fonts #}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  {# end google #}
+
+  <link rel="stylesheet" href="/assets/css/app.css?v={{ now|date('U') }}">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <link rel="icon" href="/assets/images/svg/favicon.svg">
+  {# for safari  https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df #}
+  <link rel="mask-icon" href="/assets/images/svg/favicon.svg" color="#000000">
+  <link rel="apple-touch-icon" href="/assets/images/svg/favicon.svg">
+
+  {% block pageCss %}{% endblock %}
+</head>
+<body class="{{ craft.app.language }} relative text-grayBrand bg-white font-work text-base">
+  {#
+  All image transforms are defined here. Templates using this layout can reference them thus:
+  {{ theBackgroundImage.url(transform.small) }}
+  #}
+  {% set transform = {
+    small: {
+      width: 640,
+      height: 640,
+      mode: 'crop',
+      position: 'center-center',
+      quality: 70,
+    },
+    listingBlock: {
+      width: 510,
+      height: 350,
+      mode: 'crop',
+      position: 'center-center',
+      quality: 70,
+    },
+    medium: {
+      width: 1024,
+      mode: 'fit',
+      position: 'center-center',
+      quality: 70,
+
+    },
+    large: {
+      width: 1800,
+      mode: 'fit',
+      position: 'center-center',
+      quality: 70,
+    },
+    square: {
+      height: 640,
+      width:640,
+      mode: 'crop',
+      position: 'center-center',
+      quality: 70,
+    },
+    background: {
+      width: 2000,
+      height: 1125,
+      mode: 'crop',
+      position: 'center-center',
+      quality: 70,
+      },
+  } %}
+
+  <header>
+    {% include '_includes/main-nav' %}
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    {% include '_includes/footer' %}
+  </footer>
+
+  {% block pageJs %}{% endblock %}
+</body>
+</html>

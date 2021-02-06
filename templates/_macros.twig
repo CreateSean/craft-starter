@@ -1,0 +1,36 @@
+{% macro emailLinks(text, class) %}
+{# v1 #}
+{% spaceless %}
+{% set text = text|replace('/([a-zA-Z0-9_.+-]+)+@([a-zA-Z0-9-]+.[a-zA-Z]+)/', '<a ' ~ (class ? 'class="' ~ class ~ '" ') ~ 'href="mailto:'~ '\\1&#64;\\2' ~'">'~ '\\1&#64;\\2' ~'</a>') %}
+{{text|raw}}
+{% endspaceless %}
+{% endmacro %}
+{# {{ macros.emailLinks("me@domain.com", "className") }} #}
+
+
+
+{#
+  # Phone Number formatter
+  # strip - . () and spaces from phone numbers
+  # outputs a tel: link
+  # @param {phoneNumber}
+  # @param  {className} - optional
+  # currently untested
+#}
+{% macro phone(phoneNumber, className) %}
+  <a href="tel:+{{ phoneNumber|replace({'-':'', ' ':'', '.':'', '(':'', ')':''}) }}" class="{{ className }}">{{ phoneNumber }}</a>
+{% endmacro %}
+{# {{ macros.phone('1-705-000.0000', 'no-underline') }} #}
+
+
+
+{# different formatting for en/fr dates #}
+{% macro biDate(date) %}
+  {% if currentSite.language =="en" %}
+    {{ date|date("F d, Y") }}
+  {% endif %}
+
+  {% if currentSite.language =="fr" %}
+    {{ date|date("d F Y") }}
+  {% endif %}
+{% endmacro %}

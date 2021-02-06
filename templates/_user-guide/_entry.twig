@@ -1,0 +1,19 @@
+
+{% include '_user-guide/styles' %}
+
+<header>
+  <img src="/assets/images/caffeine-logo.jpg" alt="" class="caffeine-logo">
+  <div>
+    <p>This guide prepared by <a href="https://caffeinecreations.ca/" target="_blank" >Caffeine Creations</a></p>
+
+    <p>For support email <a href="mailto:sean@caffeinecreations.ca">sean@caffeinecreations.ca</a> or call <a href="tel:+16477996330">647-799-6330</a> </p>
+  </div>
+</header>
+
+{% for block in entry.userGuide.all() %}
+  {# {% include '_user-guide/blocks/' ~ block.type %} #}
+{% endfor %}
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>

@@ -1,0 +1,13 @@
+<div class="py-16">
+	<div class="container mx-auto">
+
+    {% if block.videoTitle|length %}
+      <h2 class="">{{ block.videoTitle }}</h2>
+    {% endif %}
+		
+		<div class="responsive-container">
+			{% set embedId = block.videoId %}
+      <iframe src="https://www.youtube.com/embed/{{ embedId }}?rel=0" class="" style="width:100%;"></iframe>
+		</div><!-- /.div -->
+	</div><!-- /.container mx-auto -->
+</div><!-- /.py-16 -->
