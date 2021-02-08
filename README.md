@@ -8,7 +8,7 @@ to install this package run `composer create-project createsean/craft-starter .`
 
 ## Local Development
 
-Set up your local development, if you are using DDev for local development then everything should just work for you.
+Set up your local development, if you are using DDev for local development then everything should just work for you. If you are **NOT** using DDEV for local development skip this part and set up local development however you normally do (Valet, Mamp, etc), be sure to import the seed database `db.sql.gz`
 
 1. open .ddev/config.yaml and update line 15 to use the port you want. Must be unique to all ddev sites on your local computer
 2. open .ddev/config.yaml and update php version (line 4) and mysql_version (line 11) if needed
