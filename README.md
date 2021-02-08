@@ -31,6 +31,33 @@ Password: `letmein`
 
 Images and svg files should be copied to src/img and src/img/svg. When running `npm run production` these will then be optimized and copied to /public/assets/images and /public/assets/images/svg respectively (if you don't want to run production, copy files to both locations)
 
+1. run `npm run install` or `npm run i`
+
+Add any scripts or css you need by running `npm install <package-name> --save-dev`
+You can then have the required javascript or css files combined and minimized by adding paths to the correct files in `webpack.mix.js` on line 64-70(js) or line 74-78(css). when you run `npm run watch` everything will be combined and output to `/public/assets/js` or `public/assets/css`
+
+2. in `webpack.mix.js` replace all instances of `https://craft-starter.ddev.site` with your local domain
+3. run `npm run watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
+
+### Production
+
+when you are ready to deploy your code run `npm run production` to optimize images in `/src/img/` optimized images will be output in `/public/assets/images`
+
+this will also run the critical css task which you can configure at line 118 by adding in an array of urls and templates
+
+```javascript
+  urls: [{
+      url: '',
+      template: 'home'
+    },
+    {
+      url: 'contact',
+      template: 'singles/contact'
+    },
+  ],
+
+```
+
 ---
 
 ## Tailwind

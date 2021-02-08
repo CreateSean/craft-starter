@@ -58,28 +58,6 @@
       "./public/img/"
     ],
     "components": [],
-    "fonts": [
-      "./src/fonts/*.{eot,ttf,woff,woff2}"
-    ],
-    "critical": [
-      {
-        "url": "",
-        "template": "index"
-      },
-      {
-        "url": "error",
-        "template": "error"
-      },
-      {
-        "url": "503",
-        "template": "503"
-      },
-      {
-        "url": "404",
-        "template": "404"
-      }
-    ],
-    "criticalWhitelist": [],
     "distJs": [
       "./build/js/*.js"
     ],

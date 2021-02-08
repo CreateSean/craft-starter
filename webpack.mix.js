@@ -26,7 +26,6 @@ const imageminMozjpeg = require("imagemin-mozjpeg");
 
 mix.setPublicPath('./public/assets/')
   .postCss(pkg.paths.src.css + "app.css", "css")
-  //.styles(pkg.paths.src.css + "lightgallery/" + "*.css", pkg.paths.dist.css + "lightgallery.css")
   .options({
     postCss: [
       tailwindcss(),
@@ -64,8 +63,8 @@ mix.setPublicPath('./public/assets/')
   // when npm run production is run will minimize as well
   .combine(
       [
-      //'./node_modules/flickity/dist/flickity.pkgd.js',
-      //'./node_modules/glider-js/glider.min.js',
+      // './node_modules/flickity/dist/flickity.pkgd.min.js',
+      // './node_modules/swiper/swiper-bundle.min.js',
       // this should go last
       './src/js/app.js'
       ],
@@ -75,7 +74,7 @@ mix.setPublicPath('./public/assets/')
   .combine(
     [
       // './node_modules/flickity/dist/flickity.min.css',
-      // './node_modules/glider-js/glider.min.css',
+      // './node_modules/swiper/swiper-bundle.min.css'
     ],
     'public/assets/css/vendor.combined.css')
 
