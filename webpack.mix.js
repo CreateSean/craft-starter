@@ -92,6 +92,8 @@ mix.setPublicPath('./public/assets/')
 
 mix.disableSuccessNotifications();
 
+
+
 if (mix.inProduction()) {
   mix.webpackConfig({
     plugins: [
