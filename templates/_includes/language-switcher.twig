@@ -1,0 +1,29 @@
+{# https://craftcms.stackexchange.com/a/14306/193 #}
+
+{% set currentLanguage = currentSite.language %}
+
+{# Decide which languages should be omitted from language links #}
+{% set languageExceptions = currentSite.language %}
+{% set otherLocales = craft.app.sites.getAllSites() %}
+
+
+{% for site in otherLocales %}
+  {% if site.id != currentSite.id %}
+    {% if entry is defined %}
+     {% set localeEntry = craft.entries.id(entry.id).siteId(site.id).one() %}
+
+    {% elseif event is defined %}
+      {% set localeEntry = craft.calendar.event(event.id) %}
+    {% else %}
+      {# homepage #}
+      {% set localeEntry = craft.entries.id('2').siteId(site.id).one() %}
+    {% endif %}
+
+    {% if localeEntry.siteId is defined %}
+      {# build url for events page #}
+        <a href="{{ localeEntry.url }}" title="{{ localeEntry.site.name }}" class="block px-4 py-4">
+          {{ site.name }}
+        </a>
+    {% endif %}
+  {% endif %}
+{% endfor %}
