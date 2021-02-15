@@ -31,7 +31,9 @@ Password: `letmein`
 
 Images and svg files should be copied to src/img and src/img/svg. When running `npm run production` these will then be optimized and copied to /public/assets/images and /public/assets/images/svg respectively (if you don't want to run production, copy files to both locations)
 
-1. run `npm run install` or `npm run i`
+You will need Node version 14+. YOu can either update to 14+ or if you need multiple versions of node install the Node Version Manager [Windows](https://github.com/nvm-sh/nvm)  [Mac](https://github.com/coreybutle/nvm-windows).
+
+1. run `npm install` or `npm i`
 
 Add any scripts or css you need by running `npm install <package-name> --save-dev`
 You can then have the required javascript or css files combined and minimized by adding paths to the correct files in `webpack.mix.js` on line 64-70(js) or line 74-78(css). when you run `npm run watch` everything will be combined and output to `/public/assets/js` or `public/assets/css`
