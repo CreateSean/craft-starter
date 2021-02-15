@@ -31,7 +31,7 @@ Password: `letmein`
 
 Images and svg files should be copied to src/img and src/img/svg. When running `npm run production` these will then be optimized and copied to /public/assets/images and /public/assets/images/svg respectively (if you don't want to run production, copy files to both locations)
 
-You will need Node version 14+. YOu can either update to 14+ or if you need multiple versions of node install the Node Version Manager [Windows](https://github.com/nvm-sh/nvm)  [Mac](https://github.com/coreybutle/nvm-windows).
+You will need Node version 14+. YOu can either update to 14+ or if you need multiple versions of node install the Node Version Manager [Windows](https://github.com/nvm-sh/nvm),  [Mac](https://github.com/coreybutle/nvm-windows).
 
 1. run `npm install` or `npm i`
 
