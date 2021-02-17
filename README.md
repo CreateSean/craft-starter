@@ -137,5 +137,6 @@ There is a macro available to resize images and use focal points. You can do tha
     mode: 'crop',
     quality: 80,
   } %}```
+  
  4. execute macro in template - this outputs the image tag:
   ```{{ macros.LazyFocusImager(image, options) }}```
