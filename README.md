@@ -113,3 +113,29 @@ Create the static templates in templates/static and then link to each template i
 
 * You can see an example template set up already.
 * add any partials to the templates/_includes
+
+## Image Macro
+
+**lazyLoaded Image/bgImages, optimized with Imager-x**
+
+There is a macro available to resize images and use focal points. You can do that bu following these instructions:
+
+
+1. import marco in your template:
+  ```{% import '_macros' as macros %}```
+2. set image to run through macro e.g.:
+  ```{% set image = entry.image.one() %}```
+3. set options in template, or pass without options for defaults:
+  ```{% set options = {
+    sizes: [
+      { width: 640, height: 640 },
+      { width: 400, height:400 },
+    ],
+    alt: block.image1Caption ?? image.title ,
+    class: '',
+    lazy: true,
+    mode: 'crop',
+    quality: 80,
+  } %}```
+ 4. execute macro in template - this outputs the image tag:
+  ```{{ macros.LazyFocusImager(image, options) }}```

@@ -34,3 +34,87 @@
     {{ date|date("d F Y") }}
   {% endif %}
 {% endmacro %}
+
+{#
+// lazyLoaded Image/bgImages, optimized with Imager-x
+1. import marco in your template:
+  {% import '_macros' as macros %}
+2. set image to run through macro e.g.:
+  {% set image = entry.image.one() %}
+3. set options in template, or pass without options for defaults:
+  {% set options = {
+    sizes: [
+      { width: 640, height: 640 },
+      { width: 400, height:400 },
+    ],
+    alt: block.image1Caption ?? image.title ,
+    class: '',
+    lazy: true,
+    mode: 'crop',
+    quality: 80,
+  } %}
+ 4. execute macro in template:
+  {{ macros.LazyFocusImager(image, options) }}
+#}
+
+{% macro LazyFocusImager(image,options) %}
+
+  {# Set Defaults #}
+  {% set defaults = {
+    sizes: [
+      { width: 1920 },
+      { width: 1400 },
+      { width: 1024 },
+      { width: 768 },
+      { width: 640 },
+    ],
+    allowUpscale: false,
+    alt: image.title,
+    class: '',
+    format: 'jpg',
+    interlace: true,
+    lazy: true,
+    mode: 'crop',
+    position: image.focalPoint,
+    quality: 80,
+  } %}
+
+  {# Merge Attr with Defaults #}
+  {% set options = options ? defaults|merge(options) : defaults %}
+
+  {% if image %}
+
+
+    {# Set Position #}
+    {% if options.position %}
+      {% set position = options.position %}
+    {% elseif image.focusPctX %}
+      {% set position = image.focusPctX ~ '% ' ~ image.focusPctY ~ '%' %}
+    {% else %}
+      {% set position = '50% 50%' %}
+    {% endif %}
+
+    {# Define global variables #}
+    {% set imageSettings = {
+      allowUpscale: options.allowUpscale,
+      format: options.format,
+      interlace: options.interlace,
+      jpegQuality: options.quality,
+      mode: options.mode,
+      position: position,
+    } %}
+
+    {# Image #}
+    {% set images = craft.imager.transformImage(image, options.sizes, imageSettings) %}
+
+    <img
+      srcset="{{ images | srcset }}"
+      sizes="100vw"
+      src="{{ images|last.url }}"
+      class="{{ options.class }}"
+      alt="{{ options.alt }}"
+      {{ options.lazy =="true" ? 'loading="lazy"':''}}
+      />
+
+  {% endif %}
+{% endmacro %}
