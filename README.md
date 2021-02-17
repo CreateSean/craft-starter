@@ -126,7 +126,8 @@ There is a macro available to resize images and use focal points. You can do tha
 2. set image to run through macro e.g.:
   ```{% set image = entry.image.one() %}```
 3. set options in template, or pass without options for defaults:
-  ```{% set options = {
+  ```
+  {% set options = {
     sizes: [
       { width: 640, height: 640 },
       { width: 400, height:400 },
@@ -136,7 +137,8 @@ There is a macro available to resize images and use focal points. You can do tha
     lazy: true,
     mode: 'crop',
     quality: 80,
-  } %}```
-  
+  } %}
+  ```
+
  4. execute macro in template - this outputs the image tag:
   ```{{ macros.LazyFocusImager(image, options) }}```
