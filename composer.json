@@ -10,14 +10,15 @@
   "type": "project",
   "license": "MIT",
   "minimum-stability": "stable",
-  "require": {    "craftcms/cms": "^3.6.4",
+  "require": {
+    "craftcms/cms": "^3.6.4",
     "craftcms/redactor": "^2.8",
+    "craftsnippets/craft-image-toolbox": "^1.0",
     "hillholliday/craft-user-manual": "^2.0",
     "mmikkel/retcon": "^2.2",
     "nystudio107/craft-minify": "^1.2",
     "nystudio107/craft-seomatic": "^3.3",
     "nystudio107/craft-templatecomments": "^1.1",
-    "spacecatninja/imager-x": "^3.3",
     "topshelfcraft/environment-label": "^3.2",
     "vlucas/phpdotenv": "^3.4.0"
   },

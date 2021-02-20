@@ -98,7 +98,7 @@ fontFamily: {
 The following plugins are installed and ready to be used on the site. I prefer to keep plugin usage to a **minimum** so do **not** install a plugin unless absolutely necessary. If it can be done natively, it should be done natively.
 
 1. Environment Label - adds a color bar across the control panel indicating current environment
-2. Imager X - image transforms
+2. Image Toolbox - image transforms, webp support, and more
 3. Minify - minifies html/css/js on production
 4. Redactor - Rich Text Editor
 5. Retcon - extra twig filters
@@ -114,31 +114,62 @@ Create the static templates in templates/static and then link to each template i
 * You can see an example template set up already.
 * add any partials to the templates/_includes
 
-## Image Macro
+## Image Toolbox
 
-**lazyLoaded Image/bgImages, optimized with Imager-x**
+**Responsive picture elements with Image Toolbox**
 
-There is a macro available to resize images and use focal points. You can do that bu following these instructions:
+Read the full documentation for [Image Toolbox](https://github.com/craft-snippets/Craft-image-toolbox)
 
 
-1. import marco in your template:
-  ```{% import '_macros' as macros %}```
-2. set image to run through macro e.g.:
-  ```{% set image = entry.image.one() %}```
-3. set options in template, or pass without options for defaults:
-  ```
-  {% set options = {
-    sizes: [
-      { width: 640, height: 640 },
-      { width: 400, height:400 },
-    ],
-    alt: block.image1Caption ?? image.title ,
-    class: '',
-    lazy: true,
+To use with an image that won't have multiple sizes at different breakpoints use this code:
+
+```twig
+{% set image = entry.imageField.one() %}
+{% set thumb = {
+    mode: 'crop',
+    width: 120,
+    height: 120,
+    quality: 75,
+    position: 'center, center',
+} %}
+{% set attributes = {
+  class: [
+      'add classes here',
+  ],
+  loading:'lazy',
+  alt: image.title,
+} %}
+{{craft.images.picture(image, thumb, attributes) }}
+```
+
+For a responsive image with multiple sizes applied at different breakpoints use this code where you can add as many breakpoints as needed:
+
+```
+{% set transforms = {
+  '(max-width: 767px)': {
+    width: 576,
+    height:225,
     mode: 'crop',
     quality: 80,
-  } %}
-  ```
-
- 4. execute macro in template - this outputs the image tag:
-  ```{{ macros.LazyFocusImager(image, options) }}```
+  },
+  '(max-width: 1199px)': {
+    width: 960,
+    height:375,
+    mode: 'crop',
+    quality: 80,
+  },
+  '(min-width: 1200px)': {
+    width: 1370,
+    height:530,
+    mode: 'crop',
+    quality: 80,
+  },
+} %}
+{% set attributes = {
+    class: [
+        '',
+    ],
+    loading:'lazy',
+} %}
+{{ craft.images.pictureMedia(image, transforms, null, attributes) }}
+```

@@ -1,4 +1,4 @@
-dateModified: 1612641166
+dateModified: 1613843528
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -18,11 +18,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  imager-x:
-    edition: lite
+  image-toolbox:
+    edition: standard
     enabled: true
-    licenseKey: 11OZ7R7WGA627CATMDDGXZZH
-    schemaVersion: 3.0.0
+    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: true
