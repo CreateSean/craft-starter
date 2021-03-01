@@ -40,6 +40,24 @@ You can then have the required javascript or css files combined and minimized by
 
 2. update the banner text that gets prepended to css on lines 75-85 of `webpack.mix.js` with your project info
 3. in `webpack.mix.js` update line 12  `const baseUrl = 'https://craft-starter.ddev.site'` with your local domain
+
+```javascript
+  .banner({
+    banner: (function () {
+        return [
+            '/**!',
+            ' * @project        Craft Starter Website',
+            ' * @author         Sean Smith, Caffeine Creations',
+            ' * @Copyright      Copyright (c) ' + moment().format("YYYY") + ', Caffeine Creations',
+            ' *',
+            ' */',
+            '',
+        ].join('\n');
+    })(),
+    raw: true,
+  })
+```
+
 4. run `npm run watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
 
 ### Production
