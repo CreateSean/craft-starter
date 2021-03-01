@@ -38,8 +38,9 @@ You will need [NodeJS](https://nodejs.org/en/) version 14+. YOu can either updat
 Add any scripts or css you need by running `npm install <package-name> --save-dev`
 You can then have the required javascript or css files combined and minimized by adding paths to the correct files in `webpack.mix.js` on line 64-70(js) or line 74-78(css). when you run `npm run watch` everything will be combined and output to `/public/assets/js` or `public/assets/css`
 
-2. in `webpack.mix.js` replace all instances of `https://craft-starter.ddev.site` with your local domain
-3. run `npm run watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
+2. update the banner text that gets prepended to css on lines 75-85 of `webpack.mix.js` with your project info
+3. in `webpack.mix.js` update line 12  `const baseUrl = 'https://craft-starter.ddev.site'` with your local domain
+4. run `npm run watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
 
 ### Production
 

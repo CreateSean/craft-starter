@@ -8,6 +8,11 @@ var pkg = require("./package.json");
 
 const mix = require("laravel-mix");
 
+// update local url here
+const baseUrl = 'https://craft-starter.ddev.site';
+
+const moment = require("moment");
+
 // Laravel Mix plugins for additional capabilities
 // require("laravel-mix-purgecss");
 require("laravel-mix-criticalcss");
@@ -39,29 +44,18 @@ mix.setPublicPath('./public/assets/')
     ],
     processCssUrls: false,
     hmrOptions: {
-      host: 'https://craft-starter.ddev.site',
+      host: baseUrl,
       port: 8080
     },
     devtool: 'eval-cheap-module-source-map'
   })
 
- // place scripts here to be transpiled to ES2015
-/*
-  .js(pkg.paths.src.js + "app.js", "js")
-  .js(pkg.paths.src.js + "algoliafilter.js", "js")
-  .js(pkg.paths.src.js + "search.js", "js")
-  .js(pkg.paths.src.js + "lightgallery.js", "js")
-*/
   // Source maps disabled (temporarily?) to improve build time
-  //.sourceMaps()
-
-  // copy js file
-  // don't need this now that we're combining files further down
-  // .copy("./node_modules/lightpick/lightpick.js", "public/assets/js")
+  .sourceMaps()
 
   // combine all our js scripts here
   // when npm run production is run will minimize as well
-  .combine(
+  .js(
       [
       // './node_modules/flickity/dist/flickity.pkgd.min.js',
       // './node_modules/swiper/swiper-bundle.min.js',
@@ -78,8 +72,22 @@ mix.setPublicPath('./public/assets/')
     ],
     'public/assets/css/vendor.combined.css')
 
+  .banner({
+    banner: (function () {
+        return [
+            '/**!',
+            ' * @project        Craft Starter Website',
+            ' * @author         Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>',
+            ' * @Copyright      Copyright (c) ' + moment().format("YYYY") + ', Caffeine Creations',
+            ' *',
+            ' */',
+            '',
+        ].join('\n');
+    })(),
+    raw: true,
+  })
   .browserSync({
-    proxy: "https://craft-starter.ddev.site",
+    proxy: baseUrl,
     ghostMode: false,
     notify: {
       styles: {
@@ -120,7 +128,7 @@ if (mix.inProduction()) {
   .criticalCss({
     enabled: mix.inProduction(),
     paths: {
-      base: 'https://craft-starter.ddev.site',
+      base: baseUrl,
       templates: './templates/criticalCss/'
     },
     urls: [{
