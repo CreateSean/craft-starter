@@ -192,3 +192,10 @@ For a responsive image with multiple sizes applied at different breakpoints use 
 } %}
 {{ craft.images.pictureMedia(image, transforms, null, attributes) }}
 ```
+## composer nuke
+
+If you ever need to remove the vender folder and basically reset all things composer run this command
+
+```composer nuke```
+
+This will delete the vendor folder, composer.lock, clear composers cache, and then run composer update. YOu can find the full command in the scripts section of composer.json
