@@ -1,0 +1,6 @@
+/**!
+ * @project        Craft Starter Website
+ * @author         Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>
+ * @Copyright      Copyright (c) 2021, Caffeine Creations
+ *
+ */
