@@ -29,6 +29,8 @@ Password: `letmein`
 
 ## Build Process
 
+Tailwind is compiled using [Tailwind-jit](https://github.com/tailwindlabs/tailwindcss-jit) which is much faster than previously. it also ensures a small file size during `watch` builds. However I still recommend running the [production](#production) task before deployment.
+
 Images and svg files should be copied to src/img and src/img/svg. When running `npm run production` these will then be optimized and copied to /public/assets/images and /public/assets/images/svg respectively (if you don't want to run production, copy files to both locations)
 
 You will need [NodeJS](https://nodejs.org/en/) version 14+. YOu can either update to 14+ or if you need multiple versions of node install the Node Version Manager [Windows](https://github.com/nvm-sh/nvm) / [Mac](https://github.com/coreybutle/nvm-windows).
@@ -36,7 +38,7 @@ You will need [NodeJS](https://nodejs.org/en/) version 14+. YOu can either updat
 1. run `npm install` or `npm i`
 
 Add any scripts or css you need by running `npm install <package-name> --save-dev`
-You can then have the required javascript or css files combined and minimized by adding paths to the correct files in `webpack.mix.js` on line 64-70(js) or line 74-78(css). when you run `npm run watch` everything will be combined and output to `/public/assets/js` or `public/assets/css`
+You can then have the required javascript or css files combined and minimized by adding paths to the correct files in `webpack.mix.js` on line 64-70(js) or line 74-78(css). when you run `npx mix watch` everything will be combined and output to `/public/assets/js` or `public/assets/css`
 
 2. update the banner text that gets prepended to css on lines 75-85 of `webpack.mix.js` with your project info
 3. in `webpack.mix.js` update line 12  `const baseUrl = 'https://craft-starter.ddev.site'` with your local domain
@@ -58,13 +60,13 @@ You can then have the required javascript or css files combined and minimized by
   })
 ```
 
-4. run `npm run watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
+4. run `npx mix watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
 
 ### Production
 
-when you are ready to deploy your code run `npm run production` to optimize images in `/src/img/` optimized images will be output in `/public/assets/images`
+when you are ready to deploy your code run `npx mix -pn` to optimize images in `/src/img/` optimized images will be output in `/public/assets/images`
 
-this will also run the critical css task which you can configure at line 118 by adding in an array of urls and templates
+this will also run the critical css task which you can configure at line 143 by adding in an array of urls and templates
 
 ```javascript
   urls: [{
