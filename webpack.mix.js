@@ -1,14 +1,9 @@
-/*
-// copied and modified from
-// https://github.com/CityofOakland/oaklandca.gov
-*/
-
+// webpack.mix.js
 // Grabs the package.json file to use our site’s environment/values
-var pkg = require("./package.json");
+const pkg = require("./package.json");
 
-const mix = require("laravel-mix");
+let mix = require('laravel-mix');
 
-// update local url here
 const baseUrl = 'https://craft-starter.ddev.site';
 
 const moment = require("moment");
@@ -19,29 +14,45 @@ require("laravel-mix-criticalcss");
 require("laravel-mix-banner");
 
 // CSS Plugins
+const tailwindJit = require("@tailwindcss/jit");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
 const presetenv = require("postcss-preset-env");
 const hexrgba = require('postcss-hexrgba');
+
 
 // Image plugins for compression from src folder
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const imageminMozjpeg = require("imagemin-mozjpeg");
 
+
+
+
+
 mix.setPublicPath('./public/assets/')
   .postCss(pkg.paths.src.css + "app.css", "css")
   .options({
     postCss: [
-      tailwindcss(),
-      autoprefixer({
-        cascade: false
-      }),
-      presetenv({
-        stage: 0
-      }),
-      hexrgba
+        tailwindJit,
     ],
+    autoprefixer: {
+      options: {
+          browsers: [
+              'last 4 versions',
+          ]
+      }
+    },
+    // postCss: [
+    //   tailwindcss(),
+    //   autoprefixer({
+    //     cascade: false
+    //   }),
+    //   presetenv({
+    //     stage: 0
+    //   }),
+    //   hexrgba
+    // ],
     processCssUrls: false,
     hmrOptions: {
       host: baseUrl,
@@ -50,19 +61,20 @@ mix.setPublicPath('./public/assets/')
     devtool: 'eval-cheap-module-source-map'
   })
 
+
   // Source maps disabled (temporarily?) to improve build time
   .sourceMaps()
 
   // combine all our js scripts here
   // when npm run production is run will minimize as well
   .js(
-      [
+    [
       // './node_modules/flickity/dist/flickity.pkgd.min.js',
       // './node_modules/swiper/swiper-bundle.min.js',
       // this should go last
       './src/js/app.js'
-      ],
-      'public/assets/js/scripts.combined.js')
+    ],
+    'public/assets/js/scripts.combined.js')
 
   // combine all our vendor css files here
   .combine(
@@ -76,7 +88,7 @@ mix.setPublicPath('./public/assets/')
     banner: (function () {
         return [
             '/**!',
-            ' * @project        Craft Starter Website',
+            ' * @project        Caffeine Creations Website',
             ' * @author         Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>',
             ' * @Copyright      Copyright (c) ' + moment().format("YYYY") + ', Caffeine Creations',
             ' *',
@@ -86,6 +98,7 @@ mix.setPublicPath('./public/assets/')
     })(),
     raw: true,
   })
+
   .browserSync({
     proxy: baseUrl,
     ghostMode: false,
@@ -95,13 +108,13 @@ mix.setPublicPath('./public/assets/')
         bottom: '1rem'
       }
     },
-    files: ["src/css/*.css","templates/*.twig", "templates/**/*.twig", "templates/*.js", "templates/**/*.js"]
+    files: ["src/css/*.css","src/js/*.js","templates/*.twig", "templates/**/*.twig", "templates/*.js", "templates/**/*.js"]
   });
 
 mix.disableSuccessNotifications();
 
 
-
+// production
 if (mix.inProduction()) {
   mix.webpackConfig({
     plugins: [
@@ -122,18 +135,21 @@ if (mix.inProduction()) {
             maxMemory: 1000 * 2048
           })
         ]
-      })
+      }),
+
     ],
   })
+  
   .criticalCss({
     enabled: mix.inProduction(),
     paths: {
       base: baseUrl,
       templates: './templates/criticalCss/'
     },
-    urls: [{
-        url: '',
-        template: 'home'
+    urls: [
+      {
+        url: '/',
+        template: 'index'
       }
     ],
     options: {
@@ -142,6 +158,10 @@ if (mix.inProduction()) {
       height: 900,
     },
   })
+
+  // copy fonts
   .copyDirectory(pkg.paths.src.fonts, pkg.paths.dist.fonts)
+
   .version();
 }
+// end production
