@@ -64,7 +64,7 @@ You can then have the required javascript or css files combined and minimized by
 
 ### Production
 
-when you are ready to deploy your code run `npx mix -pn` to optimize images in `/src/img/` optimized images will be output in `/public/assets/images`
+when you are ready to deploy your code run `npx mix -p` to optimize images in `/src/img/` optimized images will be output in `/public/assets/images`
 
 this will also run the critical css task which you can configure at line 143 by adding in an array of urls and templates
 
