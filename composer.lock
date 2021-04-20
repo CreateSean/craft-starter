@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df5eb9d088caf66707401cb038edb59f",
+    "content-hash": "cd68038c1cb5be6d261c54b3bd731187",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3701,6 +3701,46 @@
                 "source": "https://github.com/reactphp/promise/tree/v2.8.0"
             },
             "time": "2020-05-12T15:16:56+00:00"
+        },
+        {
+            "name": "sebastianlenz/linkfield",
+            "version": "1.0.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
+                "reference": "a29f328fe41248e9b1722c52f68e435f53c241d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/a29f328fe41248e9b1722c52f68e435f53c241d3",
+                "reference": "a29f328fe41248e9b1722c52f68e435f53c241d3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5 || ^8.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "typedlinkfield",
+                "name": "Typed link field",
+                "developer": "Sebastian Lenz",
+                "developerUrl": "https://github.com/sebastian-lenz/"
+            },
+            "autoload": {
+                "psr-4": {
+                    "typedlinkfield\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Craft field type for selecting links",
+            "time": "2021-02-23T20:55:03+00:00"
         },
         {
             "name": "seld/cli-prompt",

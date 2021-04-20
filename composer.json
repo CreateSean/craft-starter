@@ -19,6 +19,7 @@
     "nystudio107/craft-minify": "^1.2",
     "nystudio107/craft-seomatic": "^3.3",
     "nystudio107/craft-templatecomments": "^1.1",
+    "sebastianlenz/linkfield": "^1.0",
     "topshelfcraft/environment-label": "^3.2",
     "vlucas/phpdotenv": "^3.4.0"
   },

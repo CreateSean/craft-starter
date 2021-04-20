@@ -1,4 +1,4 @@
-dateModified: 1613843528
+dateModified: 1618924940
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -37,9 +37,13 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: GAGO3GIITAF1YMQ8JZWMIUYU
+    licenseKey: 0F9VOPZ558WMQISLHBLYMB51
     schemaVersion: 3.0.9
   templatecomments:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typedlinkfield:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

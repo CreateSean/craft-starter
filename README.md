@@ -125,7 +125,8 @@ The following plugins are installed and ready to be used on the site. I prefer t
 5. Retcon - extra twig filters
 6. SEOmatic - used for all SEO.
 7. Template Comments - adds template comments in local dev to make finding templates easy
-8. User Manual - in CP user manual
+8. Typed Link Field - used for buttons and other linkks
+9. User Manual - in CP user manual
 
 
 ## Templates
