@@ -34,25 +34,6 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  505d226e-5fae-49b8-9460-b78c35449b2e:
-    contentColumnType: text
-    fieldGroup: null
-    handle: sectionsubtitle
-    instructions: ''
-    name: SectionSubtitle
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   6f74be98-1b1b-470e-a96a-727b01e0b225:
     contentColumnType: string
     fieldGroup: null
@@ -87,6 +68,25 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  505d226e-5fae-49b8-9460-b78c35449b2e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionsubtitle
+    instructions: ''
+    name: SectionSubtitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   854806b9-7b9c-4bee-b636-6ffb1d144b34:
     contentColumnType: text
     fieldGroup: null

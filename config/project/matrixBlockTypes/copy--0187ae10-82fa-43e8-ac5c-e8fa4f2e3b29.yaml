@@ -53,6 +53,25 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  6adad598-392d-4158-9400-8f90f7fe1fb0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionSubtitle
+    instructions: ''
+    name: 'Section Subtitle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   10748c54-7d1f-4b35-9fd9-57bb11a751bc:
     contentColumnType: text
     fieldGroup: null
@@ -81,25 +100,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
-  6adad598-392d-4158-9400-8f90f7fe1fb0:
-    contentColumnType: text
-    fieldGroup: null
-    handle: sectionSubtitle
-    instructions: ''
-    name: 'Section Subtitle'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
 handle: copy
 name: Copy
 sortOrder: 1
