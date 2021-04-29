@@ -69,10 +69,11 @@
   } %}
 
   <header>
+    <a href="#main-content" role="button"  aria-label="Skip to main content" class="flex flex-col justify-center skip-main" style="height:40px;">Skip to main content</a><!-- /.skip-main -->
     {% include '_includes/main-nav' %}
   </header>
 
-  <main>
+  <main id="main-content" aria-label="page content">
     {% block content %}{% endblock %}
   </main>
 

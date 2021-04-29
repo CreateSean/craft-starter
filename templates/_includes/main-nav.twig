@@ -1,109 +1,65 @@
-<nav class="bg-gray-300 p-20">
+<nav class="bg-white border-b border-gray-200">
+  <div class="w-full text-gray-700 max-w-screen container">
+    <div x-data="{ open: false }" class="flex flex-col mx-auto ax-w-screen lg:flex-row">
 
-<div class="w-full text-gray-700 max-w-screen">
-
-  <div x-data="{ open: false }" class="flex flex-col mx-auto ax-w-screen lg:px-4 lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
-
-    <div class="flex flex-row items-center justify-between px-4 lg:py-4">
-      {% set homeLink = craft.entries.section('homePage').one() %}
-      <a href="{{ homeLink.url }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
-        {# {{ svg('@webroot/assets/images/svg/logo.svg')|attr({ class: 'ml-4 md:ml-0' }) }} #}
-        insert logo
-        <span class="sr-only">Home</span>
+      <div class="flex flex-row items-center justify-between px-4 py-2">
+        <a href="{{siteUrl }}" class="hidden text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+          {# {{ svg('@webroot/assets/images/svg/logo.svg')|attr({ class: 'ml-4 md:ml-0' }) }} #}
+          insert logo
+          <span class="sr-only">Home</span>
         </a>
-      <button class="mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-        {{ svg('@webroot/assets/images/svg/close.svg')|attr({ class:'h-6 w-6', 'x-show':'open',  'x-cloak':''}) }}
-        <span class="sr-only" x-show="open">Close Menu</span><!-- /.sr-only -->
-         {{ svg('@webroot/assets/images/svg/hamburger.svg')|attr({ class:'h-6 w-6', 'x-show':'!open'}) }}
-         <span class="sr-only" x-show="!open">Open Menu</span><!-- /.sr-only -->
-      </button>
-    </div>
 
+        <button class="mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+          {{ svg('@webroot/assets/images/svg/close.svg')|attr({ class:'h-6 w-6', 'x-show':'open',  'x-cloak':''}) }}
+          <span class="sr-only" x-show="open">Close Menu</span><!-- /.sr-only -->
+          {{ svg('@webroot/assets/images/svg/hamburger.svg')|attr({ class:'h-6 w-6', 'x-show':'!open'}) }}
+          <span class="sr-only" x-show="!open">Open Menu</span><!-- /.sr-only -->
+        </button>
+      </div>
 
+      <nav class="flex-col flex-grow hidden h-screen pb-4 lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
+        <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
 
+          {% set pages = craft.entries.section('pages').hideFromNav('0').level('<='~4).all() %}
 
-    {# https://codepen.io/una/pen/pVvXmK #}
-    <nav class="flex-col flex-grow hidden h-screen pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
+          {% nav entry in pages %}
+            <li class="group relative
+              {{ entry.level =='1' ? 'block lg:px-0 xl:px-0 mr-1 py-2':'border-b border-white border-opacity-[0.2]' }}"
+              {{ entry.hasDescendants ? 'x-data="{isOpen:false }"  @mouseleave="isOpen = false"':'' }}>
 
-
-
-      <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
-
-        <li class="relative block lg:px-2 xl:px-4 lg:py-4 lg:pr-2 mr-1">
-          <a href="#" class="block px-4 lg:px-0 py-4">
-            Page Title  +
-          </a>
-
-            <ul class="invisible hidden pl-4 mt-4 bg-white lg:ml-4 lg:left-0 lg:p-4 lg:shadow-lg lg:absolute dropdown" aria-label="submenu">
-              <a href="#" class="block px-4 lg:px-0 py-4">
-                Child Page
+              <a href="{{ entry.hasDescendants ? '#' : entry.url }}"
+                class="{{ entry.level =='1' ? 'px-4 py-2 group-hover:bg-gray-400 group-hover:text-white':'text-white bg-transparent py-1 hover:text-green-100 lg:text-xs' }}"
+                {% if entry.hasDescendants %}
+                  @click="isOpen = !isOpen"
+                  x-on:click.prevent
+                  :class="{'rounded-b-none' : isOpen}"
+                {% endif %}>
+                  {{ entry.title }}
               </a>
-            </ul>
-        </li>
-        <li class="relative block lg:px-2 xl:px-4 lg:py-4 lg:pr-2 mr-1">
-          <a href="#" class="block px-4 lg:px-0 py-4">
-            Page Title
-          </a>
-        </li>
-        <li class="relative block lg:px-2 xl:px-4 lg:py-4 lg:pr-2 mr-1">
-          <a href="#" class="block px-4 lg:px-0 py-4">
-            Page Title
-          </a>
-        </li>
 
-        <li class="relative flex flex-row items-center lg:p-4">
-          <a href="#" class="block px-4 py-4">Français</a>
-          {% include '_includes/language-switcher' %}
-        </li>
+              {% ifchildren %}
 
-      </ul>
+                {% if entry.level !="1" %}
+                  <img src="/assets/images/right.gif" alt="" class="hidden lg:inline-block">
+                {% endif %}
 
-    </nav>
+                <ul
+                  class="bg-gray-600 p-2"
+                  aria-label="submenu"
+                   x-show="isOpen"
+                   @click.away="isOpen = false">
+                  {% children %}
+                </ul>
+              {% endifchildren %}
 
+            </li>
+          {% endnav %}
+
+        </ul>
+      </nav>
+
+
+
+    </div>
   </div>
-</div>
-
 </nav>
-
-
-<style>
-  nav li {
-    transition-duration: 0.5s;
-  }
-  nav  li:hover,
-  nav li:focus-within {
-    cursor: pointer;
-  }
-  nav  li.no-pointer:hover,
-  nav li.no-pointer:focus-within {
-    cursor: default;
-  }
-
-  /*
-  nav li:focus-within a {
-    outline: none;
-  }
-  */
-
-  nav ul li ul {
-    opacity: 0;
-    z-index:9999;
-    transition: all 0.5s ease;
-    right: -20px;
-    min-width:250px;
-  }
-
-  nav ul li:hover > ul,
-  nav ul li:focus-within > ul,
-  nav ul li ul:hover,
-  nav ul li ul:focus {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-
-  nav ul li ul li {
-    clear: both;
-    width: 100%;
-  }
-</style>
