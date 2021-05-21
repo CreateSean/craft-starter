@@ -3,7 +3,7 @@
     <div x-data="{ open: false }" class="flex flex-col mx-auto ax-w-screen lg:flex-row">
 
       <div class="flex flex-row items-center justify-between px-4 py-2">
-        <a href="{{siteUrl }}" class="hidden text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+        <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase    dark-mode:text-white focus:outline-none focus:shadow-outline">
           {# {{ svg('@webroot/assets/images/svg/logo.svg')|attr({ class: 'ml-4 md:ml-0' }) }} #}
           insert logo
           <span class="sr-only">Home</span>
@@ -28,19 +28,24 @@
               {{ entry.hasDescendants ? 'x-data="{isOpen:false }"  @mouseleave="isOpen = false"':'' }}>
 
               <a href="{{ entry.hasDescendants ? '#' : entry.url }}"
-                class="{{ entry.level =='1' ? 'px-4 py-2 group-hover:bg-gray-400 group-hover:text-white':'text-white bg-transparent py-1 hover:text-green-100 lg:text-xs' }}"
+                class="py-2
+                {{ entry.level =='1' ? 'px-4 group-hover:bg-gray-400 group-hover:text-white':'text-white bg-transparent hover:text-gray-100 lg:text-sm' }}"
+
                 {% if entry.hasDescendants %}
                   @click="isOpen = !isOpen"
                   x-on:click.prevent
                   :class="{'rounded-b-none' : isOpen}"
                 {% endif %}>
+
                   {{ entry.title }}
               </a>
 
               {% ifchildren %}
 
                 {% if entry.level !="1" %}
-                  <img src="/assets/images/right.gif" alt="" class="hidden lg:inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="16" height="16" class="hidden lg:inline-block fill-white absolute top-[10px] right-0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
                 {% endif %}
 
                 <ul

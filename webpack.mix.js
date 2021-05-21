@@ -139,7 +139,7 @@ if (mix.inProduction()) {
 
     ],
   })
-  
+
   .criticalCss({
     enabled: mix.inProduction(),
     paths: {

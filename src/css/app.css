@@ -53,30 +53,16 @@
   }
 
   a.skip-main {
+    @apply absolute top-[40px] w-[1px] h-[1px] overflow-hidden;
     left: -999px;
-    position: absolute;
-    top: 40px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
     z-index: -999;
     background: #2d2828;
   }
 
   a.skip-main:focus,
   a.skip-main:active {
-    color: #fff;
-    background-color: #2d2828;
-    left: 5px;
-    top: 30px;
-    min-width: 200px;
-    text-decoration: none;
-    margin: 10px 5px;
-    padding: 10px;
-    border: 1px solid #000;
-    font-size: 1rem;
-    z-index: 999;
-  } 
+    @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;    
+  }
   /* Nav */
   nav li {
     transition-duration: 0.5s;
@@ -90,7 +76,7 @@
     @apply cursor-default;
   }
   nav ul li ul {
-    @apply lg:rounded-md bg-white lg:left-0 px-0 py-1 lg:shadow-lg lg:absolute bg-gray-400 lg:max-w-[180px] w-full lg:w-[180px] lg:min-w-[180px] pl-8 lg:pl-0;
+    @apply bg-white lg:left-0 px-0 py-1 lg:shadow-lg lg:absolute bg-gray-400 lg:max-w-[180px] w-full lg:w-[180px] lg:min-w-[180px] pl-8 lg:pl-0;
     z-index:9999;
     transition: all 0.5s ease;
     right: -20px;
