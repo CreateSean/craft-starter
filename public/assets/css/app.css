@@ -775,10 +775,9 @@ nav ul li ul ul {
     right: -180px;
     left:auto;
 }
-nav ul li ul li {
-    clear: both;
+/* nav ul li ul li {
     width: 100%;
-  }
+  } */
 nav ul li img {
 	position: absolute;
 	right: 10px;
@@ -923,11 +922,6 @@ nav ul li img {
 
 .rounded-lg {
 	border-radius: 0.5rem;
-}
-
-.rounded-b-none {
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
 }
 
 .border {

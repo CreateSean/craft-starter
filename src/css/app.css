@@ -92,11 +92,9 @@
     right: -180px;
     left:auto;
   }
-
-  nav ul li ul li {
-    clear: both;
+  /* nav ul li ul li {
     width: 100%;
-  }
+  } */
   nav ul li img {
     @apply absolute right-[10px];
     top: calc(50% - 4px);
