@@ -61,7 +61,7 @@
 
   a.skip-main:focus,
   a.skip-main:active {
-    @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;    
+    @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;
   }
   /* Nav */
   nav li {
@@ -90,7 +90,7 @@
   nav ul li ul ul {
     @apply top-0;
     right: -180px;
-    left:auto !important;
+    left:auto;
   }
 
   nav ul li ul li {

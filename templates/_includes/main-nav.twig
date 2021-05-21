@@ -4,14 +4,16 @@
 
       <div class="flex flex-row items-center justify-between px-4 py-2">
         <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase    dark-mode:text-white focus:outline-none focus:shadow-outline">
-          {# {{ svg('@webroot/assets/images/svg/logo.svg')|attr({ class: 'ml-4 md:ml-0' }) }} #}
           insert logo
           <span class="sr-only">Home</span>
         </a>
 
         <button class="mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+          {# close icon at mobile #}
           {{ svg('@webroot/assets/images/svg/close.svg')|attr({ class:'h-6 w-6', 'x-show':'open',  'x-cloak':''}) }}
           <span class="sr-only" x-show="open">Close Menu</span><!-- /.sr-only -->
+
+          {# hamburger menu at mobile #}
           {{ svg('@webroot/assets/images/svg/hamburger.svg')|attr({ class:'h-6 w-6', 'x-show':'!open'}) }}
           <span class="sr-only" x-show="!open">Open Menu</span><!-- /.sr-only -->
         </button>
@@ -24,7 +26,10 @@
 
           {% nav entry in pages %}
             <li class="group relative
+              {# conditionally add classes to either top level entries or child entries #}
               {{ entry.level =='1' ? 'block lg:px-0 xl:px-0 mr-1 py-2':'border-b border-white border-opacity-[0.2]' }}"
+
+              {# if entry has children make it a dropdown/flyout #}
               {{ entry.hasDescendants ? 'x-data="{isOpen:false }"  @mouseleave="isOpen = false"':'' }}>
 
               <a href="{{ entry.hasDescendants ? '#' : entry.url }}"
@@ -34,28 +39,44 @@
                 {% if entry.hasDescendants %}
                   @click="isOpen = !isOpen"
                   x-on:click.prevent
-                  :class="{'rounded-b-none' : isOpen}"
+                  :class="{'' : isOpen}"
                 {% endif %}>
 
                   {{ entry.title }}
               </a>
 
+              {# display all child entries #}
               {% ifchildren %}
 
+                {#
+                  if has children and is not a top level entry
+                  then add a left chevron
+                #}
                 {% if entry.level !="1" %}
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="16" height="16" class="hidden lg:inline-block fill-white absolute top-[10px] right-0" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                   </svg>
                 {% endif %}
 
+                {# wrap children with ul and display them #}
                 <ul
                   class="bg-gray-600 p-2"
                   aria-label="submenu"
                    x-show="isOpen"
                    @click.away="isOpen = false">
+
+                   {# display parent entry again
+                      since it's not reachable by click
+                   #}
+                   <li class="group relative border-b border-white border-opacity-[0.2]">
+                     <a href="{{ entry.url }}" class="py-2text-white bg-transparent hover:text-gray-100 lg:text-sm">{{ entry.title }}</a>
+                   </li><!-- /.p-3 bg-green-200 -->
+                   {# end show parent entry #}
+
                   {% children %}
                 </ul>
               {% endifchildren %}
+              {# end children #}
 
             </li>
           {% endnav %}
