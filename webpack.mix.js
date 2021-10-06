@@ -14,7 +14,7 @@ require("laravel-mix-criticalcss");
 require("laravel-mix-banner");
 
 // CSS Plugins
-const tailwindJit = require("@tailwindcss/jit");
+//const tailwindJit = require("@tailwindcss/jit");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
 const presetenv = require("postcss-preset-env");
@@ -34,7 +34,7 @@ mix.setPublicPath('./public/assets/')
   .postCss(pkg.paths.src.css + "app.css", "css")
   .options({
     postCss: [
-        tailwindJit,
+        tailwindcss,
     ],
     autoprefixer: {
       options: {
