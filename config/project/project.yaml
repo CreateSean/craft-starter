@@ -1,4 +1,4 @@
-dateModified: 1619705957
+dateModified: 1633623726
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -22,6 +22,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  knock-knock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
   minify:
     edition: standard
     enabled: true

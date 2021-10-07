@@ -127,6 +127,7 @@ The following plugins are installed and ready to be used on the site. I prefer t
 7. Template Comments - adds template comments in local dev to make finding templates easy
 8. Typed Link Field - used for buttons and other linkks
 9. User Manual - in CP user manual
+10. Knock Knock - password protect staging site (pass: **letmein**)
 
 
 ## Templates

@@ -21,6 +21,7 @@
     "nystudio107/craft-templatecomments": "^1.1",
     "sebastianlenz/linkfield": "^1.0",
     "topshelfcraft/environment-label": "^3.2",
+    "verbb/knock-knock": "^1.2",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "require-dev": {
