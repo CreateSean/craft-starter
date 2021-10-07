@@ -15,13 +15,15 @@ Set up your local development, if you are using DDev for local development then 
 3. update dotenv variables, especially SITE_NAME, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL and fill in the missing details
 4. Run `ddev start` and the site should start up.
 5. run `ddev import-db --src=db.sql.gz` this will import the seeder database with settings, channels, etc.
-6. run `ddev launch access` will open the Craft CP
-7. To access the db from your host machine run `ddev describe` and you'll get the connection details needed
+6. run `php craft setup/security-key`
+7. run `php craft setup/app-id`
+8. run `ddev launch access` will open the Craft CP
+9. To access the db from your host machine run `ddev describe` and you'll get the connection details needed
 
 Login: `cc_admin`
 Password: `letmein`
 
-8. after logging in be sure to **update your password**
+10. after logging in be sure to **update your password**
 
 ## To Do
 
