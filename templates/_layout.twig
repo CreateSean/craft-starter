@@ -19,7 +19,7 @@
 
   {% block pageCss %}{% endblock %}
 </head>
-<body class="{{ craft.app.language }} relative text-grayBrand bg-white font-work text-base">
+<body id="body" class="{{ craft.app.language }} relative text-grayBrand bg-white font-work text-base">
   {#
   All image transforms are defined here. Templates using this layout can reference them thus:
   {{ theBackgroundImage.url(transform.small) }}

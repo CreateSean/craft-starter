@@ -938,6 +938,10 @@ nav ul li img {
 	        justify-content: space-between;
 }
 
+.overflow-hidden {
+	overflow: hidden;
+}
+
 .rounded-lg {
 	border-radius: 0.5rem;
 }
