@@ -1,12 +1,8 @@
 module.exports = {
-  mode:'jit',
-  purge: [
-    './templates/**/*.html',
-    './templates/**/*.twig',
-    './src/**/*.vue',
-    './src/**/*.jsx',
+  content: [
+    './templates/**/*.{html,twig,js}',
+    './src/**/*.{vue,js,jsx}',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
       center: true,
@@ -24,10 +20,5 @@ module.exports = {
         }
       },
     },
-  },
-  variants: {
-    extend: {
-      textColor: ['visited'],
-    }
   },
 }
