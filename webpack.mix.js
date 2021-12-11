@@ -43,16 +43,6 @@ mix.setPublicPath('./public/assets/')
           ]
       }
     },
-    // postCss: [
-    //   tailwindcss(),
-    //   autoprefixer({
-    //     cascade: false
-    //   }),
-    //   presetenv({
-    //     stage: 0
-    //   }),
-    //   hexrgba
-    // ],
     processCssUrls: false,
     hmrOptions: {
       host: baseUrl,
