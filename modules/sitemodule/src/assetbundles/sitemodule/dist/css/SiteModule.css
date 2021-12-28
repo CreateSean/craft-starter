@@ -1,0 +1,34 @@
+/**
+ * Site module for Craft CMS
+ *
+ * Site CSS
+ *
+ * @author    Steve
+ * @copyright Copyright (c) 2021 Steve
+ * @link      simplicate.ca
+ * @package   SiteModule
+ * @since     1.0.0
+ */
+ /* body.login {
+  background: #232A31;
+  color: #fff;
+}
+body.login button#forgot-password,
+body.login button#remember-password {
+  color: #C59147;
+  cursor: pointer;
+}
+body.login button#forgot-password:hover,
+body.login button#remember-password:hover {
+  color: #fff;
+}
+body.login a#poweredby {
+  display: none;
+}
+*/
+
+/* style text in the redactor field to match the front end */
+/* .input .redactor-styles p.lead {
+  font-size: 22px !important;
+  line-height: 1.3em !important;
+} */

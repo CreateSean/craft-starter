@@ -816,6 +816,11 @@ nav ul li img {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
 .fill-white {
   fill: #fff;
 }
