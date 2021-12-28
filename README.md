@@ -139,6 +139,13 @@ Create the static templates in templates/static and then link to each template i
 * You can see an example template set up already.
 * add any partials to the templates/_includes
 
+## Redactor
+
+Redactor has the [link-attribute plugin installed](https://github.com/simplicate-web/redactor-link-attr) Adding/editing data attribute options is a 2 step process.
+
+1. go to `modules/sitemodule/src/SiteModule.php` line 118 and edit or add another line like this `$def->addAttribute('a', 'data-track', 'Text');`
+2. go to `config/redator/site.json` and edit or copy/paste line 20.
+
 ## Image Toolbox
 
 **Responsive picture elements with Image Toolbox**
