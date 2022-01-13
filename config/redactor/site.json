@@ -14,7 +14,8 @@
     ],
     "plugins": [
         "alignment",
-        "linkattr"
+        "linkattr",
+        "counter"
     ],
     "linkAttrs" : [
       { "label": "Tracking ID", "attr": "data-track", "type": "text" }
