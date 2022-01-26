@@ -205,6 +205,10 @@ For a responsive image with multiple sizes applied at different breakpoints use 
 } %}
 {{ craft.images.pictureMedia(image, transforms, null, attributes) }}
 ```
+## Image Optimize Plugin
+
+The Image Optimize plugin is not officially part of this repo, but if you are using it, see this github issue, [Config for ImageOptimize Plugin](https://github.com/CreateSean/craft-starter/issues/2) for instructions on getting it to work correctly.
+
 ## composer nuke
 
 If you ever need to remove the vender folder and basically reset all things composer run this command
