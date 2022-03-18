@@ -28,6 +28,7 @@ Password: `letmein`
 ## To Do
 
 * add more default templating i.e. main-nav with mobile hamburger
+* set up easy prototyping channels, fields, and templates.
 
 ## Build Process
 
