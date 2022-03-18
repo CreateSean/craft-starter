@@ -19,8 +19,11 @@
     "nystudio107/craft-minify": "^1.2",
     "nystudio107/craft-seomatic": "^3.3",
     "nystudio107/craft-templatecomments": "^1.1",
+    "nystudio107/craft-typogrify": "^1.1",
+    "putyourlightson/craft-sprig": "^1.12",
     "sebastianlenz/linkfield": "^1.0",
     "topshelfcraft/environment-label": "^3.2",
+    "vaersaagod/matrixmate": "^1.3",
     "verbb/knock-knock": "^1.2",
     "vlucas/phpdotenv": "^3.4.0"
   },
@@ -38,6 +41,10 @@
     "optimize-autoloader": true,
     "platform": {
       "php": "7.2.5"
+    },
+    "allow-plugins": {
+      "craftcms/plugin-installer": true,
+      "yiisoft/yii2-composer": true
     }
   },
   "scripts": {

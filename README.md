@@ -130,6 +130,9 @@ The following plugins are installed and ready to be used on the site. I prefer t
 8. Typed Link Field - used for buttons and other linkks
 9. User Manual - in CP user manual
 10. Knock Knock - password protect staging site (pass: **letmein**)
+11. MatrixMate
+12. Typogrify
+13. Sprig - Reactive components
 
 
 ## Templates
@@ -208,6 +211,22 @@ For a responsive image with multiple sizes applied at different breakpoints use 
 ## Image Optimize Plugin
 
 The Image Optimize plugin is not officially part of this repo, but if you are using it, see this github issue, [Config for ImageOptimize Plugin](https://github.com/CreateSean/craft-starter/issues/2) for instructions on getting it to work correctly.
+
+## Typogrify
+
+See the [typogrify docs](https://nystudio107.com/docs/typogrify/) for advanced usage. For basic use add the typography fitler to your redactor fields like this
+
+```{{ entry.copy|typogrify }}```
+
+## Sprig
+
+Sprig adds reactive components. See the [documentation](https://putyourlightson.com/plugins/sprig) and/or my article on [Reactive Pagination With Sprig](https://caffeinecreations.ca/blog/reactive-pagination-with-sprig-and-craft/) for examples.
+
+## MatrixMate
+
+MatrixMate enables you to improve the Matrix authoring experience by sorting block types into groups and block type fields into tabs. See the [documentation](https://github.com/vaersaagod/matrixmate/blob/master/README.md) for full options and feautures.
+
+There is a default config file in `config/matrixmate.php` that is not currently attached to any matrix fields.
 
 ## composer nuke
 

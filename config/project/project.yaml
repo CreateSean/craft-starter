@@ -1,4 +1,4 @@
-dateModified: 1640720312
+dateModified: 1647623547
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -13,6 +13,11 @@ email:
     useAuthentication: '1'
     username: $EMAIL_USERNAME
   transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    56f86cc6-5713-447f-8b10-e53f06ef42eb: 'Hide from Nav' # Hide from Nav
+    666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
+    bb838d9b-476f-487c-8cc2-8e01b9423d92: Pages # Pages
 plugins:
   environment-label:
     edition: standard
@@ -26,6 +31,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
+  matrixmate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: true
@@ -42,12 +51,20 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 0F9VOPZ558WMQISLHBLYMB51
-    schemaVersion: 3.0.9
+    schemaVersion: 3.0.11
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
   templatecomments:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
   typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typogrify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -64,5 +81,5 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.33
   timeZone: America/Toronto
