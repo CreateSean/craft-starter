@@ -13,14 +13,14 @@ module.exports = {
       grayBrand: {
         light: '#DADADA',
         DEFAULT: '#373F41',
-        white: colors.white,
-        transparent: 'transparent',
-        current: 'currentColor',
-        green: colors.green,
-        pink: colors.pink,
-        purple: colors.purple,
-        gray: colors.gray,
-      }
+      },
+      white: colors.white,
+      transparent: 'transparent',
+      current: 'currentColor',
+      green: colors.green,
+      pink: colors.pink,
+      purple: colors.purple,
+      gray: colors.gray,
     },
     extend: {
       fontFamily: {
