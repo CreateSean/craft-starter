@@ -64,7 +64,6 @@ You can then have the required javascript or css files combined and minimized by
 ```
 
 4. run `npx mix watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
-
 5. Tailwind Config Viewer is set up and uses the following commands. `npm run tw-config-viewer` will load up the viewer at localhost:4000 and `npm run export-tw-config` will export the viewer to `public/tw-viewer`
 
 ### Production
