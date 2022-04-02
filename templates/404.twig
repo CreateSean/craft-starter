@@ -11,24 +11,27 @@
     {% endblock %}
   {% endif %}
 
+  {% set entry = craft.entries.section('error404').one() %}
 
 {% block content %}
 
 	{# hero block #}
 	{# {% include '_includes/split-hero' %} #}
 	{# end hero block #}
-  {% if error404.alternateTitle|length %}
-  <section class="border-t border-gray-200">
+
+  <section class="py-24 border-t border-gray-200">
     <div class="container py-68">
 
-        <h1 class="text-center">{{ error404.alternateTitle }}</h1>
+      <div class="w-full mx-auto lg:w-2/3">
+        <h1 class="mb-8">{{ entry.title }}</h1>
+
+        <div class="prose prose-lg">
+          {{ entry.text }}
+        </div><!-- /.prose -->
+      </div><!-- /.w-full -->
 
     </div><!-- /.container py-68 -->
   </section>
-  {% endif %}
 
-  {% for block in error404.contentBuilder.all() %}
-    {% include '_blocks/' ~ block.type %}
-  {% endfor %}
 
 {% endblock %}

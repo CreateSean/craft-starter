@@ -51,6 +51,9 @@
   h1, h2, h3, h4, h5, h6, .h4, .h5 {
     @apply leading-tight;
   }
+  h1 {
+    @apply text-4xl;
+  }
 
   a.skip-main {
     @apply absolute top-[40px] w-[1px] h-[1px] overflow-hidden;

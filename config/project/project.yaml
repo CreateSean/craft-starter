@@ -1,4 +1,4 @@
-dateModified: 1647623547
+dateModified: 1648909956
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -15,9 +15,14 @@ email:
   transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
+    1a78d395-d81a-4b77-8da7-30a49123bbee: English # English
+    29d88d99-dd38-43f6-9ac5-3438833c75ba: 'Error 404' # Error 404
     56f86cc6-5713-447f-8b10-e53f06ef42eb: 'Hide from Nav' # Hide from Nav
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
+    b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
+    b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
     bb838d9b-476f-487c-8cc2-8e01b9423d92: Pages # Pages
+    f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
 plugins:
   environment-label:
     edition: standard

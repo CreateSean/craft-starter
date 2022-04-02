@@ -1,8 +1,9 @@
-baseUrl: $PRIMARY_SITE_URL
+baseUrl: $SITE_URL_EN
+enabled: true
 handle: default
 hasUrls: true
-language: en-CA
-name: 'Craft Starter'
+language: en
+name: English
 primary: true
 siteGroup: 2fcd48d2-b2b1-479f-9015-016904e4eab4
 sortOrder: 1

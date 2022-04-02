@@ -1,0 +1,9 @@
+baseUrl: $SITE_URL_FR
+enabled: true
+handle: french
+hasUrls: true
+language: fr
+name: Français
+primary: false
+siteGroup: 2fcd48d2-b2b1-479f-9015-016904e4eab4
+sortOrder: 2
