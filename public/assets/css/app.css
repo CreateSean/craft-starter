@@ -1,7 +1,7 @@
 /**!
  * @project        Caffeine Creations Website
  * @author         Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>
- * @Copyright      Copyright (c) 2021, Caffeine Creations
+ * @Copyright      Copyright (c) 2022, Caffeine Creations
  *
  */
 
@@ -475,7 +475,7 @@ ul {
   margin-top: 2rem;
   margin-bottom: 2rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+  background-color: rgb(194 65 12 / var(--tw-bg-opacity));
   padding: 2rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -491,7 +491,7 @@ ul {
   line-height: 1.75rem;
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
+  color: rgb(251 191 36 / var(--tw-text-opacity));
     content: 'Testing Note';
 }
 .testing:after {
@@ -501,7 +501,7 @@ ul {
   line-height: 1.75rem;
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
+  color: rgb(251 191 36 / var(--tw-text-opacity));
     content: 'remove once testing complete';
 }
 html {
@@ -814,11 +814,6 @@ nav ul li img {
 .bg-green-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
-}
-
-.bg-sky-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
 .fill-white {

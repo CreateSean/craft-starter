@@ -25,18 +25,18 @@
     border: 0;
   }
   .testing {
-    @apply p-8 my-8 text-xl text-white bg-red-700;
+    @apply p-8 my-8 text-xl text-white bg-[#c2410c];
     clear: both;
     font-family: sans-serif;
   }
 
   .testing:before {
-    @apply block mb-4 text-lg text-yellow-400 uppercase;
+    @apply block mb-4 text-lg text-[#fbbf24] uppercase;
     content: 'Testing Note';
   }
 
   .testing:after {
-    @apply block mt-4 text-lg text-yellow-400 uppercase;
+    @apply block mt-4 text-lg text-[#fbbf24] uppercase;
     content: 'remove once testing complete';
   }
 
@@ -82,7 +82,7 @@
     right: -20px;
   }
   nav ul li a {
-    @apply block  bg-transparent group-hover:text-white group-hover:bg-gray-400;
+    @apply block bg-transparent group-hover:text-white group-hover:bg-gray-400;
   }
   nav ul li:hover > a {
     @apply text-gray-900;
