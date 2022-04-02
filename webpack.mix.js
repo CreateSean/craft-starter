@@ -128,9 +128,6 @@ if (mix.inProduction()) {
       }),
 
     ],
-    stats: {
-      children: true
-    }
   })
 
   .criticalCss({
