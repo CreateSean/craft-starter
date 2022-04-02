@@ -1,5 +1,5 @@
 fieldLayouts:
-  0370a645-18d3-48e4-891a-13bc65ceb1ae:
+  69a2a893-3c54-4b63-80c3-7a42ccd38392:
     tabs:
       -
         elements:
@@ -26,6 +26,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
+          -
+            fieldUid: f4da8483-be1a-439d-8918-afde0ea14454 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
       -
@@ -41,11 +50,11 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: homepage
-hasTitleField: false
-name: Homepage
-section: 722083b8-e7bc-4d95-b4dd-3473680b72a7
-sortOrder: 1
-titleFormat: '{section.name|raw}'
+handle: home
+hasTitleField: true
+name: Home
+section: 666b31c2-d6d5-4e80-b9aa-f57b66d5b54a # Pages
+sortOrder: 2
+titleFormat: '{'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
