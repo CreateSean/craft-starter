@@ -10,7 +10,7 @@
       x-show="expanded"
       x-collapse.duration.300ms >
       <div class="container">
-        <div class="flex flex-row items-center w-full mx-auto space-x-8 lg:w-5/6">
+        <div class="relative flex flex-row items-center w-full mx-auto lg:w-5/6">
           <div class="py-4 grow">
             {{ notice.text|retcon([
                 ['attr', 'p', { class: 'm-0 text-sm' }]
@@ -18,10 +18,15 @@
           </div>
           {% if notice.button|length %}
             {{ notice.button.getLink({
-                class: 'btn',
+                class: 'btn mx-8',
               }) }}
           {% endif %}
-          <button @click="expanded = ! expanded" aria-label="Close">X</button>
+          <button
+            class="absolute text-xs font-bold text-red-400 top-1 right-2"
+            @click="expanded = ! expanded"
+            aria-label="Close">
+            X
+          </button>
 
         </div><!-- /.w-full flex flex-row -->
       </div><!-- /.container -->
