@@ -4,7 +4,7 @@
     and ( notice.noticeBarLayout !="homePageOnly" or ( entry.slug == '__home__' ) )
 %}
 
-  <div x-data="{ expanded: true}">
+  <div x-data="{ expanded: $persist(true).as('notice-bar').using(sessionStorage) }">
     <div
       class="shadow-inner drop-shadow bg-gradient-to-b from-gray-100 via-gray-50 to-gray-100"
       x-show="expanded"
