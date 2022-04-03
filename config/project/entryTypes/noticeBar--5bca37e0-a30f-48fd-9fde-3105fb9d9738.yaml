@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: 52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e # Notice Bar Layout
+            fieldUid: 52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e # Notice Bar Location
             instructions: null
             label: null
             required: false

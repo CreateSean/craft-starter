@@ -1,4 +1,4 @@
-dateModified: 1648998188
+dateModified: 1649004476
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -19,7 +19,7 @@ meta:
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
     5bed279a-5360-4e96-b92e-3153c98bff40: Copy # Copy
     29d88d99-dd38-43f6-9ac5-3438833c75ba: 'Error 404' # Error 404
-    52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e: 'Notice Bar Layout' # Notice Bar Layout
+    52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e: 'Notice Bar Location' # Notice Bar Location
     56f86cc6-5713-447f-8b10-e53f06ef42eb: 'Hide from Nav' # Hide from Nav
     57a74cde-de83-4b69-88ff-a4472daac7f7: 'Call To Action' # Call To Action
     77af5a62-d057-494a-91ac-9edf65b6b266: 'Content Builder' # Content Builder

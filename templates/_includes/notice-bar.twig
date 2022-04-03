@@ -1,7 +1,7 @@
 {% set notice = craft.entries.section('noticeBar').one() %}
 
 {% if notice.enableNoticeBar == '1'
-    and ( notice.noticeBarLayout !="homePageOnly" or ( entry.slug == '__home__' ) )
+    and ( notice.noticeBarLocation !="homePageOnly" or ( entry.slug == '__home__' ) )
 %}
 
   <div x-data="{ expanded: $persist(true).as('notice-bar').using(sessionStorage) }">
