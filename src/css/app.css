@@ -104,5 +104,8 @@
   }
   /* end nav */
 
+  .btn {
+    @apply inline-block px-6 py-1 text-white transition duration-200 bg-gray-400 rounded hover:bg-gray-300 hover:text-gray-700;
+  }
 }
 /* end components layer */

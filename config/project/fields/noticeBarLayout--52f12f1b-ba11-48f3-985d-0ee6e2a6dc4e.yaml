@@ -1,0 +1,35 @@
+columnSuffix: kjjdtixf
+contentColumnType: string
+fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824
+handle: noticeBarLayout
+instructions: ''
+name: 'Notice Bar Layout'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Home Page Only'
+        -
+          - value
+          - homePageOnly
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'All Pages'
+        -
+          - value
+          - allPages
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Dropdown
