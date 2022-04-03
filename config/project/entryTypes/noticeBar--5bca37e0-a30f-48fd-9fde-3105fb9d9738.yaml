@@ -27,6 +27,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 5489ed3b-28c1-4a26-ac7e-97b0182e6652 # Enable Notice Bar
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
             fieldUid: 52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e # Notice Bar Layout
             instructions: null
             label: null
@@ -34,7 +43,7 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 25
+            width: 50
           -
             fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b # Button
             instructions: null

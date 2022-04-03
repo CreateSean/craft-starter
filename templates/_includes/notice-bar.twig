@@ -1,24 +1,31 @@
-{% set entry = craft.entries.section('noticeBar').one() %}
-<div x-data="{ expanded: true}">
-  <div
-    class="shadow-inner drop-shadow bg-gradient-to-b from-gray-100 via-gray-50 to-gray-100"
-    x-show="expanded"
-    x-collapse.duration.300ms >
-    <div class="container">
-      <div class="flex flex-row items-center w-full mx-auto space-x-8 lg:w-5/6">
-        <div class="py-4 grow">
-          {{ entry.text|retcon([
-              ['attr', 'p', { class: 'm-0 text-sm' }]
-            ]) }}
-        </div>
-        {% if entry.button|length %}
-          {{ entry.button.getLink({
-              class: 'btn',
-            }) }}
-        {% endif %}
-        <button @click="expanded = ! expanded" aria-label="Close">X</button>
+{% set notice = craft.entries.section('noticeBar').one() %}
 
-      </div><!-- /.w-full flex flex-row -->
-    </div><!-- /.container -->
+{% if notice.enableNoticeBar == '1'
+    and ( notice.noticeBarLayout !="homePageOnly" or ( entry.slug == '__home__' ) )
+%}
+
+  <div x-data="{ expanded: true}">
+    <div
+      class="shadow-inner drop-shadow bg-gradient-to-b from-gray-100 via-gray-50 to-gray-100"
+      x-show="expanded"
+      x-collapse.duration.300ms >
+      <div class="container">
+        <div class="flex flex-row items-center w-full mx-auto space-x-8 lg:w-5/6">
+          <div class="py-4 grow">
+            {{ notice.text|retcon([
+                ['attr', 'p', { class: 'm-0 text-sm' }]
+              ]) }}
+          </div>
+          {% if notice.button|length %}
+            {{ notice.button.getLink({
+                class: 'btn',
+              }) }}
+          {% endif %}
+          <button @click="expanded = ! expanded" aria-label="Close">X</button>
+
+        </div><!-- /.w-full flex flex-row -->
+      </div><!-- /.container -->
+    </div>
   </div>
-</div>
+
+{% endif %}

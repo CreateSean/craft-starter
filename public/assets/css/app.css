@@ -1391,6 +1391,10 @@ nav ul li img {
   padding: 0.75rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;

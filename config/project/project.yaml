@@ -1,4 +1,4 @@
-dateModified: 1648995846
+dateModified: 1648998188
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -25,6 +25,7 @@ meta:
     77af5a62-d057-494a-91ac-9edf65b6b266: 'Content Builder' # Content Builder
     136d3c61-5e7c-4eb4-afc0-5c78565fbe8b: Button # Button
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
+    5489ed3b-28c1-4a26-ac7e-97b0182e6652: 'Enable Notice Bar' # Enable Notice Bar
     408314ae-e32d-471b-a729-25f4ce759ac4: 'Notice Bar' # Notice Bar
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
