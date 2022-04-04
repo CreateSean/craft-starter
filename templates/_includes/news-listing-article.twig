@@ -1,33 +1,40 @@
 <article class="flex flex-col border spacy-y-8">
   {% set image = entry.image.one() ?? fallback.fallbackImage.one() %}
-  {% set transforms = {
-    '(max-width: 767px)': {
-      width: 734,
-      height:367,
-      mode: 'crop',
-      quality: 80,
-    },
-    '(max-width: 1280px)': {
-      width:480,
-      height:240,
-      mode: 'crop',
-      quality: 80,
-    },
-    '(min-width: 1200px)': {
-      width:734,
-      height:367,
-      mode: 'crop',
-      quality: 80,
-    },
-  } %}
-  {% set attributes = {
-      class: [
-          '',
-      ],
-      loading:'lazy',
-      alt: image.altText ?? image.title,
-  } %}
-  <a href="{{ entry.url }}">{{ craft.images.pictureMedia(image, transforms, null, attributes) }}</a>
+  {# {% if image|length %} #}
+    {% set transforms = {
+      '(max-width: 767px)': {
+        width: 734,
+        height:367,
+        mode: 'crop',
+        quality: 80,
+      },
+      '(min-width:768px) and (max-width: 1024px)': {
+        width:734,
+        height:367,
+        mode: 'crop',
+        quality: 80,
+      },
+      '(min-width:1025px) and (max-width: 1280px)': {
+        width:480,
+        height:240,
+        mode: 'crop',
+        quality: 80,
+      },
+      '(min-width: 1200px)': {
+        width:734,
+        height:367,
+        mode: 'crop',
+        quality: 80,
+      },
+    } %}
+    {% set attributes = {
+        class: [
+            '',
+        ],
+        loading:'lazy',
+        alt: image.altText ?? image.title ?? 'placeholder',
+    } %}
+    <a href="{{ entry.url }}">{{ craft.images.pictureMedia(image, transforms, null, attributes) }}</a>
 
     <div class="p-8 bg-white ">
       <div class="flex flex-row">

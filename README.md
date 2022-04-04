@@ -155,7 +155,7 @@ Redactor has the [link-attribute plugin installed](https://github.com/simplicate
 
 **Responsive picture elements with Image Toolbox**
 
-Read the full documentation for [Image Toolbox](https://github.com/craft-snippets/Craft-image-toolbox)
+Read the full documentation for [Image Toolbox](https://github.com/craft-snippets/Craft-image-toolbox). Image Toolbox uses a fallback from a placeholder image service. This image can be customized in `/config/image-toolbox.php`.
 
 
 To use with an image that won't have multiple sizes at different breakpoints use this code:
