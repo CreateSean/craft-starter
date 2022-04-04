@@ -188,7 +188,7 @@ To use with an image that won't have multiple sizes at different breakpoints use
       'add classes here',
   ],
   loading:'lazy',
-  alt: image.altText ?? image.title,
+  alt: image.altText ?? image.title ?? null,
 } %}
 {{craft.images.picture(image, thumb, attributes) }}
 ```
@@ -221,7 +221,7 @@ For a responsive image with multiple sizes applied at different breakpoints use 
         '',
     ],
     loading:'lazy',
-    alt: image.altText ?? image.title,
+    alt: image.altText ?? image.title ?? null,
 } %}
 {{ craft.images.pictureMedia(image, transforms, null, attributes) }}
 ```
