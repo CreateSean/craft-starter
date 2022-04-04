@@ -19,7 +19,7 @@ to install this package run `composer create-project createsean/craft-starter .`
   * [Typogrify](#typogrify)
   * [Sprig](#sprig)
   * [MatrixMate](#matrixmate)
-  * [Cmposer nuke](#composer-nuke)
+  * [Composer nuke](#composer-nuke)
   * [Templates](#templates)
 
 ---
