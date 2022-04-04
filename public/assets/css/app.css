@@ -1330,6 +1330,18 @@ nav ul li img {
           align-items: center;
 }
 
+.justify-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .justify-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1344,6 +1356,19 @@ nav ul li img {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.self-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .overflow-hidden {
@@ -1494,6 +1519,11 @@ nav ul li img {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-4 {
@@ -1702,6 +1732,14 @@ nav ul li img {
     width: 83.333333%;
   }
 
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1713,10 +1751,23 @@ nav ul li img {
             flex-direction: row;
   }
 
+  .lg\:flex-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .lg\:justify-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:px-0 {

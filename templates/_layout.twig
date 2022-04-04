@@ -29,53 +29,14 @@
 
 </head>
 <body id="body" class="{{ craft.app.language }} relative text-grayBrand bg-white font-work text-base">
-  {#
-  All image transforms are defined here. Templates using this layout can reference them thus:
-  {{ theBackgroundImage.url(transform.small) }}
-  #}
-  {% set transform = {
-    small: {
-      width: 640,
-      height: 640,
-      mode: 'crop',
-      position: 'center-center',
-      quality: 70,
-    },
-    listingBlock: {
-      width: 510,
-      height: 350,
-      mode: 'crop',
-      position: 'center-center',
-      quality: 70,
-    },
-    medium: {
-      width: 1024,
-      mode: 'fit',
-      position: 'center-center',
-      quality: 70,
 
-    },
-    large: {
-      width: 1800,
-      mode: 'fit',
-      position: 'center-center',
-      quality: 70,
-    },
-    square: {
-      height: 640,
-      width:640,
-      mode: 'crop',
-      position: 'center-center',
-      quality: 70,
-    },
-    background: {
-      width: 2000,
-      height: 1125,
-      mode: 'crop',
-      position: 'center-center',
-      quality: 70,
-      },
-  } %}
+  {# set site name from DOTENV variable based on current site language #}
+  {% if craft.app.language == 'en' %}
+    {% set siteName = getenv('SITE_NAME_EN') %}
+  {% endif %}
+  {% if craft.app.language == 'fr' %}
+    {% set siteName = getenv('SITE_NAME_FR') %}
+  {% endif %}
 
   {% include "_includes/notice-bar" %}
 

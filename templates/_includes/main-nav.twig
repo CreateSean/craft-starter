@@ -1,10 +1,10 @@
 <nav class="bg-white border-b border-gray-200">
-  <div class="w-full text-gray-700 max-w-screen container">
+  <div class="container w-full text-gray-700 max-w-screen">
     <div x-data="{ open: false }" class="flex flex-col mx-auto ax-w-screen lg:flex-row">
 
       <div class="flex flex-row items-center justify-between px-4 py-2">
-        <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase    dark-mode:text-white focus:outline-none focus:shadow-outline">
-          insert logo
+        <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase dark-mode:text-white focus:outline-none focus:shadow-outline">
+          <span title="{{ siteName }}">insert logo</span>
           <span class="sr-only">Home</span>
         </a>
 
@@ -60,7 +60,7 @@
 
                 {# wrap children with ul and display them #}
                 <ul
-                  class="bg-gray-600 p-2"
+                  class="p-2 bg-gray-600"
                   aria-label="submenu"
                    x-show="isOpen"
                    @click.away="isOpen = false">

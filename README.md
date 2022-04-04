@@ -28,7 +28,7 @@ Set up your local development, if you are using DDev for local development then 
 
 1. open .ddev/config.yaml and update line 15 to use the port you want. Must be unique to all ddev sites on your local computer
 2. open .ddev/config.yaml and update php version (line 4) and mysql_version (line 11) if needed
-3. update dotenv variables, especially SITE_NAME, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL and fill in the missing details
+3. update dotenv variables, especially SITE_NAME_EN, SITE_NAME_FR, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL and fill in the missing details
 4. Run `ddev start` and the site should start up.
 5. run `ddev import-db --src=db.sql.gz` this will import the seeder database with settings, channels, etc.
 6. run `php craft setup/security-key`
@@ -49,6 +49,7 @@ Password: `letmein`
 -   [ ] Add news _entry template.
 -   [x] Add news listing with sprig pagination.
 -   [x] Add notice bar option.
+-   [x] Add 404 template.
 -   [x] Add installation instructions.
 
 ## Build Process
