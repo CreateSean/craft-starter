@@ -1,0 +1,10 @@
+{# homepage #}
+{% extends '_layout' %}
+
+{% block content %}
+  {#
+    load the entry news listing template
+    so we can have categories with same layout and sprig pagination
+  #}
+  {% include "pages/_entry-type/newsListing" %}
+{% endblock %}

@@ -1,3 +1,4 @@
+defaultPlacement: end
 enableVersioning: true
 handle: pages
 name: Pages
@@ -19,7 +20,7 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: pages/_entry
-    uriFormat: 'pages/{slug}'
+    uriFormat: '{parent.uri}/{slug}'
 structure:
   maxLevels: null
   uid: 536c7846-2d54-4625-a65d-1a546df44223

@@ -1,21 +1,15 @@
-{# homepage #}
+{# homepage
+
+home page template is at pages/_entry-type/home
+
+#}
 {% extends '_layout' %}
 
 {% set entry = craft.entries.slug('__home__').one() %}
 
 {% block content %}
 
-<section class="py-24 border-t border-gray-200">
-  <div class="container">
-    <div class="w-full">
-      <h1 class="mb-8 text-4xl">{{ entry.title }}</h1>
-
-      <div class="prose prose-lg">
-        {{ entry.text }}
-      </div><!-- /.prose -->
-    </div><!-- /.w-full -->
-  </div><!-- /.container -->
-</section>
+<h1>home page template is at pages/_entry-type/home</h1>
 
 
 {% endblock %}

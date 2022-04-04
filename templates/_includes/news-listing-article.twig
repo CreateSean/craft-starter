@@ -43,7 +43,7 @@
         </p><!-- /.italic -->
 
         {% for category in entry.newsCategories.limit('3').all() %}
-          <a href="{{ category.url }}" class="text-sm text-gray-500 underline hover:no-underline">{{ category.title }}</a>{{ not loop.last ? ',&nbsp;' }}
+          <button sprig s-val:category="{{ category.slug }}" class="text-sm text-gray-500 underline hover:no-underline">{{ category.title }}</button>{{ not loop.last ? ',&nbsp;' }}
         {% endfor %}
 
       </div><!-- /.flex flex-row -->

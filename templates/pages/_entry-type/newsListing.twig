@@ -1,13 +1,13 @@
   <section class="py-8 border-t border-gray-200">
     <div class="container">
       <div class="w-full">
-        <h1 class="mb-8 text-4xl">{{ entry.title }}</h1>
+        <h1 class="mb-8 text-4xl">{{ entry.title ?? category.title }}</h1>
       </div><!-- /.w-full -->
     </div><!-- /.container -->
   </section>
 
   {# make blog pagination reactive with sprig #}
-  {{ sprig('_components/news-listing', { 'limit':6}) }}
+  {{ sprig('_components/news-listing', { 'limit':2}) }}
 
     <script>
     htmx.on('htmx:afterSwap', function(event) {

@@ -33,13 +33,13 @@ handle: newsCategories
 name: 'News Categories'
 siteSettings:
   1a78d395-d81a-4b77-8da7-30a49123bbee: # English
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: pages/_news-category.twig
+    uriFormat: 'news/category/{slug}'
   b9fdef79-5b63-4932-a9aa-8d18f937e6d9: # Français
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: pages/_news-category.twig
+    uriFormat: 'news/category/{slug}'
 structure:
   maxLevels: null
   uid: a23aa2ea-1f11-4fd2-b2ea-e420d27e959d
