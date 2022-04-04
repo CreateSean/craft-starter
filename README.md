@@ -15,12 +15,10 @@ to install this package run `composer create-project createsean/craft-starter .`
   * [Craft Plugins](#craft-plugins)
   * [Redactor](#redactor)
   * [Image Toolbox](#image-toolbox)
-  * [Image Optimize Plugin](#image-optimize-plugin)
   * [Typogrify](#typogrify)
   * [Sprig](#sprig)
   * [MatrixMate](#matrixmate)
   * [Composer nuke](#composer-nuke)
-  * [Templates](#templates)
 
 ---
 
@@ -254,10 +252,3 @@ If you ever need to remove the vender folder and basically reset all things comp
 ```composer nuke```
 
 This will delete the vendor folder, composer.lock, clear composers cache, and then run composer update. You can find the full command in the scripts section of composer.json
-
-## Templates
-
-Create the static templates in templates/static and then link to each template in the index.twig file.
-
-* You can see an example template set up already.
-* add any partials to the templates/_includes
