@@ -6,6 +6,8 @@ to install this package run `composer create-project createsean/craft-starter .`
 
 ---
 
+## Table of Contents
+
   * [Local Development](#local-development)
   * [To Do](#to-do)
   * [Build Process](#build-process)
@@ -17,7 +19,7 @@ to install this package run `composer create-project createsean/craft-starter .`
   * [Typogrify](#typogrify)
   * [Sprig](#sprig)
   * [MatrixMate](#matrixmate)
-  * [composer nuke](#composer-nuke)
+  * [Cmposer nuke](#composer-nuke)
   * [Templates](#templates)
 
 ---
@@ -244,13 +246,13 @@ MatrixMate enables you to improve the Matrix authoring experience by sorting blo
 
 There is a default config file in `config/matrixmate.php` that is not currently attached to any matrix fields.
 
-## composer nuke
+## Composer nuke
 
 If you ever need to remove the vender folder and basically reset all things composer run this command
 
 ```composer nuke```
 
-This will delete the vendor folder, composer.lock, clear composers cache, and then run composer update. YOu can find the full command in the scripts section of composer.json
+This will delete the vendor folder, composer.lock, clear composers cache, and then run composer update. You can find the full command in the scripts section of composer.json
 
 ## Templates
 
