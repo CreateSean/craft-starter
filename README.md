@@ -42,6 +42,7 @@ Password: `letmein`
 10. after logging in be sure to **update your password**
 
 ## To Do
+-   [ ] Ensure accessibility passes with default templates - aria labels, alt text etc.
 -   [ ] Set up site search.
 -   [ ] Move AlpineJs and plugins from CDN to compiled build process.
 -   [ ] Add content builder with common content types.
