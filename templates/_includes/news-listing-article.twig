@@ -25,6 +25,7 @@
           '',
       ],
       loading:'lazy',
+      alt: image.altText ?? image.title,
   } %}
   <a href="{{ entry.url }}">{{ craft.images.pictureMedia(image, transforms, null, attributes) }}</a>
 

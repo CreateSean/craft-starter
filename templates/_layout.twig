@@ -23,6 +23,10 @@
   <link rel="apple-touch-icon" href="/assets/images/svg/favicon.svg">
 
   {% block pageCss %}{% endblock %}
+
+  {# for sprig components #}
+  {{ sprig.script }}
+
 </head>
 <body id="body" class="{{ craft.app.language }} relative text-grayBrand bg-white font-work text-base">
   {#

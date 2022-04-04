@@ -8,3 +8,10 @@
 
   {# make blog pagination reactive with sprig #}
   {{ sprig('_components/news-listing', { 'limit':6}) }}
+
+    <script>
+    htmx.on('htmx:afterSwap', function(event) {
+      // scroll to top so we aren't left at the bottom of the new page
+      window.scrollTo(0, 50);
+    });
+  </script>
