@@ -141,7 +141,7 @@ fontFamily: {
 },
 ```
 
-## Accesibility
+## Accessibility
 
 I aim to ensure default templates pass accessibility tests - except for color contrast as that will need to be taken into account during the design phase.
 
