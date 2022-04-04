@@ -48,6 +48,7 @@ Password: `letmein`
 -   [ ] Move AlpineJs and plugins from CDN to compiled build process.
 -   [ ] Add content builder with common content types.
 -   [ ] Get news categories working using sprig.
+-   [ ] Add news _entry template.
 -   [x] Add news listing with sprig pagination.
 -   [x] Add notice bar option.
 -   [x] Add installation instructions.
