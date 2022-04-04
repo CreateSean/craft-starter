@@ -1,0 +1,19 @@
+fieldLayouts:
+  f2c9fa24-b4e1-4a9b-ada3-9fdf262363ca:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 12c7de12-987a-4aa4-890f-ec5cde880851 # Fallback Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: fallback
+name: Fallback
+sortOrder: 1

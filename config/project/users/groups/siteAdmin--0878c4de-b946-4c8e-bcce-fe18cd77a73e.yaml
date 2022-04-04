@@ -5,22 +5,61 @@ permissions:
   - accessplugin-seomatic
   - accessplugin-usermanual
   - accesscp
-  - 'publishentries:722083b8-e7bc-4d95-b4dd-3473680b72a7'
-  - 'publishpeerentrydrafts:722083b8-e7bc-4d95-b4dd-3473680b72a7'
-  - 'deletepeerentrydrafts:722083b8-e7bc-4d95-b4dd-3473680b72a7'
-  - 'editpeerentrydrafts:722083b8-e7bc-4d95-b4dd-3473680b72a7'
-  - 'editentries:722083b8-e7bc-4d95-b4dd-3473680b72a7'
-  - 'saveassetinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'createfoldersinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'deletefilesandfoldersinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'replacefilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'editimagesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'editpeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'replacepeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'deletepeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'editpeerimagesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'viewpeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
-  - 'viewvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670'
+  - 'editsite:1a78d395-d81a-4b77-8da7-30a49123bbee' # English
+  - 'editsite:b9fdef79-5b63-4932-a9aa-8d18f937e6d9' # Français
+  - 'publishentries:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
+  - 'publishpeerentrydrafts:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
+  - 'deletepeerentrydrafts:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
+  - 'editpeerentrydrafts:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
+  - 'editentries:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
+  - 'createentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'publishentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'deleteentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'publishpeerentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'deletepeerentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'editpeerentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'publishpeerentrydrafts:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'deletepeerentrydrafts:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'editpeerentrydrafts:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'editentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'publishentries:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'publishpeerentrydrafts:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'deletepeerentrydrafts:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'editpeerentrydrafts:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'editentries:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'createentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'publishentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'deleteentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'publishpeerentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'deletepeerentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'editpeerentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'publishpeerentrydrafts:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'deletepeerentrydrafts:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'editpeerentrydrafts:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'editentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+  - 'editglobalset:415a954c-eb55-4533-9ffd-64b3eade9469' # Fallback
+  - 'saveassetinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'createfoldersinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'deletefilesandfoldersinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'replacefilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'editimagesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'editpeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'replacepeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'deletepeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'editpeerimagesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'viewpeerfilesinvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'viewvolume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  - 'saveassetinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'createfoldersinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'deletefilesandfoldersinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'replacefilesinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'editimagesinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'editpeerfilesinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'replacepeerfilesinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'deletepeerfilesinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'editpeerimagesinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'viewpeerfilesinvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
+  - 'viewvolume:d19b4314-0267-4e95-9e63-2462a334eea1'
   - 'utility:system-report'
   - 'utility:asset-indexes'
   - 'utility:db-backup'
@@ -39,7 +78,7 @@ permissions:
   - 'seomatic:site-settings:social'
   - 'seomatic:site-settings:sitemap'
   - 'seomatic:site-settings'
-  - 'seomatic:tracking-scripts:googleanalytics'
   - 'seomatic:tracking-scripts:gtag'
   - 'seomatic:tracking-scripts:googletagmanager'
+  - 'seomatic:tracking-scripts:googleanalytics'
   - 'seomatic:tracking-scripts'

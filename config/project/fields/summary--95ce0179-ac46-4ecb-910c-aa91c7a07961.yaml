@@ -1,0 +1,28 @@
+columnSuffix: udcdccbn
+contentColumnType: text
+fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824
+handle: summary
+instructions: ''
+name: Summary
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - 70f5d47b-4830-4d51-95fe-bc0f7ccc0670 # Uploads
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Site.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

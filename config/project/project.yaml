@@ -1,4 +1,4 @@
-dateModified: 1649004476
+dateModified: 1649078256
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -16,20 +16,32 @@ email:
 meta:
   __names__:
     1a78d395-d81a-4b77-8da7-30a49123bbee: English # English
+    2b01b0d7-0c08-4e47-8041-e2b6a7fc855b: Caption # Caption
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
     5bed279a-5360-4e96-b92e-3153c98bff40: Copy # Copy
+    9c12e5ad-18e9-498f-bf50-489513409007: News # News
+    12c7de12-987a-4aa4-890f-ec5cde880851: 'Fallback Image' # Fallback Image
     29d88d99-dd38-43f6-9ac5-3438833c75ba: 'Error 404' # Error 404
+    51b9c3fc-be2a-4ef3-9f2c-66372327c604: Default # Default
     52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e: 'Notice Bar Location' # Notice Bar Location
     56f86cc6-5713-447f-8b10-e53f06ef42eb: 'Hide from Nav' # Hide from Nav
     57a74cde-de83-4b69-88ff-a4472daac7f7: 'Call To Action' # Call To Action
+    70f5d47b-4830-4d51-95fe-bc0f7ccc0670: Uploads # Uploads
     77af5a62-d057-494a-91ac-9edf65b6b266: 'Content Builder' # Content Builder
+    95ce0179-ac46-4ecb-910c-aa91c7a07961: Summary # Summary
     136d3c61-5e7c-4eb4-afc0-5c78565fbe8b: Button # Button
+    415a954c-eb55-4533-9ffd-64b3eade9469: Fallback # Fallback
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
+    0878c4de-b946-4c8e-bcce-fe18cd77a73e: 'Site Admin' # Site Admin
     5489ed3b-28c1-4a26-ac7e-97b0182e6652: 'Enable Notice Bar' # Enable Notice Bar
     408314ae-e32d-471b-a729-25f4ce759ac4: 'Notice Bar' # Notice Bar
+    b2f53aa5-81a3-466c-af2d-e30dab4ed3d8: Image # Image
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
     bb838d9b-476f-487c-8cc2-8e01b9423d92: Pages # Pages
+    d1511275-c802-4850-9b74-6e305f2cc1c7: 'Asset Fields' # Asset Fields
+    dbff8535-c8bd-4629-bc58-732972504e1b: 'Alt Text' # Alt Text
+    e3dea9df-426f-43a5-96fd-927882533aa9: 'News Listing' # News Listing
     ea7fe716-adee-4200-a8ca-15362418cd97: Home # Home
     f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
 plugins:
