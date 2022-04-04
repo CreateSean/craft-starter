@@ -1,0 +1,52 @@
+<article class="flex flex-col border spacy-y-8">
+  {% set image = entry.image.one() ?? fallback.fallbackImage.one() %}
+  {% set transforms = {
+    '(max-width: 767px)': {
+      width: 734,
+      height:367,
+      mode: 'crop',
+      quality: 80,
+    },
+    '(max-width: 1280px)': {
+      width:480,
+      height:240,
+      mode: 'crop',
+      quality: 80,
+    },
+    '(min-width: 1200px)': {
+      width:734,
+      height:367,
+      mode: 'crop',
+      quality: 80,
+    },
+  } %}
+  {% set attributes = {
+      class: [
+          '',
+      ],
+      loading:'lazy',
+  } %}
+  <a href="{{ entry.url }}">{{ craft.images.pictureMedia(image, transforms, null, attributes) }}</a>
+
+    <div class="p-8 bg-white ">
+      <div class="flex flex-row">
+        <p class="mb-0 mr-4 text-sm text-gray-500">
+        {{ entry.postDate|date('F jS, Y') }}
+        </p><!-- /.italic -->
+
+        {% for category in entry.newsCategories.limit('3').all() %}
+          <a href="{{ category.url }}" class="text-sm text-gray-500 underline hover:no-underline">{{ category.title }}</a>{{ not loop.last ? ',&nbsp;' }}
+        {% endfor %}
+
+      </div><!-- /.flex flex-row -->
+      <h2 class="mt-0 mb-2 h2">
+        <a href="{{ entry.url }}">
+        {{ entry.title }}
+        </a>
+      </h2>
+
+      <div class="prose prose-lg">
+        {{ entry.summary }}
+      </div><!-- /.prose -->
+    </div>
+</article>

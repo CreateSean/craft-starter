@@ -1,4 +1,4 @@
-dateModified: 1649078256
+dateModified: 1649080934
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -39,11 +39,13 @@ meta:
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
     bb838d9b-476f-487c-8cc2-8e01b9423d92: Pages # Pages
+    d59f931d-37a7-4cb9-ac6b-68e0bb987ad2: 'News Categories' # News Categories
     d1511275-c802-4850-9b74-6e305f2cc1c7: 'Asset Fields' # Asset Fields
     dbff8535-c8bd-4629-bc58-732972504e1b: 'Alt Text' # Alt Text
     e3dea9df-426f-43a5-96fd-927882533aa9: 'News Listing' # News Listing
     ea7fe716-adee-4200-a8ca-15362418cd97: Home # Home
     f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
+    fbdde691-0df2-4e8e-b1a8-61a1f555fd0e: 'News Categories' # News Categories
 plugins:
   environment-label:
     edition: standard

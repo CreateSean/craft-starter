@@ -1,0 +1,52 @@
+  {# set variable for sprig to hook into with default for first page load #}
+  {% set page = page ?? 1 %}
+
+  {#
+  // need above values in hidden inputs for persistent state
+  // https://github.com/putyourlightson/craft-sprig/issues/71#issuecomment-745388432
+  #}
+  {{ hiddenInput('page', page) }}
+
+
+  {% import '_macros' as macros %}
+
+  {% set seg2 = craft.app.request.getSegment('2') %}
+  {% set seg3 = craft.app.request.getSegment('3') %}
+  {% set seg4 = craft.app.request.getSegment('4') %}
+
+  {% if seg3 == 'category' %}
+    {% set category = craft.categories.slug(seg4).one() %}
+  {% endif %}
+
+
+  {% set params = { section: 'news', limit: limit } %}
+  {% if category is defined %}
+    {% set params = params | merge({ relatedTo: category }) %}
+  {% endif %}
+
+  {% set entryQuery = craft.entries(params) %}
+
+  {# Paginates the entry query given the current page #}
+  {% set pageInfo = sprig.paginate(entryQuery, page) %}
+  {% set entries = pageInfo.pageResults %}
+
+
+  <section class="py-8 bg-gray-50">
+    <div class="container">
+      <div class="grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
+
+        {% for entry in entries %}
+          {% include "_includes/news-listing-article" %}
+        {% endfor %}
+
+      </div><!-- /.w-full grid grid-cols-1 -->
+    </div><!-- /.container -->
+
+    {# pagination #}
+    {% include "_components/pagination" %}
+
+  </section><!-- /.py-24 -->
+
+
+
+  {% do sprig.pushUrl('?' ~ {page: page}|url_encode) %}

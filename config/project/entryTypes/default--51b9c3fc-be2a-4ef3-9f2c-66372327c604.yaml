@@ -49,6 +49,15 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            fieldUid: fbdde691-0df2-4e8e-b1a8-61a1f555fd0e # News Categories
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
         name: Content

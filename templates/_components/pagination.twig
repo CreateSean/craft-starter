@@ -1,0 +1,71 @@
+<div class="container flex flex-col flex-wrap px-4 py-8 mx-auto md:flex-row md:px-0">
+
+  <ul class="flex w-auto mx-auto mt-12 font-sans md:mt-8 list-reset">
+
+    {# set height & width of svg icons here #}
+    {% set iconDims = "16" %}
+
+    {% if page > 1 %}
+      {# go to first page #}
+      <li>
+        <a
+          sprig
+          s-val:page="1"
+          class="block py-2 pl-0 pr-2 text-base no-underline cursor-pointer hover:bg-gray-200">
+          {{ svg('@webroot/assets/images/svg/chevron-double-left.svg')|attr({ class:'fill-current inline-block svg-shadow', 'height':iconDims, 'width':iconDims}) }}
+        </a>
+      </li>
+
+      {# go to previous page #}
+      <li>
+        <a
+          sprig
+          s-val:page="{{ page -1 }}"
+          class="block py-2 pl-0 pr-2 text-base no-underline cursor-pointer hover:bg-gray-200">
+          {{ svg('@webroot/assets/images/svg/chevron-left.svg')|attr({ class:'fill-current inline-block svg-shadow', 'height':iconDims, 'width':iconDims}) }}
+        </a>
+      </li>
+    {% endif %}
+
+    {% for i in pageInfo.getDynamicRange(5) %}
+      {% if i == page %}
+        <li><a class="block px-3 py-2 mx-2 bg-gray-200 cursor-pointer">{{ i }}</a></li>
+      {% else %}
+        <li>
+          <a
+            sprig
+            s-val:page="{{ i }}"
+            class="block px-4 py-2 text-base no-underline cursor-pointer hover:bg-gray-200">
+            {{ i }}
+          </a>
+        </li>
+      {% endif %}
+
+    {% endfor %}
+
+    {% if page < pageInfo.totalPages %}
+      {# go to next page #}
+      <li>
+        <a
+          sprig
+          s-val:page="{{ page + 1 }}"
+          class="block py-2 pl-0 pr-2 text-base no-underline cursor-pointer hover:bg-gray-200">
+          {{ svg('@webroot/assets/images/svg/chevron-right.svg')|attr({ class:'fill-current inline-block svg-shadow', 'height':iconDims, 'width':iconDims}) }}
+        </a>
+      </li>
+
+      {# go to last page #}
+      <li>
+        <a
+          sprig
+          s-val:page="{{ pageInfo.last }}"
+          class="block py-2 pl-0 pr-2 text-base no-underline cursor-pointer hover:bg-gray-200">
+          {{ svg('@webroot/assets/images/svg/chevron-double-right.svg')|attr({ class:'fill-current inline-block svg-shadow', 'height':iconDims, 'width':iconDims}) }}
+        </a>
+      </li>
+
+    {% endif %}
+
+  </ul>
+
+</div><!-- /.container mx-auto flex flex-wrap flex-col -->
