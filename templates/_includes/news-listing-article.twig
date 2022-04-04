@@ -32,9 +32,9 @@
             '',
         ],
         loading:'lazy',
-        alt: image.altText ?? image.title ?? null,
+        alt: image.altText ?? image.title ?? 'placeholder image',
     } %}
-    <a href="{{ entry.url }}">{{ craft.images.pictureMedia(image, transforms, null, attributes) }}</a>
+    <a href="{{ entry.url }}" aria-label="{{ entry.title }}">{{ craft.images.pictureMedia(image, transforms, null, attributes) }}</a>
 
     <div class="p-8 bg-white ">
       <div class="flex flex-row">

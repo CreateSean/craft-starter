@@ -12,6 +12,7 @@ to install this package run `composer create-project createsean/craft-starter .`
   * [To Do](#to-do)
   * [Build Process](#build-process)
   * [Tailwind](#tailwind)
+  * [Accessibility](#accessibility)
   * [Craft Plugins](#craft-plugins)
   * [Redactor](#redactor)
   * [Image Toolbox](#image-toolbox)
@@ -140,6 +141,9 @@ fontFamily: {
 },
 ```
 
+## Accesibility
+
+I aim to ensure default templates pass accessibility tests - except for color contrast as that will need to be taken into account during the design phase.
 
 ## Craft Plugins
 
