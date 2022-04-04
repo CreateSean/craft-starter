@@ -6,6 +6,23 @@ to install this package run `composer create-project createsean/craft-starter .`
 
 ---
 
+  * [Local Development](#local-development)
+  * [To Do](#to-do)
+  * [Build Process](#build-process)
+    + [Production](#production)
+  * [Tailwind](#tailwind)
+  * [Craft Plugins](#craft-plugins)
+  * [Templates](#templates)
+  * [Redactor](#redactor)
+  * [Image Toolbox](#image-toolbox)
+  * [Image Optimize Plugin](#image-optimize-plugin)
+  * [Typogrify](#typogrify)
+  * [Sprig](#sprig)
+  * [MatrixMate](#matrixmate)
+  * [composer nuke](#composer-nuke)
+
+---
+
 ## Local Development
 
 Set up your local development, if you are using DDev for local development then everything should just work for you. If you are **NOT** using DDEV for local development skip this part and set up local development however you normally do (Valet, Mamp, etc), be sure to import the seed database `db.sql.gz`
