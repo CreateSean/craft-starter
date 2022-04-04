@@ -26,9 +26,12 @@ Password: `letmein`
 10. after logging in be sure to **update your password**
 
 ## To Do
-
-* add more default templating i.e. main-nav with mobile hamburger
-* set up easy prototyping channels, fields, and templates.
+-   [ ] Move AlpineJs and plugins from CDN to compiled build process
+-   [ ] Add content builder with common content types
+-   [ ] Get news categories working using sprig
+-   [x] Add news listing with sprig pagination
+-   [x] Add notice bar option
+-   [x] Add installation instructions.
 
 ## Build Process
 
