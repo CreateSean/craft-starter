@@ -7,7 +7,7 @@
   </section>
 
   {# make blog pagination reactive with sprig #}
-  {{ sprig('_components/news-listing', { 'limit':2}) }}
+  {{ sprig('_components/news-listing', { 'limit':6}) }}
 
     <script>
     htmx.on('htmx:afterSwap', function(event) {

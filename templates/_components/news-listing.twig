@@ -11,12 +11,13 @@
   // https://github.com/putyourlightson/craft-sprig/issues/71#issuecomment-745388432
   #}
   {{ hiddenInput('page', page) }}
+  {{ hiddenInput('category', category) }}
 
   {% set params = { section: 'news', limit: limit } %}
 
   {# filter by category if on category page #}
   {% set blogCategory = craft.categories.slug(category).one() %}
-  {% if category !='' %}
+  {% if category != '' %}
     {% set params = params | merge({ relatedTo: blogCategory }) %}
   {% endif %}
 
@@ -26,11 +27,6 @@
   {% set pageInfo = sprig.paginate(entryQuery, page) %}
   {% set entries = pageInfo.pageResults %}
 
-  {# testing block #}
-  <div class="w-full p-8 text-white bg-red-500">
-    Category is <span class="font-bold text-black">{{ blogCategory.title ?? 'no cat' }}</span>
-  </div><!-- /.bg-red-500 text-yellow-400 -->
-  {# end testing #}
 
   <section class="py-8 bg-gray-50">
     <div class="container">
