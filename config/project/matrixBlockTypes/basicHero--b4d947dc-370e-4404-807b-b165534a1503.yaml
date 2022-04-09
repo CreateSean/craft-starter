@@ -1,0 +1,41 @@
+field: ab8abc7e-2a4d-4858-98ea-9a6954a434da # Hero
+fieldLayouts:
+  dc49b215-dcb8-4177-9ecd-36ece2b038a7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 418401d4-f08e-47eb-a216-719e3d8f4ccb # Hero Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  418401d4-f08e-47eb-a216-719e3d8f4ccb: # Hero Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: heroTitle
+    instructions: 'If empty page title will be used'
+    name: 'Hero Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: basicHero
+name: 'Basic Hero'
+sortOrder: 2
