@@ -1344,6 +1344,22 @@ nav ul li img {
   right: 0.5rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -1423,6 +1439,10 @@ nav ul li img {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -1508,6 +1528,11 @@ nav ul li img {
   gap: 1rem;
 }
 
+.self-start {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1571,6 +1596,15 @@ nav ul li img {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-gradient-to-b {
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops)));
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1595,6 +1629,11 @@ nav ul li img {
 
 .fill-white {
   fill: #fff;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {

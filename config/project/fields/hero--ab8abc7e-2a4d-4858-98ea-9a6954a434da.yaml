@@ -7,8 +7,8 @@ name: Hero
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_hero}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: '1'
+  minBlocks: '1'
   propagationKeyFormat: null
   propagationMethod: none
 translationKeyFormat: null

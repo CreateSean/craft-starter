@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 21077893-9405-4330-ba61-9f695515c9fb # Slide Title
+            fieldUid: 21077893-9405-4330-ba61-9f695515c9fb # Hero Title
             instructions: null
             label: null
             required: false
@@ -47,7 +47,7 @@ fields:
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: Button
+    handle: button
     instructions: ''
     name: Button
     searchable: false
@@ -190,13 +190,13 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  21077893-9405-4330-ba61-9f695515c9fb: # Slide Title
+  21077893-9405-4330-ba61-9f695515c9fb: # Hero Title
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: slideTitle
-    instructions: ''
-    name: 'Slide Title'
+    handle: heroTitle
+    instructions: 'If empty page title will be used'
+    name: 'Hero Title'
     searchable: false
     settings:
       byteLimit: null

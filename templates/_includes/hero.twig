@@ -1,0 +1,5 @@
+{# include hero blocks #}
+
+{% for block in entry.hero.all() %}
+  {% include "_blocks/hero/" ~ block.type %}
+{% endfor %}

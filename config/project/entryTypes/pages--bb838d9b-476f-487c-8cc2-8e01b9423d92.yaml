@@ -35,6 +35,20 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            fieldUid: ab8abc7e-2a4d-4858-98ea-9a6954a434da # Hero
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            heading: 'Main Content'
+            type: craft\fieldlayoutelements\Heading
         name: Content
         sortOrder: 1
       -
