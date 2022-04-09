@@ -28,6 +28,13 @@ fields:
       columns:
         __assoc__:
           -
+            - d5f8da04-ca55-4c9f-8605-e7f8779e82b8 # Image
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
             - 01313804-5d1a-410f-9da8-42ea30ae231d # Slide Title
             -
               __assoc__:
