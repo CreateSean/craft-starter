@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   {# end google #}
 
+  {# vendor css #}
+  <link rel="stylesheet" href="/assets/css/vendor.combined.css">
+  {# site css #}
   <link rel="stylesheet" href="/assets/css/app.css?v={{ now|date('U') }}">
 
   <!-- Alpine Plugins -->
@@ -52,6 +55,8 @@
   <footer>
     {% include '_includes/footer' %}
   </footer>
+
+  <script src="/assets/js/scripts.combined.js?v1.01"></script>
 
   {% block pageJs %}{% endblock %}
 </body>

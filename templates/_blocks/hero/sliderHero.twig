@@ -1,0 +1,121 @@
+
+<section class="w-full py-0 swiper hero-swiper">
+
+  <div class="swiper-wrapper">
+    {% for row in block.slides.all() %}
+
+      <div class="relative swiper-slide" data-foo>
+
+        {# image #}
+        <div class="w-full ">
+          {% set heroImage = row.image.one() %}
+          {% set transforms = {
+            '(max-width: 767px)': {
+              width: 767,
+              height:300,
+              mode: 'crop',
+              quality: 80,
+            },
+            '(max-width: 1199px)': {
+              width: 1200,
+              height:375,
+              mode: 'crop',
+              quality: 80,
+            },
+            '(min-width: 1200px)': {
+              width: 1920,
+              height:450,
+              mode: 'crop',
+              quality: 80,
+            },
+          } %}
+          {% set attributes = {
+              class: [
+                  'object-cover z-0 mx-auto',
+              ],
+              loading:'lazy',
+              alt: heroImage.altText ?? heroImage.title ?? null,
+          } %}
+          {{ craft.images.pictureMedia(heroImage, transforms, null, attributes) }}
+
+          {# slide copy #}
+          <div class="absolute top-0 left-0 z-10 w-full h-full py-8">
+            <div class="container relative z-10 h-full">
+              <div class="flex flex-col w-full lg:w-1/2 h-full justify-center gap-8">
+                {% if row.slideTitle|length %}
+                  <h1>{{ row.slideTitle }}</h1>
+                {% endif %}
+                {% if row.copy|length %}
+                  <div class="prose prose-lg">
+                    {{ row.copy }}
+                  </div><!-- /.prose -->
+                {% endif %}
+
+                {{ row.button.getLink({
+                  class: 'btn self-start',
+                }) }}
+
+              </div><!-- /.flex flex-col lg:flex-row -->
+            </div><!-- /.container -->
+          </div>
+          {# end slide copy #}
+
+        </div><!-- /.w-full bl-black -->
+
+        <!-- /.absolute -->
+      </div><!-- /.slide -->
+
+    {% endfor %}
+
+  </div><!-- /.swiper-wrapper -->
+
+  <div class="container">
+    <div class="relative w-full lg:w-1/2">
+      {# <div class="relative swiper-pagination home-pagination lg:absolute"></div> #}
+      <div class="relative lg:absolute left-0 bottom-[10px] lg:bottom-0 flex flex-row space-x-4 w-full mb-4">
+
+        {# prev #}
+        <div class="static swiper-button-prev">{{ svg('@webroot/assets/images/svg/arrow-right-white.svg')|attr({class:'w-10 h-10 inline-block rotate-180' }) }}</div>
+
+        {# next #}
+        <div class="static swiper-button-next">{{ svg('@webroot/assets/images/svg/arrow-right-white.svg')|attr({class:'w-10 h-10 inline-block' }) }}</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% css %}
+  {# .swiper-button-prev, .swiper-button-next {
+    width:2.5rem;
+  }
+  .swiper-button-next:after {
+    display:none;
+  }
+  .swiper-button-prev:after {
+    display:none;
+  } #}
+{% endcss %}
+
+
+{# javascript #}
+{% js %}
+  {% include "_javascript/hero-swiper.js" %}
+{% endjs %}
+
+
+
+
+
+{# <div class="bg-gray-200">
+
+  <div class="py-16">
+    <div class="container relative z-10 h-full">
+      <div class="flex flex-col w-full lg:w-1/2 h-full justify-center gap-8">
+        <h1>{{ block.heroTitle ?? entry.title }}</h1>
+      </div><!-- /.flex flex-col lg:flex-row -->
+    </div><!-- /.container -->
+  </div>
+
+</div> #}

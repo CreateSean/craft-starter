@@ -60,7 +60,7 @@ mix.setPublicPath('./public/assets/')
   .js(
     [
       // './node_modules/flickity/dist/flickity.pkgd.min.js',
-      // './node_modules/swiper/swiper-bundle.min.js',
+      './node_modules/swiper/swiper-bundle.min.js',
       // this should go last
       './src/js/app.js'
     ],
@@ -70,7 +70,7 @@ mix.setPublicPath('./public/assets/')
   .combine(
     [
       // './node_modules/flickity/dist/flickity.min.css',
-      // './node_modules/swiper/swiper-bundle.min.css'
+      './node_modules/swiper/swiper-bundle.min.css'
     ],
     'public/assets/css/vendor.combined.css')
 

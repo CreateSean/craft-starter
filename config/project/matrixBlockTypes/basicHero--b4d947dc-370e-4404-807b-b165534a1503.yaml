@@ -38,4 +38,4 @@ fields:
     type: craft\fields\PlainText
 handle: basicHero
 name: 'Basic Hero'
-sortOrder: 2
+sortOrder: 3

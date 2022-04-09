@@ -1,4 +1,4 @@
-dateModified: 1649509682
+dateModified: 1649510977
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -21,6 +21,7 @@ meta:
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
     5bed279a-5360-4e96-b92e-3153c98bff40: Copy # Copy
     7bf7da79-8f7d-4a1b-8129-121b24c0d99b: Image # Image
+    8c583e9a-a56d-486d-8550-e7eae61c8088: Slides # Slides
     9c12e5ad-18e9-498f-bf50-489513409007: News # News
     12c7de12-987a-4aa4-890f-ec5cde880851: 'Fallback Image' # Fallback Image
     29d88d99-dd38-43f6-9ac5-3438833c75ba: 'Error 404' # Error 404
@@ -33,12 +34,16 @@ meta:
     95ce0179-ac46-4ecb-910c-aa91c7a07961: Summary # Summary
     120a7750-0967-496d-9315-bba6d83eb4b1: 'Standard Hero' # Standard Hero
     136d3c61-5e7c-4eb4-afc0-5c78565fbe8b: Button # Button
+    323e9af3-aa75-4f1c-82eb-370e40179f41: 'Slider Hero' # Slider Hero
     415a954c-eb55-4533-9ffd-64b3eade9469: Fallback # Fallback
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
     0878c4de-b946-4c8e-bcce-fe18cd77a73e: 'Site Admin' # Site Admin
     5489ed3b-28c1-4a26-ac7e-97b0182e6652: 'Enable Notice Bar' # Enable Notice Bar
+    8491df26-ac74-440e-8ce9-403654b8ce98: Copy # Copy
+    59621bb5-03e8-481a-b377-5e08b5a79c12: Button # Button
     408314ae-e32d-471b-a729-25f4ce759ac4: 'Notice Bar' # Notice Bar
     418401d4-f08e-47eb-a216-719e3d8f4ccb: 'Hero Title' # Hero Title
+    01313804-5d1a-410f-9da8-42ea30ae231d: 'Slide Title' # Slide Title
     21077893-9405-4330-ba61-9f695515c9fb: 'Hero Title' # Hero Title
     ab8abc7e-2a4d-4858-98ea-9a6954a434da: Hero # Hero
     b2f53aa5-81a3-466c-af2d-e30dab4ed3d8: Image # Image
@@ -46,6 +51,7 @@ meta:
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
     bb838d9b-476f-487c-8cc2-8e01b9423d92: Pages # Pages
+    d5f8da04-ca55-4c9f-8605-e7f8779e82b8: Image # Image
     d59f931d-37a7-4cb9-ac6b-68e0bb987ad2: 'News Categories' # News Categories
     d1511275-c802-4850-9b74-6e305f2cc1c7: 'Asset Fields' # Asset Fields
     da3d7ec4-1d85-47ba-a517-6c81d94cc9d2: Copy # Copy
@@ -137,6 +143,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
   templatecomments:
     edition: standard
     enabled: true
