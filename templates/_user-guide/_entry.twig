@@ -11,7 +11,7 @@
 </header>
 
 {% for block in entry.userGuide.all() %}
-  {# {% include '_user-guide/blocks/' ~ block.type %} #}
+  {% include '_user-guide/blocks/' ~ block.type %}
 {% endfor %}
 
 
