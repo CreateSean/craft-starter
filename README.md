@@ -45,7 +45,7 @@ Password: `letmein`
 
 ## To Do
 -   [ ] Ensure accessibility passes with default templates - aria labels, alt text etc.
--   [ ] Set up site search.
+-   [x] Set up site search.
 -   [ ] Move AlpineJs and plugins from CDN to compiled build process.
 -   [ ] Add content builder with common content types.
 -   [x] Add hero with different options i.e. slider, no slider, no image just title.

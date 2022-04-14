@@ -1404,6 +1404,10 @@ nav ul li img {
   z-index: 0;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .m-0 {
   margin: 0px;
 }
