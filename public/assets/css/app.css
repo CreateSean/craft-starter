@@ -414,7 +414,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-ul, .shadow-inner, .shadow {
+ul, .shadow-inner, .shadow, .shadow-md {
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -1828,6 +1828,11 @@ nav ul li img {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-gray-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 250 251 / var(--tw-border-opacity));
+}
+
 .border-opacity-\[0\.2\] {
   --tw-border-opacity: 0.2;
 }
@@ -1891,6 +1896,16 @@ nav ul li img {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
+.bg-green-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+}
+
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops)));
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1932,6 +1947,10 @@ nav ul li img {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-28 {
+  padding: 7rem;
 }
 
 .py-24 {
@@ -2132,6 +2151,13 @@ nav ul li img {
           box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
   -webkit-filter: var(--tw-filter);
@@ -2233,6 +2259,15 @@ nav ul li img {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.focus-visible\:outline-gray-500:focus-visible {
+  outline-color: #6b7280;
+}
+.focus-visible\:outline-gray-300:focus-visible {
+  outline-color: #d1d5db;
+}
+.focus-visible\:outline-gray-400:focus-visible {
+  outline-color: #9ca3af;
 }
 .group:hover .group-hover\:bg-gray-400 {
   --tw-bg-opacity: 1;

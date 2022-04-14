@@ -17,6 +17,7 @@
    // https://github.com/putyourlightson/craft-sprig/issues/71#issuecomment-745388432
   #}
   {{ hiddenInput('page', page) }}
+  {{ hiddenInput('search', search) }}
 
   <section class="py-24">
     <div class="container">
@@ -26,6 +27,7 @@
               <input
                 sprig
                 s-trigger="keyup changed delay:300ms"
+                s-replace="#results"
                 type="search"
                 name="q"
                 class="px-6 py-2 text-lg border border-gray-200 bg-gray-50 placeholder:text-gray-400"
@@ -61,7 +63,11 @@
       {% set entries = pageInfo.pageResults %}
 
 
-      <div class="grid w-full grid-cols-1 gap-8">
+      {#
+      // id="results" so that sprig only refreshes this div
+      // when typing into the search input
+       #}
+      <div class="grid w-full grid-cols-1 gap-8" id="results">
         {# search results here #}
         {% if search != null %}
           {% for entry in entries %}

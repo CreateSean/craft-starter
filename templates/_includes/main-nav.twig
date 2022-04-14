@@ -106,19 +106,22 @@
 
             <div
               x-show="expanded"
+              x-trap="expanded"
               x-collapse
-              class="lg:absolute right-0 w-[305px] bg-gray-50 my-1 z-20">
+              class="right-0 z-20 px-2 py-2 my-1 bg-gray-100 shadow lg:absolute">
 
-                <form action="{{ url('search') }}" class="flex flex-row origin-right">
+                <form
+                  action="{{ url('search') }}"
+                  class="flex flex-row w-[305px]">
                   <input
                     id="q"
                     type="text"
                     name="q"
-                    class="px-6 py-1 my-1 text-lg border border-gray-200 bg-gray-50 placeholder:text-gray-400">
+                    class="px-6 py-1 my-1 text-lg bg-white border border-gray-200 placeholder:text-gray-400 focus-visible:outline-gray-400">
 
                     <button
                       type="submit"
-                      class="px-2 py-1 border border-gray-200 h-[38px] mt-1">
+                      class="px-2 py-1 border border-gray-200 bg-white h-[38px] mt-1">
                       <span class="sr-only">{{ "Search"|t }}</span>
                       {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':''}) }}
                     </button>
