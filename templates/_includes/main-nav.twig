@@ -1,6 +1,9 @@
 <nav class="bg-white border-b border-gray-200">
   <div class="container w-full text-gray-700 max-w-screen">
-    <div x-data="{ open: false }" class="flex flex-col mx-auto ax-w-screen lg:flex-row">
+    <div
+      x-data="{ open: false }"
+      class="flex flex-col mx-auto max-w-screen lg:flex-row"
+      :class="{'h-screen':open, 'h-auto':!open}">
 
       <div class="flex flex-row items-center justify-between px-4 py-2">
         <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase dark-mode:text-white focus:outline-none focus:shadow-outline">
@@ -20,7 +23,7 @@
       </div>
 
       {# main nav #}
-      <nav class="flex-col flex-grow hidden h-screen pb-4 lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
+      <nav class="flex-col hidden pb-4 lg:flex-grow h-screen123 lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
         <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
 
           {% set pages = craft.entries.section('pages').hideFromNav('0').level('<='~4).all() %}
@@ -88,9 +91,9 @@
       </nav>
 
       {# utility nav here #}
-      <nav class="flex-col flex-grow pb-4 lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto" aria-label="utility nav">
+      <nav class="flex-col flex-grow pb-4 mb-auto lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto lg:mb-0" aria-label="utility nav" :class="{'flex': open, 'hidden': !open}">
         <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
-          <li class="relative block py-2 ml-auto mr-1 group lg:px-0 xl:px-0">
+          <li class="relative block py-2 mr-1 lg:ml-auto group lg:px-0 xl:px-0">
             <a href="/search" class="px-4 py-2 group-hover:bg-gray-400 group-hover:text-white">Search</a>
           </li>
         </ul>
