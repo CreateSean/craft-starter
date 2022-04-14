@@ -93,8 +93,38 @@
       {# utility nav here #}
       <nav class="flex-col flex-grow pb-4 mb-auto lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto lg:mb-0" aria-label="utility nav" :class="{'flex': open, 'hidden': !open}">
         <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
-          <li class="relative block py-2 mr-1 lg:ml-auto group lg:px-0 xl:px-0">
-            <a href="/search" class="px-4 py-2 group-hover:bg-gray-400 group-hover:text-white">Search</a>
+          <li
+            x-data="{expanded:false}"
+            class="relative block py-2 mr-1 lg:ml-auto group lg:px-0 xl:px-0">
+            <button
+                @click="expanded = ! expanded"
+                class="px-2 py-1 h-[38px] mt-1">
+                <span class="sr-only">{{ "Search"|t }}</span>
+                {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'', 'x-show':'!expanded'}) }}
+                {{ svg('@webroot/assets/images/svg/close.svg')|attr({'height':'20px', 'width':'', 'x-show':'expanded'}) }}
+              </button>
+
+            <div
+              x-show="expanded"
+              x-collapse
+              class="lg:absolute right-0 w-[305px] bg-gray-50 my-1">
+
+                <form action="{{ url('search') }}" class="flex flex-row origin-right">
+                  <input
+                    id="q"
+                    type="text"
+                    name="q"
+                    class="px-6 py-1 my-1 text-lg border border-gray-200 bg-gray-50 placeholder:text-gray-400">
+
+                    <button
+                      type="submit"
+                      class="px-2 py-1 border border-gray-200 h-[38px] mt-1">
+                      <span class="sr-only">{{ "Search"|t }}</span>
+                      {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':''}) }}
+                    </button>
+                </form>
+            </div>
+
           </li>
         </ul>
       </nav>

@@ -1,0 +1,83 @@
+{# search sprig component #}
+
+  {# Ensure reset variable exists #}
+  {% set reset = reset ?? false %}
+
+  {% set page = reset ? 1 : (page ?? 1) %}
+
+  {#
+    set search parameter here
+    if query search is the query
+    if no query then search is an empty space so there are no initial results displaying
+  #}
+  {% set search = reset ? '' : (q ?? '') %}
+
+  {#
+   // need above values in hidden inputs for persistent state
+   // https://github.com/putyourlightson/craft-sprig/issues/71#issuecomment-745388432
+  #}
+  {{ hiddenInput('page', page) }}
+
+  <section class="py-24">
+    <div class="container">
+      <div class="flex w-full mx-auto mb-12">
+
+            <form class="flex flex-row search-form">
+              <input
+                sprig
+                s-trigger="keyup changed delay:300ms"
+                type="search"
+                name="q"
+                class="px-6 py-2 text-lg border border-gray-200 bg-gray-50 placeholder:text-gray-400"
+                aria-label="{{ "Search site"|t }}"
+                placeholder="{{ "Search site"|t }}"
+                autocomplete="off"
+                value="{{ search ?? null }}">
+
+              <button type="submit" class="block h-full px-2 py-1 border border-gray-200">
+                <span class="sr-only">{{ "Search"|t }}</span>
+                {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':''}) }}
+              </button>
+
+              <button
+                sprig
+                s-val:reset="1"
+                class="self-end ml-8 text-base underline hover:no-underline underline-offset-4">Clear Search</button>
+            </form>
+
+      </div><!-- /.flex w-full mx-auto -->
+
+      {#
+        search all sections except siteWideElements and user guide
+       #}
+      {% set entryQuery = craft.entries
+        .section('and, not siteWideElements, not userGuide, not error404')
+        .orderBy('')
+        .limit(limit)
+        .search(search) %}
+
+      {# Paginates the entry query given the current page #}
+      {% set pageInfo = sprig.paginate(entryQuery, page) %}
+      {% set entries = pageInfo.pageResults %}
+
+
+      <div class="grid w-full grid-cols-1 gap-8">
+        {# search results here #}
+        {% if search != null %}
+          {% for entry in entries %}
+            {% include "search/_search-item" %}
+          {% endfor %}
+        {% else %}
+          <article>
+            <h2>No Search Query</h2>
+          </article>
+        {% endif %}
+
+      </div><!-- /.w-full grid grid-cols-1 gap-8 -->
+
+
+    </div><!-- /.container -->
+  </section>
+
+
+  {% do sprig.pushUrl('?' ~ {q: search, page: page}|url_encode) %}

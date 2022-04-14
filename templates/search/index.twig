@@ -1,2 +1,10 @@
 {# Search #}
 {% extends '_layout' %}
+
+{% block content %}
+
+
+  {# include reactive search with sprig #}
+  {{ sprig('search/_components/search', { 'limit':12}) }}
+
+{% endblock %}
