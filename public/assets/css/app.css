@@ -1833,6 +1833,16 @@ nav ul li img {
   border-color: rgb(249 250 251 / var(--tw-border-opacity));
 }
 
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 .border-opacity-\[0\.2\] {
   --tw-border-opacity: 0.2;
 }
@@ -2269,6 +2279,12 @@ nav ul li img {
 .focus-visible\:outline-gray-400:focus-visible {
   outline-color: #9ca3af;
 }
+.focus-visible\:outline-gray-600:focus-visible {
+  outline-color: #4b5563;
+}
+.focus-visible\:outline-gray-900:focus-visible {
+  outline-color: #111827;
+}
 .group:hover .group-hover\:bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
@@ -2323,6 +2339,10 @@ nav ul li img {
 
   .lg\:ml-auto {
     margin-left: auto;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:inline-block {
