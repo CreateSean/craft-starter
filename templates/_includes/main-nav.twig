@@ -116,10 +116,12 @@
                 <form
                   action="{{ url('search') }}"
                   class="flex flex-row w-[305px]">
+                  <label for="q" class="sr-only">Search</label>
                   <input
                     id="q"
                     type="text"
                     name="q"
+                    placeholder="Search"
                     class="px-6 py-1 my-1 text-lg bg-white border border-gray-200 placeholder:text-gray-400 focus-visible:outline-gray-400">
 
                     <button
