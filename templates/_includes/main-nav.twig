@@ -19,6 +19,7 @@
         </button>
       </div>
 
+      {# main nav #}
       <nav class="flex-col flex-grow hidden h-screen pb-4 lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
         <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
 
@@ -81,10 +82,19 @@
             </li>
           {% endnav %}
 
+
+
         </ul>
       </nav>
 
-
+      {# utility nav here #}
+      <nav class="flex-col flex-grow pb-4 lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto" aria-label="utility nav">
+        <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
+          <li class="relative block py-2 ml-auto mr-1 group lg:px-0 xl:px-0">
+            <a href="/search" class="px-4 py-2 group-hover:bg-gray-400 group-hover:text-white">Search</a>
+          </li>
+        </ul>
+      </nav>
 
     </div>
   </div>
