@@ -1160,8 +1160,17 @@ ul, .shadow, .shadow-inner {
     border: 0;
   }
 html {
+    /*
+    prefers motion reduced disable smooth scrolling
+    */
     scroll-behavior: smooth;
   }
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+}
 body {
   font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
 }
@@ -1359,6 +1368,10 @@ nav ul li img {
   right: 0.5rem;
 }
 
+.bottom-full {
+  bottom: 100%;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -1369,14 +1382,6 @@ nav ul li img {
 
 .bottom-\[10px\] {
   bottom: 10px;
-}
-
-.top-full {
-  top: 100%;
-}
-
-.bottom-full {
-  bottom: 100%;
 }
 
 .z-20 {
@@ -1830,20 +1835,8 @@ nav ul li img {
   padding-bottom: 1rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .pl-6 {
   padding-left: 1.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
 }
 
 .font-sans {

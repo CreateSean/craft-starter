@@ -41,7 +41,10 @@
   }
 
   html {
-    scroll-behavior: smooth;
+    /*
+    prefers motion reduced disable smooth scrolling
+    */
+    @apply scroll-smooth motion-reduce:scroll-auto;
   }
 
   body {
