@@ -48,6 +48,8 @@ Password: `letmein`
 -   [x] Set up site search.
 -   [ ] Move AlpineJs and plugins from CDN to compiled build process.
 -   [ ] Add content builder with common content types.
+-   [ ] Contact page
+-   [ ] About/Team page
 -   [x] Add hero with different options i.e. slider, no slider, no image just title.
 -   [x] Get news categories working using sprig.
 -   [ ] Add news _entry template.
