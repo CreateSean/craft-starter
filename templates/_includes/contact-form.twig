@@ -10,6 +10,16 @@
 
         {% set message = message ?? null %}
 
+{# The `success` variable is defined by the contact form controller on success #}
+{% if success is defined and success %}
+
+  <p>{{ fromName }}, Your message was successfully sent!</p>
+
+{% else %}
+  <p>
+    no success
+  </p>
+{% endif %}
 
 
         <form
@@ -19,7 +29,7 @@
           class="flex flex-col gap-8 mx-auto lg:w-1/2">
             {{ csrfInput() }}
             {{ actionInput('contact-form/send') }}
-            {{ redirectInput('contact/thanks') }}
+            {# {{ redirectInput('contact/thanks') }} #}
 
 
             <h2 class="mb-0">Contact Us</h2>

@@ -1,4 +1,4 @@
-dateModified: 1650460621
+dateModified: 1650462906
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -66,6 +66,13 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Your Website'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: $TO_EMAIL
   environment-label:
     edition: standard
     enabled: true

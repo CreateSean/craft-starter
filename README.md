@@ -18,6 +18,7 @@ to install this package run `composer create-project createsean/craft-starter .`
   * [Image Toolbox](#image-toolbox)
   * [Typogrify](#typogrify)
   * [Sprig](#sprig)
+  * [contact Form](#contact-form)
   * [MatrixMate](#matrixmate)
   * [Content](#content)
   * [Composer nuke](#composer-nuke)
@@ -30,7 +31,7 @@ Set up your local development, if you are using DDev for local development then 
 
 1. open .ddev/config.yaml and update line 15 to use the port you want. Must be unique to all ddev sites on your local computer
 2. open .ddev/config.yaml and update php version (line 4) and mysql_version (line 11) if needed
-3. update dotenv variables, especially SITE_NAME_EN, SITE_NAME_FR, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL and fill in the missing details
+3. update dotenv variables, especially SITE_NAME_EN, SITE_NAME_FR, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL, TO_EMAIL (and **other email settings**) and fill in the missing details
 4. Run `ddev start` and the site should start up.
 5. run `ddev import-db --src=db.sql.gz` this will import the seeder database with settings, channels, etc.
 6. run `php craft setup/security-key`
@@ -46,6 +47,7 @@ Password: `letmein`
 ## To Do
 -   [ ] Ensure accessibility passes with default templates - aria labels, alt text etc.
 -   [x] Set up site search.
+-   [x] Contact Form.
 -   [ ] Move AlpineJs and plugins from CDN to compiled build process.
 -   [ ] Add content builder with common content types.
 -   [x] Add hero with different options i.e. slider, no slider, no image just title.
@@ -246,6 +248,10 @@ See the [typogrify docs](https://nystudio107.com/docs/typogrify/) for advanced u
 ## Sprig
 
 Sprig adds reactive components. See the [documentation](https://putyourlightson.com/plugins/sprig) and/or my article on [Reactive Pagination With Sprig](https://caffeinecreations.ca/blog/reactive-pagination-with-sprig-and-craft/) for examples.
+
+## Contact Form
+
+The contact form is powered by the first party [contact form plugin](https://github.com/craftcms/contact-form) and Sprig. be sure to update the Email varaibles in dotenv so that email works correctly. Go to `plugins > contact form` and update the Sender Text and Subject text of your emails.
 
 ## MatrixMate
 
