@@ -1,0 +1,108 @@
+  <section class="py-12">
+    <div class="container">
+      <div class="w-full prose prose-lg">
+
+        {% macro errorList(errors) %}
+            {% if errors %}
+                {{ ul(errors, {class: 'errors text-red-500'}) }}
+            {% endif %}
+        {% endmacro %}
+
+        {# Sets default values if not defined by the input fields below #}
+        {% set fromName = fromName ?? '' %}
+        {% set fromEmail = fromEmail ?? '' %}
+        {% set subject = subject ?? '' %}
+        {% set message = message ?? '' %}
+
+        {# The `success` variable is defined by the contact form controller on success #}
+        {% if success is defined and success %}
+          {# success message here #}
+          <div class="p-8 mx-auto lg:w-1/2 bg-red-50">
+            <p>{{ fromName }}, Your message was successfully sent!</p>
+            <p class="mb-8">
+              <span class="font-bold">Sender Name:</span> {{ fromName }} <br>
+              <span class="font-bold">Sender Email:</span> {{ fromEmail }} <br>
+              <span class="font-bold">Subject:</span>  {{ subject }} <br>
+            </p>
+            <div class="pt-8 mt-8 text-lg border-t">
+            <span class="font-bold">Message:</span> <br><br>
+              {{ message|nl2br }}
+            </div><!-- /.prose -->
+          </div>
+
+        {% else %}
+          {# display the form not on the success page #}
+          <form
+            method="post"
+            sprig s-method="post"
+            s-action="contact-form/send"
+            accept-charset="UTF-8"
+            class="flex flex-col gap-8 mx-auto lg:w-1/2">
+              {{ csrfInput() }}
+              {# {{ actionInput('contact-form/send') }} #}
+              {# {{ redirectInput('contact/thanks') }} #}
+
+
+              <h2 class="mb-0">Contact Us</h2>
+
+              <div class="relative">
+                {{ input('text', 'fromName', message.fromName ?? '', {
+                    id: 'from-name',
+                    autocomplete: 'name',
+                    class: 'floating-input w-full',
+                    'aria-label': "Your Name"|t,
+                    placeholder: "Your Name"|t,
+
+                }) }}
+                <label for="from-name" class="floating-label">{{ "Full Name"|t }}</label>
+                {# {{ message ? _self.errorList(message.getErrors('fromName')) }} #}
+              </div>
+
+              <div class="relative">
+                {{ input('email', 'fromEmail', message.fromEmail ?? '', {
+                  id: 'from-email',
+                  autocomplete: 'email',
+                  class: 'floating-input w-full',
+                  'aria-label': "Email"|t,
+                  placeholder: "Email"|t,
+                }) }}
+                <label for="from-email" class="floating-label">{{ "Email"|t }}</label>
+                {# {{ message ? _self.errorList(message.getErrors('fromEmail')) }} #}
+              </div><!-- /.relative -->
+
+              <div class="relative">
+                {{ input('text', 'subject', message.subject ?? '', {
+                    id: 'subject',
+                    class: 'floating-input w-full',
+                    'aria-label': "Submect"|t,
+                    placeholder: "Subject"|t,
+                }) }}
+                <label for="subject" class="floating-label">{{ "Subject"|t }}</label>
+                {# {{ message ? _self.errorList(message.getErrors('subject')) }} #}
+              </div><!-- /.relative -->
+
+              <div class="relative">
+                {{ tag('textarea', {
+                    text: message.message ?? '',
+                    id: 'message',
+                    name: 'message',
+                    rows: 10,
+                    cols: 40,
+                    class: 'floating-input w-full',
+                    'aria-label': "Message"|t,
+                    placeholder: "Message"|t,
+                }) }}
+                <label for="message" class="floating-label">{{ "Message"|t }}</label>
+                {# {{ message ? _self.errorList(message.getErrors('message')) }} #}
+              </div><!-- /.relative -->
+
+              <button type="submit" class="self-start btn">Send</button>
+          </form>
+        {% endif %}
+
+
+
+
+      </div><!-- /.prose -->
+    </div><!-- /.container -->
+  </section>
