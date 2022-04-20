@@ -125,5 +125,13 @@
       @apply text-gray-600 -top-7;
   }
 
+  /*
+    override typography plugin max width setting of 65ch
+    https://tailwindcss.com/docs/typography-plugin#overriding-max-width
+  */
+  .prose {
+    @apply max-w-none;
+  }
+
 }
 /* end components layer */
