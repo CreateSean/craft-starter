@@ -1,4 +1,4 @@
-dateModified: 1650460459
+dateModified: 1650460621
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -38,6 +38,7 @@ meta:
     415a954c-eb55-4533-9ffd-64b3eade9469: Fallback # Fallback
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
     0878c4de-b946-4c8e-bcce-fe18cd77a73e: 'Site Admin' # Site Admin
+    4116f227-348c-4509-bc7a-6767a28fd40c: 'Contact Page' # Contact Page
     5489ed3b-28c1-4a26-ac7e-97b0182e6652: 'Enable Notice Bar' # Enable Notice Bar
     8491df26-ac74-440e-8ce9-403654b8ce98: Copy # Copy
     59621bb5-03e8-481a-b377-5e08b5a79c12: Button # Button
