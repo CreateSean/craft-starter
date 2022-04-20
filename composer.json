@@ -12,6 +12,7 @@
   "minimum-stability": "stable",
   "require": {
     "craftcms/cms": "^3.6.4",
+    "craftcms/contact-form": "^2.5",
     "craftcms/redactor": "^2.8",
     "craftsnippets/craft-image-toolbox": "^1.0",
     "hillholliday/craft-user-manual": "^2.0",
