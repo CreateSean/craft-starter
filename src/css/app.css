@@ -60,6 +60,9 @@
   h2 {
     @apply text-3xl;
   }
+  a {
+    @apply underline-offset-2 hover:no-underline;
+  }
 
   a.skip-main {
     @apply absolute top-[40px] w-[1px] h-[1px] overflow-hidden;

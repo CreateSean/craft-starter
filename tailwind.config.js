@@ -30,19 +30,33 @@ module.exports = {
       },
       fontSize: {
       },
-      typography: {
+      typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: '#333',
+            color: theme('colors.gray.900'),
             a: {
-              color: '#3182ce',
+              color: theme('colors.red.500'),
               '&:hover': {
-                color: '#2c5282',
+                color: theme('colors.red.700'),
+                textDecoration: 'none',
               },
             },
           },
         },
-      },
+      }),
+      // typography: {
+      //   DEFAULT: {
+      //     css: {
+      //       color: '#333',
+      //       a: {
+      //         color: '#3182ce',
+      //         '&:hover': {
+      //           color: '#2c5282',
+      //         },
+      //       },
+      //     },
+      //   },
+      // },
     },
   },
   plugins: [
