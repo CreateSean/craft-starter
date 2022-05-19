@@ -1,11 +1,11 @@
-field: d974bf8d-647d-45f3-98be-0733d5e3e1ba
+field: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
 fieldLayouts:
   bc2a4d96-e189-4577-9559-d25bf551d2c1:
     tabs:
       -
         elements:
           -
-            fieldUid: 854806b9-7b9c-4bee-b636-6ffb1d144b34
+            fieldUid: 854806b9-7b9c-4bee-b636-6ffb1d144b34 # Section Title
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 505d226e-5fae-49b8-9460-b78c35449b2e
+            fieldUid: 505d226e-5fae-49b8-9460-b78c35449b2e # SectionSubtitle
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225
+            fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225 # Video Upload
             instructions: null
             label: null
             required: false
@@ -34,7 +34,8 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  6f74be98-1b1b-470e-a96a-727b01e0b225:
+  6f74be98-1b1b-470e-a96a-727b01e0b225: # Video Upload
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: videoUpload
@@ -46,7 +47,7 @@ fields:
       allowUploads: true
       allowedKinds:
         - video
-      defaultUploadLocationSource: 'volume:d19b4314-0267-4e95-9e63-2462a334eea1'
+      defaultUploadLocationSource: 'volume:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -60,7 +61,7 @@ fields:
       singleUploadLocationSubpath: ''
       source: null
       sources:
-        - 'volume:d19b4314-0267-4e95-9e63-2462a334eea1'
+        - 'volume:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
       targetSiteId: null
       useSingleFolder: false
       validateRelatedElements: false
@@ -68,7 +69,8 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  505d226e-5fae-49b8-9460-b78c35449b2e:
+  505d226e-5fae-49b8-9460-b78c35449b2e: # SectionSubtitle
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionsubtitle
@@ -82,12 +84,13 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  854806b9-7b9c-4bee-b636-6ffb1d144b34:
+  854806b9-7b9c-4bee-b636-6ffb1d144b34: # Section Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionTitle
@@ -101,7 +104,7 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

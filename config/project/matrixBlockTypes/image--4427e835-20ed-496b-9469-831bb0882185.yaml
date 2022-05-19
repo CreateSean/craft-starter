@@ -1,11 +1,11 @@
-field: d974bf8d-647d-45f3-98be-0733d5e3e1ba
+field: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
 fieldLayouts:
   63e4bf4a-e003-4c1d-9c48-c8e7d9b987d0:
     tabs:
       -
         elements:
           -
-            fieldUid: 25e2157e-9a82-41cd-970f-4fc58cb3a835
+            fieldUid: 25e2157e-9a82-41cd-970f-4fc58cb3a835 # Screenshots
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f03239f9-af65-481a-b6b8-76e0e158244f
+            fieldUid: f03239f9-af65-481a-b6b8-76e0e158244f # Caption
             instructions: null
             label: null
             required: false
@@ -25,7 +25,8 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  25e2157e-9a82-41cd-970f-4fc58cb3a835:
+  25e2157e-9a82-41cd-970f-4fc58cb3a835: # Screenshots
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: screenshots
@@ -37,7 +38,7 @@ fields:
       allowUploads: true
       allowedKinds:
         - image
-      defaultUploadLocationSource: 'volume:d19b4314-0267-4e95-9e63-2462a334eea1'
+      defaultUploadLocationSource: 'volume:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -51,7 +52,7 @@ fields:
       singleUploadLocationSubpath: ''
       source: null
       sources:
-        - 'volume:d19b4314-0267-4e95-9e63-2462a334eea1'
+        - 'volume:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
       targetSiteId: null
       useSingleFolder: false
       validateRelatedElements: false
@@ -59,7 +60,8 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  f03239f9-af65-481a-b6b8-76e0e158244f:
+  f03239f9-af65-481a-b6b8-76e0e158244f: # Caption
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: caption
@@ -73,7 +75,7 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

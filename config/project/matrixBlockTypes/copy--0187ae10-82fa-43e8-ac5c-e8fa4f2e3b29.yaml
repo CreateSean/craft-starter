@@ -1,11 +1,11 @@
-field: d974bf8d-647d-45f3-98be-0733d5e3e1ba
+field: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
 fieldLayouts:
   623094d9-a7ca-4635-b4df-fb93c89d5b74:
     tabs:
       -
         elements:
           -
-            fieldUid: 01d20550-63a0-4d7a-ad9b-5a130e8f55a8
+            fieldUid: 01d20550-63a0-4d7a-ad9b-5a130e8f55a8 # Section Title
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6adad598-392d-4158-9400-8f90f7fe1fb0
+            fieldUid: 6adad598-392d-4158-9400-8f90f7fe1fb0 # Section Subtitle
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 10748c54-7d1f-4b35-9fd9-57bb11a751bc
+            fieldUid: 10748c54-7d1f-4b35-9fd9-57bb11a751bc # Copy
             instructions: null
             label: null
             required: false
@@ -34,7 +34,8 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  01d20550-63a0-4d7a-ad9b-5a130e8f55a8:
+  01d20550-63a0-4d7a-ad9b-5a130e8f55a8: # Section Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionTitle
@@ -48,12 +49,13 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  6adad598-392d-4158-9400-8f90f7fe1fb0:
+  6adad598-392d-4158-9400-8f90f7fe1fb0: # Section Subtitle
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionSubtitle
@@ -67,12 +69,13 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  10748c54-7d1f-4b35-9fd9-57bb11a751bc:
+  10748c54-7d1f-4b35-9fd9-57bb11a751bc: # Copy
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: copy
@@ -82,7 +85,6 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''

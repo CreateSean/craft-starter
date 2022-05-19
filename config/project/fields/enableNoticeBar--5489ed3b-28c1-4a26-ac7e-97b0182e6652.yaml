@@ -1,6 +1,6 @@
 columnSuffix: vgclrinn
 contentColumnType: boolean
-fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824
+fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824 # Common
 handle: enableNoticeBar
 instructions: ''
 name: 'Enable Notice Bar'

@@ -23,18 +23,16 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
+fs: userGuide
 handle: userGuide
 hasUrls: true
 name: 'User Guide'
-settings:
-  path: $GUIDE_BASE_PATH
 sortOrder: 2
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
-type: craft\volumes\Local
+titleTranslationMethod: site
 url: $GUIDE_BASE_URL

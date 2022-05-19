@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
             warning: null
             width: 100
           -
@@ -65,7 +65,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1
+            fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1 # SEO
             instructions: null
             label: null
             required: false

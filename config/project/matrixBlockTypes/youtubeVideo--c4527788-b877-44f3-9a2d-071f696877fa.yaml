@@ -1,11 +1,11 @@
-field: d974bf8d-647d-45f3-98be-0733d5e3e1ba
+field: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
 fieldLayouts:
   2be8891e-b97f-4d20-8c96-63ee3acef638:
     tabs:
       -
         elements:
           -
-            fieldUid: 14e1bd82-34c0-42c5-a72d-1d002d9775d2
+            fieldUid: 14e1bd82-34c0-42c5-a72d-1d002d9775d2 # Video Title
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 158c7930-10bb-483f-8328-c8aa657d8647
+            fieldUid: 158c7930-10bb-483f-8328-c8aa657d8647 # Video ID
             instructions: null
             label: null
             required: false
@@ -25,7 +25,8 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  14e1bd82-34c0-42c5-a72d-1d002d9775d2:
+  14e1bd82-34c0-42c5-a72d-1d002d9775d2: # Video Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: videoTitle
@@ -39,12 +40,13 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  158c7930-10bb-483f-8328-c8aa657d8647:
+  158c7930-10bb-483f-8328-c8aa657d8647: # Video ID
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: videoId
@@ -58,7 +60,7 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

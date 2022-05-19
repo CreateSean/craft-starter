@@ -23,11 +23,11 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
             warning: null
             width: 100
           -
-            fieldUid: d974bf8d-647d-45f3-98be-0733d5e3e1ba
+            fieldUid: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
             instructions: null
             label: null
             required: false
@@ -40,7 +40,7 @@ fieldLayouts:
 handle: userGuide
 hasTitleField: true
 name: 'User Guide'
-section: 0784ad32-f952-40b1-9f6c-d0e67d502551
+section: 0784ad32-f952-40b1-9f6c-d0e67d502551 # User Guide
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -1,5 +1,6 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: ca4cf186-4f48-488c-adbc-d38eba9d2533
+fieldGroup: ca4cf186-4f48-488c-adbc-d38eba9d2533 # User Guide
 handle: userGuide
 instructions: ''
 name: 'User Guide'
@@ -8,6 +9,7 @@ settings:
   contentTable: '{{%matrixcontent_userguide}}'
   maxBlocks: ''
   minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site
