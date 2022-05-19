@@ -4,6 +4,8 @@ This is an opinionated Craft CMS starter project using DDev for local developmen
 
 to install this package run `composer create-project createsean/craft-starter .`
 
+To install with Craft 3 version run `composer create-project createsean/craft-starter . --prefer-dist 1.13.11`
+
 ---
 
 ## Table of Contents
