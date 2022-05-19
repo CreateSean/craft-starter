@@ -44,8 +44,8 @@ return [
       'cacheDuration' => false,
       'setPasswordPath' => 'setpassword',
       'setPasswordSuccessPath' => 'login',
-      '@rootUrl' =>App::env('DEFAULT_SITE_URL'),
-      '@rootPath' =>App::env('SITE_PATH'),
+      // '@rootUrl' =>App::env('DEFAULT_SITE_URL'),
+      // '@rootPath' =>App::env('SITE_PATH'),
 
       'aliases' => array(
         'environment' =>App::env('ENVIRONMENT'),
@@ -64,7 +64,7 @@ return [
   // Staging environment settings
   'staging' => [
       'devMode' => false,
-      'allowAdminChanges' => trues,
+      'allowAdminChanges' => true,
 
   ],
 
