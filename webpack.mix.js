@@ -88,6 +88,7 @@ mix.setPublicPath('./public/assets/')
     })(),
     raw: true,
   })
+  .version()
 
   .browserSync({
     proxy: baseUrl,

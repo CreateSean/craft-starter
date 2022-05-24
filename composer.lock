@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "159c0756a7301f3cc326ce2297892a82",
+    "content-hash": "e1f7fed483047fc25a7b4ebcfeb858a5",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -69,6 +69,57 @@
                 "source": "https://github.com/cebe/markdown"
             },
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "clubstudioltd/craft-asset-rev",
+            "version": "6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clubstudioltd/craft-asset-rev.git",
+                "reference": "b4d4ada7902af654ceb081103ab4f5abb6a7e19c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clubstudioltd/craft-asset-rev/zipball/b4d4ada7902af654ceb081103ab4f5abb6a7e19c",
+                "reference": "b4d4ada7902af654ceb081103ab4f5abb6a7e19c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-beta.29"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/php-token-stream": "<2",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Asset Rev",
+                "handle": "assetrev",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://github.com/clubstudioltd/craft-asset-rev/blob/master/CHANGELOG.md",
+                "documentationUrl": "https://github.com/clubstudioltd/craft-asset-rev",
+                "downloadUrl": "https://github.com/clubstudioltd/craft-asset-rev/archive/v6.zip",
+                "developer": "Club Studio Ltd",
+                "developerUrl": "https://clubstudio.co.uk",
+                "class": "club\\assetrev\\AssetRev"
+            },
+            "autoload": {
+                "psr-4": {
+                    "club\\assetrev\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A plugin to aid cache-busting in Craft 3",
+            "support": {
+                "issues": "https://github.com/clubstudioltd/craft-asset-rev/issues",
+                "source": "https://github.com/clubstudioltd/craft-asset-rev/tree/v6"
+            },
+            "time": "2018-11-20T14:45:15+00:00"
         },
         {
             "name": "composer/ca-bundle",

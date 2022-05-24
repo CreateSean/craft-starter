@@ -10,9 +10,9 @@
   {# end google #}
 
   {# vendor css #}
-  <link rel="stylesheet" href="/assets/css/vendor.combined.css">
+  <link rel="stylesheet" href="{{ rev('/css/vendor.combined.css') }}">
   {# site css #}
-  <link rel="stylesheet" href="/assets/css/app.css?v={{ now|date('U') }}">
+  <link rel="stylesheet" href="{{ rev('/css/app.css') }}">
 
   <!-- Alpine Plugins -->
   {# persist plugin used to keep notice bar state across page loads #}
@@ -60,7 +60,7 @@
     {% include '_includes/footer' %}
   </footer>
 
-  <script src="/assets/js/scripts.combined.js?v1.01"></script>
+  <script src="{{ rev('/js/scripts.combined.js') }}"></script>
 
   {% block pageJs %}{% endblock %}
 </body>
