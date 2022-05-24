@@ -170,6 +170,7 @@ The following plugins are installed and ready to be used on the site. I prefer t
 11. MatrixMate
 12. Typogrify
 13. Sprig - Reactive components
+14. AssetRev - css and js using manifest.json
 
 
 ## Redactor
