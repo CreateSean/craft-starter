@@ -36,6 +36,6 @@ return [
     // likely want to set this if the paths in your manifest file are going to
     // be different to the final intended asset URL.
 
-    'assetUrlPrefix' => 'assets',
+    'assetUrlPrefix' => '/assets',
 
 ];
