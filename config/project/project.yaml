@@ -1,4 +1,4 @@
-dateModified: 1652977739
+dateModified: 1653511788
 elementSources:
   craft\elements\Entry:
     -
@@ -140,6 +140,10 @@ meta:
     f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
     fbdde691-0df2-4e8e-b1a8-61a1f555fd0e: 'News Categories' # News Categories
 plugins:
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   contact-form:
     edition: standard
     enabled: true
@@ -152,6 +156,10 @@ plugins:
       successFlashMessage: 'Your message has been sent.'
       toEmail: $TO_EMAIL
   environment-label:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  image-toolbox:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

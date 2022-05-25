@@ -4,7 +4,7 @@ This is an opinionated Craft CMS starter project using DDev for local developmen
 
 to install this package run `composer create-project createsean/craft-starter .`
 
-To install with Craft 3 version run `composer create-project createsean/craft-starter . --prefer-dist 1.13.11`
+To install with Craft 3 version run `composer create-project createsean/craft-starter . --prefer-dist 1.14.0`
 
 ---
 
@@ -165,11 +165,12 @@ The following plugins are installed and ready to be used on the site. I prefer t
 6. SEOmatic - used for all SEO.
 7. Template Comments - adds template comments in local dev to make finding templates easy
 8. Typed Link Field - used for buttons and other linkks
-9. User Manual - in CP user manual
+9. ~~User Manual - in CP user manual ~~ removed until a Craft 4 version is available
 10. Knock Knock - password protect staging site (pass: **letmein**)
 11. MatrixMate
 12. Typogrify
 13. Sprig - Reactive components
+14. AssetRev - link to css and js files with manifest.json file names
 
 
 ## Redactor

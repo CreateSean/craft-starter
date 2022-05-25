@@ -11,9 +11,11 @@
   "license": "MIT",
   "minimum-stability": "beta",
   "require": {
+    "clubstudioltd/craft-asset-rev": "^7.0",
     "craftcms/cms": "^4.0.0",
     "craftcms/contact-form": "^3.0.0",
     "craftcms/redactor": "^3.0.0",
+    "craftsnippets/craft-image-toolbox": "^2.0",
     "mmikkel/retcon": "^2.4.2",
     "nystudio107/craft-minify": "^4.0.0-beta.2",
     "nystudio107/craft-seomatic": "^4.0.0",
