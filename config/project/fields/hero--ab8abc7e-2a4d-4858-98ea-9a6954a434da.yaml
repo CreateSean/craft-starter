@@ -1,14 +1,14 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824
+fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824 # Common
 handle: hero
-instructions: ''
+instructions: null
 name: Hero
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_hero}}'
-  maxBlocks: '1'
-  minBlocks: '1'
+  maxBlocks: 1
+  minBlocks: 1
   propagationKeyFormat: null
   propagationMethod: none
 translationKeyFormat: null

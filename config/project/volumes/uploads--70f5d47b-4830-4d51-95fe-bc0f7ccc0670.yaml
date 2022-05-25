@@ -23,7 +23,8 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: c2cfa525-cf76-4f98-a9aa-5c1053b45a5c
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 294cd7dd-e705-4c7e-8730-ef3c8e6ef66f
             warning: null
             width: 100
           -
@@ -42,17 +44,16 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8f87d31c-0e72-4d32-a0ea-c95a5c987e2f
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 454bf547-c45d-41e0-9375-29df94751d21
+fs: uploads
 handle: uploads
-hasUrls: true
 name: Uploads
-settings:
-  path: $ASSET_BASE_PATH
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: craft\volumes\Local
-url: $ASSET_BASE_URL
+transformFs: null
+transformSubpath: ''

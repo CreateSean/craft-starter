@@ -11,17 +11,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 61e062bf-9716-4fe4-892c-bc2dadb71721
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: e0366ccf-37de-4a01-9c00-95a40acd04f2
 fields:
   8c583e9a-a56d-486d-8550-e7eae61c8088: # Slides
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: slides
-    instructions: ''
+    instructions: null
     name: Slides
     searchable: false
     settings:
@@ -57,13 +58,12 @@ fields:
                   - ''
       contentTable: '{{%stc_8_slides}}'
       fieldLayout: row
-      maxRows: '5'
-      minRows: '1'
-      placeholderKey: null
+      maxRows: 5
+      minRows: 1
       propagationKeyFormat: null
       propagationMethod: none
-      selectionLabel: ''
-      staticField: ''
+      selectionLabel: null
+      staticField: null
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField

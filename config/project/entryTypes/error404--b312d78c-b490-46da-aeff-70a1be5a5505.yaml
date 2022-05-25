@@ -23,7 +23,8 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d1826e4c-3c13-4edf-9d62-56e4d744a3dd
             warning: null
             width: 100
           -
@@ -33,10 +34,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b5b39377-f0b4-4435-99cb-6f3e7418b632
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 1bdacb6a-18e5-4d7a-ad23-7b647073d35e
 handle: error404
 hasTitleField: true
 name: 'Error 404'

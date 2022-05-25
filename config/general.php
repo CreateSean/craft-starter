@@ -30,9 +30,6 @@ return [
 
       'disallowRobots' => true,
 
-      // Whether to save the project config out to config/project.yaml
-      // (see https://docs.craftcms.com/v3/project-config.html)
-      'useProjectConfigFile' => true,
       // Base site URL
       'devMode' => false,
       'allowAdminChanges' => true,
@@ -40,7 +37,7 @@ return [
       'slugWordSeparator' => '-',
       'privateTemplateTrigger' => "_",
       'allowSimilarTags' => false,
-      'disableDevmodeMinifying' => true,
+      // 'disableDevmodeMinifying' => true,
       'cacheDuration' => false,
       'setPasswordPath' => 'setpassword',
       'setPasswordSuccessPath' => 'login',
@@ -64,7 +61,7 @@ return [
   // Staging environment settings
   'staging' => [
       'devMode' => false,
-      'allowAdminChanges' => true,
+      'allowAdminChanges' => false,
 
   ],
 

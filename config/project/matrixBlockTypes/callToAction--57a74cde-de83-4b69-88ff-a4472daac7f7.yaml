@@ -11,17 +11,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a71662d0-b947-40fe-9aee-693197d4445b
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: d76b4b4a-101d-4508-8153-84c7205cd9a3
 fields:
   5bed279a-5360-4e96-b92e-3153c98bff40: # Copy
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: button
-    instructions: ''
+    instructions: null
     name: Copy
     searchable: false
     settings:
@@ -31,13 +32,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Site.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged

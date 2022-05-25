@@ -1,99 +1,104 @@
-field: d974bf8d-647d-45f3-98be-0733d5e3e1ba
+field: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
 fieldLayouts:
   623094d9-a7ca-4635-b4df-fb93c89d5b74:
     tabs:
       -
         elements:
           -
-            fieldUid: 01d20550-63a0-4d7a-ad9b-5a130e8f55a8
+            fieldUid: 01d20550-63a0-4d7a-ad9b-5a130e8f55a8 # Section Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ba979be8-7b6e-4cd0-a807-5019461b80ee
             warning: null
             width: 100
           -
-            fieldUid: 6adad598-392d-4158-9400-8f90f7fe1fb0
+            fieldUid: 6adad598-392d-4158-9400-8f90f7fe1fb0 # Section Subtitle
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ff756a43-1935-4002-8b9e-845dc11eb17f
             warning: null
             width: 100
           -
-            fieldUid: 10748c54-7d1f-4b35-9fd9-57bb11a751bc
+            fieldUid: 10748c54-7d1f-4b35-9fd9-57bb11a751bc # Copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f2c4d154-8252-461f-bd0a-635b472473d1
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: e1a117ae-6930-4169-b0c6-525abba96b59
 fields:
-  01d20550-63a0-4d7a-ad9b-5a130e8f55a8:
+  01d20550-63a0-4d7a-ad9b-5a130e8f55a8: # Section Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionTitle
-    instructions: ''
+    instructions: null
     name: 'Section Title'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
+      initialRows: 4
+      multiline: false
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  6adad598-392d-4158-9400-8f90f7fe1fb0:
+  6adad598-392d-4158-9400-8f90f7fe1fb0: # Section Subtitle
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionSubtitle
-    instructions: ''
+    instructions: null
     name: 'Section Subtitle'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
+      initialRows: 4
+      multiline: false
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  10748c54-7d1f-4b35-9fd9-57bb11a751bc:
+  10748c54-7d1f-4b35-9fd9-57bb11a751bc: # Copy
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: copy
-    instructions: ''
+    instructions: null
     name: Copy
     searchable: false
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged

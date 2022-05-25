@@ -1,107 +1,116 @@
-field: d974bf8d-647d-45f3-98be-0733d5e3e1ba
+field: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
 fieldLayouts:
   bc2a4d96-e189-4577-9559-d25bf551d2c1:
     tabs:
       -
         elements:
           -
-            fieldUid: 854806b9-7b9c-4bee-b636-6ffb1d144b34
+            fieldUid: 854806b9-7b9c-4bee-b636-6ffb1d144b34 # Section Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d05631c8-4a8b-4de3-8556-fdb8dac2c21f
             warning: null
             width: 100
           -
-            fieldUid: 505d226e-5fae-49b8-9460-b78c35449b2e
+            fieldUid: 505d226e-5fae-49b8-9460-b78c35449b2e # SectionSubtitle
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9e2a1011-236a-4ff2-9867-acac7d531f6b
             warning: null
             width: 100
           -
-            fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225
+            fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225 # Video Upload
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4f452736-a434-4ee7-b2d8-a1bd8f95e768
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 56c54d1a-0bc9-493a-a342-789511c65600
 fields:
-  6f74be98-1b1b-470e-a96a-727b01e0b225:
+  6f74be98-1b1b-470e-a96a-727b01e0b225: # Video Upload
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: videoUpload
-    instructions: ''
+    instructions: null
     name: 'Video Upload'
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - video
-      defaultUploadLocationSource: 'volume:d19b4314-0267-4e95-9e63-2462a334eea1'
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSource: 'volume:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
-      singleUploadLocationSubpath: ''
       source: null
       sources:
-        - 'volume:d19b4314-0267-4e95-9e63-2462a334eea1'
+        - 'volume:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  505d226e-5fae-49b8-9460-b78c35449b2e:
+  505d226e-5fae-49b8-9460-b78c35449b2e: # SectionSubtitle
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionsubtitle
-    instructions: ''
+    instructions: null
     name: SectionSubtitle
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
+      initialRows: 4
+      multiline: false
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  854806b9-7b9c-4bee-b636-6ffb1d144b34:
+  854806b9-7b9c-4bee-b636-6ffb1d144b34: # Section Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: sectionTitle
-    instructions: ''
+    instructions: null
     name: 'Section Title'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
+      initialRows: 4
+      multiline: false
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

@@ -1,8 +1,8 @@
 columnSuffix: ybnmlxai
 contentColumnType: text
-fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824
+fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824 # Common
 handle: text
-instructions: ''
+instructions: null
 name: Text
 searchable: true
 settings:
@@ -12,13 +12,13 @@ settings:
   configSelectionMode: choose
   defaultTransform: ''
   manualConfig: ''
-  purifierConfig: ''
-  purifyHtml: '1'
+  purifierConfig: null
+  purifyHtml: true
   redactorConfig: Site-basic.json
-  removeEmptyTags: '1'
-  removeInlineStyles: '1'
-  removeNbsp: '1'
-  showHtmlButtonForNonAdmins: ''
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   uiMode: enlarged
