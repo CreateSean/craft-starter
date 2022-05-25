@@ -2,8 +2,10 @@
 
 This is an opinionated Craft CMS starter project using DDev for local development, Tailwind CSS, Alpine Js, and Laravel Mix.
 
+### Install Craft 4 version
 to install this package run `composer create-project createsean/craft-starter .`
 
+### Install Craft 3 version
 To install with Craft 3 version run `composer create-project createsean/craft-starter . --prefer-dist 1.14.0`
 
 ---
