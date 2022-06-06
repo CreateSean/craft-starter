@@ -256,6 +256,8 @@ See the [typogrify docs](https://nystudio107.com/docs/typogrify/) for advanced u
 
 Sprig adds reactive components. See the [documentation](https://putyourlightson.com/plugins/sprig) and/or my article on [Reactive Pagination With Sprig](https://caffeinecreations.ca/blog/reactive-pagination-with-sprig-and-craft/) for examples.
 
+Additionally **NOTE** that sprig will only reload components once when using the localhost:3000 url that comes with the build process. When building/testing sprig components reload manually using your localhost domain - i.e. https://site.ddev.com
+
 ## Contact Form
 
 The contact form is powered by the first party [contact form plugin](https://github.com/craftcms/contact-form) and Sprig. be sure to update the Email varaibles in dotenv so that email works correctly. Go to `plugins > contact form` and update the Sender Text and Subject text of your emails.
