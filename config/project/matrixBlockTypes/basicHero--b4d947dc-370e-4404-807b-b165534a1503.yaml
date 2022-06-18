@@ -11,11 +11,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2d611c9f-ce5d-4fb3-89b7-6cbbac684b4a
             warning: null
             width: 100
         name: Content
-        uid: eaada003-5ead-470a-9054-8417d845e9be
+        sortOrder: 1
 fields:
   418401d4-f08e-47eb-a216-719e3d8f4ccb: # Hero Title
     columnSuffix: null
@@ -28,10 +27,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: null
-      initialRows: 4
-      multiline: false
+      initialRows: '4'
+      multiline: ''
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

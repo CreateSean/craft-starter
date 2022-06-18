@@ -1,0 +1,9 @@
+{# get fragment entry #}
+
+<!-- start fragment -->
+{% set entry = block.fragment.one() %}
+
+{% for block in entry.contentBuilder.all() %}
+  {% include "_blocks/" ~ block.type %}
+{% endfor %}
+<!-- end fragment -->

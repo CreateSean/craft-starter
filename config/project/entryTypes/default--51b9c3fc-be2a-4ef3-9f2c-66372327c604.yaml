@@ -24,14 +24,12 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 514527a7-c517-4adb-9d54-efdb1f6be1b0
             warning: null
             width: 100
           -
             style: tip
             tip: 'Summary should only be 2-3 sentences. Image will appear on listing page'
             type: craft\fieldlayoutelements\Tip
-            uid: f4aec492-bb0f-40b0-afbf-79a590fca8be
           -
             fieldUid: b2f53aa5-81a3-466c-af2d-e30dab4ed3d8 # Image
             instructions: null
@@ -39,7 +37,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 23da011a-390b-4e37-89a2-4b97651ed706
             warning: null
             width: 50
           -
@@ -49,7 +46,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0ef618f6-08b3-4fcc-a915-60ee481fb8dd
             warning: null
             width: 50
           -
@@ -59,15 +55,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fbaff3bd-2fb9-4f11-a784-51688db844d5
             warning: null
             width: 100
           -
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
-            uid: d7089c82-6c41-4d83-846b-4bafe2301bac
         name: Content
-        uid: daf8662e-c051-40ce-9a9f-055743873cb4
+        sortOrder: 1
       -
         elements:
           -
@@ -77,11 +71,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c8a6d8cd-2973-4ae5-a913-4014dabf5dab
             warning: null
             width: 100
         name: SEO
-        uid: a5bc70bc-debf-4ef0-bf9f-162f96619557
+        sortOrder: 2
 handle: default
 hasTitleField: true
 name: Default

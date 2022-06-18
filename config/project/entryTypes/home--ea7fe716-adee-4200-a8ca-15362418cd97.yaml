@@ -37,6 +37,20 @@ fieldLayouts:
             uid: 25693e05-7ef0-4518-9fc5-2e899504f485
             warning: null
             width: 100
+          -
+            heading: 'Main Content'
+            type: craft\fieldlayoutelements\Heading
+            uid: c8c8df54-5786-47de-80fc-a00ce2555844
+          -
+            fieldUid: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53da33c9-cd95-43ca-98d3-b1ed3ec87096
+            warning: null
+            width: 100
         name: Content
         uid: 9768a398-72b1-4c65-aa91-dcad9be74a1f
       -

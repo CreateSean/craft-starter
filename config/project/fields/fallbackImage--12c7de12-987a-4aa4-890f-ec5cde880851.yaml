@@ -2,34 +2,31 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824 # Common
 handle: fallbackImage
-instructions: null
+instructions: ''
 name: 'Fallback Image'
 searchable: false
 settings:
   allowSelfRelations: false
-  allowSubfolders: false
   allowUploads: true
   allowedKinds:
     - image
   defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
-  defaultUploadLocationSubpath: null
+  defaultUploadLocationSubpath: ''
+  limit: '1'
   localizeRelations: true
-  maxRelations: 1
-  minRelations: null
   previewMode: full
-  restrictFiles: true
-  restrictLocation: false
-  restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
-  restrictedLocationSubpath: null
-  selectionLabel: null
+  restrictFiles: '1'
+  selectionLabel: ''
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+  singleUploadLocationSubpath: ''
   source: null
   sources:
     - 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   targetSiteId: null
+  useSingleFolder: false
   validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null

@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+handle: fragments
+name: Fragments
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  1a78d395-d81a-4b77-8da7-30a49123bbee: # English
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  b9fdef79-5b63-4932-a9aa-8d18f937e6d9: # Français
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

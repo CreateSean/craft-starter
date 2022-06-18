@@ -11,7 +11,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 98f0e07e-81da-484f-8190-987af0f739c8
             warning: null
             width: 100
           -
@@ -21,7 +20,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 360e355c-d9f2-417d-af9f-ce89b15c6e4a
             warning: null
             width: 100
           -
@@ -31,7 +29,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b95dfd47-bd17-4d2d-b2f5-586a0750667f
             warning: null
             width: 100
           -
@@ -41,106 +38,153 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8f7852fc-9a4e-40a7-9816-dbb286775bf9
             warning: null
             width: 100
         name: Content
-        uid: 4f2e4fad-7ce3-4757-abbd-6483c2dc8abe
+        sortOrder: 1
 fields:
   4d4435a9-cff2-46e6-9e43-ca2b7d62486f: # Button
     columnSuffix: null
-    contentColumnType: string
+    contentColumnType: text
     fieldGroup: null
     handle: button
-    instructions: null
+    instructions: ''
     name: Button
     searchable: false
     settings:
-      allowCustomText: true
-      allowTarget: true
-      autoNoReferrer: false
-      customTextMaxLength: 0
-      customTextRequired: false
+      allowCustomText: '1'
+      allowTarget: '1'
+      allowedLinkNames:
+        1: asset
+        3: entry
+        7: email
+        8: tel
+        9: url
+      autoNoReferrer: ''
       defaultLinkName: entry
       defaultText: ''
-      enableAllLinkTypes: false
-      enableAriaLabel: false
-      enableElementCache: false
-      enableTitle: true
+      enableAriaLabel: ''
+      enableTitle: '1'
       typeSettings:
-        asset:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        category:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        custom:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        email:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        entry:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        site:
-          enabled: false
-          sites: '*'
-        tel:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        url:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        user:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
     translationKeyFormat: null
     translationMethod: site
-    type: lenz\linkfield\fields\LinkField
+    type: typedlinkfield\fields\LinkField
   7bf7da79-8f7d-4a1b-8129-121b24c0d99b: # Image
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: null
+    instructions: ''
     name: Image
     searchable: false
     settings:
       allowSelfRelations: false
-      allowSubfolders: false
       allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
-      defaultUploadLocationSubpath: null
+      defaultUploadLocationSubpath: ''
+      limit: '1'
       localizeRelations: true
-      maxRelations: 1
-      minRelations: null
       previewMode: full
-      restrictFiles: false
-      restrictLocation: true
-      restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
-      restrictedLocationSubpath: hero
-      selectionLabel: null
+      restrictFiles: ''
+      selectionLabel: ''
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      singleUploadLocationSubpath: hero
       source: null
       sources: '*'
       targetSiteId: null
+      useSingleFolder: true
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -157,10 +201,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: null
-      initialRows: 4
-      multiline: false
+      initialRows: '4'
+      multiline: ''
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -171,7 +215,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: copy
-    instructions: null
+    instructions: ''
     name: Copy
     searchable: false
     settings:
@@ -181,13 +225,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: null
-      purifyHtml: true
+      purifierConfig: ''
+      purifyHtml: '1'
       redactorConfig: Site-basic.json
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: false
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged

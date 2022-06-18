@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 5bed279a-5360-4e96-b92e-3153c98bff40 # Copy
+            fieldUid: 5bed279a-5360-4e96-b92e-3153c98bff40 # Section Title
             instructions: null
             label: null
             required: false
@@ -14,37 +14,161 @@ fieldLayouts:
             uid: a71662d0-b947-40fe-9aee-693197d4445b
             warning: null
             width: 100
+          -
+            fieldUid: c78e0b43-9945-41ae-bdc4-9e38f07eca01 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bdb7e4c4-caa6-40d1-bb93-831a931266f2
+            warning: null
+            width: 100
+          -
+            fieldUid: cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f # Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c36cc61-1f7c-4373-91f1-16aa37ce2c5b
+            warning: null
+            width: 100
         name: Content
         uid: d76b4b4a-101d-4508-8153-84c7205cd9a3
 fields:
-  5bed279a-5360-4e96-b92e-3153c98bff40: # Copy
+  5bed279a-5360-4e96-b92e-3153c98bff40: # Section Title
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
-    handle: button
+    handle: sectionTitle
     instructions: null
-    name: Copy
+    name: 'Section Title'
     searchable: false
     settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: null
-      purifyHtml: true
-      redactorConfig: Site.json
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: false
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      uiMode: enlarged
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c78e0b43-9945-41ae-bdc4-9e38f07eca01: # Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: null
+    name: Button
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: true
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
     translationKeyFormat: null
     translationMethod: site
-    type: craft\redactor\Field
+    type: lenz\linkfield\fields\LinkField
+  cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f: # Background Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: null
+    name: 'Background Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources:
+        - 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
 handle: callToAction
 name: 'Call To Action'
-sortOrder: 1
+sortOrder: 2

@@ -11,7 +11,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 51b6bdd2-3479-42db-92bd-f2fb2fb27b63
             warning: null
             width: 100
           -
@@ -21,7 +20,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8a19baf0-3870-4179-836b-f7624be7c6c4
             warning: null
             width: 100
           -
@@ -31,7 +29,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a04ae6dc-b7fa-46dd-859e-dcff16d29d36
             warning: null
             width: 100
           -
@@ -41,18 +38,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 51097e95-fc51-4969-82d6-d06ff5a1f646
             warning: null
             width: 100
         name: Content
-        uid: 4d5d1e3c-1e1b-4f04-9ca0-0d09f84d1a6c
+        sortOrder: 1
 fields:
   8491df26-ac74-440e-8ce9-403654b8ce98: # Copy
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: copy
-    instructions: null
+    instructions: ''
     name: Copy
     searchable: false
     settings:
@@ -62,13 +58,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: null
-      purifyHtml: true
+      purifierConfig: ''
+      purifyHtml: '1'
       redactorConfig: Site-basic.json
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: false
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -77,82 +73,134 @@ fields:
     type: craft\redactor\Field
   59621bb5-03e8-481a-b377-5e08b5a79c12: # Button
     columnSuffix: null
-    contentColumnType: string
+    contentColumnType: text
     fieldGroup: null
     handle: button
-    instructions: null
+    instructions: ''
     name: Button
     searchable: false
     settings:
-      allowCustomText: true
-      allowTarget: true
-      autoNoReferrer: true
-      customTextMaxLength: 0
-      customTextRequired: false
+      allowCustomText: '1'
+      allowTarget: '1'
+      allowedLinkNames:
+        1: asset
+        3: entry
+        6: custom
+        7: email
+        8: tel
+        9: url
+      autoNoReferrer: '1'
       defaultLinkName: entry
       defaultText: 'Learn more'
-      enableAllLinkTypes: false
-      enableAriaLabel: true
-      enableElementCache: false
-      enableTitle: false
+      enableAriaLabel: '1'
+      enableTitle: ''
       typeSettings:
-        asset:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        category:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        custom:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        email:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        entry:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        site:
-          enabled: false
-          sites: '*'
-        tel:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        url:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        user:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
     translationKeyFormat: null
     translationMethod: site
-    type: lenz\linkfield\fields\LinkField
+    type: typedlinkfield\fields\LinkField
   01313804-5d1a-410f-9da8-42ea30ae231d: # Slide Title
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: slideTitle
-    instructions: null
+    instructions: ''
     name: 'Slide Title'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: null
-      initialRows: 4
-      multiline: false
+      initialRows: '4'
+      multiline: ''
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -163,33 +211,30 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: null
+    instructions: ''
     name: Image
     searchable: false
     settings:
       allowSelfRelations: false
-      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
       defaultUploadLocationSubpath: hero
+      limit: '1'
       localizeRelations: true
-      maxRelations: 1
-      minRelations: null
       previewMode: full
-      restrictFiles: true
-      restrictLocation: true
-      restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
-      restrictedLocationSubpath: hero
-      selectionLabel: null
+      restrictFiles: '1'
+      selectionLabel: ''
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      singleUploadLocationSubpath: hero
       source: null
       sources: '*'
       targetSiteId: null
+      useSingleFolder: true
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null

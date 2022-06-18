@@ -54,6 +54,16 @@ fieldLayouts:
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
             uid: cbba0400-5698-4143-b88f-d1094999895e
+          -
+            fieldUid: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36136a1a-0b6e-472f-9756-759df4d6dc47
+            warning: null
+            width: 100
         name: Content
         uid: 2898983f-51ae-4f50-869a-c73395ab8d68
       -

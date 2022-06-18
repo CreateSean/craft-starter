@@ -1,0 +1,57 @@
+field: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+fieldLayouts:
+  9a7c5f55-c3f5-4e6e-9066-4cae24a1e8fc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: aac80dd6-df34-4cd2-a92f-14debb37b911 # Fragment
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36176e49-f347-4d1d-9c9f-43876e808579
+            warning: null
+            width: 100
+        name: Content
+        uid: 9ac485a3-5145-4704-b46f-add6c7126e86
+fields:
+  aac80dd6-df34-4cd2-a92f-14debb37b911: # Fragment
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: fragment
+    instructions: null
+    name: Fragment
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: null
+      minRelations: 1
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: fragments
+name: Fragments
+sortOrder: 3

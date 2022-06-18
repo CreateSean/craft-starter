@@ -1,5 +1,5 @@
 fieldLayouts:
-  ff6710b6-fa56-44b7-a693-664ee41ba595:
+  27773fbe-4706-4cf6-aff2-7c6d13d64fe2:
     tabs:
       -
         elements:
@@ -24,23 +24,25 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 15c4e0af-8e95-42fa-8015-e4b4a34c0c9e
             warning: null
             width: 100
           -
-            fieldUid: f4da8483-be1a-439d-8918-afde0ea14454 # Text
+            fieldUid: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4a5d1b5b-fdc1-4395-b5ec-88613d00ba33
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
-handle: error404
+        uid: 683d16fd-4d8f-4461-a6dd-15b7ece55232
+handle: fragments
 hasTitleField: true
-name: 'Error 404'
-section: 29d88d99-dd38-43f6-9ac5-3438833c75ba # Error 404
+name: fragments
+section: ce27286a-7635-4494-9c9c-77f2d73352f4 # Fragments
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

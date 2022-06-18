@@ -1,0 +1,10 @@
+  <section class="py-24 border-t border-gray-200">
+    <div class="container">
+      {% if block.sectionTitle|length %}
+        <h2>{{ block.sectionTitle }}</h2>
+      {% endif %}
+      <div class="w-full prose">
+        {{ block.copy }}
+      </div><!-- /.w-full -->
+    </div><!-- /.container -->
+  </section>
