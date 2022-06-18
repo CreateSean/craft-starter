@@ -17,6 +17,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Build Process](#build-process)
   * [Tailwind](#tailwind)
   * [Accessibility](#accessibility)
+  * [Fragments](#fragments)
   * [Craft Plugins](#craft-plugins)
   * [Redactor](#redactor)
   * [Image Toolbox](#image-toolbox)
@@ -154,6 +155,14 @@ fontFamily: {
 ## Accessibility
 
 I aim to ensure default templates pass accessibility tests - except for color contrast as that will need to be taken into account during the design phase.
+
+## Fragments
+
+Fragments are a section that is intended for creating reusable content. Often you will need a Call To Action that is duplicated around the site. In this section you create that Call to Action and then using the **fragments** block in the content builder pull it in to that entry.
+
+Other uses may include a block with Related Entries, a Slideshow, or photo gallery that gets featured around the site.
+
+There is one Fragment already added that is a call to action with a button to the Contact page.
 
 ## Craft Plugins
 
