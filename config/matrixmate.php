@@ -1,32 +1,29 @@
 <?php
 
 return [
-    'fields' => [
-        'matrixFieldHandle' => [
-            'groups' => [[
-                'label' => 'Content',
-                'types' => ['text', 'images', 'video'],
-            ], [
-                'label' => 'Listings',
-                'types' => ['news', 'employees'],
-            ]],
-            'types' => [
-                'text' => [
-                    'tabs' => [[
-                        'label' => 'Text',
-                        'fields' => ['heading', 'text'],
-                    ], [
-                        'label' => 'Settings',
-                        'fields' => ['columns'],
-                    ]],
-                    'hiddenFields' => ['backgroundColor', 'textColor'],
-                ],
-                'news' => [
-                    'maxLimit' => 1,
-                ],
-            ],
-        ],
-        'anotherMatrixFieldHandle' => [
-        ],
+  'fields' => [
+    // content builder
+    'contentBuilder' => [
+      // 'defaultTabName' => 'Additional Settings',
+      // 'groups' => [
+      //   [
+      //     'label' => 'Text Heavy',
+      //     'types' => ['copy', 'copyFloatedImage', 'ctaCopy'],
+      //   ],
+      //   [
+      //     'label' => 'Imagery',
+      //     'types' => ['fullWidthImage', 'gallery', 'slideshow'],
+      //   ],
+      //   [
+      //     'label' => 'Other',
+      //     'types' => ['fragments', 'embedCode', 'entryCards', 'alternatingEntries', 'related3Content'],
+      //   ],
+      // ],
+
+      // hide fragments block from fragment channel
+      'section:fragments' => [
+        'hiddenTypes' => ['fragments'],
+      ],
     ],
+  ],
 ];
