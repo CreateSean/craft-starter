@@ -51,6 +51,31 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            style: tip
+            tip: 'Used when displayed on other pages'
+            type: craft\fieldlayoutelements\Tip
+            uid: 124ac5d1-7d24-4c4b-a2dd-75b9b0659c5a
+          -
+            fieldUid: c33fedfd-ec76-45db-93dc-a12697e4a2aa # Listing Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 506ef83f-cf14-422a-8251-0487f72f2441
+            warning: null
+            width: 25
+          -
+            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2dc7747d-77d5-4b31-b9ad-6334c9087687
+            warning: null
+            width: 75
+          -
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
             uid: cbba0400-5698-4143-b88f-d1094999895e

@@ -5,6 +5,16 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b392e2e-ab1b-42ce-81a1-01fbd59e5ce6
+            warning: null
+            width: 100
+          -
             fieldUid: 5bed279a-5360-4e96-b92e-3153c98bff40 # Section Title
             instructions: null
             label: null
@@ -57,6 +67,63 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  127f0d67-cfaf-4e5d-b3f8-111b7fda6f64: # Padding
+    columnSuffix: mjnbzisp
+    contentColumnType: string
+    fieldGroup: null
+    handle: padding
+    instructions: null
+    name: Padding
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top & bottom'
+            -
+              - value
+              - section-y-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top Only'
+            -
+              - value
+              - section-t-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Bottom Only'
+            -
+              - value
+              - section-b-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'No Padding'
+            -
+              - value
+              - section-no-padding
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   c78e0b43-9945-41ae-bdc4-9e38f07eca01: # Button
     columnSuffix: null
     contentColumnType: string

@@ -24,6 +24,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4a9c3468-247d-4f5a-9bb4-cc13ba9aaa61
             warning: null
             width: 100
           -
@@ -33,10 +34,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7f733cb5-f471-4dff-b2a3-d81a2354ba71
             warning: null
             width: 100
           -
             type: craft\fieldlayoutelements\HorizontalRule
+            uid: 85a4a23d-3725-49a3-9650-918f3be12037
           -
             fieldUid: ab8abc7e-2a4d-4858-98ea-9a6954a434da # Hero
             instructions: null
@@ -44,22 +47,50 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 43d8cb47-c827-4bf1-9813-485c81b5c326
             warning: null
             width: 100
+          -
+            style: tip
+            tip: 'Used when displayed on other pages'
+            type: craft\fieldlayoutelements\Tip
+            uid: f070e260-a4d3-4c63-b54d-18e032a4f1c6
+          -
+            fieldUid: c33fedfd-ec76-45db-93dc-a12697e4a2aa # Listing Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d14775fa-d808-4ae1-803b-8d7ad5dc2ad6
+            warning: null
+            width: 25
+          -
+            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43ae12e0-d1f6-4042-b214-32aeabadd0de
+            warning: null
+            width: 75
           -
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
+            uid: b16c683b-ef39-4e18-86d3-fc3566be5c73
           -
-            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
-            instructions: ''
-            label: Copy
-            required: ''
+            fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
+            instructions: null
+            label: null
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7abfbd10-fb81-43de-88fa-fed21b3ec9c7
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 02bd7ec5-b7cd-4277-9993-5e39613b939a
       -
         elements:
           -
@@ -69,10 +100,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0280f63c-8003-4627-acde-ccde741de390
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 26cb98cc-1949-467c-8b80-02a8b8ef608f
 handle: contactPage
 hasTitleField: true
 name: 'Contact Page'

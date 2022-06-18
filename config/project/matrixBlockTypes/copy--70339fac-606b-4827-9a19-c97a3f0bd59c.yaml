@@ -5,6 +5,16 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: b507c631-830f-46d6-b625-4d4a6df7775c # Padding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eab65f53-ddcc-4fe7-86a6-125f0da1b7b0
+            warning: null
+            width: 100
+          -
             fieldUid: 80c3b02f-d4d4-4fb2-8c5c-1cde8119afad # Section Title
             instructions: null
             label: null
@@ -45,7 +55,7 @@ fields:
       manualConfig: ''
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: site.json
+      redactorConfig: null
       removeEmptyTags: false
       removeInlineStyles: false
       removeNbsp: false
@@ -76,6 +86,63 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  b507c631-830f-46d6-b625-4d4a6df7775c: # Padding
+    columnSuffix: rdhahobp
+    contentColumnType: string
+    fieldGroup: null
+    handle: padding
+    instructions: null
+    name: Padding
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top & Bottom'
+            -
+              - value
+              - section-y-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top Only'
+            -
+              - value
+              - section-t-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Bottom Only'
+            -
+              - value
+              - section-b-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'No Padding'
+            -
+              - value
+              - section-no-padding
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
 handle: copy
 name: Copy
 sortOrder: 1

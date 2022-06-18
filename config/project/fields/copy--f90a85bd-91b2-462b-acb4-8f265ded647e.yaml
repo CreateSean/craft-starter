@@ -1,0 +1,28 @@
+columnSuffix: mevzfsyi
+contentColumnType: text
+fieldGroup: ef8cc244-dfa8-41b1-945d-cb673ae71824 # Common
+handle: copy
+instructions: null
+name: Copy
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - 70f5d47b-4830-4d51-95fe-bc0f7ccc0670 # Uploads
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: Site.json
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

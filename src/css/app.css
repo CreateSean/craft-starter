@@ -117,6 +117,20 @@
     @apply inline-block px-6 py-1 text-white transition duration-200 bg-gray-400 rounded hover:bg-gray-300 hover:text-gray-700;
   }
 
+  /* padding used in matrix blocks */
+  .section-y-padding {
+    @apply py-24;
+  }
+  .section-t-padding {
+   @apply pt-24;
+ }
+ .section-b-padding {
+   @apply pb-24;
+ }
+ .section-no-padding {
+   @apply p-0;
+ }
+
   /* form fields */
   .floating-input {
     @apply px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-none focus:border-gray-400;
