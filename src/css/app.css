@@ -58,7 +58,10 @@
     @apply text-4xl;
   }
   h2 {
-    @apply text-3xl;
+    @apply mb-8 text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
   }
   a {
     @apply underline-offset-2 hover:no-underline;

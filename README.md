@@ -198,7 +198,7 @@ To use with an image that won't have multiple sizes at different breakpoints use
     width: 120,
     height: 120,
     quality: 75,
-    position: 'center, center',
+    position: 'center-center',
 } %}
 {% set attributes = {
   class: [
@@ -214,21 +214,27 @@ For a responsive image with multiple sizes applied at different breakpoints use 
 
 ```
 {% set transforms = {
-  '(max-width: 767px)': {
+  '(max-width: 767.9px)': {
     width: 576,
-    height:225,
+    height:432,
     mode: 'crop',
     quality: 80,
   },
-  '(max-width: 1199px)': {
-    width: 960,
-    height:375,
+  '(min-width:768px) and (max-width: 1023.9px)': {
+    width: 232,
+    height:174,
     mode: 'crop',
     quality: 80,
   },
-  '(min-width: 1200px)': {
-    width: 1370,
-    height:530,
+  '(min-width:1024px) and (max-width: 1279.9px)': {
+    width: 310,
+    height:232,
+    mode: 'crop',
+    quality: 80,
+  },
+  '(min-width: 1280px)': {
+    width: 392,
+    height:294,
     mode: 'crop',
     quality: 80,
   },

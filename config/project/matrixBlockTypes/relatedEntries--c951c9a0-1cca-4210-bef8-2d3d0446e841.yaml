@@ -1,0 +1,153 @@
+field: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+fieldLayouts:
+  5dd65675-497a-4ca9-b807-7e443b915ef5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: cf771399-6f67-4917-bd2f-0173c3504c7e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5fecab2-6bd5-43f3-9ae5-597561792f6f
+            warning: null
+            width: 100
+          -
+            fieldUid: e285fc8c-8b64-4829-afe0-88f9d0c3c8c4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52b9bea1-445b-41fa-ac5f-b334fc72f044
+            warning: null
+            width: 100
+          -
+            fieldUid: 5026b221-a48f-4868-9f48-07428068e77e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23c2f709-04c7-4f0f-926d-c0f2e04b3fc7
+            warning: null
+            width: 100
+        name: Content
+        uid: 6f27ce87-60b4-40a1-8b87-dea3e269f9a5
+fields:
+  5026b221-a48f-4868-9f48-07428068e77e:
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedEntries
+    instructions: 'Select up to 3 entries'
+    name: 'Related Entries'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: 3
+      minRelations: 1
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  cf771399-6f67-4917-bd2f-0173c3504c7e:
+    columnSuffix: bejubloh
+    contentColumnType: string
+    fieldGroup: null
+    handle: padding
+    instructions: null
+    name: Padding
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top & bottom'
+            -
+              - value
+              - section-y-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top Only'
+            -
+              - value
+              - section-t-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Bottom Only'
+            -
+              - value
+              - section-b-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'No Padding'
+            -
+              - value
+              - section-no-padding
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  e285fc8c-8b64-4829-afe0-88f9d0c3c8c4:
+    columnSuffix: lcneswnz
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: null
+    name: 'Section Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: relatedEntries
+name: 'Related Entries'
+sortOrder: 4

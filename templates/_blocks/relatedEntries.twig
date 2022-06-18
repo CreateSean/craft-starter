@@ -1,0 +1,61 @@
+  <section class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200">
+    <div class="container">
+      {% if block.sectionTitle|length %}
+        <h2 class="">{{ block.sectionTitle }}</h2>
+      {% endif %}
+
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        {% for entry in block.relatedEntries.collect() %}
+          <div class="flex flex-col border shadow-sm">
+            {% set image = entry.listingImage.one() %}
+            {% set transforms = {
+              '(max-width: 767.9px)': {
+                width: 576,
+                height:432,
+                mode: 'crop',
+                quality: 80,
+              },
+              '(min-width:768px) and (max-width: 1023.9px)': {
+                width: 232,
+                height:174,
+                mode: 'crop',
+                quality: 80,
+              },
+              '(min-width:1024px) and (max-width: 1279.9px)': {
+                width: 310,
+                height:232,
+                mode: 'crop',
+                quality: 80,
+              },
+              '(min-width: 1280px)': {
+                width: 392,
+                height:294,
+                mode: 'crop',
+                quality: 80,
+              },
+            } %}
+            {% set attributes = {
+                class: [
+                    '',
+                ],
+                loading:'lazy',
+                alt: image.altText ?? image.title ?? null,
+            } %}
+            {{ craft.images.pictureMedia(image, transforms, null, attributes) }}
+            <div class="flex flex-col justify-between h-full gap-4 px-6 py-4">
+              <h3 class="">
+                <a href="{{ entry.title }}">{{ entry.title }}</a>
+              </h3>
+              {% if entry.summary|length %}
+                <div class="prose">
+                  {{ entry.summary }}
+                </div><!-- /.prose -->
+              {% endif %}
+              <a href="{{ entry.url }}" class="self-start btn">Learn More</a><!-- /.btn -->
+            </div>
+          </div>
+        {% endfor %}
+      </div><!-- /.grid grid-cols-3 gap-8 -->
+
+    </div><!-- /.container -->
+  </section>
