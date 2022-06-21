@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97ce06f42b1530085726e5cc3f4996cf",
+    "content-hash": "bc464eb2f7a14c903485c7d15aa51662",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2101,6 +2101,72 @@
                 }
             ],
             "time": "2022-03-20T21:55:58+00:00"
+        },
+        {
+            "name": "hillholliday/craft-user-manual",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobErskine/Craft-User-Manual.git",
+                "reference": "5ad81cf340c0e7743d683e7de83aaf19cc33b2d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobErskine/Craft-User-Manual/zipball/5ad81cf340c0e7743d683e7de83aaf19cc33b2d9",
+                "reference": "5ad81cf340c0e7743d683e7de83aaf19cc33b2d9",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "User Manual",
+                "handle": "usermanual",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/roberskine/Craft-User-Manual/master/CHANGELOG.md",
+                "class": "roberskine\\usermanual\\UserManual"
+            },
+            "autoload": {
+                "psr-4": {
+                    "roberskine\\usermanual\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Erskine",
+                    "homepage": "https://roberskine.com"
+                }
+            ],
+            "description": "Craft User Manual allows developers (or even content editors) to provide CMS documentation using Craft's built-in sections (singles, channels, or structures) to create a `User Manual` or `Help` section directly in the control panel.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "usermanual"
+            ],
+            "support": {
+                "docs": "https://github.com/roberskine/Craft-User-Manual/blob/master/README.md",
+                "issues": "https://github.com/roberskine/Craft-User-Manual/issues",
+                "source": "https://github.com/RobErskine/Craft-User-Manual/tree/4.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/roberskine",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-06-20T21:05:11+00:00"
         },
         {
             "name": "illuminate/collections",

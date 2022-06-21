@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: cf771399-6f67-4917-bd2f-0173c3504c7e
+            fieldUid: cf771399-6f67-4917-bd2f-0173c3504c7e # Padding
             instructions: null
             label: null
             required: false
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: e285fc8c-8b64-4829-afe0-88f9d0c3c8c4
+            fieldUid: e285fc8c-8b64-4829-afe0-88f9d0c3c8c4 # Section Title
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5026b221-a48f-4868-9f48-07428068e77e
+            fieldUid: 5026b221-a48f-4868-9f48-07428068e77e # Related Entries
             instructions: null
             label: null
             required: false
@@ -37,7 +37,7 @@ fieldLayouts:
         name: Content
         uid: 6f27ce87-60b4-40a1-8b87-dea3e269f9a5
 fields:
-  5026b221-a48f-4868-9f48-07428068e77e:
+  5026b221-a48f-4868-9f48-07428068e77e: # Related Entries
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -71,7 +71,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  cf771399-6f67-4917-bd2f-0173c3504c7e:
+  cf771399-6f67-4917-bd2f-0173c3504c7e: # Padding
     columnSuffix: bejubloh
     contentColumnType: string
     fieldGroup: null
@@ -128,7 +128,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  e285fc8c-8b64-4829-afe0-88f9d0c3c8c4:
+  e285fc8c-8b64-4829-afe0-88f9d0c3c8c4: # Section Title
     columnSuffix: lcneswnz
     contentColumnType: text
     fieldGroup: null

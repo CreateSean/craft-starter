@@ -1,4 +1,4 @@
-dateModified: 1655556955
+dateModified: 1655839594
 elementSources:
   craft\elements\Entry:
     -
@@ -117,7 +117,7 @@ meta:
     0878c4de-b946-4c8e-bcce-fe18cd77a73e: 'Site Admin' # Site Admin
     4116f227-348c-4509-bc7a-6767a28fd40c: 'Contact Page' # Contact Page
     4427e835-20ed-496b-9469-831bb0882185: Image # Image
-    5026b221-a48f-4868-9f48-07428068e77e: 'Related Entries'
+    5026b221-a48f-4868-9f48-07428068e77e: 'Related Entries' # Related Entries
     5489ed3b-28c1-4a26-ac7e-97b0182e6652: 'Enable Notice Bar' # Enable Notice Bar
     8084d027-d1a0-424e-930b-a4217b9862f2: 'Public Schema' # Public Schema
     8491df26-ac74-440e-8ce9-403654b8ce98: Copy # Copy
@@ -142,12 +142,12 @@ meta:
     c33fedfd-ec76-45db-93dc-a12697e4a2aa: 'Listing Image' # Listing Image
     c78e0b43-9945-41ae-bdc4-9e38f07eca01: Button # Button
     c166cd47-6f64-49e0-b33d-6aceadb3fcc3: fragments # fragments
-    c951c9a0-1cca-4210-bef8-2d3d0446e841: 'Related Entries'
+    c951c9a0-1cca-4210-bef8-2d3d0446e841: 'Related Entries' # Related Entries
     c4527788-b877-44f3-9a2d-071f696877fa: 'YouTube Video' # YouTube Video
     ca4cf186-4f48-488c-adbc-d38eba9d2533: 'User Guide' # User Guide
     cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f: 'Background Image' # Background Image
     ce27286a-7635-4494-9c9c-77f2d73352f4: Fragments # Fragments
-    cf771399-6f67-4917-bd2f-0173c3504c7e: Padding
+    cf771399-6f67-4917-bd2f-0173c3504c7e: Padding # Padding
     d5f8da04-ca55-4c9f-8605-e7f8779e82b8: Image # Image
     d19b4314-0267-4e95-9e63-2462a334eea1: 'User Guide' # User Guide
     d59f931d-37a7-4cb9-ac6b-68e0bb987ad2: 'News Categories' # News Categories
@@ -156,7 +156,7 @@ meta:
     da3d7ec4-1d85-47ba-a517-6c81d94cc9d2: Copy # Copy
     dbff8535-c8bd-4629-bc58-732972504e1b: 'Alt Text' # Alt Text
     e3dea9df-426f-43a5-96fd-927882533aa9: 'News Listing' # News Listing
-    e285fc8c-8b64-4829-afe0-88f9d0c3c8c4: 'Section Title'
+    e285fc8c-8b64-4829-afe0-88f9d0c3c8c4: 'Section Title' # Section Title
     ea7fe716-adee-4200-a8ca-15362418cd97: Home # Home
     ef8cc244-dfa8-41b1-945d-cb673ae71824: Common # Common
     f03239f9-af65-481a-b6b8-76e0e158244f: Caption # Caption
@@ -277,6 +277,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  usermanual:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.0
+    settings:
+      enabledSideBar: true
+      pluginNameOverride: 'User Manual'
+      section: '3'
+      templateOverride: _user-guide/_entry
 system:
   edition: pro
   live: true
