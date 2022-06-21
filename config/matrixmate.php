@@ -1,29 +1,29 @@
 <?php
 
-return [
-  'fields' => [
-    // content builder
-    'contentBuilder' => [
-      // 'defaultTabName' => 'Additional Settings',
-      // 'groups' => [
-      //   [
-      //     'label' => 'Text Heavy',
-      //     'types' => ['copy', 'copyFloatedImage', 'ctaCopy'],
-      //   ],
-      //   [
-      //     'label' => 'Imagery',
-      //     'types' => ['fullWidthImage', 'gallery', 'slideshow'],
-      //   ],
-      //   [
-      //     'label' => 'Other',
-      //     'types' => ['fragments', 'embedCode', 'entryCards', 'alternatingEntries', 'related3Content'],
-      //   ],
-      // ],
-
-      // hide fragments block from fragment channel
-      'section:fragments' => [
-        'hiddenTypes' => ['fragments'],
-      ],
+$globalConfig = [
+  'groups' => [
+    [
+      'label' => 'Text Heavy',
+      'types' => ['copy'],
+    ],
+    // [
+    //   'label' => 'Imagery',
+    //   'types' => [],
+    // ],
+    [
+      'label' => 'Other',
+      'types' => ['fragments', 'callToAction', 'relatedEntries'],
     ],
   ],
+];
+
+return [
+    'fields' => [
+        'contentBuilder' => [
+            '*' => $globalConfig,
+            'section:fragments' => array_merge_recursive($globalConfig, [
+              'hiddenTypes' => ['fragments'],
+            ]),
+        ],
+    ],
 ];
