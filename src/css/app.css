@@ -138,10 +138,13 @@
   .floating-input {
     @apply px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-none focus:border-gray-400;
   }
+  .floating-select {
+    @apply w-full px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-none focus:border-gray-400;
+  }
   .floating-label {
     @apply absolute text-lg text-gray-400 transition-all duration-300 left-4 top-2.5;
   }
-  .floating-input:focus~label, .floating-input:not(:placeholder-shown)~label {
+  .floating-input:focus~label, .floating-input:not(:placeholder-shown)~label, .floating-select:focus~label, .floating-select:not([value=""]):valid ~ label {
       @apply text-gray-600 -top-7;
   }
 

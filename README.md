@@ -18,6 +18,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Tailwind](#tailwind)
   * [Accessibility](#accessibility)
   * [Fragments](#fragments)
+  * [Floated Labels](#floated-labels)
   * [Craft Plugins](#craft-plugins)
   * [Redactor](#redactor)
   * [Image Toolbox](#image-toolbox)
@@ -163,6 +164,44 @@ Fragments are a section that is intended for creating reusable content. Often yo
 Other uses may include a block with Related Entries, a Slideshow, or photo gallery that gets featured around the site.
 
 There is one Fragment already added that is a call to action with a button to the Contact page.
+
+## Floated Labels
+Floated labels are already added to the css. To use floated labels set your html like this for Input fields
+
+```twig
+<div class="relative">
+  <input
+    type="text"
+    id="city"
+    class="w-full rounded-lg floating-input"
+    name="city"
+    value=""
+    autocomplete="city"
+    aria-label="City Name"
+    placeholder="City Name">
+  <label for="city" class="floating-label">{{ "City Name"|t }}</label>
+</div>
+```
+
+And for selects use this:
+
+```twig
+<div class="relative">
+  <select
+    name="country"
+    id="country"
+    class="rounded-lg floating-select"
+    {# on click works with mouse but not keyboard... hmmm #}
+    onclick="this.setAttribute('value', this.value);"
+    value="">
+    <option value=""></option>
+    <option value="Canadas">Canada</option>
+    <option value="USA">United States</option>
+  </select>
+  {# <span class="highlight"></span> #}
+  <label class="floating-label">Country</label>
+</div>
+```
 
 ## Craft Plugins
 
