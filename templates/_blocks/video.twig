@@ -15,7 +15,7 @@
     #}
     {% css %}
       :root {
-      --plyr-color-main: #FF0000;
+      {# --plyr-color-main: green; #}
       }
     {% endcss %}
 
@@ -30,8 +30,9 @@
     {% endjs %}
 
 
-    {# Assume Vimeo: #}
     <div class="mx-auto overflow-hidden rounded-lg lg:w-4/5 container-plyr">
+
+      {# Assume Vimeo: #}
       {% if 'vimeo' in block.videoLink %}
         <div id="player"
           class="overflow-hidden js-player rounded-tl-brand"

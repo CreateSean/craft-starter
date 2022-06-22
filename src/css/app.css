@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --plyr-color-main: #FF0000;
+    --plyr-color-main: theme('colors.red.600');
     }
 }
 
