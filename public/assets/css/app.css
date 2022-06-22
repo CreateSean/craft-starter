@@ -391,6 +391,10 @@ video {
   height: auto;
 }
   :root {
+    /*
+      Override the default colour theme in Plyr:
+      https://github.com/sampotts/plyr#customizing-the-css
+    */
     --plyr-color-main: #dc2626;
     }
 
