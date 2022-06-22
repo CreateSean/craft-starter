@@ -3,6 +3,11 @@
 
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --plyr-color-main: #FF0000;
+    }
+}
 
 @layer components {
 

@@ -1,0 +1,53 @@
+<section class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200">
+  <div class="container">
+
+    {% if block.sectionTitle|length %}
+      <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
+    {% endif %}
+
+
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+
+    {#
+      Override the default colour theme in Plyr:
+      https://github.com/sampotts/plyr#customizing-the-css
+    #}
+    {% css %}
+      :root {
+      --plyr-color-main: #FF0000;
+      }
+    {% endcss %}
+
+    {% js %}
+      // Change the second argument to your options:
+      // https://github.com/sampotts/plyr/#options
+      {# const player = new Plyr('#player', {captions: {active: true}}); #}
+      const players = Plyr.setup('.js-player');
+
+      // Expose player so it can be used from the console
+      window.player = player;
+    {% endjs %}
+
+
+    {# Assume Vimeo: #}
+    <div class="mx-auto overflow-hidden rounded-lg lg:w-4/5 container-plyr">
+      {% if 'vimeo' in block.videoLink %}
+        <div id="player"
+          class="overflow-hidden js-player rounded-tl-brand"
+          data-plyr-provider="vimeo"
+          data-plyr-embed-id="{{ block.videoLink }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"></div>
+        </div>
+      {% else %}
+
+      {# Assume YouTube: #}
+        <div id="player"
+          class="overflow-hidden js-player rounded-tl-brand"
+          data-plyr-provider="youtube"
+          data-plyr-embed-id="{{ block.videoLink }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"></div>
+        </div>
+      {% endif %}
+    </div>
+
+  </div><!-- /.container -->
+</section>

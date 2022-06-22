@@ -59,7 +59,7 @@ mix.setPublicPath('./public/assets/')
   // when npm run production is run will minimize as well
   .js(
     [
-      // './node_modules/flickity/dist/flickity.pkgd.min.js',
+      // './node_modules/plyr/dist/plyr.js',
       './node_modules/swiper/swiper-bundle.min.js',
       // this should go last
       './src/js/app.js'
@@ -69,7 +69,7 @@ mix.setPublicPath('./public/assets/')
   // combine all our vendor css files here
   .combine(
     [
-      // './node_modules/flickity/dist/flickity.min.css',
+      // './node_modules/plyr/dist/plyr.css',
       './node_modules/swiper/swiper-bundle.min.css'
     ],
     'public/assets/css/vendor.combined.css')

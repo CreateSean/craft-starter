@@ -390,6 +390,9 @@ video {
   max-width: 100%;
   height: auto;
 }
+  :root {
+    --plyr-color-main: #FF0000;
+    }
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -1334,7 +1337,7 @@ nav ul li img {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
-.floating-input:focus~label,  .floating-input:not(:placeholder-shown)~label {
+.floating-input:focus~label,  .floating-input:not(:placeholder-shown)~label,  .floating-select:focus~label,  .floating-select:not([value=""]):valid ~ label {
   top: -1.75rem;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1495,10 +1498,6 @@ nav ul li img {
   margin-bottom: 1rem;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .block {
   display: block;
 }
@@ -1521,6 +1520,10 @@ nav ul li img {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -1535,10 +1538,6 @@ nav ul li img {
 
 .h-\[38px\] {
   height: 38px;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-10 {
@@ -1567,6 +1566,14 @@ nav ul li img {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .flex-grow {
@@ -1662,10 +1669,6 @@ nav ul li img {
   gap: 1rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1682,21 +1685,20 @@ nav ul li img {
       align-self: flex-end;
 }
 
-.self-center {
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-.justify-self-end {
-  justify-self: end;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-tl-xl {
+  border-top-left-radius: 0.75rem;
 }
 
 .border {
@@ -1819,6 +1821,16 @@ nav ul li img {
   padding-bottom: 6rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1849,11 +1861,6 @@ nav ul li img {
   padding-bottom: 5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1862,11 +1869,6 @@ nav ul li img {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .py-16 {
@@ -1897,10 +1899,6 @@ nav ul li img {
 
 .pl-6 {
   padding-left: 1.5rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .font-sans {
@@ -2216,6 +2214,10 @@ nav ul li img {
 
   .lg\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .lg\:w-4\/5 {
+    width: 80%;
   }
 
   .lg\:flex-grow {
