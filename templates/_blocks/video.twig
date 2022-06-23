@@ -5,10 +5,6 @@
       <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
     {% endif %}
 
-
-    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
-
     {#
       Override the default colour theme in Plyr:
       https://github.com/sampotts/plyr#customizing-the-css
@@ -16,16 +12,10 @@
       // this can be done in the @layer base of src/css/app.css
     #}
 
+    {#
+      // javascript in src/js/app.js
+     #}
 
-    {% js %}
-      // Change the second argument to your options:
-      // https://github.com/sampotts/plyr/#options
-      {# const player = new Plyr('#player', {captions: {active: true}}); #}
-      const players = Plyr.setup('.js-player');
-
-      // Expose player so it can be used from the console
-      window.player = player;
-    {% endjs %}
 
 
     <div class="mx-auto overflow-hidden rounded-lg lg:w-4/5 container-plyr">

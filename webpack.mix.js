@@ -59,7 +59,6 @@ mix.setPublicPath('./public/assets/')
   // when npm run production is run will minimize as well
   .js(
     [
-      // './node_modules/plyr/dist/plyr.js',
       './node_modules/swiper/swiper-bundle.min.js',
       // this should go last
       './src/js/app.js'
@@ -69,10 +68,15 @@ mix.setPublicPath('./public/assets/')
   // combine all our vendor css files here
   .combine(
     [
-      // './node_modules/plyr/dist/plyr.css',
+      './node_modules/plyr/dist/plyr.css',
       './node_modules/swiper/swiper-bundle.min.css'
     ],
     'public/assets/css/vendor.combined.css')
+
+  // for some reason plyr doesn't work when concatenated
+  // so we'll copy to assets and add a script tag to
+  // layout.html
+  .copy('node_modules/plyr/dist/plyr.min.js', 'public/assets/js/plyr.min.js')
 
   .banner({
     banner: (function () {
@@ -89,6 +93,7 @@ mix.setPublicPath('./public/assets/')
     raw: true,
   })
   .version()
+
 
   .browserSync({
     proxy: baseUrl,

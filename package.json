@@ -115,6 +115,7 @@
     "es6-promise": "^4.2.6",
     "hover.css": "^2.3.2",
     "instantsearch.js": "2.10.4",
+    "plyr": "^3.7.2",
     "swiper": "^8.0.7"
   },
   "browserslist": [
