@@ -102,8 +102,8 @@
                 @click="expanded = ! expanded"
                 class="px-2 py-1 h-[38px] mt-1">
                 <span class="sr-only">{{ "Search"|t }}</span>
-                {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'', 'x-show':'!expanded'}) }}
-                {{ svg('@webroot/assets/images/svg/close.svg')|attr({'height':'20px', 'width':'', 'x-show':'expanded'}) }}
+                {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'20px', 'x-show':'!expanded'}) }}
+                {{ svg('@webroot/assets/images/svg/close.svg')|attr({'height':'20px', 'width':'20px', 'x-show':'expanded'}) }}
               </button>
 
             <div
@@ -129,7 +129,7 @@
                       type="submit"
                       class="px-2 py-1 border border-gray-200 bg-white h-[38px] mt-1">
                       <span class="sr-only">{{ "Search"|t }}</span>
-                      {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':''}) }}
+                      {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'20px'}) }}
                     </button>
                 </form>
             </div>
