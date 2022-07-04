@@ -5,6 +5,7 @@ module.exports = {
     './templates/**/*.{html,twig,js}',
     './src/**/*.{vue,js,jsx}',
   ],
+  darkMode:'class',
   theme: {
     container: {
       center: true,

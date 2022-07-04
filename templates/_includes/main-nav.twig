@@ -92,6 +92,14 @@
 
       {# utility nav here #}
       <nav class="flex-col flex-grow pb-4 mb-auto lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto lg:mb-0" aria-label="utility nav" :class="{'flex': open, 'hidden': !open}">
+
+        {#
+        // dark mode buttons
+        // change styles in tailwind by prefixing classes with dark:
+        // if no dark mode comment out this include
+        #}
+        {% include "_includes/dark-mode" %}
+
         <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
 
           {# desktop search #}
