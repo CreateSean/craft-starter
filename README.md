@@ -17,6 +17,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Build Process](#build-process)
   * [Tailwind](#tailwind)
   * [Accessibility](#accessibility)
+  * [Dark Mode](#dark-mode)
   * [Fragments](#fragments)
   * [Floated Labels](#floated-labels)
   * [Craft Plugins](#craft-plugins)
@@ -156,6 +157,19 @@ fontFamily: {
 ## Accessibility
 
 I aim to ensure default templates pass accessibility tests - except for color contrast as that will need to be taken into account during the design phase.
+
+## Dark Mode
+
+Dark mode toggle buttons are built in and are added via an include on line 101 of _includes/dark-mode. If you are not using dark-mode comment out this file. Dark mode has 3 buttons dark, light, & system as per my article on this [Dark Mode with Alpine.js and Tailwind](https://caffeinecreations.ca/blog/dark-mode-with-alpinejs-and-tailwind/)
+
+update styles to use the dark prefix like this.
+
+```html
+<div class="bg-gray-100 dark:bg-gray-800">
+  <h2 class="text-black dark:text-white">My title goes here</h2>
+  <!-- more code -->
+</div>
+```
 
 ## Fragments
 
