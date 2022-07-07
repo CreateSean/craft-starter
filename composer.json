@@ -59,7 +59,7 @@
       "@php craft setup/app-id"
     ],
     "nuke": [
-      "rm -rf vendor/ && rm composer.lock && composer clear-cache && composer update"
+      "rm -rf vendor/ && rm composer.lock && composer clear-cache && composer install"
     ]
   }
 }
