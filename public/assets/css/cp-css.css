@@ -1,0 +1,8 @@
+.blocks .matrixblock:not(.collapsed) {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.blocks .matrixblock:not(.collapsed):focus-within {
+    box-shadow: 10px 10px 70px 40px rgba(0, 0, 0, 0.42);
+    z-index: 10;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

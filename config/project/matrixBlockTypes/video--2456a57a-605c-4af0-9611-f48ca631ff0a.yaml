@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: b2007669-385a-48ab-8bb3-88019d7c65de
+            fieldUid: b2007669-385a-48ab-8bb3-88019d7c65de # Padding
             instructions: null
             label: null
             required: false
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0608b317-3611-4a50-a757-9d0414083f50
+            fieldUid: 0608b317-3611-4a50-a757-9d0414083f50 # Video Link
             instructions: null
             label: null
             required: false
@@ -27,7 +27,7 @@ fieldLayouts:
         name: Content
         uid: 78216433-19bd-4871-aee8-1687783498cd
 fields:
-  0608b317-3611-4a50-a757-9d0414083f50:
+  0608b317-3611-4a50-a757-9d0414083f50: # Video Link
     columnSuffix: ysfzptiq
     contentColumnType: text
     fieldGroup: null
@@ -47,7 +47,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  b2007669-385a-48ab-8bb3-88019d7c65de:
+  b2007669-385a-48ab-8bb3-88019d7c65de: # Padding
     columnSuffix: ehibomly
     contentColumnType: string
     fieldGroup: null

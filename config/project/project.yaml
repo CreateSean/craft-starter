@@ -1,4 +1,4 @@
-dateModified: 1655932841
+dateModified: 1659630360
 elementSources:
   craft\elements\Entry:
     -
@@ -112,11 +112,11 @@ meta:
     415a954c-eb55-4533-9ffd-64b3eade9469: Fallback # Fallback
     475a351b-2442-4767-8ab6-1b39216d0c61: 'User Guide' # User Guide
     505d226e-5fae-49b8-9460-b78c35449b2e: SectionSubtitle # SectionSubtitle
-    0608b317-3611-4a50-a757-9d0414083f50: 'Video Link'
+    0608b317-3611-4a50-a757-9d0414083f50: 'Video Link' # Video Link
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
     0784ad32-f952-40b1-9f6c-d0e67d502551: 'User Guide' # User Guide
     0878c4de-b946-4c8e-bcce-fe18cd77a73e: 'Site Admin' # Site Admin
-    2456a57a-605c-4af0-9611-f48ca631ff0a: Video
+    2456a57a-605c-4af0-9611-f48ca631ff0a: Video # Video
     4116f227-348c-4509-bc7a-6767a28fd40c: 'Contact Page' # Contact Page
     4427e835-20ed-496b-9469-831bb0882185: Image # Image
     5026b221-a48f-4868-9f48-07428068e77e: 'Related Entries' # Related Entries
@@ -140,7 +140,7 @@ meta:
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
     b507c631-830f-46d6-b625-4d4a6df7775c: Padding # Padding
-    b2007669-385a-48ab-8bb3-88019d7c65de: Padding
+    b2007669-385a-48ab-8bb3-88019d7c65de: Padding # Padding
     bb838d9b-476f-487c-8cc2-8e01b9423d92: Pages # Pages
     c33fedfd-ec76-45db-93dc-a12697e4a2aa: 'Listing Image' # Listing Image
     c78e0b43-9945-41ae-bdc4-9e38f07eca01: Button # Button
@@ -182,6 +182,14 @@ plugins:
       prependSubject: 'New message from Your Website'
       successFlashMessage: 'Your message has been sent.'
       toEmail: $TO_EMAIL
+  cp-css:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      additionalCss: ''
+      cacheBusting: true
+      cssFile: /assets/css/cp-css.css
   environment-label:
     edition: standard
     enabled: true

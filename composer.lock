@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc464eb2f7a14c903485c7d15aa51662",
+    "content-hash": "18e79053473cf7fbbb01ba02b72b56e9",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1572,6 +1572,62 @@
                 }
             ],
             "time": "2022-02-28T11:07:21+00:00"
+        },
+        {
+            "name": "doublesecretagency/craft-cpcss",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doublesecretagency/craft-cpcss.git",
+                "reference": "00ab3d680d75920b303cb492fb1e5bf30878b7f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doublesecretagency/craft-cpcss/zipball/00ab3d680d75920b303cb492fb1e5bf30878b7f3",
+                "reference": "00ab3d680d75920b303cb492fb1e5bf30878b7f3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-beta"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Control Panel CSS",
+                "handle": "cp-css",
+                "schemaVersion": "2.0.0",
+                "changelogUrl": "https://raw.githubusercontent.com/doublesecretagency/craft-cpcss/v2/CHANGELOG.md",
+                "class": "doublesecretagency\\cpcss\\CpCss"
+            },
+            "autoload": {
+                "psr-4": {
+                    "doublesecretagency\\cpcss\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Double Secret Agency",
+                    "homepage": "https://www.doublesecretagency.com/plugins"
+                }
+            ],
+            "description": "Add custom CSS to your Control Panel.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "cp-css",
+                "craft-plugin",
+                "craftcms",
+                "css"
+            ],
+            "support": {
+                "docs": "https://github.com/doublesecretagency/craft-cpcss/blob/v2/README.md",
+                "issues": "https://github.com/doublesecretagency/craft-cpcss/issues",
+                "source": "https://github.com/doublesecretagency/craft-cpcss/tree/2.5.0"
+            },
+            "time": "2022-04-02T20:54:42+00:00"
         },
         {
             "name": "egulias/email-validator",
