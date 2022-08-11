@@ -38,13 +38,14 @@ Set up your local development, if you are using DDev for local development then 
 
 1. open .ddev/config.yaml and update line 15 to use the port you want. Must be unique to all ddev sites on your local computer
 2. open .ddev/config.yaml and update php version (line 4) and mysql_version (line 11) if needed
-3. update dotenv variables, especially SITE_NAME_EN, SITE_NAME_FR, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL, TO_EMAIL (and **other email settings**) and fill in the missing details
-4. Run `ddev start` and the site should start up.
-5. run `ddev import-db --src=db.sql.gz` this will import the seeder database with settings, channels, etc.
-6. run `php craft setup/security-key`
-7. run `php craft setup/app-id`
-8. run `ddev launch access` will open the Craft CP
-9. To access the db from your host machine run `ddev describe` and you'll get the connection details needed
+3. update dotenv variables, especially SITE_NAME_EN, SITE_NAME_FR, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL
+4. update email settings of dotenv for staging/production. Current settings work with mailhog in ddev. To open mailhog run `ddev launch -m`
+5. Run `ddev start` and the site should start up.
+6. run `ddev import-db --src=db.sql.gz` this will import the seeder database with settings, channels, etc.
+7. run `php craft setup/security-key`
+8. run `php craft setup/app-id`
+9. run `ddev launch access` will open the Craft CP
+10. To access the db from your host machine run `ddev describe` and you'll get the connection details needed
 
 Login: `cc_admin`
 Password: `letmein`
