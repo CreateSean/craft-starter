@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 344c64f5-781b-4fb5-a46b-4429b9f2f253
             warning: null
             width: 100
           -
@@ -20,26 +21,27 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0d461c76-9beb-40da-ae5e-a9d0fe2ded2d
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 22553107-05a0-4b71-be18-0d3a3d8035b8
 fields:
   14e1bd82-34c0-42c5-a72d-1d002d9775d2: # Video Title
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: videoTitle
-    instructions: ''
+    instructions: null
     name: 'Video Title'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -56,10 +58,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

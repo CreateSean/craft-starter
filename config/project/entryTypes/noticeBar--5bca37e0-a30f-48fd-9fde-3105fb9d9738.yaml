@@ -24,6 +24,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a112464c-3177-4fb9-9327-e01f6f402c5e
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6a3a9669-fd06-48a0-9c6c-7d57a8673df6
             warning: null
             width: 50
           -
@@ -42,6 +44,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 73f65df1-43ec-4557-8579-cb72ea2554fc
             warning: null
             width: 50
           -
@@ -51,6 +54,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: af7d8040-e45a-4132-86a1-9020152c0d10
             warning: null
             width: 75
           -
@@ -60,10 +64,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1af21084-1c75-4add-af7b-4d5443ae4120
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 4678e52f-c995-4149-922a-e84c2d8eb686
 handle: noticeBar
 hasTitleField: false
 name: 'Notice Bar'

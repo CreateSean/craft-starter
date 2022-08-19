@@ -24,6 +24,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ef403fbe-a0cf-41c3-b22c-76881e7a4fac
             warning: null
             width: 100
           -
@@ -33,10 +34,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7ff5a06e-1c8f-4594-830d-de5bbf507453
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 89637c1a-bab7-4e46-9f03-aef99019b870
 handle: userGuide
 hasTitleField: true
 name: 'User Guide'

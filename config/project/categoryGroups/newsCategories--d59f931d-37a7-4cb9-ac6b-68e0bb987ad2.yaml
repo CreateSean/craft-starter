@@ -25,10 +25,11 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 593fe1e3-cd73-4c6a-9895-efd6001cd477
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 674ed069-566a-4ed5-9ba5-eb80d42f9366
 handle: newsCategories
 name: 'News Categories'
 siteSettings:
