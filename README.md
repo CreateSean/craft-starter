@@ -27,6 +27,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Sprig](#sprig)
   * [contact Form](#contact-form)
   * [MatrixMate](#matrixmate)
+  * [Style Guide](#styleguide)
   * [Content](#content)
   * [Composer nuke](#composer-nuke)
 
@@ -336,6 +337,28 @@ The contact form is powered by the first party [contact form plugin](https://git
 MatrixMate enables you to improve the Matrix authoring experience by sorting block types into groups and block type fields into tabs. See the [documentation](https://github.com/vaersaagod/matrixmate/blob/master/README.md) for full options and feautures.
 
 There is a default config file in `config/matrixmate.php` that is not currently attached to any matrix fields.
+
+## Styleguide
+
+The style guide will automatically create the color palatte from your tailwind config. **Note:** - it only works with custom colors not tailwind colors. Additionally custom colors need to be added before any tailwind colors and be in this format:
+
+```json
+  grayBrand: {
+    light: '#DADADA',
+    DEFAULT: '#373F41',
+  },
+```
+using tailwind dot notation does not work if you have a color that does not have other options be sure to use the above format with `DEFAULT` as the key.
+
+Each time you update the colors you will need to run the following command
+
+```
+npm run export-tailwind-config
+```
+
+Which will export a json list in `templates/_tw-config`. Also see the **comments** in `templates/styleguide`.
+
+Uncomment block with `.testing` class and then copy/paste the generated classes into the `templates/_whitelist.twig` file.
 
 ## Content
 

@@ -106,6 +106,7 @@
     "stylelint-config-recommended": "^2.2.0",
     "tailwind-config-viewer": "^1.6.3",
     "tailwindcss": "^3.1.2",
+    "tailwindcss-export-config": "^4.1.0",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.57.1"
   },
@@ -124,6 +125,8 @@
   "scripts": {
     "tw-config-viewer": "tailwind-config-viewer -o -p 4000",
     "export-tw-viewer": "tailwind-config-viewer export ./public/tw-viewer",
+    "export-tailwind-config": "tailwindcss-export-config --config=./tailwind.config.js --destination=./templates/_tw-config/tw --format=json --quoted-keys=true --onlyIncludeKeys=colors,fontFamily ",
+    "tw-whitelist": "tailwindcss-export-config --config=./tailwind.config.js --destination=./templates/_tw-config/whitelist --format=scss --quoted-keys=true --onlyIncludeKeys=colors --prefix=bg --flat",
     "development": "mix",
     "watch": "mix watch",
     "watch-poll": "mix watch -- --watch-options-poll=1000",

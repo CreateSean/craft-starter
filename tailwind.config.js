@@ -16,8 +16,12 @@ module.exports = {
         light: '#DADADA',
         DEFAULT: '#373F41',
       },
-      white: colors.white,
-      black: colors.black,
+      'white': {
+        DEFAULT: '#FFFFFF',
+      },
+      'black': {
+        DEFAULT: '#000000',
+      },
       transparent: 'transparent',
       current: 'currentColor',
       green: colors.green,
