@@ -1,0 +1,11 @@
+<section class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200">
+  <div class="container">
+
+    {% if block.sectionTitle|length %}
+      <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
+    {% endif %}
+
+    {{ block.embed|raw }}
+
+  </div><!-- /.container -->
+</section>
