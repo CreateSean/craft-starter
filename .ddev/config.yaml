@@ -20,6 +20,7 @@ host_db_port: "32221"
 # and follow the prompts
 hooks:
   pre-stop:
+    - exec-host: "ddev snapshot --cleanup -y"
     - exec-host: "ddev snapshot"
 
 # This config.yaml was created with ddev version v1.16.5
