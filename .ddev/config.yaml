@@ -14,6 +14,13 @@ use_dns_when_possible: true
 composer_version: ""
 host_db_port: "32221"
 
+# take a db snapshot when stopping the site to ensure
+# no accidental data loss
+# to restore a snapshot use ddev snapshot restore
+# and follow the prompts
+hooks:
+  pre-stop:
+    - exec-host: "ddev snapshot"
 
 # This config.yaml was created with ddev version v1.16.5
 # webimage: drud/ddev-webserver:v1.16.3
