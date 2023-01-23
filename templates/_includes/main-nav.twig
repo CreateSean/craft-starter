@@ -11,13 +11,21 @@
           <span class="sr-only">Home</span>
         </a>
 
-        <button class="mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open;toggleOverflow();">
+        <button class="relative mt-4 mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open;toggleOverflow();">
+
+            <div class="absolute block w-5 h-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 border-1">
+                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'opacity-0': open } "></span>
+                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+            </div>
+
+
           {# close icon at mobile #}
-          {{ svg('@webroot/assets/images/svg/close.svg')|attr({ class:'h-6 w-6', 'x-show':'open',  'x-cloak':''}) }}
+          {# {{ svg('@webroot/assets/images/svg/close.svg')|attr({ class:'h-6 w-6', 'x-show':'open',  'x-cloak':''}) }} #}
           <span class="sr-only" x-show="open">Close Menu</span><!-- /.sr-only -->
 
           {# hamburger menu at mobile #}
-          {{ svg('@webroot/assets/images/svg/hamburger.svg')|attr({ class:'h-6 w-6', 'x-show':'!open'}) }}
+          {# {{ svg('@webroot/assets/images/svg/hamburger.svg')|attr({ class:'h-6 w-6', 'x-show':'!open'}) }} #}
           <span class="sr-only" x-show="!open">Open Menu</span><!-- /.sr-only -->
         </button>
       </div>
