@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 8a60bb9d-8e34-4487-b809-65134adc6fa1
+            fieldUid: 8a60bb9d-8e34-4487-b809-65134adc6fa1 # Padding
             instructions: null
             label: null
             required: false
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 3b9496a7-4539-4c28-91bc-3e51c68f4187
+            fieldUid: 3b9496a7-4539-4c28-91bc-3e51c68f4187 # Embed
             instructions: null
             label: null
             required: false
@@ -33,7 +33,7 @@ fieldLayouts:
         uid: 1107425a-00a9-49dc-81b2-989e058e0fee
         userCondition: null
 fields:
-  3b9496a7-4539-4c28-91bc-3e51c68f4187:
+  3b9496a7-4539-4c28-91bc-3e51c68f4187: # Embed
     columnSuffix: buzbghct
     contentColumnType: text
     fieldGroup: null
@@ -53,7 +53,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  8a60bb9d-8e34-4487-b809-65134adc6fa1:
+  8a60bb9d-8e34-4487-b809-65134adc6fa1: # Padding
     columnSuffix: sxtfpvji
     contentColumnType: string
     fieldGroup: null
