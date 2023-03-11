@@ -1,8 +1,8 @@
-defaultPlacement: end
 fieldLayouts:
-  33ffecde-4b2e-4645-ad54-3c15b2967fcc:
+  b3390d68-f84f-46fa-9b06-88b3dc039727:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -10,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,22 +26,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
-            uid: 593fe1e3-cd73-4c6a-9895-efd6001cd477
+            uid: a9b04cad-9f4c-4de5-b25a-39852ba6691e
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 674ed069-566a-4ed5-9ba5-eb80d42f9366
-handle: newsCategories
-name: 'News Categories'
-siteSettings:
-  1a78d395-d81a-4b77-8da7-30a49123bbee: # English
-    hasUrls: true
-    template: pages/_news-category.twig
-    uriFormat: 'news/category/{slug}'
-  b9fdef79-5b63-4932-a9aa-8d18f937e6d9: # Français
-    hasUrls: true
-    template: pages/_news-category.twig
-    uriFormat: 'news/category/{slug}'
-structure:
-  maxLevels: null
-  uid: a23aa2ea-1f11-4fd2-b2ea-e420d27e959d
+        uid: 14887279-63d4-41f5-880f-5923f8d02a1d
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 4b342e70-0223-4c29-9237-86a023f74f1b # News Categories
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

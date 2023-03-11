@@ -1,4 +1,4 @@
-dateModified: 1678476674
+dateModified: 1678539015
 elementSources:
   craft\elements\Entry:
     -
@@ -28,7 +28,16 @@ elementSources:
         - link
       type: native
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
       type: native
     -
       heading: ''
@@ -43,8 +52,11 @@ elementSources:
       key: 'section:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
       type: native
     -
-      heading: ''
+      heading: Categories
       type: heading
+    -
+      key: 'section:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
+      type: native
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -81,6 +93,7 @@ meta:
     2b01b0d7-0c08-4e47-8041-e2b6a7fc855b: Caption # Caption
     2fcd48d2-b2b1-479f-9015-016904e4eab4: 'Craft Starter' # Craft Starter
     3b9496a7-4539-4c28-91bc-3e51c68f4187: Embed # Embed
+    4b342e70-0223-4c29-9237-86a023f74f1b: 'News Categories' # News Categories
     4d4435a9-cff2-46e6-9e43-ca2b7d62486f: Button # Button
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
     5bed279a-5360-4e96-b92e-3153c98bff40: 'Section Title' # Section Title
@@ -156,7 +169,6 @@ meta:
     cf771399-6f67-4917-bd2f-0173c3504c7e: Padding # Padding
     d5f8da04-ca55-4c9f-8605-e7f8779e82b8: Image # Image
     d19b4314-0267-4e95-9e63-2462a334eea1: 'User Guide' # User Guide
-    d59f931d-37a7-4cb9-ac6b-68e0bb987ad2: 'News Categories' # News Categories
     d974bf8d-647d-45f3-98be-0733d5e3e1ba: 'User Guide' # User Guide
     d1511275-c802-4850-9b74-6e305f2cc1c7: 'Asset Fields' # Asset Fields
     da3d7ec4-1d85-47ba-a517-6c81d94cc9d2: Copy # Copy
@@ -165,6 +177,7 @@ meta:
     e285fc8c-8b64-4829-afe0-88f9d0c3c8c4: 'Section Title' # Section Title
     ea7fe716-adee-4200-a8ca-15362418cd97: Home # Home
     ef8cc244-dfa8-41b1-945d-cb673ae71824: Common # Common
+    ef488e30-b35e-4bf8-87a3-34f0f76b622f: Default # Default
     f03239f9-af65-481a-b6b8-76e0e158244f: Caption # Caption
     f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
     f90a85bd-91b2-462b-acb4-8f265ded647e: Copy # Copy

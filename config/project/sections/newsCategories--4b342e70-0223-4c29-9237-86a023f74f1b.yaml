@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+handle: newsCategories
+name: 'News Categories'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  1a78d395-d81a-4b77-8da7-30a49123bbee: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_news-category.twig
+    uriFormat: 'news/category/{slug}'
+  b9fdef79-5b63-4932-a9aa-8d18f937e6d9: # Français
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_news-category.twig
+    uriFormat: 'news/category/{slug}'
+structure:
+  maxLevels: null
+  uid: 6defae27-bbfa-4841-9096-f69c8b9f8e75
+type: structure

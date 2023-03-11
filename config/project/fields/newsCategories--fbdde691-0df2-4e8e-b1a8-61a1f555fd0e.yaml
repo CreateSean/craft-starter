@@ -6,20 +6,19 @@ instructions: null
 name: 'News Categories'
 searchable: false
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
   branchLimit: null
   localizeRelations: true
+  maintainHierarchy: true
   maxRelations: null
   minRelations: null
   selectionLabel: null
   showSiteMenu: false
-  source: 'group:d59f931d-37a7-4cb9-ac6b-68e0bb987ad2' # News Categories
-  sources: '*'
+  sources:
+    - 'section:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Categories
+type: craft\fields\Entries

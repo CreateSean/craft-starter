@@ -16,7 +16,7 @@
   {% set params = { section: 'news', limit: limit } %}
 
   {# filter by category if on category page #}
-  {% set blogCategory = craft.categories.slug(category).one() %}
+  {% set blogCategory = craft.entries.slug(category).one() %}
   {% if category != '' %}
     {% set params = params | merge({ relatedTo: blogCategory }) %}
   {% endif %}
@@ -26,7 +26,6 @@
   {# Paginates the entry query given the current page #}
   {% set pageInfo = sprig.paginate(entryQuery, page) %}
   {% set entries = pageInfo.pageResults %}
-
 
   <section class="py-8 bg-gray-50">
     <div class="container">
