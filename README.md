@@ -103,6 +103,13 @@ You can then have the required javascript or css files combined and minimized by
 ```
 
 4. run `npx mix watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
+    1. To get your SSL working with browsersync and DDEV follow these instructions
+    * SSL-enabled for DDev. You have to copy the SSL cert to somewhere outside of Docker first. Run this at your project root [Stack Overflow](https://stackoverflow.com/questions/59730898/cant-connect-browsersync-with-ddev-nginx-server-because-ssl-error):
+
+    ```
+    docker cp ddev-router:/etc/nginx/certs ~/tmp/DOMAIN-WITH-EXTENSION
+    ```
+
 5. Tailwind Config Viewer is set up and uses the following commands. `npm run tw-config-viewer` will load up the viewer at localhost:4000 and `npm run export-tw-config` will export the viewer to `public/tw-viewer`
 
 ### Production

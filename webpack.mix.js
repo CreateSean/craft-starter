@@ -5,6 +5,7 @@ const pkg = require("./package.json");
 let mix = require('laravel-mix');
 
 const baseUrl = 'https://craft-starter.ddev.site';
+const homedir = require('os').homedir();
 
 const moment = require("moment");
 
@@ -103,6 +104,16 @@ mix.setPublicPath('./public/assets/')
         top: 'auto',
         bottom: '1rem'
       }
+    },
+    https:true,
+    /*
+    ? SSL-enabled for DDev. You have to copy the SSL cert to somewhere outside of Docker first. Run this at your project root:
+    docker cp ddev-router:/etc/nginx/certs ~/tmp/DOMAIN-WITH-EXTENSION
+    (From: https://stackoverflow.com/questions/59730898/cant-connect-browsersync-with-ddev-nginx-server-because-ssl-error):
+    */
+    https: {
+      key: homedir + "/tmp/certs" + "/master.key",
+      cert: homedir + "/tmp/certs" + "/master.crt"
     },
     files: ["src/css/*.css","src/js/*.js","templates/*.twig", "templates/**/*.twig", "templates/*.js", "templates/**/*.js"]
   });
