@@ -107,9 +107,10 @@ You can then have the required javascript or css files combined and minimized by
     * SSL-enabled for DDev. You have to copy the SSL cert to somewhere outside of Docker first. Run this at your project root [Stack Overflow](https://stackoverflow.com/questions/59730898/cant-connect-browsersync-with-ddev-nginx-server-because-ssl-error):
 
     ```
-    docker cp ddev-router:/etc/nginx/certs ~/tmp/DOMAIN-WITH-EXTENSION
+    docker cp ddev-router:/etc/nginx/certs ~/tmp/certs
     ```
-    2. You should only need to do this for 1 project and then everythign should work on multiple projects.
+    2. you may need to create the tmp/certs directory in your OS users directory
+    3. You should only need to do this for 1 project and then everything should work on multiple projects.
 
 5. Tailwind Config Viewer is set up and uses the following commands. `npm run tw-config-viewer` will load up the viewer at localhost:4000 and `npm run export-tw-config` will export the viewer to `public/tw-viewer`
 
