@@ -109,6 +109,7 @@ You can then have the required javascript or css files combined and minimized by
     ```
     docker cp ddev-router:/etc/nginx/certs ~/tmp/DOMAIN-WITH-EXTENSION
     ```
+    2. You should only need to do this for 1 project and then everythign should work on multiple projects.
 
 5. Tailwind Config Viewer is set up and uses the following commands. `npm run tw-config-viewer` will load up the viewer at localhost:4000 and `npm run export-tw-config` will export the viewer to `public/tw-viewer`
 
