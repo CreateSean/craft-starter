@@ -1,42 +1,44 @@
-<section class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200">
-  <div class="container">
+{# use block layout #}
+{% extends '_blocks/_layout' %}
 
-    {% if block.sectionTitle|length %}
-      <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
-    {% endif %}
+{# section background #}
+{% set background = 'bg-gray-200' %}
 
-    {#
-      Override the default colour theme in Plyr:
-      https://github.com/sampotts/plyr#customizing-the-css
+{% block body %}
+  {% if block.sectionTitle|length %}
+    <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
+  {% endif %}
 
-      // this can be done in the @layer base of src/css/app.css
+  {#
+    Override the default colour theme in Plyr:
+    https://github.com/sampotts/plyr#customizing-the-css
+
+    // this can be done in the @layer base of src/css/app.css
+  #}
+
+  {#
+    // javascript in src/js/app.js
     #}
 
-    {#
-      // javascript in src/js/app.js
-     #}
 
 
+  <div class="mx-auto overflow-hidden rounded-lg lg:w-4/5 container-plyr">
 
-    <div class="mx-auto overflow-hidden rounded-lg lg:w-4/5 container-plyr">
+    {# Assume Vimeo: #}
+    {% if 'vimeo' in block.videoLink %}
+      <div id="player"
+        class="overflow-hidden js-player rounded-tl-brand"
+        data-plyr-provider="vimeo"
+        data-plyr-embed-id="{{ block.videoLink }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"></div>
+      </div>
+    {% else %}
 
-      {# Assume Vimeo: #}
-      {% if 'vimeo' in block.videoLink %}
-        <div id="player"
-          class="overflow-hidden js-player rounded-tl-brand"
-          data-plyr-provider="vimeo"
-          data-plyr-embed-id="{{ block.videoLink }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"></div>
-        </div>
-      {% else %}
-
-      {# Assume YouTube: #}
-        <div id="player"
-          class="overflow-hidden js-player rounded-tl-brand"
-          data-plyr-provider="youtube"
-          data-plyr-embed-id="{{ block.videoLink }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"></div>
-        </div>
-      {% endif %}
-    </div>
-
-  </div><!-- /.container -->
-</section>
+    {# Assume YouTube: #}
+      <div id="player"
+        class="overflow-hidden js-player rounded-tl-brand"
+        data-plyr-provider="youtube"
+        data-plyr-embed-id="{{ block.videoLink }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"></div>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

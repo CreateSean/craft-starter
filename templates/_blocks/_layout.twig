@@ -1,0 +1,11 @@
+{# section background #}
+{% set background = background ?? 'bg-white' %}
+
+<section
+  class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200 {{ background }}">
+  <div class="container">
+
+    {% block body %}{% endblock %}
+
+  </div><!-- /.container -->
+</section>

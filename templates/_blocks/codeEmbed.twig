@@ -1,11 +1,15 @@
-<section class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200">
-  <div class="container">
+{# use block layout #}
+{% extends '_blocks/_layout' %}
 
-    {% if block.sectionTitle|length %}
-      <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
-    {% endif %}
+{# section background #}
+{% set background = 'bg-gray-100' %}
 
-    {{ block.embed|raw }}
+{% block body %}
 
-  </div><!-- /.container -->
-</section>
+  {% if block.sectionTitle|length %}
+    <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
+  {% endif %}
+
+  {{ block.embed|raw }}
+
+{% endblock %}
