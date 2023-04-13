@@ -4,6 +4,7 @@
 {% set entry = block.fragment.one() %}
 
 {% for block in entry.contentBuilder.all() %}
+  <!-- _blocks/{{ block.type }} -->
   {% include "_blocks/" ~ block.type %}
 {% endfor %}
 <!-- end fragment -->
