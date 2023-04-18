@@ -1,0 +1,36 @@
+{# homepage
+
+home page template is at pages/_entry-type/home
+
+#}
+{% extends '_layout' %}
+
+{% set entry = craft.entries.slug('__home__').one() %}
+
+{% block content %}
+
+<section class="py-8">
+  <div class="container">
+    <h2 class="mb-8">Site Map</h2>
+
+    <ul class="list-disc font-proxima">
+      {# pages channel #}
+      {% set pages = craft.entries.section('pages').hideFromNav('0').collect() %}
+      {% nav entry in pages %}
+        <li class="mb-1 {{ entry.level =='1' ? 'text-18 mt-4':'text-base' }}">
+          <a href="{{ entry.url }}" class="hover:underline underline-offset-2">{{ entry.title }}</a>
+
+          {% ifchildren %}
+            <ul class="mt-1 ml-4 list-disc">
+              {% children %}
+            </ul>
+          {% endifchildren %}
+        </li>
+      {% endnav %}
+    </ul>
+
+  </div><!-- /.container -->
+</section>
+
+
+{% endblock %}
