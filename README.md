@@ -58,8 +58,8 @@ Password: `letmein`
 -   [x] Set up site search.
 -   [x] Contact Form.
 -   [ ] Move AlpineJs and plugins from CDN to compiled build process.
--   [ ] Add content builder with common content types.
--   [ ] Contact page
+-   [X] Add content builder with common content types.
+-   [X] Contact page
 -   [ ] About/Team page
 -   [x] Add hero with different options i.e. slider, no slider, no image just title.
 -   [x] Get news categories working using sprig.
@@ -180,6 +180,27 @@ update styles to use the dark prefix like this.
   <h2 class="text-black dark:text-white">My title goes here</h2>
   <!-- more code -->
 </div>
+```
+## Main Navigation
+
+The main navigation has 2 options: one with dropdowns activated on click and the other activated on hover. On click dropdowns are the preferred methond for usability and accessibilty reasons. However sometimes clients insist on using hover so there is an option for that.
+
+Template defaults to on click dropdowns to change to hover dropdowns comment line 67 and uncomment line 74 of _layout.twig
+
+```twig67
+    {#
+      // main nav click dropdown this is better user experience
+      // and better for accessibility
+      // works with tertiary level dropdowns
+    #}
+    {% include '_includes/main-nav' %}
+
+    {#
+      // main nav hover dropdown
+      // we use this when client insists on hover dropdowns
+      // does NOT work with tertiary dropdowns
+    #}
+    {# {% include '_includes/main-nav-hover' %} #}
 ```
 
 ## Fragments
