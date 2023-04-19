@@ -1,0 +1,218 @@
+{% import "_macros" as macros %}
+<!--_includes/main-nav-hover-->
+<nav class="relative z-20 bg-white border-b shadow-nav">
+  <div class="container w-full text-gray-700 max-w-screen">
+    <div
+      x-data="{ open: false }"
+      class="flex flex-col mx-auto max-w-screen lg:flex-row"
+      :class="{'h-screen':open, 'h-auto':!open}">
+
+      <div class="flex flex-row items-center justify-between px-4 py-2">
+
+        {# need to wrap this at mobile for styling reasons #}
+        {# <div class="container flex flex-row justify-between lg:px-12 lg:px-0"> #}
+        <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase dark-mode:text-white focus:outline-none focus:shadow-outline">
+          <span title="{{ siteName }}">insert logo</span>
+          <span class="sr-only">Home</span>
+        </a>
+
+        <button class="relative mt-4 mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open;toggleOverflow();openNavHeight();">
+
+          <div class="absolute block w-5 h-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 border-1">
+            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'opacity-0': open } "></span>
+            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+            </div>
+
+
+          {# close icon at mobile #}
+          {# {{ svg('@webroot/assets/images/svg/close.svg')|attr({ class:'h-6 w-6', 'x-show':'open',  'x-cloak':''}) }} #}
+          <span class="sr-only" x-show="open">Close Menu</span><!-- /.sr-only -->
+
+          {# hamburger menu at mobile #}
+          {# {{ svg('@webroot/assets/images/svg/hamburger.svg')|attr({ class:'h-6 w-6', 'x-show':'!open'}) }} #}
+          <span class="sr-only" x-show="!open">Open Menu</span><!-- /.sr-only -->
+        </button>
+      {# </div> #}
+
+    </div>
+
+    {# main nav #}
+    <nav
+      class="flex-col hidden pb-4 lg:flex-grow lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto"
+      aria-label="Main Navigation"
+      :class="{'flex scrollbar pb-20': open, 'hidden': !open}">
+      <ul class="flex flex-col flex-wrap pl-8 m-0 lg:pl-0 lg:items-center lg:flex-row ">
+
+        {% set pages = craft.entries.section('pages').hideFromNav('0').level('<='~4).all() %}
+
+        {% for navItem in craft.entries.section('pages').hideFromNav('0').level('1').all() %}
+          {# Hover Nav parent #}
+          <li class="relative block py-2 mr-1 group lg:px-0 xl:px-0">
+
+            <button
+              class="px-4 group-hover:bg-gray-400 group-hover:text-white
+              {{ macros.is_active(navItem.slug ?? null) }}">
+                <span class="inline-block">{{ navItem.title }}</span>
+                {% if navItem.hasDescendants() %}
+                  {{ svg('@webroot/assets/images/svg/down-chevron.svg')|attr({
+                    class:'w-6 h-6 inline-block fill-current -ml-1'
+                  }) }}
+                {% endif %}
+            </button>
+
+
+            {% if navItem.hasDescendants() %}
+              <div
+                role="list"
+                class="lg:absolute z-10 hidden nav-dropdown group-hover:block pb-0 {# top-[calc(100%+0.75rem)]#} top-full left-0 border-t-4 bg-grayBrand-light border-grayBrand lg:shadow-card lg:ml-2.5-aa lg:w-[330px]">
+                  <div class="flex flex-col">
+                    {# list parent again #}
+                    <div
+                      role="listitem"
+                      class="border-b border-grayBrand border-opacity-[0.2] leading-[1.3rem]">
+                      <a href="{{ navItem.url }}" class="flex flex-row block px-4 py-5 leading-5 no-underline border-b hover:underline lg:text-[0.95rem] hover:font-bold text-grayBrand-dark border-grayBrand-light hover:text-greenBrand hover:no-underline">
+                      {{ svg('@webroot/assets/images/svg/nav-arrow-right.svg')|attr({ class:'w-3 h-4 mr-3', 'style':'min-width:0.75rem;' }) }}
+                        {{ navItem.title }}
+                      </a>
+                    </div>
+
+                    {% for entry in craft.entries.section('pages').descendantOf(navItem).hideFromNav('0').level('2').all() %}
+                      <div
+                        role="listitem"
+                        class="border-b border-grayBrand border-opacity-[0.2] leading-[1.3rem]">
+                        <a href="{{ entry.url }}" class="flex flex-row block px-4 py-5 leading-5 no-underline border-b hover:underline lg:text-[0.95rem] hover:font-bold text-grayBrand-dark border-grayBrand-light hover:text-greenBrand hover:no-underline">
+                        {{ svg('@webroot/assets/images/svg/nav-arrow-right.svg')|attr({ class:'w-3 h-4 mr-3', 'style':'min-width:0.75rem;' }) }}
+                          {{ entry.title }}
+                        </a>
+                      </div>
+                    {% endfor %}
+                  </div>
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+
+      </ul>
+    </nav>
+
+    {# utility nav here #}
+    <nav class="flex-col flex-grow pb-4 mb-auto lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto lg:mb-0" aria-label="utility nav" :class="{'flex': open, 'hidden': !open}">
+
+      {#
+      // dark mode buttons
+      // change styles in tailwind by prefixing classes with dark:
+      // if no dark mode comment out this include
+      #}
+      {% include "_includes/dark-mode" %}
+
+      <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
+
+        {# desktop search #}
+        <li
+          x-data="{expanded:false}"
+          class="relative hidden py-2 mr-1 lg:ml-auto group lg:px-0 xl:px-0 lg:block">
+          <button
+              @click="expanded = ! expanded"
+              class="px-2 py-1 h-[38px] mt-1">
+              <span class="sr-only">{{ "Search"|t }}</span>
+              {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'20px', 'x-show':'!expanded'}) }}
+              {{ svg('@webroot/assets/images/svg/close.svg')|attr({'height':'20px', 'width':'20px', 'x-show':'expanded'}) }}
+            </button>
+
+          <div
+            x-show="expanded"
+            x-trap="expanded"
+            x-collapse
+            x-on:click.away="expanded = false"
+            x-on:keydown.escape.prevent.stop="expanded = false"
+            class="right-0 z-20 px-2 py-2 my-1 bg-gray-100 shadow lg:absolute">
+
+              <form
+                action="{{ url('search') }}"
+                class="flex flex-row w-[305px]">
+                <label for="q" class="sr-only">Search</label>
+                <input
+                  id="q"
+                  type="text"
+                  name="q"
+                  placeholder="Search"
+                  class="px-6 py-1 my-1 text-lg bg-white border border-gray-200 placeholder:text-gray-400 focus-visible:outline-gray-400">
+
+                  <button
+                    type="submit"
+                    class="px-2 py-1 border border-gray-200 bg-white h-[38px] mt-1">
+                    <span class="sr-only">{{ "Search"|t }}</span>
+                    {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'20px'}) }}
+                  </button>
+              </form>
+          </div>
+
+        </li>
+
+        {# mobile search #}
+        <li class="relative block py-2 mr-1 lg:ml-auto group lg:px-0 xl:px-0 lg:hidden">
+          <form
+            action="{{ url('search') }}"
+            class="flex flex-row w-[305px] px-4">
+              <label for="mobile-q" class="sr-only">
+              search
+              </label>
+              <input
+              id="mobile-q"
+              type="text"
+              name="q"
+              placeholder="search"
+            class="px-6 py-1 my-1 text-lg bg-white border border-gray-600 placeholder:text-gray-400 focus-visible:outline-gray-900">
+              <button
+                type="submit"
+                class="px-2 py-1 border border-gray-600 bg-white h-[38px] mt-1">
+                <span class="sr-only">{{ "Search"|t }}</span>
+                {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'20px  '}) }}
+              </button>
+          </form>
+
+        </li>
+      </ul>
+    </nav>
+
+    </div>
+  </div>
+</nav>
+
+
+{% js %}
+  function toggleOverflow() {
+    document.getElementById('body').classList.toggle('overflow-hidden');
+  }
+
+  function openNavHeight() {
+    // Get the logo-hamburger element
+    const logoHamburger = document.querySelector('.logo-hamburger');
+
+    // Get the utility-nav element
+    const utilityNav = document.querySelector('.utility-nav');
+
+    // Calculate the total height of the two elements
+    const totalHeight = logoHamburger.offsetHeight + utilityNav.offsetHeight;
+
+    // Get the viewport height
+    const viewportHeight = window.innerHeight;
+
+    // Calculate the height to be applied to the open-nav element
+    const heightToApply = viewportHeight - totalHeight;
+
+    // Calculate the maximum height for the open-nav element as a percentage of the viewport height
+    const maxOpenNavHeight = ((viewportHeight / totalHeight) * 100) - 100;
+
+    // Set the maximum height of the open-nav element with percentage value
+    const openNav = document.querySelector('.open-nav');
+    openNav.style.maxHeight = maxOpenNavHeight + 'dvh';
+
+    // Set the height of the open-nav element
+    openNav.style.height = heightToApply + 'px';
+    console.log('open');
+  }
+
+  // openNavHeight();
+{% endjs %}

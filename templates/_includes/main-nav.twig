@@ -31,7 +31,7 @@
       </div>
 
       {# main nav #}
-      <nav class="flex-col hidden pb-4 lg:flex-grow h-screen123 lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
+      <nav class="flex-col hidden pb-4 lg:flex-grow lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
         <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
 
           {% set pages = craft.entries.section('pages').hideFromNav('0').level('<='~4).all() %}

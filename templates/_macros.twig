@@ -1,12 +1,18 @@
 {% macro emailLinks(text, class) %}
 {# v1 #}
-{% spaceless %}
+{% apply spaceless %}
 {% set text = text|replace('/([a-zA-Z0-9_.+-]+)+@([a-zA-Z0-9-]+.[a-zA-Z]+)/', '<a ' ~ (class ? 'class="' ~ class ~ '" ') ~ 'href="mailto:'~ '\\1&#64;\\2' ~'">'~ '\\1&#64;\\2' ~'</a>') %}
 {{text|raw}}
-{% endspaceless %}
+{% endapply %}
 {% endmacro %}
 {# {{ macros.emailLinks("me@domain.com", "className") }} #}
 
+{# active segment #}
+{% macro is_active(segment) %}
+	{% if craft.app.request.segments | first == segment %}
+    active
+  {% endif %}
+{% endmacro %}
 
 
 {#

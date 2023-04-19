@@ -59,7 +59,21 @@
 
     {% include "_includes/notice-bar" %}
 
+    {#
+      // main nav click dropdown this is better user experience
+      // and better for accessibility
+      // works with tertiary level dropdowns
+    #}
     {% include '_includes/main-nav' %}
+
+    {#
+      // main nav hover dropdown
+      // we use this when client insists on hover dropdowns
+      // does NOT work with tertiary dropdowns
+    #}
+    {% include '_includes/main-nav-hover' %}
+
+
   </header>
 
   <main id="main-content" aria-label="page content">
