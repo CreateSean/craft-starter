@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18e79053473cf7fbbb01ba02b72b56e9",
+    "content-hash": "7e245b1f25853b496231427faf4d080d",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -727,6 +727,69 @@
                 }
             ],
             "time": "2022-02-25T21:32:43+00:00"
+        },
+        {
+            "name": "craftcms/ckeditor",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/ckeditor.git",
+                "reference": "e89c788fc366ca61b465e9c1cd264f4b5bf971b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/e89c788fc366ca61b465e9c1cd264f4b5bf971b5",
+                "reference": "e89c788fc366ca61b465e9c1cd264f4b5bf971b5",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.4.7",
+                "craftcms/html-field": "^2.0.0-alpha.2",
+                "nystudio107/craft-code-editor": "^1.0.8",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "CKEditor",
+                "handle": "ckeditor",
+                "documentationUrl": "https://github.com/craftcms/ckeditor/blob/master/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\ckeditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Edit rich text content in Craft CMS using CKEditor.",
+            "keywords": [
+                "CKEditor",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/ckeditor/issues?state=open",
+                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
+                "source": "https://github.com/craftcms/ckeditor"
+            },
+            "time": "2023-04-19T18:29:10+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -3386,16 +3449,16 @@
         },
         {
             "name": "nystudio107/craft-code-editor",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-code-editor.git",
-                "reference": "6e9cd8a7078915660c99e934357eafc720492b88"
+                "reference": "ed82bebd043245173c187b8c16434bf93e179406"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/6e9cd8a7078915660c99e934357eafc720492b88",
-                "reference": "6e9cd8a7078915660c99e934357eafc720492b88",
+                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/ed82bebd043245173c187b8c16434bf93e179406",
+                "reference": "ed82bebd043245173c187b8c16434bf93e179406",
                 "shasum": ""
             },
             "require": {
@@ -3447,7 +3510,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-13T03:43:09+00:00"
+            "time": "2023-04-17T03:53:23+00:00"
         },
         {
             "name": "nystudio107/craft-minify",
@@ -4114,16 +4177,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.18.1",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "22dcdfd725ddf99583bfe398fc624ad6c5004a0f"
+                "reference": "10553ab3f0337ff1a71433c3417d7eb2a3eec1fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/22dcdfd725ddf99583bfe398fc624ad6c5004a0f",
-                "reference": "22dcdfd725ddf99583bfe398fc624ad6c5004a0f",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/10553ab3f0337ff1a71433c3417d7eb2a3eec1fd",
+                "reference": "10553ab3f0337ff1a71433c3417d7eb2a3eec1fd",
                 "shasum": ""
             },
             "require": {
@@ -4153,9 +4216,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.18.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.0"
             },
-            "time": "2023-04-07T11:51:11+00:00"
+            "time": "2023-04-20T11:18:07+00:00"
         },
         {
             "name": "pimple/pimple",

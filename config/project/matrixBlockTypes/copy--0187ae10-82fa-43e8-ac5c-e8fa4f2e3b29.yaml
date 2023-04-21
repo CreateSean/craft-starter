@@ -88,23 +88,19 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      ckeConfig: 170a124d-5ba5-43f5-a663-8f85be97b38b # Default
       columnType: text
-      configSelectionMode: choose
       defaultTransform: ''
-      manualConfig: ''
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
       removeEmptyTags: true
       removeInlineStyles: true
       removeNbsp: true
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
 handle: copy
 name: Copy
 sortOrder: 1

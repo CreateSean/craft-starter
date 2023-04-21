@@ -9,20 +9,17 @@ settings:
   availableTransforms: '*'
   availableVolumes:
     - 70f5d47b-4830-4d51-95fe-bc0f7ccc0670 # Uploads
+  ckeConfig: 12f17257-6f1c-4e4c-837e-17ad76241a60 # Site
   columnType: text
-  configSelectionMode: choose
   defaultTransform: ''
-  manualConfig: ''
   purifierConfig: null
   purifyHtml: true
-  redactorConfig: Site.json
   removeEmptyTags: true
   removeInlineStyles: true
   removeNbsp: true
-  showHtmlButtonForNonAdmins: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  uiMode: enlarged
+  showWordCount: true
 translationKeyFormat: null
 translationMethod: site
-type: craft\redactor\Field
+type: craft\ckeditor\Field

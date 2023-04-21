@@ -1,0 +1,16 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: 'Site Basic'
+options:
+  code:
+    indentSequence: '  '
+  link:
+    addTargetToExternalLinks: true
+toolbar:
+  - sourceEditing
+  - bold

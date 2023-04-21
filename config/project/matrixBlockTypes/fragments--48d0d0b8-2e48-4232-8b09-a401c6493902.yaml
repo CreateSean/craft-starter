@@ -31,7 +31,9 @@ fields:
     searchable: false
     settings:
       allowSelfRelations: false
+      branchLimit: null
       localizeRelations: false
+      maintainHierarchy: false
       maxRelations: null
       minRelations: 1
       selectionCondition:
@@ -47,7 +49,6 @@ fields:
             - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: false
-      source: null
       sources:
         - 'section:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
       targetSiteId: null

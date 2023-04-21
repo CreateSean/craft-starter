@@ -1,0 +1,27 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: Default
+options:
+  code:
+    indentSequence: '  '
+  link:
+    addTargetToExternalLinks: true
+toolbar:
+  - sourceEditing
+  - '|'
+  - heading
+  - '|'
+  - blockQuote
+  - codeBlock
+  - bold
+  - italic
+  - bulletedList
+  - numberedList
+  - link
+  - insertImage
+  - mediaEmbed

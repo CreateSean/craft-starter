@@ -1,4 +1,4 @@
-dateModified: 1678539015
+dateModified: 1682085928
 elementSources:
   craft\elements\Entry:
     -
@@ -93,6 +93,7 @@ meta:
     2b01b0d7-0c08-4e47-8041-e2b6a7fc855b: Caption # Caption
     2fcd48d2-b2b1-479f-9015-016904e4eab4: 'Craft Starter' # Craft Starter
     3b9496a7-4539-4c28-91bc-3e51c68f4187: Embed # Embed
+    3e09420e-30db-49dd-9520-4775f6667303: 'Site Basic' # Site Basic
     4b342e70-0223-4c29-9237-86a023f74f1b: 'News Categories' # News Categories
     4d4435a9-cff2-46e6-9e43-ca2b7d62486f: Button # Button
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
@@ -104,6 +105,7 @@ meta:
     8c583e9a-a56d-486d-8550-e7eae61c8088: Slides # Slides
     9c12e5ad-18e9-498f-bf50-489513409007: News # News
     12c7de12-987a-4aa4-890f-ec5cde880851: 'Fallback Image' # Fallback Image
+    12f17257-6f1c-4e4c-837e-17ad76241a60: Site # Site
     14e1bd82-34c0-42c5-a72d-1d002d9775d2: 'Video Title' # Video Title
     25e2157e-9a82-41cd-970f-4fc58cb3a835: Screenshots # Screenshots
     29d88d99-dd38-43f6-9ac5-3438833c75ba: 'Error 404' # Error 404
@@ -122,6 +124,7 @@ meta:
     136d3c61-5e7c-4eb4-afc0-5c78565fbe8b: Button # Button
     149ec41c-d6de-4ae5-84db-08d285801dd1: SEO # SEO
     158c7930-10bb-483f-8328-c8aa657d8647: 'Video ID' # Video ID
+    170a124d-5ba5-43f5-a663-8f85be97b38b: Default # Default
     0187ae10-82fa-43e8-ac5c-e8fa4f2e3b29: Copy # Copy
     323e9af3-aa75-4f1c-82eb-370e40179f41: 'Slider Hero' # Slider Hero
     415a954c-eb55-4533-9ffd-64b3eade9469: Fallback # Fallback
@@ -153,6 +156,7 @@ meta:
     ab8abc7e-2a4d-4858-98ea-9a6954a434da: Hero # Hero
     b2f53aa5-81a3-466c-af2d-e30dab4ed3d8: Image # Image
     b4d947dc-370e-4404-807b-b165534a1503: 'Basic Hero' # Basic Hero
+    b9d8d694-0313-4709-a12e-06b36b2333c7: Simple # Simple
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
     b507c631-830f-46d6-b625-4d4a6df7775c: Padding # Padding
@@ -187,6 +191,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   contact-form:
     edition: standard
     enabled: true

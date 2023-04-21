@@ -57,23 +57,20 @@ fields:
       availableTransforms: ''
       availableVolumes:
         - 70f5d47b-4830-4d51-95fe-bc0f7ccc0670 # Uploads
+      ckeConfig: 12f17257-6f1c-4e4c-837e-17ad76241a60 # Site
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
       removeEmptyTags: false
       removeInlineStyles: false
       removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   80c3b02f-d4d4-4fb2-8c5c-1cde8119afad: # Section Title
     columnSuffix: rqrvhxtc
     contentColumnType: text

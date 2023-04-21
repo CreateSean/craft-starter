@@ -58,23 +58,20 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      ckeConfig: 3e09420e-30db-49dd-9520-4775f6667303 # Site Basic
       columnType: text
-      configSelectionMode: choose
       defaultTransform: ''
-      manualConfig: ''
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: Site-basic.json
       removeEmptyTags: true
       removeInlineStyles: true
       removeNbsp: true
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: true
     translationKeyFormat: null
     translationMethod: site
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   59621bb5-03e8-481a-b377-5e08b5a79c12: # Button
     columnSuffix: null
     contentColumnType: string

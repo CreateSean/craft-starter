@@ -1,0 +1,38 @@
+headingLevels:
+  - 2
+  - 3
+name: Site
+options:
+  code:
+    indentSequence: '  '
+  link:
+    addTargetToExternalLinks: true
+  style:
+    definitions:
+      -
+        classes:
+          - mb-20
+        element: span
+        name: 'Extra Bottom Margin'
+      -
+        classes:
+          - mt-1
+          - mb-0
+          - leading-tight
+        element: p
+        name: 'Tight Paragraphs'
+toolbar:
+  - sourceEditing
+  - '|'
+  - heading
+  - '|'
+  - style
+  - '|'
+  - bold
+  - italic
+  - bulletedList
+  - numberedList
+  - outdent
+  - indent
+  - link
+  - alignment
