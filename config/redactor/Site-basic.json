@@ -1,6 +1,0 @@
-{
-  "buttons": ["html", "bold"],
-  "plugins": ["counter"],
-  "linkNewTab": true,
-  "toolbarFixed": true
-}
