@@ -52,7 +52,7 @@ fields:
     handle: copy
     instructions: null
     name: Copy
-    searchable: false
+    searchable: true
     settings:
       availableTransforms: ''
       availableVolumes:
@@ -67,9 +67,9 @@ fields:
       removeNbsp: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      showWordCount: false
+      showWordCount: true
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\ckeditor\Field
   80c3b02f-d4d4-4fb2-8c5c-1cde8119afad: # Section Title
     columnSuffix: rqrvhxtc
@@ -78,7 +78,7 @@ fields:
     handle: sectionTitle
     instructions: null
     name: 'Section Title'
-    searchable: false
+    searchable: true
     settings:
       byteLimit: null
       charLimit: null

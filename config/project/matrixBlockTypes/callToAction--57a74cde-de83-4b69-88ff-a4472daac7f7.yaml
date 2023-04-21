@@ -64,7 +64,7 @@ fields:
     handle: sectionTitle
     instructions: null
     name: 'Section Title'
-    searchable: false
+    searchable: true
     settings:
       byteLimit: null
       charLimit: null
@@ -75,7 +75,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   127f0d67-cfaf-4e5d-b3f8-111b7fda6f64: # Padding
     columnSuffix: mjnbzisp
