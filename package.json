@@ -111,6 +111,11 @@
     "webpack": "^5.57.1"
   },
   "dependencies": {
+    "@alpinejs/collapse": "^3.12.0",
+    "@alpinejs/focus": "^3.12.0",
+    "@alpinejs/intersect": "^3.12.0",
+    "@alpinejs/persist": "^3.12.0",
+    "alpinejs": "^3.12.0",
     "critical-css-webpack-plugin": "^2.0.0",
     "cross-env": "^6.0.3",
     "es6-promise": "^4.2.6",

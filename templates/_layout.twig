@@ -24,12 +24,15 @@
   {# site css #}
   <link rel="stylesheet" href="{{ rev('/css/app.css') }}">
 
-  <!-- Alpine Plugins -->
+  {# <!-- Alpine Plugins -->
+  // moved alpine to build process
+  #}
   {# persist plugin used to keep notice bar state across page loads #}
-  <script defer src="https://unpkg.com/@alpinejs/persist@3.9.5/dist/cdn.min.js"></script>
+  {# <script defer src="https://unpkg.com/@alpinejs/persist@3.9.5/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/@alpinejs/collapse@3.9.5/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/@alpinejs/focus@3.9.5/dist/cdn.min.js"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.9.5/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.9.5/dist/cdn.min.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.9.5/dist/cdn.min.js"></script> #}
 
   <link rel="icon" href="/assets/images/svg/favicon.svg">
   {# for safari  https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df #}

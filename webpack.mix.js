@@ -61,6 +61,14 @@ mix.setPublicPath('./public/assets/')
   .js(
     [
       './node_modules/swiper/swiper-bundle.min.js',
+      // Alpine plugins before alpine
+      './node_modules/@alpinejs/persist/dist/cdn.min.js',
+      './node_modules/@alpinejs/collapse/dist/cdn.min.js',
+      './node_modules/@alpinejs/focus/dist/cdn.min.js',
+      './node_modules/@alpinejs/intersect/dist/cdn.min.js',
+
+      // Alpine Js
+      './node_modules/alpinejs/dist/cdn.min.js',
       // this should go last
       './src/js/app.js'
     ],
