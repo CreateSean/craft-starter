@@ -2499,10 +2499,6 @@ nav ul li img {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.dark .dark\:bg-pink-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
-}
 .dark .dark\:fill-white {
   fill: #FFFFFF;
 }
