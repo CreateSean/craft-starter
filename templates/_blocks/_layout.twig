@@ -2,7 +2,7 @@
 {% set background = background ?? 'bg-white' %}
 
 <section
-  class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200 {{ background }} @sm:bg-pink-300 @md:bg-green-200 @lg:bg-red-500 @xl:bg-gray-700">
+  class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200 {{ background }} @container">
   <div class="container">
 
     {% block body %}{% endblock %}

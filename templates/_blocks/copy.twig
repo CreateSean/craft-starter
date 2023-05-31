@@ -7,7 +7,7 @@
 {% block body %}
 
   {% if block.sectionTitle|length %}
-    <h2>{{ block.sectionTitle }}</h2>
+    <h2 class="@lg:underline">{{ block.sectionTitle }}</h2>
   {% endif %}
   <div class="w-full prose">
     {{ block.copy }}

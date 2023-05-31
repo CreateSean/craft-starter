@@ -114,6 +114,18 @@ You can then have the required javascript or css files combined and minimized by
 
 5. Tailwind Config Viewer is set up and uses the following commands. `npm run tw-config-viewer` will load up the viewer at localhost:4000 and `npm run export-tw-config` will export the viewer to `public/tw-viewer`
 
+6. Tailwind Container Queries plugin is installed. See the (documentation)[https://github.com/tailwindlabs/tailwindcss-container-queries]
+
+Add a `@container` class to the a parent div and then use prefixes to target the container size like this `@lg:bg-pink-400`. Matrix blocks by default have a `@container` so it is easy to use containers out of the box.
+
+```html
+<div class="@container">
+  <div class="@lg:bg-pink-400">
+    This div will have a pink background when the container is larger than 32rem.
+  </div>
+</div>
+```
+
 ### Production
 
 when you are ready to deploy your code run `npx mix -p` to optimize images in `/src/img/` optimized images will be output in `/public/assets/images`
