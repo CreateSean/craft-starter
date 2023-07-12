@@ -1,4 +1,4 @@
-dateModified: 1689184951
+dateModified: 1689186614
 elementSources:
   craft\elements\Entry:
     -
@@ -238,7 +238,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 0F9VOPZ558WMQISLHBLYMB51
-    schemaVersion: 3.0.11
+    schemaVersion: 3.0.12
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
