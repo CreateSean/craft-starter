@@ -1,4 +1,4 @@
-dateModified: 1682088668
+dateModified: 1689184951
 elementSources:
   craft\elements\Entry:
     -
@@ -215,10 +215,6 @@ plugins:
       cacheBusting: true
       cssFile: /assets/css/cp-css.css
   environment-label:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  image-toolbox:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

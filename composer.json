@@ -15,7 +15,6 @@
     "craftcms/ckeditor": "^3.2",
     "craftcms/cms": "^4.0.0",
     "craftcms/contact-form": "^3.0.0",
-    "craftsnippets/craft-image-toolbox": "^2.0",
     "doublesecretagency/craft-cpcss": "^2.5",
     "hillholliday/craft-user-manual": "^4.0",
     "mmikkel/retcon": "^2.4.2",

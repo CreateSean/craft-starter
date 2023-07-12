@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f5f66dfe30be9021366801b7d133018",
+    "content-hash": "0dc58242983523b8dcd799a44c3e5202",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1172,66 +1172,6 @@
                 "source": "https://github.com/craftcms/server-check"
             },
             "time": "2022-04-17T02:14:46+00:00"
-        },
-        {
-            "name": "craftsnippets/craft-image-toolbox",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craft-snippets/Craft-image-toolbox.git",
-                "reference": "2ec42a3b963e64c11508bff7f78ee7d9b6d3b84e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craft-snippets/Craft-image-toolbox/zipball/2ec42a3b963e64c11508bff7f78ee7d9b6d3b84e",
-                "reference": "2ec42a3b963e64c11508bff7f78ee7d9b6d3b84e",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Image toolbox",
-                "handle": "image-toolbox",
-                "developer": "Piotr Pogorzelski",
-                "developerUrl": "http://craftsnippets.com/",
-                "documentationUrl": "http://craftsnippets.com/docs/image-toolbox/",
-                "changelogUrl": "https://github.com/craft-snippets/Craft-image-toolbox/blob/master/CHANGELOG.md",
-                "components": {
-                    "imageToolboxService": "craftsnippets\\imagetoolbox\\services\\ImageToolboxService"
-                },
-                "class": "craftsnippets\\imagetoolbox\\ImageToolbox"
-            },
-            "autoload": {
-                "psr-4": {
-                    "craftsnippets\\imagetoolbox\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Piotr Pogorzelski",
-                    "homepage": "http://craftsnippets.com/"
-                }
-            ],
-            "description": "Image toolbox",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "image toolbox"
-            ],
-            "support": {
-                "docs": "http://craftsnippets.com/docs/image-toolbox/",
-                "issues": "https://github.com/craft-snippets/Craft-image-toolbox/issues",
-                "source": "https://github.com/craft-snippets/Craft-image-toolbox/tree/2.0.1"
-            },
-            "time": "2023-04-13T01:38:18+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
