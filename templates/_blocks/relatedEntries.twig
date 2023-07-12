@@ -12,41 +12,56 @@
   <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
     {% for entry in block.relatedEntries.collect() %}
       <div class="flex flex-col duration-300 bg-white border shadow-md hover:scale-105">
+
         {% set image = entry.listingImage.one() %}
-        {% set transforms = {
-          '(max-width: 767.9px)': {
-            width: 576,
-            height:432,
-            mode: 'crop',
-            quality: 80,
-          },
-          '(min-width:768px) and (max-width: 1023.9px)': {
-            width: 232,
-            height:174,
-            mode: 'crop',
-            quality: 80,
-          },
-          '(min-width:1024px) and (max-width: 1279.9px)': {
-            width: 310,
-            height:232,
-            mode: 'crop',
-            quality: 80,
-          },
-          '(min-width: 1280px)': {
-            width: 480,
-            height:360,
-            mode: 'crop',
-            quality: 80,
-          },
-        } %}
-        {% set attributes = {
-            class: [
-                '',
-            ],
-            loading:'lazy',
+        {{ include('_includes/responsiveImage', {
+          image: image,
+          transforms: [
+            {
+              mq:'(max-width: 767.9px)',
+              crop: {
+                width: 576,
+                height:432,
+                mode: 'crop',
+                quality: 80,
+              }
+            },
+            {
+              mq:'(min-width:768px) and (max-width: 1023.9px)',
+              crop: {
+                width: 232,
+                height:174,
+                mode: 'crop',
+                quality: 80,
+              }
+            },
+            {
+              mq:'(min-width:1024px) and (max-width: 1279.9px)',
+              crop: {
+                width: 310,
+                height:232,
+                mode: 'crop',
+                quality: 80,
+              }
+            },
+            {
+              mq:'(min-width: 1280px)',
+              crop: {
+                width: 480,
+                height:360,
+                mode: 'crop',
+                quality: 80,
+              }
+            },
+          ],
+          attributes: {
             alt: image.altText ?? image.title ?? null,
-        } %}
-        {{ craft.images.pictureMedia(image, transforms, null, attributes) }}
+            class: '',
+            loading: 'lazy',
+            dataAttributes: ''
+          },
+        }, with_context = false) }}
+
         <div class="flex flex-col justify-between h-full gap-4 px-6 py-4">
           <h3 class="">
             <a href="{{ entry.title }}">{{ entry.title }}</a>

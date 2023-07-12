@@ -1,0 +1,55 @@
+{#
+// set some default transforms that can be overridden in the template - this isn't done yet
+
+{%- set transforms = transforms|default([]) -%}
+{%- set srcset = transformedImages|map(image => "#{image.getUrl()} #{image.width}w") -%}
+{%- set attributes = attributes ?? {} -%}
+#}
+
+
+<picture>
+
+
+  {#
+    use the final crop in the transforms array
+    as the default
+  #}
+  {% set defaultCrop = transforms|last %}
+  {% set defaultCrop = defaultCrop.crop %}
+
+  {# set fallBack image for when the field is empty #}
+  {% set fallbackImage = 'https://via.placeholder.com/' ~ defaultCrop.width ~ 'x' ~ defaultCrop.height ~ '/dfe4f7/bababa' %}
+
+
+  {% for transform in transforms %}
+    {# jpeg source #}
+    {% set crop = transform.crop %}
+    <source
+      media="{{ transform.mq }}"
+      srcset="{{ image.url(crop) ?? fallbackImage }}"
+      width="{{ transform.crop.width }}"
+      height="{{ transform.crop.height }}"
+      type="image/jpeg"
+    >
+    {# webp source #}
+    {% set cropWebp = transform.crop|merge({
+      'format': 'webp' }) %}
+    <source
+      media="{{ transform.mq }}"
+      srcset="{{ image.url(cropWebp) ?? fallbackImage }}"
+      width="{{ transform.crop.width }}"
+      height="{{ transform.crop.height }}"
+      type="image/webp"
+    >
+  {% endfor %}
+
+
+  <img
+    src="{{ image.url(defaultCrop) ?? fallbackImage }}"
+    alt="{{ attributes.alt }}"
+    class="{{ attributes.class }}"
+    width="{{ defaultCrop.width }}"
+    height="{{ defaultCrop.height }}"
+    loading="{{ attributes.loading }}"
+    {{ attributes.dataAttributes|raw }}/>
+</picture>

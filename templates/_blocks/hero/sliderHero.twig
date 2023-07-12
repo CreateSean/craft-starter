@@ -9,39 +9,49 @@
         {# image #}
         <div class="w-full ">
           {% set heroImage = row.image.one() %}
-          {% set transforms = {
-            '(max-width: 767px)': {
-              width: 767,
-              height:300,
-              mode: 'crop',
-              quality: 80,
+          {{ include('_includes/responsiveImage', {
+            image: heroImage,
+            transforms: [
+              {
+                mq:'(max-width: 767.9px)',
+                crop: {
+                  width: 767,
+                  height:300,
+                  mode: 'crop',
+                  quality: 80,
+                }
+              },
+              {
+                mq:'(max-width: 1199px)',
+                crop: {
+                  width: 1200,
+                  height:375,
+                  mode: 'crop',
+                  quality: 80,
+                }
+              },
+              {
+                mq:'(min-width: 1200px)',
+                crop: {
+                  width: 1920,
+                  height:450,
+                  mode: 'crop',
+                  quality: 80,
+                }
+              },
+            ],
+            attributes: {
+              alt: image.altText ?? image.title ?? null,
+              class: 'object-cover z-0 mx-auto',
+              loading: 'lazy',
+              dataAttributes: ''
             },
-            '(max-width: 1199px)': {
-              width: 1200,
-              height:375,
-              mode: 'crop',
-              quality: 80,
-            },
-            '(min-width: 1200px)': {
-              width: 1920,
-              height:450,
-              mode: 'crop',
-              quality: 80,
-            },
-          } %}
-          {% set attributes = {
-              class: [
-                  'object-cover z-0 mx-auto',
-              ],
-              loading:'lazy',
-              alt: heroImage.altText ?? heroImage.title ?? null,
-          } %}
-          {{ craft.images.pictureMedia(heroImage, transforms, null, attributes) }}
+          }, with_context = false) }}
 
           {# slide copy #}
           <div class="absolute top-0 left-0 z-10 w-full h-full py-8">
             <div class="container relative z-10 h-full">
-              <div class="flex flex-col w-full lg:w-1/2 h-full justify-center gap-8">
+              <div class="flex flex-col justify-center w-full h-full gap-8 lg:w-1/2">
                 {% if row.slideTitle|length %}
                   <h1>{{ row.slideTitle }}</h1>
                 {% endif %}
@@ -112,7 +122,7 @@
 
   <div class="py-16">
     <div class="container relative z-10 h-full">
-      <div class="flex flex-col w-full lg:w-1/2 h-full justify-center gap-8">
+      <div class="flex flex-col justify-center w-full h-full gap-8 lg:w-1/2">
         <h1>{{ block.heroTitle ?? entry.title }}</h1>
       </div><!-- /.flex flex-col lg:flex-row -->
     </div><!-- /.container -->

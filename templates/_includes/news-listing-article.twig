@@ -1,40 +1,58 @@
 <article class="flex flex-col border spacy-y-8">
-  {% set image = entry.image.one() ?? fallback.fallbackImage.one() %}
-  {# {% if image|length %} #}
-    {% set transforms = {
-      '(max-width: 767px)': {
-        width: 734,
-        height:367,
-        mode: 'crop',
-        quality: 80,
-      },
-      '(min-width:768px) and (max-width: 1024px)': {
-        width:734,
-        height:367,
-        mode: 'crop',
-        quality: 80,
-      },
-      '(min-width:1025px) and (max-width: 1280px)': {
-        width:480,
-        height:240,
-        mode: 'crop',
-        quality: 80,
-      },
-      '(min-width: 1200px)': {
-        width:734,
-        height:367,
-        mode: 'crop',
-        quality: 80,
-      },
-    } %}
-    {% set attributes = {
-        class: [
-            '',
+
+
+    <a href="{{ entry.url }}" aria-label="{{ entry.title }}">
+      {# {{ craft.images.pictureMedia(image, transforms, null, attributes) }} #}
+
+      {% set image = entry.image.one() ?? fallback.fallbackImage.one() %}
+      {{ include('_includes/responsiveImage', {
+        image: image,
+        transforms: [
+          {
+            mq:'(max-width: 767.9px)',
+            crop: {
+              width: 734,
+              height:367,
+              mode: 'crop',
+              quality: 80,
+            }
+          },
+          {
+            mq:'(min-width:768px) and (max-width: 1024px)',
+            crop: {
+              width:734,
+              height:367,
+              mode: 'crop',
+              quality: 80,
+            }
+          },
+          {
+            mq:'(min-width:1025px) and (max-width: 1280px)',
+            crop: {
+              width:480,
+              height:240,
+              mode: 'crop',
+              quality: 80,
+            }
+          },
+          {
+            mq:'(min-width: 1200px)',
+            crop: {
+              width:734,
+              height:367,
+              mode: 'crop',
+              quality: 80,
+            }
+          },
         ],
-        loading:'lazy',
-        alt: image.altText ?? image.title ?? 'placeholder image',
-    } %}
-    <a href="{{ entry.url }}" aria-label="{{ entry.title }}">{{ craft.images.pictureMedia(image, transforms, null, attributes) }}</a>
+        attributes: {
+          alt: image.altText ?? image.title ?? null,
+          class: '',
+          loading: 'lazy',
+          dataAttributes: ''
+        },
+      }, with_context = false) }}
+    </a>
 
     <div class="p-8 bg-white ">
       <div class="flex flex-row">

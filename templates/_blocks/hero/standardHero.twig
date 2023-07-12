@@ -1,7 +1,48 @@
 <div class="relative">
 
   {% set heroImage = block.image.one() %}
-  {% set transforms = {
+
+
+  {{ include('_includes/responsiveImage', {
+    image: heroImage,
+    transforms: [
+      {
+        mq:'(max-width: 767.9px)',
+        crop: {
+          width: 767,
+          height:300,
+          mode: 'crop',
+          quality: 80,
+        }
+      },
+      {
+        mq:'(max-width: 1199px)',
+        crop: {
+          width: 1200,
+          height:375,
+          mode: 'crop',
+          quality: 80,
+        }
+      },
+      {
+        mq:'(min-width: 1200px)',
+        crop: {
+          width: 1920,
+          height:450,
+          mode: 'crop',
+          quality: 80,
+        }
+      },
+    ],
+    attributes: {
+      alt: image.altText ?? image.title ?? null,
+      class: 'object-cover z-0 w-full h-full lg:min-h-[450px] md:min-h-[375px] min-h-[300px]',
+      loading: 'lazy',
+      dataAttributes: ''
+    },
+  }, with_context = false) }}
+
+  {# {% set transforms = {
     '(max-width: 767px)': {
       width: 767,
       height:300,
@@ -28,7 +69,7 @@
       loading:'lazy',
       alt: heroImage.altText ?? heroImage.title ?? null,
   } %}
-  {{ craft.images.pictureMedia(heroImage, transforms, null, attributes) }}
+  {{ craft.images.pictureMedia(heroImage, transforms, null, attributes) }} #}
 
   {# hero content #}
   <div class="absolute top-0 left-0 z-10 w-full h-full py-8">

@@ -20,6 +20,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Dark Mode](#dark-mode)
   * [Fragments](#fragments)
   * [Floated Labels](#floated-labels)
+  * [Picture Element](#picture-elements)
   * [Craft Plugins](#craft-plugins)
   * [Redactor](#redactor)
   * [Image Toolbox](#image-toolbox)
@@ -261,24 +262,75 @@ And for selects use this:
 </div>
 ```
 
+## Picture elements
+
+This uses an include to generate a picture element with multiple sources with webp falling back to jpeg. use this example code to add an image to any page
+
+if the image is empty uses a **fallback image** from **placeholder.com**  - this can be update on line 21 of `_includes/responsiveImage.twig`
+
+```twig
+{{ include('_includes/responsiveImage', {
+  image: image,
+  transforms: [
+    {
+      mq:'(max-width: 767.9px)',
+      crop: {
+        width: 500,
+        height: 200,
+        mode: 'crop'
+      }
+    },
+    {
+      mq:'(min-width: 768px)',
+      crop: {
+        width: 500,
+        height: 200,
+        mode: 'crop'
+      }
+    },
+    {
+      mq:'(min-width: 1024px)',
+      crop: {
+        width: 300,
+        height: 100,
+        mode: 'crop'
+      }
+    },
+    {
+      mq:'(min-width: 1280px)',
+      crop: {
+        width: 700,
+        height: 250,
+        mode: 'crop'
+      }
+    },
+  ],
+  attributes: {
+    alt: image.altText ?? image.title ?? null,
+    class: '',
+    loading: 'lazy',
+    dataAttributes: ''
+  },
+}, with_context = false) }}
+```
+
 ## Craft Plugins
 
 The following plugins are installed and ready to be used on the site. I prefer to keep plugin usage to a **minimum** so do **not** install a plugin unless absolutely necessary. If it can be done natively, it should be done natively.
 
-1. Environment Label - adds a color bar across the control panel indicating current environment
-2. Image Toolbox - image transforms, webp support, and more
-3. Minify - minifies html/css/js on production
-4. Redactor - Rich Text Editor
-5. Retcon - extra twig filters
-6. SEOmatic - used for all SEO.
-7. Template Comments - adds template comments in local dev to make finding templates easy
-8. Typed Link Field - used for buttons and other linkks
-9. ~~User Manual - in CP user manual ~~ removed until a Craft 4 version is available
-10. Knock Knock - password protect staging site (pass: **letmein**)
-11. MatrixMate
-12. Typogrify
-13. Sprig - Reactive components
-14. AssetRev - link to css and js files with manifest.json file names
+1. Environment Label - adds a color bar across the control panel indicating current environmen
+2. Minify - minifies html/css/js on production
+3. Redactor - Rich Text Editor
+4. Retcon - extra twig filters
+5. SEOmatic - used for all SEO.
+6. Template Comments - adds template comments in local dev to make finding templates easy
+7. Typed Link Field - used for buttons and other linkks
+8. ~~User Manual - in CP user manual ~~ removed until a Craft 4 version is available
+9. Knock Knock - password protect staging site (pass: **letmein**)
+10. MatrixMate
+11. Typogrify
+11. Sprig - Reactive components
+13. AssetRev - link to css and js files with manifest.json file names
 
 
 ## Redactor
@@ -287,76 +339,6 @@ Redactor has the [link-attribute plugin installed](https://github.com/simplicate
 
 1. go to `modules/sitemodule/src/SiteModule.php` line 118 and edit or add another line like this `$def->addAttribute('a', 'data-track', 'Text');`
 2. go to `config/redator/site.json` and edit or copy/paste line 20.
-
-## Image Toolbox
-
-**Responsive picture elements with Image Toolbox**
-
-Read the full documentation for [Image Toolbox](https://github.com/craft-snippets/Craft-image-toolbox). Image Toolbox uses a fallback from a placeholder image service. This image can be customized in `/config/image-toolbox.php`.
-
-
-To use with an image that won't have multiple sizes at different breakpoints use this code:
-
-```twig
-{% set image = entry.imageField.one() %}
-{% set thumb = {
-    mode: 'crop',
-    width: 120,
-    height: 120,
-    quality: 75,
-    position: 'center-center',
-} %}
-{% set attributes = {
-  class: [
-      'add classes here',
-  ],
-  loading:'lazy',
-  alt: image.altText ?? image.title ?? null,
-} %}
-{{craft.images.picture(image, thumb, attributes) }}
-```
-
-For a responsive image with multiple sizes applied at different breakpoints use this code where you can add as many breakpoints as needed:
-
-```
-{% set transforms = {
-  '(max-width: 767.9px)': {
-    width: 576,
-    height:432,
-    mode: 'crop',
-    quality: 80,
-  },
-  '(min-width:768px) and (max-width: 1023.9px)': {
-    width: 232,
-    height:174,
-    mode: 'crop',
-    quality: 80,
-  },
-  '(min-width:1024px) and (max-width: 1279.9px)': {
-    width: 310,
-    height:232,
-    mode: 'crop',
-    quality: 80,
-  },
-  '(min-width: 1280px)': {
-    width: 392,
-    height:294,
-    mode: 'crop',
-    quality: 80,
-  },
-} %}
-{% set attributes = {
-    class: [
-        '',
-    ],
-    loading:'lazy',
-    alt: image.altText ?? image.title ?? null,
-} %}
-{{ craft.images.pictureMedia(image, transforms, null, attributes) }}
-```
-## Image Optimize Plugin
-
-The Image Optimize plugin is not officially part of this repo, but if you are using it, see this github issue, [Config for ImageOptimize Plugin](https://github.com/CreateSean/craft-starter/issues/2) for instructions on getting it to work correctly.
 
 ## Typogrify
 

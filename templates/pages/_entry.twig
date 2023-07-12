@@ -3,5 +3,6 @@
 
 {% block content %}
   {# load the entry type template #}
+  <!--pages/_entry-type/{{ entry.type }}-->
   {% include "pages/_entry-type/" ~ entry.type %}
 {% endblock %}
