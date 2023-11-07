@@ -13,6 +13,7 @@ provider: default
 use_dns_when_possible: true
 composer_version: ""
 host_db_port: "32221"
+upload_dirs: ["public/uploads"]
 
 # take a db snapshot when stopping the site to ensure
 # no accidental data loss
