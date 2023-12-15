@@ -2,6 +2,7 @@ fieldLayouts:
   171a213e-9b33-49e7-bf1d-8056ef4d5c12:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,14 +27,19 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 514527a7-c517-4adb-9d54-efdb1f6be1b0
+            userCondition: null
             warning: null
             width: 100
           -
+            dismissible: false
+            elementCondition: null
             style: tip
             tip: 'Summary should only be 2-3 sentences. Image will appear on listing page'
             type: craft\fieldlayoutelements\Tip
             uid: f4aec492-bb0f-40b0-afbf-79a590fca8be
+            userCondition: null
           -
+            elementCondition: null
             fieldUid: b2f53aa5-81a3-466c-af2d-e30dab4ed3d8 # Image
             instructions: null
             label: null
@@ -40,9 +47,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 23da011a-390b-4e37-89a2-4b97651ed706
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
             instructions: null
             label: null
@@ -50,9 +59,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 0ef618f6-08b3-4fcc-a915-60ee481fb8dd
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: fbdde691-0df2-4e8e-b1a8-61a1f555fd0e # News Categories
             instructions: null
             label: null
@@ -60,17 +71,23 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: fbaff3bd-2fb9-4f11-a784-51688db844d5
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
             uid: d7089c82-6c41-4d83-846b-4bafe2301bac
+            userCondition: null
         name: Content
         uid: daf8662e-c051-40ce-9a9f-055743873cb4
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1 # SEO
             instructions: null
             label: null
@@ -78,14 +95,19 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: c8a6d8cd-2973-4ae5-a913-4014dabf5dab
+            userCondition: null
             warning: null
             width: 100
         name: SEO
         uid: a5bc70bc-debf-4ef0-bf9f-162f96619557
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Default
 section: 9c12e5ad-18e9-498f-bf50-489513409007 # News
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

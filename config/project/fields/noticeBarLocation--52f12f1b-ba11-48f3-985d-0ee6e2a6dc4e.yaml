@@ -6,6 +6,7 @@ instructions: null
 name: 'Notice Bar Location'
 searchable: false
 settings:
+  columnType: string
   options:
     -
       __assoc__:

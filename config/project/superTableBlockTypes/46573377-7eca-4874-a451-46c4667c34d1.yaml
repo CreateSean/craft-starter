@@ -1,10 +1,13 @@
+changedFieldIndicator: null
 field: 8c583e9a-a56d-486d-8550-e7eae61c8088 # Slides
 fieldLayouts:
   67089895-31a3-4dbf-ad4b-7d5cf2c9c385:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: d5f8da04-ca55-4c9f-8605-e7f8779e82b8 # Image
             instructions: null
             label: null
@@ -12,9 +15,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 51b6bdd2-3479-42db-92bd-f2fb2fb27b63
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 01313804-5d1a-410f-9da8-42ea30ae231d # Slide Title
             instructions: null
             label: null
@@ -22,9 +27,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8a19baf0-3870-4179-836b-f7624be7c6c4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8491df26-ac74-440e-8ce9-403654b8ce98 # Copy
             instructions: null
             label: null
@@ -32,9 +39,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a04ae6dc-b7fa-46dd-859e-dcff16d29d36
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 59621bb5-03e8-481a-b377-5e08b5a79c12 # Button
             instructions: null
             label: null
@@ -42,10 +51,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 51097e95-fc51-4969-82d6-d06ff5a1f646
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 4d5d1e3c-1e1b-4f04-9ca0-0d09f84d1a6c
+        userCondition: null
 fields:
   8491df26-ac74-440e-8ce9-403654b8ce98: # Copy
     columnSuffix: null
@@ -60,15 +71,14 @@ fields:
       availableVolumes: '*'
       ckeConfig: 3e09420e-30db-49dd-9520-4775f6667303 # Site Basic
       columnType: text
-      defaultTransform: ''
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
       purifierConfig: null
       purifyHtml: true
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       showWordCount: true
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: site
     type: craft\ckeditor\Field
@@ -169,9 +179,11 @@ fields:
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
       defaultUploadLocationSubpath: hero
       localizeRelations: true
+      maintainHierarchy: false
       maxRelations: 1
       minRelations: null
       previewMode: full
@@ -184,7 +196,6 @@ fields:
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      source: null
       sources: '*'
       targetSiteId: null
       validateRelatedElements: false

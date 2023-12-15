@@ -11,15 +11,14 @@ settings:
     - 70f5d47b-4830-4d51-95fe-bc0f7ccc0670 # Uploads
   ckeConfig: 12f17257-6f1c-4e4c-837e-17ad76241a60 # Site
   columnType: text
-  defaultTransform: ''
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
   purifierConfig: null
   purifyHtml: true
-  removeEmptyTags: true
-  removeInlineStyles: true
-  removeNbsp: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: true
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\ckeditor\Field

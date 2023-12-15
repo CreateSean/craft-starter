@@ -3,8 +3,10 @@ fieldLayouts:
   2be8891e-b97f-4d20-8c96-63ee3acef638:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 14e1bd82-34c0-42c5-a72d-1d002d9775d2 # Video Title
             instructions: null
             label: null
@@ -12,9 +14,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 344c64f5-781b-4fb5-a46b-4429b9f2f253
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 158c7930-10bb-483f-8328-c8aa657d8647 # Video ID
             instructions: null
             label: null
@@ -22,10 +26,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 0d461c76-9beb-40da-ae5e-a9d0fe2ded2d
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 22553107-05a0-4b71-be18-0d3a3d8035b8
+        userCondition: null
 fields:
   14e1bd82-34c0-42c5-a72d-1d002d9775d2: # Video Title
     columnSuffix: null

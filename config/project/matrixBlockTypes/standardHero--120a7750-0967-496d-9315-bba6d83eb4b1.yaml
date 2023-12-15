@@ -3,8 +3,10 @@ fieldLayouts:
   73281f26-73de-4318-a067-3d6c6905b1cd:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 7bf7da79-8f7d-4a1b-8129-121b24c0d99b # Image
             instructions: null
             label: null
@@ -12,9 +14,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 98f0e07e-81da-484f-8190-987af0f739c8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 21077893-9405-4330-ba61-9f695515c9fb # Hero Title
             instructions: null
             label: null
@@ -22,9 +26,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 360e355c-d9f2-417d-af9f-ce89b15c6e4a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: da3d7ec4-1d85-47ba-a517-6c81d94cc9d2 # Copy
             instructions: null
             label: null
@@ -32,9 +38,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: b95dfd47-bd17-4d2d-b2f5-586a0750667f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 4d4435a9-cff2-46e6-9e43-ca2b7d62486f # Button
             instructions: null
             label: null
@@ -42,10 +50,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8f7852fc-9a4e-40a7-9816-dbb286775bf9
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 4f2e4fad-7ce3-4757-abbd-6483c2dc8abe
+        userCondition: null
 fields:
   4d4435a9-cff2-46e6-9e43-ca2b7d62486f: # Button
     columnSuffix: null
@@ -123,9 +133,11 @@ fields:
       allowSubfolders: false
       allowUploads: true
       allowedKinds: null
+      branchLimit: null
       defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
       defaultUploadLocationSubpath: null
       localizeRelations: true
+      maintainHierarchy: false
       maxRelations: 1
       minRelations: null
       previewMode: full
@@ -138,7 +150,6 @@ fields:
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      source: null
       sources: '*'
       targetSiteId: null
       validateRelatedElements: false
@@ -179,15 +190,14 @@ fields:
       availableVolumes: '*'
       ckeConfig: 3e09420e-30db-49dd-9520-4775f6667303 # Site Basic
       columnType: text
-      defaultTransform: ''
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
       purifierConfig: null
       purifyHtml: true
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       showWordCount: true
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: site
     type: craft\ckeditor\Field

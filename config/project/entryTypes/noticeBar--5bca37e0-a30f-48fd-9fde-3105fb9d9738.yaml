@@ -2,6 +2,7 @@ fieldLayouts:
   051e5080-5716-48d1-8d3d-69b3d850a9ca:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,9 +27,11 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: a112464c-3177-4fb9-9327-e01f6f402c5e
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 5489ed3b-28c1-4a26-ac7e-97b0182e6652 # Enable Notice Bar
             instructions: null
             label: null
@@ -35,9 +39,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 6a3a9669-fd06-48a0-9c6c-7d57a8673df6
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e # Notice Bar Location
             instructions: null
             label: null
@@ -45,9 +51,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 73f65df1-43ec-4557-8579-cb72ea2554fc
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b # Button
             instructions: null
             label: null
@@ -55,9 +63,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: af7d8040-e45a-4132-86a1-9020152c0d10
+            userCondition: null
             warning: null
             width: 75
           -
+            elementCondition: null
             fieldUid: f4da8483-be1a-439d-8918-afde0ea14454 # Text
             instructions: null
             label: null
@@ -65,14 +75,19 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 1af21084-1c75-4add-af7b-4d5443ae4120
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 4678e52f-c995-4149-922a-e84c2d8eb686
+        userCondition: null
 handle: noticeBar
 hasTitleField: false
 name: 'Notice Bar'
 section: 408314ae-e32d-471b-a729-25f4ce759ac4 # Notice Bar
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

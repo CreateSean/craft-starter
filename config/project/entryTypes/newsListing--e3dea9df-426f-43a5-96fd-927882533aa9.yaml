@@ -2,6 +2,7 @@ fieldLayouts:
   8f880d21-2d24-4e77-b149-cd95cb26961c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,14 +27,19 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 5f6b0ffc-3351-4869-b4a4-11aee4c1c5e9
+            userCondition: null
             warning: null
             width: 100
           -
+            dismissible: false
+            elementCondition: null
             style: tip
             tip: 'Used when displayed on other pages'
             type: craft\fieldlayoutelements\Tip
             uid: 94e994eb-e860-427a-b9ad-14780fa0043b
+            userCondition: null
           -
+            elementCondition: null
             fieldUid: c33fedfd-ec76-45db-93dc-a12697e4a2aa # Listing Image
             instructions: null
             label: null
@@ -40,9 +47,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 58d96b32-eca0-461b-aabf-c80abc32a5a2
+            userCondition: null
             warning: null
             width: 25
           -
+            elementCondition: null
             fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
             instructions: null
             label: null
@@ -50,17 +59,23 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 572c63a6-9911-4fba-a9a2-702f8c568e66
+            userCondition: null
             warning: null
             width: 75
           -
+            elementCondition: null
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
             uid: 5e79ceb5-58a6-4e1a-84c0-9d25e1fee295
+            userCondition: null
         name: Content
         uid: 00dcba48-c8e6-436c-88cf-4362f6b375cc
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1 # SEO
             instructions: null
             label: null
@@ -68,14 +83,19 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 2e7499cf-96a5-4586-90e6-9eacb5fdbda7
+            userCondition: null
             warning: null
             width: 100
         name: SEO
         uid: 5c2081a7-07bd-42f2-8c3d-66f1639b113a
+        userCondition: null
 handle: newsListing
 hasTitleField: true
 name: 'News Listing'
 section: 666b31c2-d6d5-4e80-b9aa-f57b66d5b54a # Pages
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 3
 titleFormat: null
 titleTranslationKeyFormat: null

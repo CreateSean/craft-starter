@@ -60,14 +60,13 @@ fields:
       ckeConfig: 12f17257-6f1c-4e4c-837e-17ad76241a60 # Site
       columnType: text
       defaultTransform: null
+      enableSourceEditingForNonAdmins: false
       purifierConfig: null
       purifyHtml: true
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       showWordCount: true
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: site
     type: craft\ckeditor\Field
@@ -100,6 +99,7 @@ fields:
     name: Padding
     searchable: false
     settings:
+      columnType: string
       options:
         -
           __assoc__:

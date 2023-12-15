@@ -2,8 +2,10 @@ fieldLayouts:
   f2c9fa24-b4e1-4a9b-ada3-9fdf262363ca:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 12c7de12-987a-4aa4-890f-ec5cde880851 # Fallback Image
             instructions: null
             label: null
@@ -11,10 +13,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 76442d36-9051-4053-bbc2-7da82de91b97
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 17fe967b-d017-46eb-9f6b-84851017ec41
+        userCondition: null
 handle: fallback
 name: Fallback
 sortOrder: 1

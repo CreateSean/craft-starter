@@ -37,6 +37,9 @@ handle: default
 hasTitleField: true
 name: Default
 section: 4b342e70-0223-4c29-9237-86a023f74f1b # News Categories
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

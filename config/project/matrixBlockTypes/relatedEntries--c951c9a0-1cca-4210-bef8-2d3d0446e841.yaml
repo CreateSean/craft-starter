@@ -89,6 +89,7 @@ fields:
     name: Padding
     searchable: false
     settings:
+      columnType: string
       options:
         -
           __assoc__:
