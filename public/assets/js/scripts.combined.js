@@ -1,7 +1,7 @@
 /**!
  * @project        Caffeine Creations Website
  * @author         Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>
- * @Copyright      Copyright (c) 2023, Caffeine Creations
+ * @Copyright      Copyright (c) 2024, Caffeine Creations
  *
  */
 

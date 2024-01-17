@@ -19,10 +19,10 @@ upload_dirs: ["public/uploads"]
 # no accidental data loss
 # to restore a snapshot use ddev snapshot restore
 # and follow the prompts
-hooks:
-  pre-stop:
-    - exec-host: "ddev snapshot --cleanup -y"
-    - exec-host: "ddev snapshot"
+# hooks:
+#   pre-stop:
+#     - exec-host: "ddev snapshot --cleanup -y"
+#     - exec-host: "ddev snapshot"
 
 # This config.yaml was created with ddev version v1.16.5
 # webimage: drud/ddev-webserver:v1.16.3

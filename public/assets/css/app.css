@@ -1,7 +1,7 @@
 /**!
  * @project        Caffeine Creations Website
  * @author         Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>
- * @Copyright      Copyright (c) 2023, Caffeine Creations
+ * @Copyright      Copyright (c) 2024, Caffeine Creations
  *
  */
 
@@ -1197,14 +1197,25 @@ video {
     content: 'remove once testing complete';
 }
 html {
+    /* align punctuation outside the content  https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation aslo see this video explaining it https://youtu.be/cCAtD_BAHNw?si=wx_ZSydoec1r234r&t=555*/
+    hanging-punctuation: first last;
     /*
     prefers motion reduced disable smooth scrolling
     */
+    /* @apply scroll-smooth motion-reduce:scroll-auto; */
+  }
+/* scroll stuff for any element that has a scrollbar */
+:has(:target) {
+    /*
+    prefers motion reduced disable smooth scrolling
+    */
+    scroll-padding-top: 2rem;
     scroll-behavior: smooth;
+
   }
 @media (prefers-reduced-motion: reduce) {
 
-  html {
+  :has(:target) {
     scroll-behavior: auto;
   }
 }
@@ -1213,6 +1224,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6, .h4, .h5 {
   line-height: 1.25;
+    text-wrap:balance;
 }
 h1 {
   font-size: 2.25rem;
