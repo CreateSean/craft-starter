@@ -2483,6 +2483,15 @@ nav ul li img {
           transition-duration: 150ms;
 }
 
+.transition-opacity {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+
 .duration-300 {
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
