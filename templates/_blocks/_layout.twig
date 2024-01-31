@@ -1,8 +1,13 @@
 {# section background #}
 {% set background = background ?? 'bg-white' %}
 
+{# reveal blocks when they are 200px into the viewport #}
 <section
-  class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200 {{ background }} @container">
+  x-data="{ isVisible: false }"
+  x-intersect.margin.-200px.once="isVisible = true"
+  x-transition
+  :class="isVisible ? 'opacity-100' : 'opacity-0'"
+  class="{{ block.padding.value ?? 'section-y-padding' }} border-t border-gray-200 {{ background }} @container transition-opacity duration-300">
   <div class="container">
 
     {% block body %}{% endblock %}
