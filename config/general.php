@@ -29,6 +29,8 @@ return [
       'securityKey' => App::env('SECURITY_KEY'),
 
       'disallowRobots' => true,
+      // prevent /cpresources/ path showing up on the front end
+      'generateTransformsBeforePageLoad' => true,
 
       // Base site URL
       'devMode' => false,
