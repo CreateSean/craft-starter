@@ -43,7 +43,7 @@ Set up your local development, if you are using DDev for local development then 
 3. update dotenv variables, especially SITE_NAME_EN, SITE_NAME_FR, PRIMARY_SITE_URL, SITE_PATH, ASSET_BASE_URL
 4. update email settings of dotenv for staging/production. Current settings work with mailhog in ddev. To open mailhog run `ddev launch -m`
 5. Run `ddev start` and the site should start up.
-6. run `ddev import-db --src=db.sql.gz` this will import the seeder database with settings, channels, etc.
+6. run `ddev import-db --file=db.sql.gz` this will import the seeder database with settings, channels, etc.
 7. run `php craft setup/security-key`
 8. run `php craft setup/app-id`
 9. run `ddev launch access` will open the Craft CP
