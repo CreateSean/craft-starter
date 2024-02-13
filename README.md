@@ -1,4 +1,4 @@
-# Craft CMS Starter Project
+# Craft CMS Starter Project (Boilerplate)
 
 This is an opinionated Craft CMS starter project using DDev for local development, Tailwind CSS, Alpine Js, and Laravel Mix.
 
