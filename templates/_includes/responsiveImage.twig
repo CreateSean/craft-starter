@@ -27,8 +27,8 @@
     <source
       media="{{ transform.mq }}"
       srcset="{{ image.url(crop) ?? fallbackImage }}"
-      width="{{ transform.crop.width }}"
-      height="{{ transform.crop.height }}"
+      width="{{ transform.crop.width ?? null }}"
+      height="{{ transform.crop.height ?? null }}"
       type="image/jpeg"
     >
     {# webp source #}
@@ -37,8 +37,8 @@
     <source
       media="{{ transform.mq }}"
       srcset="{{ image.url(cropWebp) ?? fallbackImage }}"
-      width="{{ transform.crop.width }}"
-      height="{{ transform.crop.height }}"
+      width="{{ transform.crop.width ?? null }}"
+      height="{{ transform.crop.height ?? null }}"
       type="image/webp"
     >
   {% endfor %}
