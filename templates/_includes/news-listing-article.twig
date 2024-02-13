@@ -1,9 +1,12 @@
-<article class="flex flex-col border spacy-y-8">
+<article
+  x-data="{ isVisible: false }"
+  x-intersect.half.once="isVisible = true"
+  x-transition
+  :class="isVisible ? 'opacity-100' : 'opacity-0'"
+  class="flex flex-col border spacy-y-8">
 
 
     <a href="{{ entry.url }}" aria-label="{{ entry.title }}">
-      {# {{ craft.images.pictureMedia(image, transforms, null, attributes) }} #}
-
       {% set image = entry.image.one() ?? fallback.fallbackImage.one() %}
       {{ include('_includes/responsiveImage', {
         image: image,
