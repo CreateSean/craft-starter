@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e18b68db9d8735ed3045a1de3892fb2",
+    "content-hash": "efd70bb1abb764cacb3579e030f85cd0",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3765,65 +3765,6 @@
             "time": "2024-03-22T20:36:28+00:00"
         },
         {
-            "name": "nystudio107/craft-templatecomments",
-            "version": "4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-templatecomments.git",
-                "reference": "a09a4ac5c54b9199f0ed497e98727f0ba7a18685"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-templatecomments/zipball/a09a4ac5c54b9199f0ed497e98727f0ba7a18685",
-                "reference": "a09a4ac5c54b9199f0ed497e98727f0ba7a18685",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "class": "nystudio107\\templatecomments\\TemplateComments",
-                "handle": "templatecomments",
-                "name": "Template Comments"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\templatecomments\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com/"
-                }
-            ],
-            "description": "Adds a HTML comment with performance timings to demarcate `{% block %}`s and each Twig template that is included or extended.",
-            "keywords": [
-                "comments",
-                "craft-plugin",
-                "craftcms",
-                "debugging",
-                "twig"
-            ],
-            "support": {
-                "docs": "https://nystudio107.com/docs/template-comments/",
-                "issues": "https://nystudio107.com/plugins/template-comments/support",
-                "source": "https://github.com/nystudio107/craft-templatecomments"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-05-08T03:22:45+00:00"
-        },
-        {
             "name": "nystudio107/craft-typogrify",
             "version": "4.0.1",
             "source": {
@@ -5091,95 +5032,6 @@
                 }
             ],
             "time": "2023-11-23T14:11:29+00:00"
-        },
-        {
-            "name": "sebastianlenz/craft-utils",
-            "version": "3.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastian-lenz/craft-utils.git",
-                "reference": "3abd09bd950dda67926f537b0d9b4b922c205c4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/3abd09bd950dda67926f537b0d9b4b922c205c4d",
-                "reference": "3abd09bd950dda67926f537b0d9b4b922c205c4d",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^1.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "lenz\\craft\\utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A collection of utility classes for Craft CMS development",
-            "support": {
-                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.12"
-            },
-            "time": "2023-11-29T19:19:14+00:00"
-        },
-        {
-            "name": "sebastianlenz/linkfield",
-            "version": "2.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
-                "reference": "b82fb1a8f94861f08c8b119758606a2a2172aef9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/b82fb1a8f94861f08c8b119758606a2a2172aef9",
-                "reference": "b82fb1a8f94861f08c8b119758606a2a2172aef9",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0",
-                "sebastianlenz/craft-utils": "^3.0.5"
-            },
-            "require-dev": {
-                "craftcms/feed-me": "^5.0",
-                "craftcms/phpstan": "dev-main",
-                "phpstan/phpstan": "^1.8.5",
-                "phpunit/phpunit": "^7.5 || ^8.0",
-                "verbb/super-table": "^3.0.5"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "typedlinkfield",
-                "name": "Typed link field",
-                "developer": "Sebastian Lenz",
-                "developerUrl": "https://github.com/sebastian-lenz/"
-            },
-            "autoload": {
-                "psr-4": {
-                    "lenz\\linkfield\\": "src/"
-                },
-                "classmap": [
-                    "legacy"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A Craft field type for selecting links",
-            "support": {
-                "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
-                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.5"
-            },
-            "time": "2022-11-29T09:36:26+00:00"
         },
         {
             "name": "seld/cli-prompt",

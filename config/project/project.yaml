@@ -1,4 +1,4 @@
-dateModified: 1711478458
+dateModified: 1711478684
 elementSources:
   craft\elements\Entry:
     -
@@ -297,14 +297,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
-  templatecomments:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  typedlinkfield:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
   typogrify:
     edition: standard
     enabled: true
