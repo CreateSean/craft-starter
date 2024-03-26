@@ -1,4 +1,4 @@
-dateModified: 1702668674
+dateModified: 1711478458
 elementSources:
   craft\elements\Entry:
     -
@@ -217,6 +217,11 @@ plugins:
   environment-label:
     edition: standard
     enabled: true
+    schemaVersion: 1.0.0
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: KJD0ZOPA01HM1YYCNCJ3ZA2Z
     schemaVersion: 1.0.0
   knock-knock:
     edition: standard

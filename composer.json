@@ -26,6 +26,7 @@
     "sebastianlenz/linkfield": "^2.1.3-rc",
     "topshelfcraft/environment-label": "^4.0.0",
     "vaersaagod/matrixmate": "^2.0.1",
+    "verbb/hyper": "^1.1.25",
     "verbb/knock-knock": "^2.0.0-beta.1",
     "verbb/super-table": "^3.0.0-beta.4",
     "vlucas/phpdotenv": "^3.4.0"

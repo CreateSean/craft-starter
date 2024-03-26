@@ -36,17 +36,6 @@ fields:
       maintainHierarchy: false
       maxRelations: null
       minRelations: 1
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Entry
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: false
       sources:
