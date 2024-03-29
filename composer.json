@@ -27,7 +27,7 @@
     "verbb/hyper": "^1.1.25",
     "verbb/knock-knock": "^2.0.0-beta.1",
     "verbb/super-table": "^3.0.0-beta.4",
-    "vlucas/phpdotenv": "^3.4.0"
+    "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"

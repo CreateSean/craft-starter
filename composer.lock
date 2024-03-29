@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "efd70bb1abb764cacb3579e030f85cd0",
+    "content-hash": "4d3fa0fe96b315efa6afff8a56e3f18a",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -752,16 +752,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "ced299686f41dce890debac69273b47ffe98a40c"
+                "reference": "4f988f8fdf580d53bdb2d1278fe93d1ed5462255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/ced299686f41dce890debac69273b47ffe98a40c",
-                "reference": "ced299686f41dce890debac69273b47ffe98a40c",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/4f988f8fdf580d53bdb2d1278fe93d1ed5462255",
+                "reference": "4f988f8fdf580d53bdb2d1278fe93d1ed5462255",
                 "shasum": ""
             },
             "require": {
@@ -772,7 +772,7 @@
             "require-dev": {
                 "phpstan/phpstan": "^1.0",
                 "phpstan/phpstan-strict-rules": "^1.1",
-                "symfony/phpunit-bridge": "^6.0"
+                "phpunit/phpunit": "^8.5 || ^9.6 || ^10.5"
             },
             "type": "library",
             "autoload": {
@@ -796,9 +796,9 @@
                 "performance"
             ],
             "support": {
-                "irc": "irc://irc.freenode.org/composer",
+                "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/xdebug-handler/issues",
-                "source": "https://github.com/composer/xdebug-handler/tree/3.0.3"
+                "source": "https://github.com/composer/xdebug-handler/tree/3.0.4"
             },
             "funding": [
                 {
@@ -814,20 +814,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-25T21:32:43+00:00"
+            "time": "2024-03-26T18:29:49+00:00"
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "3.8.2",
+            "version": "3.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "2c3673c13562bf9bec1ec7d215afca1ea87d7b06"
+                "reference": "2dada986452c8a403c3ca652e87fe3a440fe9bf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/2c3673c13562bf9bec1ec7d215afca1ea87d7b06",
-                "reference": "2c3673c13562bf9bec1ec7d215afca1ea87d7b06",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/2dada986452c8a403c3ca652e87fe3a440fe9bf5",
+                "reference": "2dada986452c8a403c3ca652e87fe3a440fe9bf5",
                 "shasum": ""
             },
             "require": {
@@ -878,7 +878,7 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2024-03-19T20:26:40+00:00"
+            "time": "2024-03-28T19:52:16+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -1927,6 +1927,68 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.17.0"
             },
             "time": "2023-11-17T15:01:25+00:00"
+        },
+        {
+            "name": "graham-campbell/result-type",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Result-Type.git",
+                "reference": "fbd48bce38f73f8a4ec8583362e732e4095e5862"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/fbd48bce38f73f8a4ec8583362e732e4095e5862",
+                "reference": "fbd48bce38f73f8a4ec8583362e732e4095e5862",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5 || ^8.0",
+                "phpoption/phpoption": "^1.9.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\ResultType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                }
+            ],
+            "description": "An Implementation Of The Result Type",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Result Type",
+                "Result-Type",
+                "result"
+            ],
+            "support": {
+                "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/result-type",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-12T22:16:48+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3766,22 +3828,27 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "facdf5205fee16cbaba446b4a1f18ab42a50bb26"
+                "reference": "43a147c576535ba23314515dab97459066fd929a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/facdf5205fee16cbaba446b4a1f18ab42a50bb26",
-                "reference": "facdf5205fee16cbaba446b4a1f18ab42a50bb26",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/43a147c576535ba23314515dab97459066fd929a",
+                "reference": "43a147c576535ba23314515dab97459066fd929a",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0.0",
                 "michelf/php-smartypants": "^1.8",
                 "mundschenk-at/php-typography": "^6.0"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "craftcms/rector": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3823,7 +3890,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-27T18:11:56+00:00"
+            "time": "2024-03-27T19:08:18+00:00"
         },
         {
             "name": "oscarotero/html-parser",
@@ -4757,23 +4824,27 @@
         },
         {
             "name": "putyourlightson/craft-sprig",
-            "version": "2.7.3",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/putyourlightson/craft-sprig.git",
-                "reference": "850bf29b99a47077fbd1ba6c9b4189b7b883e114"
+                "reference": "930406dfbf8dd8bc037c4b8e36b944d07a69cd67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/850bf29b99a47077fbd1ba6c9b4189b7b883e114",
-                "reference": "850bf29b99a47077fbd1ba6c9b4189b7b883e114",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/930406dfbf8dd8bc037c4b8e36b944d07a69cd67",
+                "reference": "930406dfbf8dd8bc037c4b8e36b944d07a69cd67",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0",
                 "nystudio107/craft-code-editor": "^1.0.0",
                 "php": "^8.0.2",
-                "putyourlightson/craft-sprig-core": "^2.6.4"
+                "putyourlightson/craft-sprig-core": "^2.7.0"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4806,20 +4877,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-12T15:09:09+00:00"
+            "time": "2024-03-27T03:15:23+00:00"
         },
         {
             "name": "putyourlightson/craft-sprig-core",
-            "version": "2.6.7",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/putyourlightson/craft-sprig-core.git",
-                "reference": "d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb"
+                "reference": "bd112b1525a8b42c1d59d5635dbe972418d318bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb",
-                "reference": "d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/bd112b1525a8b42c1d59d5635dbe972418d318bd",
+                "reference": "bd112b1525a8b42c1d59d5635dbe972418d318bd",
                 "shasum": ""
             },
             "require": {
@@ -4827,9 +4898,6 @@
                 "php": "^8.0.2"
             },
             "require-dev": {
-                "codeception/codeception": "^4.1.29",
-                "codeception/module-asserts": "^1.3.1",
-                "codeception/module-yii2": "^1.1.5",
                 "craftcms/ecs": "dev-main",
                 "craftcms/generator": "^1.0.0",
                 "craftcms/phpstan": "dev-main",
@@ -4852,7 +4920,7 @@
                 "issues": "https://github.com/putyourlightson/craft-sprig-core/issues",
                 "source": "https://github.com/putyourlightson/craft-sprig-core"
             },
-            "time": "2024-02-09T02:28:56+00:00"
+            "time": "2024-03-27T02:39:57+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -7768,16 +7836,16 @@
         },
         {
             "name": "verbb/hyper",
-            "version": "1.1.25",
+            "version": "1.1.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/hyper.git",
-                "reference": "6754297fe716c7b211a66ab7422e194002943ad0"
+                "reference": "b920117f1bb0a8f76b444af9a7b8686da256f13a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/hyper/zipball/6754297fe716c7b211a66ab7422e194002943ad0",
-                "reference": "6754297fe716c7b211a66ab7422e194002943ad0",
+                "url": "https://api.github.com/repos/verbb/hyper/zipball/b920117f1bb0a8f76b444af9a7b8686da256f13a",
+                "reference": "b920117f1bb0a8f76b444af9a7b8686da256f13a",
                 "shasum": ""
             },
             "require": {
@@ -7830,7 +7898,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-23T08:00:49+00:00"
+            "time": "2024-03-29T04:25:47+00:00"
         },
         {
             "name": "verbb/knock-knock",
@@ -7964,36 +8032,43 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.6.10",
+            "version": "v5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5b547cdb25825f10251370f57ba5d9d924e6f68e"
+                "reference": "2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5b547cdb25825f10251370f57ba5d9d924e6f68e",
-                "reference": "5b547cdb25825f10251370f57ba5d9d924e6f68e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
+                "reference": "2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0 || ^8.0",
-                "phpoption/phpoption": "^1.5.2",
-                "symfony/polyfill-ctype": "^1.17"
+                "ext-pcre": "*",
+                "graham-campbell/result-type": "^1.1.2",
+                "php": "^7.2.5 || ^8.0",
+                "phpoption/phpoption": "^1.9.2",
+                "symfony/polyfill-ctype": "^1.24",
+                "symfony/polyfill-mbstring": "^1.24",
+                "symfony/polyfill-php80": "^1.24"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.8.2",
                 "ext-filter": "*",
-                "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.21"
+                "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
             },
             "suggest": {
-                "ext-filter": "Required to use the boolean validator.",
-                "ext-pcre": "Required to use most of the library."
+                "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true
+                },
                 "branch-alias": {
-                    "dev-master": "3.6-dev"
+                    "dev-master": "5.6-dev"
                 }
             },
             "autoload": {
@@ -8025,7 +8100,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v3.6.10"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.0"
             },
             "funding": [
                 {
@@ -8037,7 +8112,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-12T23:02:06+00:00"
+            "time": "2023-11-12T22:43:29+00:00"
         },
         {
             "name": "voku/anti-xss",

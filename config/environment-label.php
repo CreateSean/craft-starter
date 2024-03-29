@@ -3,7 +3,7 @@
 return [
 
     'showLabel' => true,
-    'labelText' => ' (' . CRAFT_ENVIRONMENT . ')',
+    'labelText' => getenv('ENVIRONMENT'),
     'prefixText' => getenv('CRAFT_ENV_LABEL_PREFIX'),
     'suffixText' => null,
     'labelColor' => getenv('CRAFT_ENV_LABEL_COLOR'),
