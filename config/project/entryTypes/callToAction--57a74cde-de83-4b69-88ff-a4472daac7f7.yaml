@@ -1,0 +1,81 @@
+color: null
+fieldLayouts:
+  7d8c40f9-257c-41b4-8747-551f180cacc5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Padding
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b392e2e-ab1b-42ce-81a1-01fbd59e5ce6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5bed279a-5360-4e96-b92e-3153c98bff40
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Section Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a71662d0-b947-40fe-9aee-693197d4445b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c78e0b43-9945-41ae-bdc4-9e38f07eca01
+            handle: button
+            includeInCards: false
+            instructions: null
+            label: Button
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bdb7e4c4-caa6-40d1-bb93-831a931266f2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Background Image'
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c36cc61-1f7c-4373-91f1-16aa37ce2c5b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d76b4b4a-101d-4508-8153-84c7205cd9a3
+        userCondition: null
+handle: callToAction
+hasTitleField: false
+icon: null
+name: 'Call To Action'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

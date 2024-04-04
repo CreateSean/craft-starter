@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  bc2a4d96-e189-4577-9559-d25bf551d2c1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 854806b9-7b9c-4bee-b636-6ffb1d144b34
+            handle: sectionTitle
+            includeInCards: true
+            instructions: null
+            label: 'Section Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d05631c8-4a8b-4de3-8556-fdb8dac2c21f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 505d226e-5fae-49b8-9460-b78c35449b2e
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: SectionSubtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e2a1011-236a-4ff2-9867-acac7d531f6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Video Upload'
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f452736-a434-4ee7-b2d8-a1bd8f95e768
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 56c54d1a-0bc9-493a-a342-789511c65600
+        userCondition: null
+handle: video2
+hasTitleField: false
+icon: null
+name: 'Video 2'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

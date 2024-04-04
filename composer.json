@@ -11,18 +11,18 @@
   "license": "MIT",
   "minimum-stability": "beta",
   "require": {
-    "clubstudioltd/craft-asset-rev": "^7.0",
-    "craftcms/ckeditor": "^3.2",
-    "craftcms/cms": "^4.0.0",
-    "craftcms/contact-form": "^3.0.0",
-    "doublesecretagency/craft-cpcss": "^2.5",
-    "mmikkel/retcon": "^2.4.2",
-    "nystudio107/craft-minify": "^4.0.0-beta.2",
-    "nystudio107/craft-seomatic": "^4.0.0",
-    "nystudio107/craft-typogrify": "^4.0.0-beta.2",
-    "putyourlightson/craft-sprig": "^2.0.1",
-    "verbb/hyper": "^1.1.25",
-    "verbb/knock-knock": "^2.0.0-beta.1",
+    "clubstudioltd/craft-asset-rev": "^8.0.0",
+    "craftcms/ckeditor": "^4.0.3",
+    "craftcms/cms": "^5.0.0",
+    "craftcms/contact-form": "^3.1.0",
+    "doublesecretagency/craft-cpcss": "^3.0.0",
+    "mmikkel/retcon": "^3.0.0",
+    "nystudio107/craft-minify": "^5.0.0-beta.2",
+    "nystudio107/craft-seomatic": "^5.0.0-beta.8",
+    "nystudio107/craft-typogrify": "^5.0.0-beta.2",
+    "putyourlightson/craft-sprig": "^3.0.0-beta.2",
+    "verbb/hyper": "^2.0.0-beta.7",
+    "verbb/knock-knock": "^3.0.0-beta.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -38,7 +38,7 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "8.0.2"
+      "php": "8.2"
     },
     "allow-plugins": {
       "craftcms/plugin-installer": true,

@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - ef488e30-b35e-4bf8-87a3-34f0f76b622f # News Categories - Default
 handle: newsCategories
 name: 'News Categories'
 previewTargets:

@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   c626b1d8-1909-423a-a161-eda975647216:
     tabs:
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -34,8 +37,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 56f86cc6-5713-447f-8b10-e53f06ef42eb # Hide from Nav
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -51,8 +57,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: ab8abc7e-2a4d-4858-98ea-9a6954a434da # Hero
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -71,8 +80,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: c33fedfd-ec76-45db-93dc-a12697e4a2aa # Listing Image
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -83,8 +95,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -101,8 +116,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -119,8 +137,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1 # SEO
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -133,12 +154,12 @@ fieldLayouts:
         userCondition: null
 handle: contactPage
 hasTitleField: true
+icon: phone-office
 name: 'Contact Page'
-section: 666b31c2-d6d5-4e80-b9aa-f57b66d5b54a # Pages
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-sortOrder: 4
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

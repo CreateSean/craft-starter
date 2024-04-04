@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - c166cd47-6f64-49e0-b33d-6aceadb3fcc3 # Fragments
 handle: fragments
 name: Fragments
 previewTargets:

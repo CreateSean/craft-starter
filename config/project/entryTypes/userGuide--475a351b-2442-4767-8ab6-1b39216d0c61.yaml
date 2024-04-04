@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   b0e00b72-8d9b-40b3-87a4-efcc1d0bc0ad:
     tabs:
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -34,8 +37,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: d974bf8d-647d-45f3-98be-0733d5e3e1ba # User Guide
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -48,12 +54,12 @@ fieldLayouts:
         userCondition: null
 handle: userGuide
 hasTitleField: true
+icon: person-chalkboard
 name: 'User Guide'
-section: 0784ad32-f952-40b1-9f6c-d0e67d502551 # User Guide
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-sortOrder: 1
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

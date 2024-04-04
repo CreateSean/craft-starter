@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   69a2a893-3c54-4b63-80c3-7a42ccd38392:
     tabs:
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -34,8 +37,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: ab8abc7e-2a4d-4858-98ea-9a6954a434da # Hero
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -52,8 +58,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -70,8 +79,11 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1 # SEO
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -84,12 +96,12 @@ fieldLayouts:
         userCondition: null
 handle: home
 hasTitleField: true
+icon: house
 name: Home
-section: 666b31c2-d6d5-4e80-b9aa-f57b66d5b54a # Pages
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-sortOrder: 2
 titleFormat: '{'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

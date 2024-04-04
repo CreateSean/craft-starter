@@ -1,4 +1,4 @@
-dateModified: 1712251672
+dateModified: 1712254102
 elementSources:
   craft\elements\Entry:
     -
@@ -89,100 +89,55 @@ fs:
 meta:
   __names__:
     1a78d395-d81a-4b77-8da7-30a49123bbee: English # English
-    01d20550-63a0-4d7a-ad9b-5a130e8f55a8: 'Section Title' # Section Title
     2b01b0d7-0c08-4e47-8041-e2b6a7fc855b: Caption # Caption
     2fcd48d2-b2b1-479f-9015-016904e4eab4: 'Craft Starter' # Craft Starter
-    3b9496a7-4539-4c28-91bc-3e51c68f4187: Embed # Embed
     3e09420e-30db-49dd-9520-4775f6667303: 'Site Basic' # Site Basic
     4b342e70-0223-4c29-9237-86a023f74f1b: 'News Categories' # News Categories
-    4d4435a9-cff2-46e6-9e43-ca2b7d62486f: Button # Button
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
-    5bed279a-5360-4e96-b92e-3153c98bff40: 'Section Title' # Section Title
-    6adad598-392d-4158-9400-8f90f7fe1fb0: 'Section Subtitle' # Section Subtitle
-    6f74be98-1b1b-470e-a96a-727b01e0b225: 'Video Upload' # Video Upload
-    7bf7da79-8f7d-4a1b-8129-121b24c0d99b: Image # Image
-    8a60bb9d-8e34-4487-b809-65134adc6fa1: Padding # Padding
-    8c583e9a-a56d-486d-8550-e7eae61c8088: Slides # Slides
     9c12e5ad-18e9-498f-bf50-489513409007: News # News
     12c7de12-987a-4aa4-890f-ec5cde880851: 'Fallback Image' # Fallback Image
     12f17257-6f1c-4e4c-837e-17ad76241a60: Site # Site
-    14e1bd82-34c0-42c5-a72d-1d002d9775d2: 'Video Title' # Video Title
-    25e2157e-9a82-41cd-970f-4fc58cb3a835: Screenshots # Screenshots
     29d88d99-dd38-43f6-9ac5-3438833c75ba: 'Error 404' # Error 404
-    48d0d0b8-2e48-4232-8b09-a401c6493902: Fragments # Fragments
-    51b9c3fc-be2a-4ef3-9f2c-66372327c604: Default # Default
+    48d0d0b8-2e48-4232-8b09-a401c6493902: 'Fragment Block' # Fragment Block
+    51b9c3fc-be2a-4ef3-9f2c-66372327c604: News # News
     52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e: 'Notice Bar Location' # Notice Bar Location
     56f86cc6-5713-447f-8b10-e53f06ef42eb: 'Hide from Nav' # Hide from Nav
-    57a74cde-de83-4b69-88ff-a4472daac7f7: 'Call To Action' # Call To Action
     70f5d47b-4830-4d51-95fe-bc0f7ccc0670: Uploads # Uploads
-    77af2e3b-d586-4daa-b99c-fd4792c204da: Copy # Copy
     77af5a62-d057-494a-91ac-9edf65b6b266: 'Content Builder' # Content Builder
-    80c3b02f-d4d4-4fb2-8c5c-1cde8119afad: 'Section Title' # Section Title
     95ce0179-ac46-4ecb-910c-aa91c7a07961: Summary # Summary
-    120a7750-0967-496d-9315-bba6d83eb4b1: 'Standard Hero' # Standard Hero
-    127f0d67-cfaf-4e5d-b3f8-111b7fda6f64: Padding # Padding
     136d3c61-5e7c-4eb4-afc0-5c78565fbe8b: Button # Button
     149ec41c-d6de-4ae5-84db-08d285801dd1: SEO # SEO
-    158c7930-10bb-483f-8328-c8aa657d8647: 'Video ID' # Video ID
     170a124d-5ba5-43f5-a663-8f85be97b38b: Default # Default
-    0187ae10-82fa-43e8-ac5c-e8fa4f2e3b29: Copy # Copy
-    323e9af3-aa75-4f1c-82eb-370e40179f41: 'Slider Hero' # Slider Hero
     415a954c-eb55-4533-9ffd-64b3eade9469: Fallback # Fallback
     475a351b-2442-4767-8ab6-1b39216d0c61: 'User Guide' # User Guide
-    505d226e-5fae-49b8-9460-b78c35449b2e: SectionSubtitle # SectionSubtitle
-    0608b317-3611-4a50-a757-9d0414083f50: 'Video Link' # Video Link
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
     0784ad32-f952-40b1-9f6c-d0e67d502551: 'User Guide' # User Guide
     0878c4de-b946-4c8e-bcce-fe18cd77a73e: 'Site Admin' # Site Admin
-    2456a57a-605c-4af0-9611-f48ca631ff0a: Video # Video
     4116f227-348c-4509-bc7a-6767a28fd40c: 'Contact Page' # Contact Page
-    4427e835-20ed-496b-9469-831bb0882185: Image # Image
-    5026b221-a48f-4868-9f48-07428068e77e: 'Related Entries' # Related Entries
     5489ed3b-28c1-4a26-ac7e-97b0182e6652: 'Enable Notice Bar' # Enable Notice Bar
     8084d027-d1a0-424e-930b-a4217b9862f2: 'Public Schema' # Public Schema
     8491df26-ac74-440e-8ce9-403654b8ce98: Copy # Copy
-    10748c54-7d1f-4b35-9fd9-57bb11a751bc: Copy # Copy
-    45625a48-7140-46aa-8d2c-e4a043c680a3: SEO # SEO
     59621bb5-03e8-481a-b377-5e08b5a79c12: Button # Button
     70339fac-606b-4827-9a19-c97a3f0bd59c: Copy # Copy
     408314ae-e32d-471b-a729-25f4ce759ac4: 'Notice Bar' # Notice Bar
-    418401d4-f08e-47eb-a216-719e3d8f4ccb: 'Hero Title' # Hero Title
-    854806b9-7b9c-4bee-b636-6ffb1d144b34: 'Section Title' # Section Title
     01313804-5d1a-410f-9da8-42ea30ae231d: 'Slide Title' # Slide Title
-    21077893-9405-4330-ba61-9f695515c9fb: 'Hero Title' # Hero Title
-    a399fb79-90a6-48a0-be1f-38d2b8a81af5: Video # Video
-    a983660a-2b2e-413f-a79c-498b502b4f85: 'Code Embed' # Code Embed
-    aac80dd6-df34-4cd2-a92f-14debb37b911: Fragment # Fragment
     ab8abc7e-2a4d-4858-98ea-9a6954a434da: Hero # Hero
     b2f53aa5-81a3-466c-af2d-e30dab4ed3d8: Image # Image
-    b4d947dc-370e-4404-807b-b165534a1503: 'Basic Hero' # Basic Hero
     b9d8d694-0313-4709-a12e-06b36b2333c7: Simple # Simple
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
-    b507c631-830f-46d6-b625-4d4a6df7775c: Padding # Padding
-    b2007669-385a-48ab-8bb3-88019d7c65de: Padding # Padding
     bb838d9b-476f-487c-8cc2-8e01b9423d92: Pages # Pages
     c33fedfd-ec76-45db-93dc-a12697e4a2aa: 'Listing Image' # Listing Image
-    c78e0b43-9945-41ae-bdc4-9e38f07eca01: Button # Button
-    c166cd47-6f64-49e0-b33d-6aceadb3fcc3: fragments # fragments
+    c166cd47-6f64-49e0-b33d-6aceadb3fcc3: Fragments # Fragments
     c951c9a0-1cca-4210-bef8-2d3d0446e841: 'Related Entries' # Related Entries
-    c4527788-b877-44f3-9a2d-071f696877fa: 'YouTube Video' # YouTube Video
-    ca4cf186-4f48-488c-adbc-d38eba9d2533: 'User Guide' # User Guide
-    cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f: 'Background Image' # Background Image
     ce27286a-7635-4494-9c9c-77f2d73352f4: Fragments # Fragments
-    cf771399-6f67-4917-bd2f-0173c3504c7e: Padding # Padding
     d5f8da04-ca55-4c9f-8605-e7f8779e82b8: Image # Image
     d19b4314-0267-4e95-9e63-2462a334eea1: 'User Guide' # User Guide
     d974bf8d-647d-45f3-98be-0733d5e3e1ba: 'User Guide' # User Guide
-    d1511275-c802-4850-9b74-6e305f2cc1c7: 'Asset Fields' # Asset Fields
-    da3d7ec4-1d85-47ba-a517-6c81d94cc9d2: Copy # Copy
     dbff8535-c8bd-4629-bc58-732972504e1b: 'Alt Text' # Alt Text
     e3dea9df-426f-43a5-96fd-927882533aa9: 'News Listing' # News Listing
-    e285fc8c-8b64-4829-afe0-88f9d0c3c8c4: 'Section Title' # Section Title
     ea7fe716-adee-4200-a8ca-15362418cd97: Home # Home
-    ef8cc244-dfa8-41b1-945d-cb673ae71824: Common # Common
-    ef488e30-b35e-4bf8-87a3-34f0f76b622f: Default # Default
-    f03239f9-af65-481a-b6b8-76e0e158244f: Caption # Caption
+    ef488e30-b35e-4bf8-87a3-34f0f76b622f: 'News Categories - Default' # News Categories - Default
     f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
     f90a85bd-91b2-462b-acb4-8f265ded647e: Copy # Copy
     fbdde691-0df2-4e8e-b1a8-61a1f555fd0e: 'News Categories' # News Categories
@@ -294,5 +249,5 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 4.5.3.0
+  schemaVersion: 5.0.0.20
   timeZone: America/Toronto

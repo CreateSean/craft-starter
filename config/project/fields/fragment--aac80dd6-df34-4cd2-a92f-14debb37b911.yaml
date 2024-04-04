@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: fragment
+instructions: null
+name: 'Content Builder - Fragments - Fragment'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 1
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

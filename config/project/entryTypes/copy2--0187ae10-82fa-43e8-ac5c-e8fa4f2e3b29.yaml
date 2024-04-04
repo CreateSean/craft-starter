@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  623094d9-a7ca-4635-b4df-fb93c89d5b74:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 01d20550-63a0-4d7a-ad9b-5a130e8f55a8
+            handle: sectionTitle
+            includeInCards: true
+            instructions: null
+            label: 'Section Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba979be8-7b6e-4cd0-a807-5019461b80ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6adad598-392d-4158-9400-8f90f7fe1fb0
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Section Subtitle'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff756a43-1935-4002-8b9e-845dc11eb17f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 10748c54-7d1f-4b35-9fd9-57bb11a751bc
+            handle: copy
+            includeInCards: false
+            instructions: null
+            label: Copy
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2c4d154-8252-461f-bd0a-635b472473d1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e1a117ae-6930-4169-b0c6-525abba96b59
+        userCondition: null
+handle: copy2
+hasTitleField: false
+icon: null
+name: 'Copy 2'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

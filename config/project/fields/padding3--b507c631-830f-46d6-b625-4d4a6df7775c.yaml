@@ -1,0 +1,54 @@
+columnSuffix: rdhahobp
+handle: padding3
+instructions: null
+name: 'Content Builder - Copy - Padding'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Top & Bottom'
+        -
+          - value
+          - section-y-padding
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Top Only'
+        -
+          - value
+          - section-t-padding
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Bottom Only'
+        -
+          - value
+          - section-b-padding
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'No Padding'
+        -
+          - value
+          - section-no-padding
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

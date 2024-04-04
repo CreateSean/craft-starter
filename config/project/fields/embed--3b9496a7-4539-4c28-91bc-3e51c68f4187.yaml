@@ -1,0 +1,16 @@
+columnSuffix: buzbghct
+handle: embed
+instructions: null
+name: 'Content Builder - Code Embed - Embed'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  initialRows: 3
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: heroTitle
+instructions: 'If empty page title will be used'
+name: 'Hero - Standard Hero - Hero Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

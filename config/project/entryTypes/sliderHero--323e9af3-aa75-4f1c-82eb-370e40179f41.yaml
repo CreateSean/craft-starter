@@ -1,0 +1,36 @@
+color: null
+fieldLayouts:
+  532fe5e4-df32-4a3a-a746-e5f91f6e168b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8c583e9a-a56d-486d-8550-e7eae61c8088
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Slides
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61e062bf-9716-4fe4-892c-bc2dadb71721
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e0366ccf-37de-4a01-9c00-95a40acd04f2
+        userCondition: null
+handle: sliderHero
+hasTitleField: false
+icon: null
+name: 'Slider Hero'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,16 @@
+columnSuffix: lcneswnz
+handle: sectionTitle3
+instructions: null
+name: 'Content Builder - Related Entries - Section Title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

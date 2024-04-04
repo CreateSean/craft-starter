@@ -85,7 +85,6 @@ fieldLayouts:
 handle: noticeBar
 hasTitleField: false
 name: 'Notice Bar'
-section: 408314ae-e32d-471b-a729-25f4ce759ac4 # Notice Bar
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

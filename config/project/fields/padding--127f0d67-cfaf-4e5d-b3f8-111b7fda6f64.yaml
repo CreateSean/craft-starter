@@ -1,0 +1,54 @@
+columnSuffix: mjnbzisp
+handle: padding
+instructions: null
+name: 'Content Builder - Call To Action - Padding'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Top & bottom'
+        -
+          - value
+          - section-y-padding
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Top Only'
+        -
+          - value
+          - section-t-padding
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Bottom Only'
+        -
+          - value
+          - section-b-padding
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'No Padding'
+        -
+          - value
+          - section-no-padding
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

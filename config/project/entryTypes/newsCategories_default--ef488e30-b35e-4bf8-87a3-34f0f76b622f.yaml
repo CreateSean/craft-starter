@@ -34,10 +34,9 @@ fieldLayouts:
         name: Content
         uid: 14887279-63d4-41f5-880f-5923f8d02a1d
         userCondition: null
-handle: default
+handle: newsCategories_default
 hasTitleField: true
-name: Default
-section: 4b342e70-0223-4c29-9237-86a023f74f1b # News Categories
+name: 'News Categories - Default'
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

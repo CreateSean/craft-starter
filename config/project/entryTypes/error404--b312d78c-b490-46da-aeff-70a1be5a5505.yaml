@@ -49,7 +49,6 @@ fieldLayouts:
 handle: error404
 hasTitleField: true
 name: 'Error 404'
-section: 29d88d99-dd38-43f6-9ac5-3438833c75ba # Error 404
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
