@@ -1,6 +1,8 @@
 {# section background #}
 {% set background = background ?? 'bg-white' %}
 
+{% block templateComment %}{% endblock %}
+
 {# reveal blocks when they are 200px into the viewport #}
 <section
   x-data="{ isVisible: false }"

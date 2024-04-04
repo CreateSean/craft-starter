@@ -1,3 +1,4 @@
+{{ craft.app.config.general.devMode ? ('<!-- Template: ' ~ _self ~ ' -->') | raw }}
 
   {% set seg2 = craft.app.request.getSegment('2') %}
   {% set seg3 = craft.app.request.getSegment('3') %}

@@ -1,3 +1,5 @@
+{{ craft.app.config.general.devMode ? ('<!-- Template: ' ~ _self ~ ' -->') | raw }}
+
 {# include hero blocks #}
 
 {% for block in entry.hero.all() %}

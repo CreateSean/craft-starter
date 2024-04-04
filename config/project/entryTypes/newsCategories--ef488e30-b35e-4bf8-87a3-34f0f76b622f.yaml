@@ -1,3 +1,4 @@
+color: yellow
 fieldLayouts:
   b3390d68-f84f-46fa-9b06-88b3dc039727:
     tabs:
@@ -12,6 +13,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -20,6 +22,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -34,13 +37,14 @@ fieldLayouts:
         name: Content
         uid: 14887279-63d4-41f5-880f-5923f8d02a1d
         userCondition: null
-handle: newsCategories_default
+handle: newsCategories
 hasTitleField: true
-name: 'News Categories - Default'
+icon: icons
+name: 'News Categories'
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-sortOrder: 1
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

@@ -1,3 +1,5 @@
+{{ craft.app.config.general.devMode ? ('<!-- Template: ' ~ _self ~ ' -->') | raw }}
+
 <article
   x-data="{ isVisible: false }"
   x-intersect.half.once="isVisible = true"

@@ -1,4 +1,4 @@
-dateModified: 1712254102
+dateModified: 1712256010
 elementSources:
   craft\elements\Entry:
     -
@@ -137,7 +137,7 @@ meta:
     dbff8535-c8bd-4629-bc58-732972504e1b: 'Alt Text' # Alt Text
     e3dea9df-426f-43a5-96fd-927882533aa9: 'News Listing' # News Listing
     ea7fe716-adee-4200-a8ca-15362418cd97: Home # Home
-    ef488e30-b35e-4bf8-87a3-34f0f76b622f: 'News Categories - Default' # News Categories - Default
+    ef488e30-b35e-4bf8-87a3-34f0f76b622f: 'News Categories' # News Categories
     f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
     f90a85bd-91b2-462b-acb4-8f265ded647e: Copy # Copy
     fbdde691-0df2-4e8e-b1a8-61a1f555fd0e: 'News Categories' # News Categories

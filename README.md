@@ -2,8 +2,11 @@
 
 This is an opinionated Craft CMS starter project using DDev for local development, Tailwind CSS, Alpine Js, and Laravel Mix.
 
-### Install Craft 4 version
+### Install Craft 5 version
 to install this package run `composer create-project createsean/craft-starter .`
+
+### Install Craft 4 version
+to install this package run `composer create-project createsean/craft-starter . --prefer-dist 4.2.31`
 
 ### Install Craft 3 version
 To install with Craft 3 version run `composer create-project createsean/craft-starter . --prefer-dist 1.14.0`
@@ -22,12 +25,9 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Floated Labels](#floated-labels)
   * [Picture Element](#picture-elements)
   * [Craft Plugins](#craft-plugins)
-  * [Redactor](#redactor)
-  * [Image Toolbox](#image-toolbox)
   * [Typogrify](#typogrify)
   * [Sprig](#sprig)
   * [contact Form](#contact-form)
-  * [MatrixMate](#matrixmate)
   * [Style Guide](#styleguide)
   * [Content](#content)
   * [Composer nuke](#composer-nuke)
@@ -58,7 +58,7 @@ Password: `letmein`
 -   [ ] Ensure accessibility passes with default templates - aria labels, alt text etc.
 -   [x] Set up site search.
 -   [x] Contact Form.
--   [ ] Move AlpineJs and plugins from CDN to compiled build process.
+-   [X] Move AlpineJs and plugins from CDN to compiled build process.
 -   [X] Add content builder with common content types.
 -   [X] Contact page
 -   [ ] About/Team page
@@ -69,6 +69,8 @@ Password: `letmein`
 -   [x] Add notice bar option.
 -   [x] Add 404 template.
 -   [x] Add installation instructions.
+-   [ ] Replace matrix content builder with CKEditor longform
+-   [ ] update templates to use `.eagerly()` where possible
 
 ## Build Process
 
@@ -320,29 +322,21 @@ The following plugins are installed and ready to be used on the site. I prefer t
 
 1. Environment Label - adds a color bar across the control panel indicating current environmen
 2. Minify - minifies html/css/js on production
-3. Redactor - Rich Text Editor
+3. CKEditor - Rich Text Editor
 4. Retcon - extra twig filters
 5. SEOmatic - used for all SEO.
-6. Template Comments - adds template comments in local dev to make finding templates easy
-7. Typed Link Field - used for buttons and other linkks
-8. ~~User Manual - in CP user manual ~~ removed until a Craft 4 version is available
+6. Control Panel CSS - add custom styles to the CP
+7. Hyper - used for buttons and other linkks
+8. ~~User Manual - in CP user manual ~~ removed until a Craft 5 version is available
 9. Knock Knock - password protect staging site (pass: **letmein**)
-10. MatrixMate
-11. Typogrify
+10. Typogrify
 11. Sprig - Reactive components
-13. AssetRev - link to css and js files with manifest.json file names
+12. AssetRev - link to css and js files with manifest.json file names
 
-
-## Redactor
-
-Redactor has the [link-attribute plugin installed](https://github.com/simplicate-web/redactor-link-attr) Adding/editing data attribute options is a 2 step process.
-
-1. go to `modules/sitemodule/src/SiteModule.php` line 118 and edit or add another line like this `$def->addAttribute('a', 'data-track', 'Text');`
-2. go to `config/redator/site.json` and edit or copy/paste line 20.
 
 ## Typogrify
 
-See the [typogrify docs](https://nystudio107.com/docs/typogrify/) for advanced usage. For basic use add the typography fitler to your redactor fields like this
+See the [typogrify docs](https://nystudio107.com/docs/typogrify/) for advanced usage. For basic use add the typography filter to your redactor fields like this
 
 ```{{ entry.copy|typogrify }}```
 
@@ -356,11 +350,6 @@ Additionally **NOTE** that sprig will only reload components once when using the
 
 The contact form is powered by the first party [contact form plugin](https://github.com/craftcms/contact-form) and Sprig. be sure to update the Email varaibles in dotenv so that email works correctly. Go to `plugins > contact form` and update the Sender Text and Subject text of your emails.
 
-## MatrixMate
-
-MatrixMate enables you to improve the Matrix authoring experience by sorting block types into groups and block type fields into tabs. See the [documentation](https://github.com/vaersaagod/matrixmate/blob/master/README.md) for full options and feautures.
-
-There is a default config file in `config/matrixmate.php` that is not currently attached to any matrix fields.
 
 ## Styleguide
 
@@ -393,6 +382,8 @@ A hero component is available with three options:
 - **Standard Hero** - image, Hero Title, Copy, Button
 - **Basic Hero** - no image, just a title and a dark background
 - **Slider Hero** - same as standard but operates as a slider - maximum 5 slides
+
+There is also a basic matrix field for a content builder. Once I have more time I will create a longform content CKEditor field to replace the matrix content builder.
 
 ## Composer nuke
 

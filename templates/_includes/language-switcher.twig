@@ -1,3 +1,6 @@
+{{ craft.app.config.general.devMode ? ('<!-- Template: ' ~ _self ~ ' -->') | raw }}
+
+
 {# https://craftcms.stackexchange.com/a/14306/193 #}
 
 {% set currentLanguage = currentSite.language %}

@@ -1,3 +1,5 @@
+{{ craft.app.config.general.devMode ? ('<!-- Template: ' ~ _self ~ ' -->') | raw }}
+
 <div class="relative">
 
   {% set heroImage = block.image.one() %}

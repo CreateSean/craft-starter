@@ -1,5 +1,9 @@
 {% extends '_blocks/_layout' %}
 
+{% block templateComment %}
+  {{ craft.app.config.general.devMode ? ('<!-- Template: ' ~ _self ~ ' -->') | raw }}
+{% endblock %}
+
 {# section background #}
 {% set background = '' %}
 
