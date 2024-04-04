@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d3fa0fe96b315efa6afff8a56e3f18a",
+    "content-hash": "9b45e4176ac130602d0d286a0e6d99cd",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2314,72 +2314,6 @@
                 }
             ],
             "time": "2023-12-03T20:05:35+00:00"
-        },
-        {
-            "name": "hillholliday/craft-user-manual",
-            "version": "4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/RobErskine/Craft-User-Manual.git",
-                "reference": "5ad81cf340c0e7743d683e7de83aaf19cc33b2d9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/RobErskine/Craft-User-Manual/zipball/5ad81cf340c0e7743d683e7de83aaf19cc33b2d9",
-                "reference": "5ad81cf340c0e7743d683e7de83aaf19cc33b2d9",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0.2"
-            },
-            "require-dev": {
-                "craftcms/rector": "dev-main"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "User Manual",
-                "handle": "usermanual",
-                "hasCpSettings": true,
-                "hasCpSection": true,
-                "changelogUrl": "https://raw.githubusercontent.com/roberskine/Craft-User-Manual/master/CHANGELOG.md",
-                "class": "roberskine\\usermanual\\UserManual"
-            },
-            "autoload": {
-                "psr-4": {
-                    "roberskine\\usermanual\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rob Erskine",
-                    "homepage": "https://roberskine.com"
-                }
-            ],
-            "description": "Craft User Manual allows developers (or even content editors) to provide CMS documentation using Craft's built-in sections (singles, channels, or structures) to create a `User Manual` or `Help` section directly in the control panel.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "usermanual"
-            ],
-            "support": {
-                "docs": "https://github.com/roberskine/Craft-User-Manual/blob/master/README.md",
-                "issues": "https://github.com/roberskine/Craft-User-Manual/issues",
-                "source": "https://github.com/RobErskine/Craft-User-Manual/tree/4.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/roberskine",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-06-20T21:05:11+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -7513,88 +7447,6 @@
             "time": "2019-11-14T14:08:48+00:00"
         },
         {
-            "name": "topshelfcraft/base",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TopShelfCraft/base.git",
-                "reference": "5e0376d39a2b84a0cc1b661c2ed2dd3742077f87"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TopShelfCraft/base/zipball/5e0376d39a2b84a0cc1b661c2ed2dd3742077f87",
-                "reference": "5e0376d39a2b84a0cc1b661c2ed2dd3742077f87",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TopShelfCraft\\base\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Base metal for Top Shelf Craft modules and plugins.",
-            "support": {
-                "issues": "https://github.com/TopShelfCraft/base/issues",
-                "source": "https://github.com/TopShelfCraft/base/tree/4.0.2"
-            },
-            "time": "2022-12-20T02:05:36+00:00"
-        },
-        {
-            "name": "topshelfcraft/environment-label",
-            "version": "4.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TopShelfCraft/Environment-Label.git",
-                "reference": "9311bd50df251bfadb6f421646bee2fb85e593c4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TopShelfCraft/Environment-Label/zipball/9311bd50df251bfadb6f421646bee2fb85e593c4",
-                "reference": "9311bd50df251bfadb6f421646bee2fb85e593c4",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0",
-                "topshelfcraft/base": "^4.0.1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Environment Label",
-                "handle": "environment-label",
-                "class": "TopShelfCraft\\EnvironmentLabel\\EnvironmentLabel"
-            },
-            "autoload": {
-                "psr-4": {
-                    "TopShelfCraft\\EnvironmentLabel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Top Shelf Craft (Michael Rog)",
-                    "homepage": "https://topshelfcraft.com"
-                }
-            ],
-            "description": "...so you don't forget where you are.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "environment label"
-            ],
-            "support": {
-                "docs": "https://github.com/TopShelfCraft/Environment-Label",
-                "issues": "https://github.com/TopShelfCraft/Environment-Label/issues",
-                "source": "https://github.com/TopShelfCraft/Environment-Label/tree/4.0.3"
-            },
-            "time": "2023-04-26T02:25:25+00:00"
-        },
-        {
             "name": "tubalmartin/cssmin",
             "version": "v4.1.1",
             "source": {
@@ -7722,67 +7574,6 @@
                 }
             ],
             "time": "2023-11-21T18:54:41+00:00"
-        },
-        {
-            "name": "vaersaagod/matrixmate",
-            "version": "2.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vaersaagod/matrixmate.git",
-                "reference": "65651e7aee74207afa1818f9a7cea37cff71b262"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vaersaagod/matrixmate/zipball/65651e7aee74207afa1818f9a7cea37cff71b262",
-                "reference": "65651e7aee74207afa1818f9a7cea37cff71b262",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0.2"
-            },
-            "require-dev": {
-                "craftcms/rector": "dev-main"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "MatrixMate",
-                "handle": "matrixmate",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/vaersaagod/matrixmate/master/CHANGELOG.md",
-                "class": "vaersaagod\\matrixmate\\MatrixMate"
-            },
-            "autoload": {
-                "psr-4": {
-                    "vaersaagod\\matrixmate\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Værsågod",
-                    "homepage": "https://vaersaagod.no"
-                }
-            ],
-            "description": "Welding Matrix into shape, mate!",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "matrixmate"
-            ],
-            "support": {
-                "docs": "https://github.com/vaersaagod/matrixmate/blob/master/README.md",
-                "issues": "https://github.com/vaersaagod/matrixmate/issues",
-                "source": "https://github.com/vaersaagod/matrixmate/tree/v2.1.4"
-            },
-            "time": "2023-11-10T23:46:59+00:00"
         },
         {
             "name": "verbb/base",
@@ -7963,72 +7754,6 @@
                 }
             ],
             "time": "2023-11-09T04:51:59+00:00"
-        },
-        {
-            "name": "verbb/super-table",
-            "version": "3.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/super-table.git",
-                "reference": "ba5d7b0ddbd2597c156a0e9913890d391ba54040"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/ba5d7b0ddbd2597c156a0e9913890d391ba54040",
-                "reference": "ba5d7b0ddbd2597c156a0e9913890d391ba54040",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0.2",
-                "verbb/base": "^2.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Super Table",
-                "handle": "super-table",
-                "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
-                "documentationUrl": "https://github.com/verbb/super-table",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/super-table/craft-4/CHANGELOG.md",
-                "class": "verbb\\supertable\\SuperTable"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\supertable\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Super-charge your content builders and create nested Matrix fields.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "super table"
-            ],
-            "support": {
-                "docs": "https://github.com/verbb/super-table",
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/super-table/issues?state=open",
-                "rss": "https://github.com/verbb/super-table/commits/v2.atom",
-                "source": "https://github.com/verbb/super-table"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/verbb",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-10-05T04:08:28+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -9569,8 +9294,7 @@
     "stability-flags": {
         "nystudio107/craft-minify": 10,
         "nystudio107/craft-typogrify": 10,
-        "verbb/knock-knock": 10,
-        "verbb/super-table": 10
+        "verbb/knock-knock": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -30,49 +30,66 @@ fields:
     name: Slides
     searchable: false
     settings:
-      blockTypeFields: 0
-      changedFieldIndicator: null
-      columns:
+      errorMessage: 'Unable to find component class ''verbb\supertable\fields\SuperTableField''.'
+      expectedType: verbb\supertable\fields\SuperTableField
+      settings:
         __assoc__:
-          -
-            - d5f8da04-ca55-4c9f-8605-e7f8779e82b8 # Image
+          0:
+            - minRows
+            - 1
+          1:
+            - maxRows
+            - 5
+          2:
+            - contentTable
+            - '{{%stc_8_slides}}'
+          3:
+            - propagationMethod
+            - none
+          6:
+            - fieldLayout
+            - row
+          8:
+            - columns
             -
               __assoc__:
                 -
-                  - width
-                  - ''
-          -
-            - 01313804-5d1a-410f-9da8-42ea30ae231d # Slide Title
-            -
-              __assoc__:
+                  - d5f8da04-ca55-4c9f-8605-e7f8779e82b8 # Image
+                  -
+                    __assoc__:
+                      -
+                        - width
+                        - ''
                 -
-                  - width
-                  - ''
-          -
-            - 8491df26-ac74-440e-8ce9-403654b8ce98 # Copy
-            -
-              __assoc__:
+                  - 01313804-5d1a-410f-9da8-42ea30ae231d # Slide Title
+                  -
+                    __assoc__:
+                      -
+                        - width
+                        - ''
                 -
-                  - width
-                  - ''
-          -
-            - 59621bb5-03e8-481a-b377-5e08b5a79c12 # Button
-            -
-              __assoc__:
+                  - 8491df26-ac74-440e-8ce9-403654b8ce98 # Copy
+                  -
+                    __assoc__:
+                      -
+                        - width
+                        - ''
                 -
-                  - width
-                  - ''
-      contentTable: '{{%stc_8_slides}}'
-      fieldLayout: row
-      maxRows: 5
-      minRows: 1
-      propagationKeyFormat: null
-      propagationMethod: none
-      selectionLabel: null
-      staticField: null
+                  - 59621bb5-03e8-481a-b377-5e08b5a79c12 # Button
+                  -
+                    __assoc__:
+                      -
+                        - width
+                        - ''
+          9:
+            - changedFieldIndicator
+            - 1852189373
+          10:
+            - blockTypeFields
+            - 0
     translationKeyFormat: null
-    translationMethod: site
-    type: verbb\supertable\fields\SuperTableField
+    translationMethod: none
+    type: craft\fields\MissingField
 handle: sliderHero
 name: 'Slider Hero'
 sortOrder: 2

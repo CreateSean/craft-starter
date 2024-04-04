@@ -1,4 +1,4 @@
-dateModified: 1711478684
+dateModified: 1712251672
 elementSources:
   craft\elements\Entry:
     -
@@ -214,10 +214,6 @@ plugins:
       additionalCss: ''
       cacheBusting: true
       cssFile: /assets/css/cp-css.css
-  environment-label:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   hyper:
     edition: standard
     enabled: true
@@ -227,10 +223,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
-  matrixmate:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: true
@@ -293,23 +285,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
-  super-table:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.0.0
   typogrify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  usermanual:
-    edition: standard
-    enabled: true
-    schemaVersion: 4.0.0
-    settings:
-      enabledSideBar: true
-      pluginNameOverride: 'User Manual'
-      section: '3'
-      templateOverride: _user-guide/_entry
 system:
   edition: pro
   live: true
