@@ -6,11 +6,13 @@
     z-index: 2;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-/* matrix mate tabs active move noticable */
-.matrixmate-block-inited .matrixmate-tabs li a.tab {
-  background:#b1cdef !important;
+
+
+/* native matrix  */
+.matrixblock>.titlebar>.matrixblock-tabs .pane-tabs [role=tablist] [role=tab] {
+  background:#b1cdef;
 }
-.matrixmate-block-inited .matrixmate-tabs li a.sel {
+.pane-tabs [role=tablist] [role=tab].sel {
   background:#4b89d3 !important; /*#b1cdef*/
   color: #fff;
 }
