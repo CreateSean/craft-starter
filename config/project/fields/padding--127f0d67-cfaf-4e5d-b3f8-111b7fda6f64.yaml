@@ -15,7 +15,7 @@ settings:
           - section-y-padding
         -
           - default
-          - ''
+          - '1'
     -
       __assoc__:
         -

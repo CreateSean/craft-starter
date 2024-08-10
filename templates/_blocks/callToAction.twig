@@ -17,6 +17,16 @@
       {{ block.button.getLink({
         class: 'btn',
       }) }}
+
+      {#
+      {{ tag('a', {
+          text: block.buttonText ?? block.button.label,
+          href: block.button
+        })|attr({
+          class: 'btn',
+          target: block.openInNewTab =='1' ? '_blank' : '_self'
+        }) }}
+       #}
   </div><!-- /.flex flex-row -->
 
 {% endblock %}

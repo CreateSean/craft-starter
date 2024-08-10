@@ -7,7 +7,7 @@ searchable: false
 settings:
   entryTypes:
     - 48d0d0b8-2e48-4232-8b09-a401c6493902 # Fragment Block
-    - 57a74cde-de83-4b69-88ff-a4472daac7f7
+    - 57a74cde-de83-4b69-88ff-a4472daac7f7 # Call To Action
     - 2456a57a-605c-4af0-9611-f48ca631ff0a
     - 70339fac-606b-4827-9a19-c97a3f0bd59c # Copy
     - a983660a-2b2e-413f-a79c-498b502b4f85
