@@ -50,9 +50,48 @@
     {% set siteName = getenv('SITE_NAME_FR') %}
   {% endif %}
 
+<header>
+{#
+ // use below header for sticky header that disappears on scroll down but reappears on scroll up
+#}
+{# <header
+  x-data="{ visible: true, lastScrollY: window.scrollY, ticking: false }"
+  x-init="
+    // Initialize lastScrollY with the current scroll position
+    lastScrollY = window.scrollY;
+
+    // Add a scroll event listener to the window
+    window.addEventListener('scroll', () => {
+      // Check if a scroll event is already being processed
+      if (!ticking) {
+        // Use requestAnimationFrame to debounce the scroll event handler
+        window.requestAnimationFrame(() => {
+          // Check the scroll direction
+          if (window.scrollY > lastScrollY) {
+            // If scrolling down, hide the header
+            visible = false;
+          } else {
+            // If scrolling up, show the header
+            visible = true;
+          }
+          // Update lastScrollY with the current scroll position
+          lastScrollY = window.scrollY;
+          // Reset ticking to false to allow future scroll events to be processed
+          ticking = false;
+        });
+        // Set ticking to true to indicate that a scroll event is being processed
+        ticking = true;
+      }
+    });
+  "
+  :class="{
+    'transform -translate-y-full -top-[85px]': !visible,
+    'transform translate-y-0 top-0': visible }"
+  class="fixed left-0 right-0 z-50 transition-all duration-500 ease-in-out bg-white"
+> #}
 
 
-  <header>
+
     <a href="#main-content" role="button"  aria-label="Skip to main content" class="flex flex-col justify-center skip-main" style="height:40px;">Skip to main content</a><!-- /.skip-main -->
 
     {% include "_includes/notice-bar" %}

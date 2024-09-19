@@ -23,6 +23,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Dark Mode](#dark-mode)
   * [Fragments](#fragments)
   * [Floated Labels](#floated-labels)
+  * [Sticky header](#sticky-header)
   * [Picture Element](#picture-elements)
   * [Craft Plugins](#craft-plugins)
   * [Typogrify](#typogrify)
@@ -263,6 +264,10 @@ And for selects use this:
   <label class="floating-label">Country</label>
 </div>
 ```
+
+## Sticky Header
+
+The layout template has a commented out header tag with that when enabled will make the navigation sticky. When scrolling down will disappear and re-appear when scrolling up.
 
 ## Picture elements
 
