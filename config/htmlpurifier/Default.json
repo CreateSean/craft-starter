@@ -6,6 +6,9 @@
   "HTML.AllowedComments": [
     "pagebreak"
   ],
+  "HTML.ForbiddenAttributes": [
+    "style"
+  ],
   "HTML.SafeIframe": true,
   "URI.SafeIframeRegexp": "%^(https?:)?//(www.youtube.com/embed/|player.vimeo.com/video/)%"
 }
