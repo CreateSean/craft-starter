@@ -6,8 +6,39 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-10-23T17:27:03+00:00'
+            disabled: false
             elementCondition: null
-            fieldUid: 8c583e9a-a56d-486d-8550-e7eae61c8088
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5e12737a-07df-4361-8f63-0eb9a62a8182
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-23T17:27:03+00:00'
+            elementCondition: null
+            fieldUid: 8c583e9a-a56d-486d-8550-e7eae61c8088 # Hero - Slider Hero - Slides
             handle: null
             includeInCards: false
             instructions: null
@@ -25,12 +56,12 @@ fieldLayouts:
         userCondition: null
 handle: sliderHero
 hasTitleField: false
-icon: null
+icon: ''
 name: 'Slider Hero'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

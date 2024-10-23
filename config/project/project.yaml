@@ -1,4 +1,4 @@
-dateModified: 1723300584
+dateModified: 1729704722
 elementSources:
   craft\elements\Entry:
     -
@@ -94,6 +94,7 @@ meta:
     3e09420e-30db-49dd-9520-4775f6667303: 'Site Basic' # Site Basic
     4b342e70-0223-4c29-9237-86a023f74f1b: 'News Categories' # News Categories
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
+    8c583e9a-a56d-486d-8550-e7eae61c8088: 'Hero - Slider Hero - Slides' # Hero - Slider Hero - Slides
     9c12e5ad-18e9-498f-bf50-489513409007: News # News
     12c7de12-987a-4aa4-890f-ec5cde880851: 'Fallback Image' # Fallback Image
     12f17257-6f1c-4e4c-837e-17ad76241a60: Site # Site
@@ -111,6 +112,7 @@ meta:
     136d3c61-5e7c-4eb4-afc0-5c78565fbe8b: Button # Button
     149ec41c-d6de-4ae5-84db-08d285801dd1: SEO # SEO
     170a124d-5ba5-43f5-a663-8f85be97b38b: Default # Default
+    323e9af3-aa75-4f1c-82eb-370e40179f41: 'Slider Hero' # Slider Hero
     415a954c-eb55-4533-9ffd-64b3eade9469: Fallback # Fallback
     475a351b-2442-4767-8ab6-1b39216d0c61: 'User Guide' # User Guide
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
@@ -139,6 +141,7 @@ meta:
     ce27286a-7635-4494-9c9c-77f2d73352f4: Fragments # Fragments
     d5f8da04-ca55-4c9f-8605-e7f8779e82b8: Image # Image
     d19b4314-0267-4e95-9e63-2462a334eea1: 'User Guide' # User Guide
+    d399ecfb-7ec8-47d8-84ed-b8447e779a67: Slide # Slide
     d974bf8d-647d-45f3-98be-0733d5e3e1ba: 'User Guide' # User Guide
     dbff8535-c8bd-4629-bc58-732972504e1b: 'Alt Text' # Alt Text
     e3dea9df-426f-43a5-96fd-927882533aa9: 'News Listing' # News Listing
