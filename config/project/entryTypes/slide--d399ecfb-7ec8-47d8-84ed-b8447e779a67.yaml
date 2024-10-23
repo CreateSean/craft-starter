@@ -43,8 +43,8 @@ fieldLayouts:
             includeInCards: false
             instructions: '1900px * 450px'
             label: 'Slide Background Image'
-            providesThumbs: false
-            required: false
+            providesThumbs: true
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 089152b0-0d41-4e63-92a8-d83178a4ce67
@@ -60,7 +60,7 @@ fieldLayouts:
             instructions: null
             label: 'Slide Title'
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a4a388a4-1eb3-4e3a-8781-e0887b77d13e
@@ -104,12 +104,12 @@ fieldLayouts:
         userCondition: null
 handle: slide
 hasTitleField: false
-icon: ''
+icon: gallery-thumbnails
 name: Slide
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: '{slideTitle}'
 titleTranslationKeyFormat: ''
 titleTranslationMethod: site

@@ -8,7 +8,7 @@ settings:
   entryTypes:
     - d399ecfb-7ec8-47d8-84ed-b8447e779a67 # Slide
   includeTableView: false
-  maxEntries: null
+  maxEntries: 5
   minEntries: null
   pageSize: 50
   propagationKeyFormat: null
