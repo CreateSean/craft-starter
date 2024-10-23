@@ -3,13 +3,13 @@
 <section class="w-full py-0 swiper hero-swiper">
 
   <div class="swiper-wrapper">
-    {% for row in block.slides.all() %}
+    {% for slide in block.slides.all() %}
 
       <div class="relative swiper-slide" data-foo>
 
         {# image #}
         <div class="w-full ">
-          {% set heroImage = row.image.one() %}
+          {% set heroImage = slide.image.one() %}
           {{ include('_includes/responsiveImage', {
             image: heroImage,
             transforms: [
@@ -53,16 +53,16 @@
           <div class="absolute top-0 left-0 z-10 w-full h-full py-8">
             <div class="container relative z-10 h-full">
               <div class="flex flex-col justify-center w-full h-full gap-8 lg:w-1/2">
-                {% if row.slideTitle|length %}
-                  <h1>{{ row.slideTitle }}</h1>
+                {% if slide.slideTitle|length %}
+                  <h1>{{ slide.slideTitle }}</h1>
                 {% endif %}
-                {% if row.copy|length %}
+                {% if slide.copy|length %}
                   <div class="prose prose-lg">
-                    {{ row.copy }}
+                    {{ slide.copy }}
                   </div><!-- /.prose -->
                 {% endif %}
 
-                {{ row.button.getLink({
+                {{ slide.button.getLink({
                   class: 'btn self-start',
                 }) }}
 

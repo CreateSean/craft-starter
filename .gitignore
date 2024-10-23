@@ -4,7 +4,6 @@
 /vendor
 .DS_Store
 /node_modules
-/public/imager/
 /translations/
 /public/uploads/
 /public/guide/
