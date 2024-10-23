@@ -1,6 +1,6 @@
 {{ craft.app.config.general.devMode ? ('<!-- Template: ' ~ _self ~ ' -->') | raw }}
 
-<nav class="bg-white border-b border-gray-200">
+<nav class="bg-white border-b border-gray-200 dark:bg-gray-700">
   <div class="container w-full text-gray-700 max-w-screen">
     <div
       x-data="{ open: false }"
@@ -9,7 +9,7 @@
 
       <div class="flex flex-row items-center justify-between px-4 py-2">
         <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase dark-mode:text-white focus:outline-none focus:shadow-outline">
-          <span title="{{ siteName }}">insert logo</span>
+          <span title="{{ siteName }}" class="dark:text-gray-100">insert logo</span>
           <span class="sr-only">Home</span>
         </a>
 
@@ -48,7 +48,7 @@
 
               <a href="{{ entry.hasDescendants ? '#' : entry.url }}"
                 class="py-2
-                {{ entry.level =='1' ? 'px-4 group-hover:bg-gray-400 group-hover:text-white':'text-white bg-transparent hover:text-gray-100 lg:text-sm' }}"
+                {{ entry.level =='1' ? 'px-4 group-hover:bg-gray-400 group-hover:text-white dark:text-gray-100':'text-white bg-transparent hover:text-gray-100 lg:text-sm' }}"
 
                 {% if entry.hasDescendants %}
                   @click="isOpen = !isOpen"
@@ -120,8 +120,8 @@
                 @click="expanded = ! expanded"
                 class="px-2 py-1 h-[38px] mt-1">
                 <span class="sr-only">{{ "Search"|t }}</span>
-                {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'20px', 'x-show':'!expanded'}) }}
-                {{ svg('@webroot/assets/images/svg/close.svg')|attr({'height':'20px', 'width':'20px', 'x-show':'expanded'}) }}
+                {{ svg('@webroot/assets/images/svg/search.svg')|attr({class:'dark:fill-gray-100 dark:stroke-gray-100','height':'20px', 'width':'20px', 'x-show':'!expanded'}) }}
+                {{ svg('@webroot/assets/images/svg/close.svg')|attr({class:'dark:fill-gray-100 dark:stroke-gray-100','height':'20px', 'width':'20px', 'x-show':'expanded'}) }}
               </button>
 
             <div
@@ -130,7 +130,7 @@
               x-collapse
               x-on:click.away="expanded = false"
               x-on:keydown.escape.prevent.stop="expanded = false"
-              class="right-0 z-20 px-2 py-2 my-1 bg-gray-100 shadow lg:absolute">
+              class="right-0 z-20 px-2 py-2 my-1 bg-gray-100 shadow lg:absolute dark:bg-gray-600">
 
                 <form
                   action="{{ url('search') }}"
@@ -141,13 +141,13 @@
                     type="text"
                     name="q"
                     placeholder="Search"
-                    class="px-6 py-1 my-1 text-lg bg-white border border-gray-200 placeholder:text-gray-400 focus-visible:outline-gray-400">
+                    class="px-6 py-1 my-1 text-lg bg-white border border-gray-200 dark:bg-gray-500 dark:text-gray-100 dark:bg-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-300 focus-visible:outline-gray-400">
 
                     <button
                       type="submit"
-                      class="px-2 py-1 border border-gray-200 bg-white h-[38px] mt-1">
+                      class="px-2 py-1 border border-gray-200 bg-white dark:bg-gray-600 dark:border-gray-700 h-[38px] mt-1">
                       <span class="sr-only">{{ "Search"|t }}</span>
-                      {{ svg('@webroot/assets/images/svg/search.svg')|attr({'height':'20px', 'width':'20px'}) }}
+                      {{ svg('@webroot/assets/images/svg/search.svg')|attr({class:'dark:fill-gray-100 dark:stroke-gray-100','height':'20px', 'width':'20px'}) }}
                     </button>
                 </form>
             </div>

@@ -2180,6 +2180,18 @@ nav ul li img {
   fill: #FFFFFF;
 }
 
+.fill-gray-400 {
+  fill: #9ca3af;
+}
+
+.stroke-gray-100 {
+  stroke: #f3f4f6;
+}
+
+.stroke-white {
+  stroke: #FFFFFF;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2427,6 +2439,11 @@ nav ul li img {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2634,16 +2651,113 @@ nav ul li img {
             text-decoration-line: underline;
   }
 }
+:is(.dark .dark\:border-gray-700) {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+:is(.dark .dark\:bg-gray-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+:is(.dark .dark\:bg-gray-100) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+:is(.dark .dark\:bg-gray-700) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+:is(.dark .dark\:bg-gray-600) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+:is(.dark .dark\:bg-gray-500) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
 :is(.dark .dark\:fill-white) {
   fill: #FFFFFF;
+}
+:is(.dark .dark\:fill-gray-100) {
+  fill: #f3f4f6;
+}
+:is(.dark .dark\:stroke-gray-100) {
+  stroke: #f3f4f6;
+}
+:is(.dark .dark\:stroke-white) {
+  stroke: #FFFFFF;
 }
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+:is(.dark .dark\:text-gray-100) {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
 :is(.dark .dark\:shadow-white\/30) {
   --tw-shadow-color: rgb(255 255 255 / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
+}
+:is(.dark .dark\:placeholder\:text-gray-100)::-webkit-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-100)::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-100):-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-100)::-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-100)::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-200)::-webkit-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-200)::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-200):-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-200)::-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-200)::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-300)::-webkit-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-300)::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-300):-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-300)::-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:placeholder\:text-gray-300)::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 :is(.dark .dark\:hover\:bg-gray-600:hover) {
   --tw-bg-opacity: 1;
