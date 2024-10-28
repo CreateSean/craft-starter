@@ -45,10 +45,15 @@ Set up your local development, if you are using DDev for local development then 
 4. update email settings of dotenv for staging/production. Current settings work with mailhog in ddev. To open mailhog run `ddev launch -m`
 5. Run `ddev start` and the site should start up.
 6. run `ddev import-db --file=db.sql.gz` this will import the seeder database with settings, channels, etc.
-7. run `php craft setup/security-key`
-8. run `php craft setup/app-id`
-9. run `ddev launch access` will open the Craft CP
-10. To access the db from your host machine run `ddev describe` and you'll get the connection details needed
+7. run `ddev launch access` will open the Craft CP
+8. To access the db from your host machine run `ddev describe` and you'll get the connection details needed
+
+if you clone the starter instead of using composer to create the package you will need to run additional commands
+
+1. `php craft setup/security-key`
+2. `php craft setup/app-id`
+3. `ddev composer install`
+4. `npm run install`
 
 Login: `cc_admin`
 Password: `letmein`

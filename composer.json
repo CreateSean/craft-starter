@@ -51,7 +51,8 @@
     ],
     "post-create-project-cmd": [
       "@php craft setup/security-key",
-      "@php craft setup/app-id"
+      "@php craft setup/app-id",
+      "@npm install"
     ],
     "nuke": [
       "rm -rf vendor/ && composer clear-cache && composer install"
