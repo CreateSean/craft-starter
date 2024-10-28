@@ -12,7 +12,7 @@
   <!--_components/news-listing-->
   {{ sprig('_components/news-listing', { 'limit':6}) }}
 
-    <script>
+  <script>
     htmx.on('htmx:afterSwap', function(event) {
       // scroll to top so we aren't left at the bottom of the new page
       window.scrollTo(0, 50);
