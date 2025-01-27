@@ -11,3 +11,4 @@
 *.bak
 /web/assets/cpresources/
 .vscode/tasks.json
+.tarbells/
