@@ -278,7 +278,7 @@ The layout template has a commented out header tag with that when enabled will m
 
 This uses an include to generate a picture element with multiple sources with webp falling back to jpeg. use this example code to add an image to any page
 
-if the image is empty uses a **fallback image** from **placeholder.com**  - this can be update on line 21 of `_includes/responsiveImage.twig`
+if the image is empty uses a **fallback image** from **placeholder.com**  - this can be update on line 5 of `_includes/responsiveImage.twig`
 
 ```twig
 {{ include('_includes/responsiveImage', {
@@ -317,6 +317,10 @@ if the image is empty uses a **fallback image** from **placeholder.com**  - this
       }
     },
   ],
+  figureClass: null,
+  figureStyle: null,
+  pictureClass: null,
+  caption: null,
   attributes: {
     alt: image.altText ?? image.title ?? null,
     class: '',

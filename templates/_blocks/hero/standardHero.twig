@@ -36,6 +36,10 @@
         }
       },
     ],
+    figureClass: null,
+    figureStyle: null,
+    pictureClass: null,
+    caption: null,
     attributes: {
       alt: image.altText ?? image.title ?? null,
       class: 'object-cover z-0 w-full h-full lg:min-h-[450px] md:min-h-[375px] min-h-[300px]',
@@ -44,34 +48,6 @@
     },
   }, with_context = false) }}
 
-  {# {% set transforms = {
-    '(max-width: 767px)': {
-      width: 767,
-      height:300,
-      mode: 'crop',
-      quality: 80,
-    },
-    '(max-width: 1199px)': {
-      width: 1200,
-      height:375,
-      mode: 'crop',
-      quality: 80,
-    },
-    '(min-width: 1200px)': {
-      width: 1920,
-      height:450,
-      mode: 'crop',
-      quality: 80,
-    },
-  } %}
-  {% set attributes = {
-      class: [
-          'object-cover z-0 w-full h-full lg:min-h-[450px] md:min-h-[375px] min-h-[300px]',
-      ],
-      loading:'lazy',
-      alt: heroImage.altText ?? heroImage.title ?? null,
-  } %}
-  {{ craft.images.pictureMedia(heroImage, transforms, null, attributes) }} #}
 
   {# hero content #}
   <div class="absolute top-0 left-0 z-10 w-full h-full py-8">
