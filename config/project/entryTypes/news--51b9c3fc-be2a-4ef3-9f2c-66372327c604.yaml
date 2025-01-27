@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-01-27T11:58:14-05:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T11:58:14-05:00'
             dismissible: false
             elementCondition: null
             style: tip
@@ -43,6 +45,7 @@ fieldLayouts:
             uid: f4aec492-bb0f-40b0-afbf-79a590fca8be
             userCondition: null
           -
+            dateAdded: '2025-01-27T11:58:14-05:00'
             elementCondition: null
             fieldUid: b2f53aa5-81a3-466c-af2d-e30dab4ed3d8 # Image
             handle: null
@@ -58,12 +61,13 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dateAdded: '2025-01-27T11:58:14-05:00'
             elementCondition: null
-            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
-            handle: null
+            fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
+            handle: summary
             includeInCards: false
             instructions: null
-            label: null
+            label: Summary
             providesThumbs: false
             required: false
             tip: null
@@ -73,6 +77,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dateAdded: '2025-01-27T11:58:14-05:00'
             elementCondition: null
             fieldUid: fbdde691-0df2-4e8e-b1a8-61a1f555fd0e # News Categories
             handle: null
@@ -88,6 +93,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T11:58:14-05:00'
             elementCondition: null
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
@@ -100,6 +106,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T11:58:14-05:00'
             elementCondition: null
             fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1 # SEO
             handle: null

@@ -1,7 +1,7 @@
 columnSuffix: buzbghct
 handle: embed
 instructions: null
-name: 'Content Builder - Code Embed - Embed'
+name: Embed
 searchable: false
 settings:
   byteLimit: null

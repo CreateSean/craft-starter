@@ -1,17 +1,20 @@
 color: null
 fieldLayouts:
   5cffcd34-b35a-46b9-afa9-c3f3b295e13d:
+    cardView:
+      - 'layoutElement:0c4076ea-60fd-47cd-8995-455d0b2dbcd1'
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:50:55+00:00'
             elementCondition: null
-            fieldUid: 8a60bb9d-8e34-4487-b809-65134adc6fa1
-            handle: padding
+            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
+            handle: null
             includeInCards: true
             instructions: null
-            label: Padding
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -21,8 +24,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:50:55+00:00'
             elementCondition: null
-            fieldUid: 3b9496a7-4539-4c28-91bc-3e51c68f4187
+            fieldUid: 3b9496a7-4539-4c28-91bc-3e51c68f4187 # Embed
             handle: null
             includeInCards: false
             instructions: null
@@ -40,7 +44,7 @@ fieldLayouts:
         userCondition: null
 handle: codeEmbed
 hasTitleField: false
-icon: null
+icon: terminal
 name: 'Code Embed'
 showSlugField: true
 showStatusField: true

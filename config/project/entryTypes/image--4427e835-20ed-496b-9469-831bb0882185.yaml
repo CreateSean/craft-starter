@@ -6,8 +6,9 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T11:45:28-05:00'
             elementCondition: null
-            fieldUid: 25e2157e-9a82-41cd-970f-4fc58cb3a835
+            fieldUid: 25e2157e-9a82-41cd-970f-4fc58cb3a835 # Screenshots
             handle: null
             includeInCards: false
             instructions: null
@@ -21,8 +22,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T11:45:28-05:00'
             elementCondition: null
-            fieldUid: f03239f9-af65-481a-b6b8-76e0e158244f
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: caption
             includeInCards: true
             instructions: null

@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-01-27T16:37:49+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,8 +36,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:37:49+00:00'
             elementCondition: null
-            fieldUid: e285fc8c-8b64-4829-afe0-88f9d0c3c8c4
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: sectionTitle
             includeInCards: false
             instructions: null
@@ -50,8 +52,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:37:49+00:00'
             elementCondition: null
-            fieldUid: 5026b221-a48f-4868-9f48-07428068e77e
+            fieldUid: 5026b221-a48f-4868-9f48-07428068e77e # Related Entries
             handle: null
             includeInCards: false
             instructions: null
@@ -71,12 +74,13 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:37:49+00:00'
             elementCondition: null
-            fieldUid: cf771399-6f67-4917-bd2f-0173c3504c7e
-            handle: padding
+            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
+            handle: null
             includeInCards: false
             instructions: null
-            label: Padding
+            label: null
             providesThumbs: false
             required: false
             tip: null

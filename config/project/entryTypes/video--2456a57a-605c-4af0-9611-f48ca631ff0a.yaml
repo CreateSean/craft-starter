@@ -6,12 +6,13 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:45:28+00:00'
             elementCondition: null
-            fieldUid: b2007669-385a-48ab-8bb3-88019d7c65de
-            handle: padding
+            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
+            handle: null
             includeInCards: true
             instructions: null
-            label: Padding
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -21,11 +22,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:45:28+00:00'
             elementCondition: null
-            fieldUid: 0608b317-3611-4a50-a757-9d0414083f50
-            handle: null
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
+            handle: videoLink
             includeInCards: false
-            instructions: null
+            instructions: 'YouTube or Vimeo'
             label: 'Video Link'
             providesThumbs: false
             required: false

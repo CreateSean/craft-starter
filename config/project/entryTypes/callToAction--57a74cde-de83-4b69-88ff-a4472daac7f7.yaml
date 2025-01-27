@@ -1,45 +1,17 @@
 color: null
 fieldLayouts:
   7d8c40f9-257c-41b4-8747-551f180cacc5:
+    cardView:
+      - 'layoutElement:1b392e2e-ab1b-42ce-81a1-01fbd59e5ce6'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-08-10T13:55:01+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 88559258-48a8-43f5-b71d-445743d4cb82
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-08-10T13:55:01+00:00'
             elementCondition: null
-            fieldUid: 5bed279a-5360-4e96-b92e-3153c98bff40
-            handle: null
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
+            handle: sectionTitle
             includeInCards: false
             instructions: null
             label: 'Section Title'
@@ -61,11 +33,11 @@ fieldLayouts:
           -
             dateAdded: '2024-08-10T13:55:01+00:00'
             elementCondition: null
-            fieldUid: c78e0b43-9945-41ae-bdc4-9e38f07eca01 # Button
-            handle: button
+            fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b # Button
+            handle: null
             includeInCards: false
             instructions: null
-            label: Button
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -83,7 +55,7 @@ fieldLayouts:
           -
             dateAdded: '2024-08-10T13:55:01+00:00'
             elementCondition: null
-            fieldUid: cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f
+            fieldUid: cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f # Background Image
             handle: null
             includeInCards: false
             instructions: null
@@ -105,7 +77,7 @@ fieldLayouts:
           -
             dateAdded: '2024-08-10T13:55:01+00:00'
             elementCondition: null
-            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Content Builder - Call To Action - Padding
+            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
             handle: null
             includeInCards: true
             instructions: null
@@ -127,8 +99,8 @@ icon: link
 name: 'Call To Action'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

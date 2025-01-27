@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   763d8c69-2e2f-4452-9c19-5408b26d3e08:
+    cardView:
+      - 'layoutElement:2dc7747d-77d5-4b31-b9ad-6334c9087687'
     tabs:
       -
         elementCondition: null
@@ -10,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-01-27T16:47:25+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +38,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
             fieldUid: 56f86cc6-5713-447f-8b10-e53f06ef42eb # Hide from Nav
             handle: null
@@ -50,11 +54,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 52d4b636-f08e-47cf-9216-9d20782de596
             userCondition: null
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
             fieldUid: ab8abc7e-2a4d-4858-98ea-9a6954a434da # Hero
             handle: null
@@ -70,6 +76,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             dismissible: false
             elementCondition: null
             style: tip
@@ -78,6 +85,7 @@ fieldLayouts:
             uid: 124ac5d1-7d24-4c4b-a2dd-75b9b0659c5a
             userCondition: null
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
             fieldUid: c33fedfd-ec76-45db-93dc-a12697e4a2aa # Listing Image
             handle: null
@@ -93,12 +101,13 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
-            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
-            handle: null
+            fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
+            handle: summary
             includeInCards: true
             instructions: null
-            label: null
+            label: Summary
             providesThumbs: false
             required: false
             tip: null
@@ -108,12 +117,14 @@ fieldLayouts:
             warning: null
             width: 75
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
             heading: 'Main Content'
             type: craft\fieldlayoutelements\Heading
             uid: cbba0400-5698-4143-b88f-d1094999895e
             userCondition: null
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
             fieldUid: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
             handle: null
@@ -135,6 +146,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:47:25+00:00'
             elementCondition: null
             fieldUid: 149ec41c-d6de-4ae5-84db-08d285801dd1 # SEO
             handle: null
@@ -158,8 +170,8 @@ icon: notebook
 name: Pages
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

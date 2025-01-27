@@ -1,12 +1,11 @@
 columnSuffix: null
 handle: relatedEntries
 instructions: 'Select up to 3 entries'
-name: 'Content Builder - Related Entries - Related Entries'
+name: 'Related Entries'
 searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 3
   minRelations: 1
@@ -16,7 +15,7 @@ settings:
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Entries

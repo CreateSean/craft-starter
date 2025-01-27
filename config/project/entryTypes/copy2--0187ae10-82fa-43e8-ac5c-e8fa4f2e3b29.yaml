@@ -1,13 +1,16 @@
 color: null
 fieldLayouts:
   623094d9-a7ca-4635-b4df-fb93c89d5b74:
+    cardView:
+      - 'layoutElement:ba979be8-7b6e-4cd0-a807-5019461b80ee'
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:41:59+00:00'
             elementCondition: null
-            fieldUid: 01d20550-63a0-4d7a-ad9b-5a130e8f55a8
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: sectionTitle
             includeInCards: true
             instructions: null
@@ -21,9 +24,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:41:59+00:00'
             elementCondition: null
-            fieldUid: 6adad598-392d-4158-9400-8f90f7fe1fb0
-            handle: null
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
+            handle: sectionSubtitle
             includeInCards: false
             instructions: null
             label: 'Section Subtitle'
@@ -36,12 +40,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:41:59+00:00'
             elementCondition: null
-            fieldUid: 10748c54-7d1f-4b35-9fd9-57bb11a751bc
-            handle: copy
+            fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
+            handle: null
             includeInCards: false
             instructions: null
-            label: Copy
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -56,7 +61,7 @@ fieldLayouts:
 handle: copy2
 hasTitleField: false
 icon: null
-name: 'Copy 2'
+name: 'Copy (user guide)'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

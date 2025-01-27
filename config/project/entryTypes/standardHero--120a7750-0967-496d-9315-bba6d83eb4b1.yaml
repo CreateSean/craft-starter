@@ -1,13 +1,16 @@
 color: null
 fieldLayouts:
   73281f26-73de-4318-a067-3d6c6905b1cd:
+    cardView:
+      - 'layoutElement:360e355c-d9f2-417d-af9f-ce89b15c6e4a'
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:37:38+00:00'
             elementCondition: null
-            fieldUid: 7bf7da79-8f7d-4a1b-8129-121b24c0d99b
+            fieldUid: 7bf7da79-8f7d-4a1b-8129-121b24c0d99b # Hero Image
             handle: image
             includeInCards: false
             instructions: null
@@ -21,11 +24,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:37:38+00:00'
             elementCondition: null
-            fieldUid: 21077893-9405-4330-ba61-9f695515c9fb
-            handle: null
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
+            handle: heroTitle
             includeInCards: true
-            instructions: null
+            instructions: 'If empty page title will be used'
             label: 'Hero Title'
             providesThumbs: false
             required: false
@@ -36,8 +40,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:37:38+00:00'
             elementCondition: null
-            fieldUid: da3d7ec4-1d85-47ba-a517-6c81d94cc9d2
+            fieldUid: da3d7ec4-1d85-47ba-a517-6c81d94cc9d2 # Copy Basic
             handle: copy
             includeInCards: false
             instructions: null
@@ -51,12 +56,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:37:38+00:00'
             elementCondition: null
-            fieldUid: 4d4435a9-cff2-46e6-9e43-ca2b7d62486f
-            handle: button
+            fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b # Button
+            handle: null
             includeInCards: false
             instructions: null
-            label: Button
+            label: null
             providesThumbs: false
             required: false
             tip: null

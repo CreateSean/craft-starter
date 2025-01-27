@@ -1,21 +1,49 @@
 columnSuffix: null
-contentColumnType: string
 handle: contentBuilder
 instructions: null
 name: 'Content Builder'
-searchable: false
+searchable: true
 settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
-    - 48d0d0b8-2e48-4232-8b09-a401c6493902 # Fragment Block
-    - 57a74cde-de83-4b69-88ff-a4472daac7f7 # Call To Action
-    - 2456a57a-605c-4af0-9611-f48ca631ff0a
-    - 70339fac-606b-4827-9a19-c97a3f0bd59c # Copy
-    - a983660a-2b2e-413f-a79c-498b502b4f85
-    - c951c9a0-1cca-4210-bef8-2d3d0446e841 # Related Entries
+    -
+      __assoc__:
+        -
+          - uid
+          - 48d0d0b8-2e48-4232-8b09-a401c6493902 # Fragment Block
+    -
+      __assoc__:
+        -
+          - uid
+          - 57a74cde-de83-4b69-88ff-a4472daac7f7 # Call To Action
+    -
+      __assoc__:
+        -
+          - uid
+          - 2456a57a-605c-4af0-9611-f48ca631ff0a
+    -
+      __assoc__:
+        -
+          - uid
+          - 70339fac-606b-4827-9a19-c97a3f0bd59c # Copy
+    -
+      __assoc__:
+        -
+          - uid
+          - a983660a-2b2e-413f-a79c-498b502b4f85 # Code Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - c951c9a0-1cca-4210-bef8-2d3d0446e841 # Related Entries
+  includeTableView: false
   maxEntries: null
   minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: none
+  showCardsInGrid: false
   viewMode: blocks
 translationKeyFormat: null
 translationMethod: site

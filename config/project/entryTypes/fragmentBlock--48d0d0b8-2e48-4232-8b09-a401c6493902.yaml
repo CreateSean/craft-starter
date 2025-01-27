@@ -1,42 +1,16 @@
 color: null
 fieldLayouts:
   9a7c5f55-c3f5-4e6e-9066-4cae24a1e8fc:
+    cardView:
+      - 'layoutElement:36176e49-f347-4d1d-9c9f-43876e808579'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
+            dateAdded: '2025-01-27T17:15:33+00:00'
             elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d1cb9311-8822-4092-8e29-4605232cc3a5
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: aac80dd6-df34-4cd2-a92f-14debb37b911
+            fieldUid: aac80dd6-df34-4cd2-a92f-14debb37b911 # Fragment
             handle: null
             includeInCards: true
             instructions: null
@@ -54,12 +28,12 @@ fieldLayouts:
         userCondition: null
 handle: fragmentBlock
 hasTitleField: false
-icon: ''
+icon: puzzle-piece
 name: 'Fragment Block'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

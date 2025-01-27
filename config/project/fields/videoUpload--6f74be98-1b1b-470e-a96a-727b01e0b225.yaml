@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: videoUpload
 instructions: null
-name: 'User Guide - Video - Video Upload'
+name: 'Video Upload'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,7 +12,6 @@ settings:
   branchLimit: null
   defaultUploadLocationSource: 'volume:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
   defaultUploadLocationSubpath: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null

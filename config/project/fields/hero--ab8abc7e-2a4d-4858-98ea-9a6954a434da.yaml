@@ -2,13 +2,26 @@ columnSuffix: null
 handle: hero
 instructions: null
 name: Hero
-searchable: false
+searchable: true
 settings:
   createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
-    - 120a7750-0967-496d-9315-bba6d83eb4b1
-    - 323e9af3-aa75-4f1c-82eb-370e40179f41 # Slider Hero
-    - b4d947dc-370e-4404-807b-b165534a1503
+    -
+      __assoc__:
+        -
+          - uid
+          - 120a7750-0967-496d-9315-bba6d83eb4b1 # Standard Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - 323e9af3-aa75-4f1c-82eb-370e40179f41 # Slider Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - b4d947dc-370e-4404-807b-b165534a1503
   includeTableView: false
   maxEntries: 1
   minEntries: 1

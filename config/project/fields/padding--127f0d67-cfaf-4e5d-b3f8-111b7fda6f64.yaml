@@ -1,9 +1,10 @@
 columnSuffix: mjnbzisp
 handle: padding
 instructions: null
-name: 'Content Builder - Call To Action - Padding'
+name: Padding
 searchable: false
 settings:
+  customOptions: false
   options:
     -
       __assoc__:
@@ -50,5 +51,5 @@ settings:
           - default
           - ''
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Dropdown

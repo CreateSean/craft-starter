@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: backgroundImage
 instructions: null
-name: 'Content Builder - Call To Action - Background Image'
+name: 'Background Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,7 +12,6 @@ settings:
   branchLimit: null
   defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   defaultUploadLocationSubpath: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null

@@ -1,13 +1,16 @@
 color: null
 fieldLayouts:
   bc2a4d96-e189-4577-9559-d25bf551d2c1:
+    cardView:
+      - 'layoutElement:d05631c8-4a8b-4de3-8556-fdb8dac2c21f'
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:41:59+00:00'
             elementCondition: null
-            fieldUid: 854806b9-7b9c-4bee-b636-6ffb1d144b34
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: sectionTitle
             includeInCards: true
             instructions: null
@@ -21,9 +24,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:41:59+00:00'
             elementCondition: null
-            fieldUid: 505d226e-5fae-49b8-9460-b78c35449b2e
-            handle: null
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
+            handle: sectionsubtitle2
             includeInCards: false
             instructions: null
             label: SectionSubtitle
@@ -36,8 +40,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:41:59+00:00'
             elementCondition: null
-            fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225
+            fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225 # Video Upload
             handle: null
             includeInCards: false
             instructions: null
@@ -56,7 +61,7 @@ fieldLayouts:
 handle: video2
 hasTitleField: false
 icon: null
-name: 'Video 2'
+name: 'Video (user guide)'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

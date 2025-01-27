@@ -1,20 +1,21 @@
 columnSuffix: null
-handle: copy3
+handle: copyBasic
 instructions: null
-name: 'Hero - Standard Hero - Copy'
-searchable: false
+name: 'Copy Basic'
+searchable: true
 settings:
-  availableTransforms: '*'
+  availableTransforms: ''
   availableVolumes: '*'
   ckeConfig: 3e09420e-30db-49dd-9520-4775f6667303 # Site Basic
   createButtonLabel: null
   defaultTransform: null
-  enableSourceEditingForNonAdmins: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: true
+  sourceEditingGroups:
+    - __ADMINS__
   wordLimit: null
 translationKeyFormat: null
 translationMethod: site

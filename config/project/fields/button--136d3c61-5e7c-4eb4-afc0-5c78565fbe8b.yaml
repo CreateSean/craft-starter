@@ -1,36 +1,34 @@
 columnSuffix: eqtutsuz
-contentColumnType: text
 handle: button
 instructions: null
 name: Button
-searchable: false
+searchable: true
 settings:
-  columnType: text
   defaultLinkType: default-verbb-hyper-links-entry
   defaultNewWindow: false
   fieldLayoutId: null
   linkTypes:
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Asset
-        -
+        1:
           - label
           - Asset
-        -
+        2:
           - handle
           - default-verbb-hyper-links-asset
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 31628411-76ea-4047-b879-ae8bffb6e351
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -220,30 +218,33 @@ settings:
                               -
                                 - uid
                                 - ebb16819-1a18-4927-84eb-07831b6f3143
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Category
-        -
+        1:
           - label
           - Category
-        -
+        2:
           - handle
           - default-verbb-hyper-links-category
-        -
+        3:
           - enabled
-          - false
-        -
+          - true
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 9a2ea86d-fb7c-47d9-bf6c-d0d5a15480e6
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -300,8 +301,17 @@ settings:
                                 - required
                                 - false
                               -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
                                 - width
                                 - 50
+                              -
+                                - dateAdded
+                                - '2025-01-27T17:08:36+00:00'
                               -
                                 - uid
                                 - 1bd789ab-4eab-4f03-adae-ca5bdfc8971c
@@ -347,8 +357,17 @@ settings:
                                 - required
                                 - false
                               -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
                                 - width
                                 - 50
+                              -
+                                - dateAdded
+                                - '2025-01-27T17:08:36+00:00'
                               -
                                 - uid
                                 - 8b1742ab-13d8-47e4-9148-1918205979a2
@@ -363,6 +382,59 @@ settings:
                       -
                         - elements
                         -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2025-01-27T12:09:19-05:00'
+                              -
+                                - uid
+                                - 2ec7271e-5a9e-4402-8fae-73019d0c1254
                           -
                             __assoc__:
                               -
@@ -402,8 +474,17 @@ settings:
                                 - required
                                 - false
                               -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
                                 - width
                                 - 100
+                              -
+                                - dateAdded
+                                - '2025-01-27T17:08:36+00:00'
                               -
                                 - uid
                                 - 58d5f1fb-de1a-4269-bb6b-344922439800
@@ -428,14 +509,26 @@ settings:
                                 - required
                                 - false
                               -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
                                 - width
                                 - 100
                               -
+                                - dateAdded
+                                - '2025-01-27T17:08:36+00:00'
+                              -
                                 - uid
                                 - b68deb7d-0bce-4830-83a6-b46a3fd3eb54
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -1112,25 +1205,25 @@ settings:
                                 - e256f08f-eaa1-4246-a1aa-ce60dc81ec4a
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Entry
-        -
+        1:
           - label
           - Entry
-        -
+        2:
           - handle
           - default-verbb-hyper-links-entry
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 0ddca3c5-05d5-495e-9ce5-1ecc4526c144
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -1320,9 +1413,12 @@ settings:
                               -
                                 - uid
                                 - 61de6340-1954-4ece-a68a-1e2831278693
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -1958,25 +2054,25 @@ settings:
                                 - b4de502d-57dd-47bc-9453-657008280014
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\User
-        -
+        1:
           - label
           - User
-        -
+        2:
           - handle
           - default-verbb-hyper-links-user
-        -
+        3:
           - enabled
           - false
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 8e8ce2ae-4e02-442c-a742-47683b3f2cdb
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -2166,9 +2262,12 @@ settings:
                               -
                                 - uid
                                 - 8a6e92ce-9e6e-47f3-b874-a3cbfcab0297
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
   maxLinks: null
   minLinks: null
   multipleLinks: false

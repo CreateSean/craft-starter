@@ -1,42 +1,16 @@
 color: null
 fieldLayouts:
   f3caeaf8-c441-4ad3-a2e8-5ea9abdc3340:
+    cardView:
+      - 'layoutElement:eab65f53-ddcc-4fe7-86a6-125f0da1b7b0'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
+            dateAdded: '2025-01-27T16:37:44+00:00'
             elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 287bc99a-b762-4452-b6c6-e6084ef63e75
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 80c3b02f-d4d4-4fb2-8c5c-1cde8119afad
+            fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: sectionTitle
             includeInCards: false
             instructions: null
@@ -50,12 +24,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-27T16:37:44+00:00'
             elementCondition: null
-            fieldUid: 77af2e3b-d586-4daa-b99c-fd4792c204da
-            handle: copy
+            fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
+            handle: null
             includeInCards: false
             instructions: null
-            label: Copy
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -71,12 +46,13 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-27T16:37:44+00:00'
             elementCondition: null
-            fieldUid: b507c631-830f-46d6-b625-4d4a6df7775c
-            handle: padding
+            fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
+            handle: null
             includeInCards: true
             instructions: null
-            label: Padding
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -90,12 +66,12 @@ fieldLayouts:
         userCondition: null
 handle: copy
 hasTitleField: false
-icon: ''
+icon: font-case
 name: Copy
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,12 +1,17 @@
 columnSuffix: null
 handle: slides
 instructions: null
-name: 'Hero - Slider Hero - Slides'
-searchable: false
+name: Slides
+searchable: true
 settings:
   createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
-    - d399ecfb-7ec8-47d8-84ed-b8447e779a67 # Slide
+    -
+      __assoc__:
+        -
+          - uid
+          - d399ecfb-7ec8-47d8-84ed-b8447e779a67 # Slide
   includeTableView: false
   maxEntries: 5
   minEntries: null

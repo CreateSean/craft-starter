@@ -6,10 +6,10 @@ name: 'User Guide'
 searchable: false
 settings:
   entryTypes:
-    - 0187ae10-82fa-43e8-ac5c-e8fa4f2e3b29
+    - 0187ae10-82fa-43e8-ac5c-e8fa4f2e3b29 # Copy (user guide)
     - 4427e835-20ed-496b-9469-831bb0882185
-    - a399fb79-90a6-48a0-be1f-38d2b8a81af5
-    - c4527788-b877-44f3-9a2d-071f696877fa
+    - a399fb79-90a6-48a0-be1f-38d2b8a81af5 # Video (user guide)
+    - c4527788-b877-44f3-9a2d-071f696877fa # YouTube Video (user guide)
   maxEntries: null
   minEntries: null
   propagationKeyFormat: null
