@@ -3,7 +3,11 @@
 @source "./templates";
 @source "./src";
 
+@plugin "@tailwindcss/typography";
+
 @config '../../tailwind.config.js';
+
+
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
