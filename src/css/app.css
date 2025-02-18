@@ -87,7 +87,9 @@ a.skip-main:active {
 }
 
 @utility nav-dropdown {
-  /* hover nav  */
+  /* hover nav
+  // copied from HOTD
+  */
   &:before {
     /* position:absolute;
     z-index:15;
