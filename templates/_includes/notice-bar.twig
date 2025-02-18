@@ -8,7 +8,7 @@
 
   <div x-data="{ expanded: $persist(true).as('notice-bar').using(sessionStorage) }">
     <div
-      class="shadow-inner drop-shadow bg-gradient-to-b from-gray-100 via-gray-50 to-gray-100"
+      class="shadow-inner drop-shadow-sm bg-linear-to-b from-gray-100 via-gray-50 to-gray-100"
       x-show="expanded"
       x-collapse.duration.300ms >
       <div class="container">

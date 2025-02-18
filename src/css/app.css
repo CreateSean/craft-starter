@@ -1,31 +1,34 @@
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss' source(none);
 
-@tailwind utilities;
+@source "./templates";
+@source "./src";
 
+@config '../../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-  :root {
-    /*
-      Override the default colour theme in Plyr:
-      https://github.com/sampotts/plyr#customizing-the-css
-    */
-    --plyr-color-main: theme('colors.red.600');
-    }
+  *,
+  /* ::after, */
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
-@layer components {
+@utility responsive-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
 
-  [x-cloak] {
-    display: none;
-  }
-
-  .responsive-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-  }
-
-  .responsive-container iframe {
+  & iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,20 +36,159 @@
     height: 100%;
     border: 0;
   }
-  .testing {
-    @apply p-8 my-8 text-xl text-white bg-[#c2410c];
-    clear: both;
-    font-family: sans-serif;
-  }
+}
 
-  .testing:before {
+@utility testing {
+  @apply p-8 my-8 text-xl text-white bg-[#c2410c];
+  clear: both;
+  font-family: sans-serif;
+
+  &:before {
     @apply block mb-4 text-lg text-[#fbbf24] uppercase;
     content: 'Testing Note';
   }
 
-  .testing:after {
+  &:after {
     @apply block mt-4 text-lg text-[#fbbf24] uppercase;
     content: 'remove once testing complete';
+  }
+}
+
+@utility h4 {
+  @apply leading-tight;
+  text-wrap: balance;
+}
+
+@utility h5 {
+  @apply leading-tight;
+  text-wrap: balance;
+}
+
+a.skip-main {
+  @apply absolute top-[40px] w-[1px] h-[1px] overflow-hidden;
+  left: -999px;
+  z-index: -999;
+  background: #2d2828;
+}
+
+a.skip-main:focus,
+a.skip-main:active {
+  @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;
+}
+
+@utility no-pointer {
+  nav &li:hover {
+    @apply cursor-default;
+  }
+
+  nav &li:focus-within {
+    @apply cursor-default;
+  }
+}
+
+@utility nav-dropdown {
+  /* hover nav  */
+  &:before {
+    /* position:absolute;
+    z-index:15;
+    top:0;
+    left:0;
+    content:'';
+    width:100%;
+    height:23px;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0) 100%);
+    opacity:0.43; */
+  }
+}
+
+@utility btn {
+  /* .nav-hover:hover .top-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 12px);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    width: 25px;
+    height: 12px;
+    background-image: url(/assets/images/nav_dropdown_arrow.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: -12px 0 0 -12px;
+    margin-left: 0;
+    z-index: 10;
+  } */
+
+  /* end nav */
+  @apply inline-block px-6 py-1 text-white transition duration-200 bg-gray-400 rounded-sm hover:bg-gray-300 hover:text-gray-700;
+}
+
+@utility section-y-padding {
+  /* padding used in matrix blocks */
+  @apply py-24;
+}
+
+@utility section-t-padding {
+  @apply pt-24;
+}
+
+@utility section-b-padding {
+  @apply pb-24;
+}
+
+@utility section-no-padding {
+  @apply p-0;
+}
+
+@utility floating-input {
+  /* form fields */
+  @apply px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-hidden focus:border-gray-400;
+  &:focus ~ label {
+    @apply text-gray-600 -top-7;
+  }
+  &:not(:placeholder-shown) ~ label {
+    @apply text-gray-600 -top-7;
+  }
+}
+
+@utility floating-select {
+  @apply w-full px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-hidden focus:border-gray-400;
+  &:focus ~ label {
+    @apply text-gray-600 -top-7;
+  }
+  &:not([value='']):valid ~ label {
+    @apply text-gray-600 -top-7;
+  }
+}
+
+@utility floating-label {
+  @apply absolute text-lg text-gray-400 transition-all duration-300 left-4 top-2.5;
+}
+
+@utility prose {
+  /*
+    override typography plugin max width setting of 65ch
+    https://tailwindcss.com/docs/typography-plugin#overriding-max-width
+  */
+  @apply max-w-none;
+}
+/* end components layer */
+
+@layer base {
+  :root {
+    /*
+      Override the default colour theme in Plyr:
+      https://github.com/sampotts/plyr#customizing-the-css
+    */
+    --plyr-color-main: var(--color-red-600);
+    }
+}
+
+@layer components {
+
+  [x-cloak] {
+    display: none;
   }
 
   html {
@@ -70,11 +212,6 @@
   body {
     @apply font-default;
   }
-
-  h1, h2, h3, h4, h5, h6, .h4, .h5 {
-    @apply leading-tight;
-    text-wrap:balance;
-  }
   h1 {
     @apply text-4xl;
   }
@@ -87,18 +224,6 @@
   a {
     @apply underline-offset-2 hover:no-underline;
   }
-
-  a.skip-main {
-    @apply absolute top-[40px] w-[1px] h-[1px] overflow-hidden;
-    left: -999px;
-    z-index: -999;
-    background: #2d2828;
-  }
-
-  a.skip-main:focus,
-  a.skip-main:active {
-    @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;
-  }
   /* Nav */
   nav li {
     transition-duration: 0.5s;
@@ -106,10 +231,6 @@
   nav  li:hover,
   nav li:focus-within {
     @apply cursor-pointer;
-  }
-  nav  li.no-pointer:hover,
-  nav li.no-pointer:focus-within {
-    @apply cursor-default;
   }
   nav ul li ul {
     @apply bg-white lg:left-0 px-0 py-1 lg:shadow-lg lg:absolute bg-gray-400 lg:max-w-[180px] w-full lg:w-[180px] lg:min-w-[180px] pl-8 lg:pl-0;
@@ -136,79 +257,4 @@
     top: calc(50% - 4px);
   }
 
-    /* hover nav
-  // copied from HOTD
-  */
-  .nav-dropdown:before {
-    /* position:absolute;
-    z-index:15;
-    top:0;
-    left:0;
-    content:'';
-    width:100%;
-    height:23px;
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0) 100%);
-    opacity:0.43; */
-  }
-  /* .nav-hover:hover .top-link:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 12px);
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    width: 25px;
-    height: 12px;
-    background-image: url(/assets/images/nav_dropdown_arrow.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    margin: -12px 0 0 -12px;
-    margin-left: 0;
-    z-index: 10;
-  } */
-
-  /* end nav */
-
-  .btn {
-    @apply inline-block px-6 py-1 text-white transition duration-200 bg-gray-400 rounded hover:bg-gray-300 hover:text-gray-700;
-  }
-
-  /* padding used in matrix blocks */
-  .section-y-padding {
-    @apply py-24;
-  }
-  .section-t-padding {
-   @apply pt-24;
- }
- .section-b-padding {
-   @apply pb-24;
- }
- .section-no-padding {
-   @apply p-0;
- }
-
-  /* form fields */
-  .floating-input {
-    @apply px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-none focus:border-gray-400;
-  }
-  .floating-select {
-    @apply w-full px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-none focus:border-gray-400;
-  }
-  .floating-label {
-    @apply absolute text-lg text-gray-400 transition-all duration-300 left-4 top-2.5;
-  }
-  .floating-input:focus~label, .floating-input:not(:placeholder-shown)~label, .floating-select:focus~label, .floating-select:not([value=""]):valid ~ label {
-      @apply text-gray-600 -top-7;
-  }
-
-  /*
-    override typography plugin max width setting of 65ch
-    https://tailwindcss.com/docs/typography-plugin#overriding-max-width
-  */
-  .prose {
-    @apply max-w-none;
-  }
-
 }
-/* end components layer */

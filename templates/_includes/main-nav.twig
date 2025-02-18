@@ -8,12 +8,12 @@
       :class="{'h-screen':open, 'h-auto':!open}">
 
       <div class="flex flex-row items-center justify-between px-4 py-2">
-        <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase dark-mode:text-white focus:outline-none focus:shadow-outline">
+        <a href="{{siteUrl }}" class="text-lg font-semibold tracking-widest text-gray-900 uppercase dark-mode:text-white focus:outline-hidden focus:shadow-outline">
           <span title="{{ siteName }}" class="dark:text-gray-100">insert logo</span>
           <span class="sr-only">Home</span>
         </a>
 
-        <button class="relative mt-4 mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open;toggleOverflow();">
+        <button class="relative mt-4 mr-8 rounded-lg md:mr-12 lg:hidden focus:outline-hidden focus:shadow-outline" @click="open = !open;toggleOverflow();">
 
             <div class="absolute block w-5 h-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 border-1">
                 <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-300 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
@@ -33,7 +33,7 @@
       </div>
 
       {# main nav #}
-      <nav class="flex-col hidden pb-4 lg:flex-grow lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
+      <nav class="flex-col hidden pb-4 lg:grow lg:pb-0 lg:flex lg:justify-start lg:flex-row lg:h-auto" aria-label="Main Navigation" :class="{'flex': open, 'hidden': !open}">
         <ul class="flex flex-col flex-wrap pl-0 m-0 lg:flex-row">
 
           {% set pages = craft.entries.section('pages').hideFromNav('0').level('<='~4).all() %}
@@ -101,7 +101,7 @@
       </nav>
 
       {# utility nav here #}
-      <nav class="flex-col flex-grow pb-4 mb-auto lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto lg:mb-0" aria-label="utility nav" :class="{'flex': open, 'hidden': !open}">
+      <nav class="flex-col grow pb-4 mb-auto lg:pb-0 lg:flex lg:justify-center lg:flex-row lg:h-auto lg:mb-0" aria-label="utility nav" :class="{'flex': open, 'hidden': !open}">
 
         {#
         // dark mode buttons
@@ -130,7 +130,7 @@
               x-collapse
               x-on:click.away="expanded = false"
               x-on:keydown.escape.prevent.stop="expanded = false"
-              class="right-0 z-20 px-2 py-2 my-1 bg-gray-100 shadow lg:absolute dark:bg-gray-600">
+              class="right-0 z-20 px-2 py-2 my-1 bg-gray-100 shadow-sm lg:absolute dark:bg-gray-600">
 
                 <form
                   action="{{ url('search') }}"
