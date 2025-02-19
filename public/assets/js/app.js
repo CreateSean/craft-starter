@@ -53,4 +53,4 @@ console.log('please stop');
 const players = Plyr.setup('.js-player');
 
 // Expose player so it can be used from the console
-window.player = player;
+// window.player = player;

@@ -1,4 +1,4 @@
-@import 'tailwindcss' source(none);
+@import 'tailwindcss' ; /*source(none) */
 
 @source "./templates";
 @source "./src";
@@ -7,7 +7,19 @@
 
 @config '../../tailwind.config.js';
 
+@theme {
+  /* fonts */
+  --font-default: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
 
+  /* colors */
+  --color-grayBrand: #373F41;
+  --color-gray-light: #DADADA;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-transparent: transparent;
+  --color-current:currentColor;
+  --color-Ctesting:#d716de;
+}
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
