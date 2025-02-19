@@ -28,8 +28,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Craft Plugins](#craft-plugins)
   * [Typogrify](#typogrify)
   * [Sprig](#sprig)
-  * [contact Form](#contact-form)
-  * [Style Guide](#styleguide)
+  * [Contact Form](#contact-form)
   * [Content](#content)
   * [Composer nuke](#composer-nuke)
 
