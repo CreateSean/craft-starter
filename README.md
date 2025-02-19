@@ -1,6 +1,6 @@
 # Craft CMS Starter Project (Boilerplate)
 
-This is an opinionated Craft CMS starter project using DDev for local development, Tailwind CSS, Alpine Js, and Laravel Mix.
+This is an opinionated Craft CMS starter project using DDev for local development, Tailwind CSS, Alpine Js, and NPM Build Scripts.
 
 ### Install Craft 5 version
 to install this package run `composer create-project createsean/craft-starter .`
@@ -80,50 +80,31 @@ Password: `letmein`
 
 ## Build Process
 
-Tailwind is compiled using [Tailwind-jit](https://github.com/tailwindlabs/tailwindcss-jit) which is much faster than previously. it also ensures a small file size during `watch` builds. However I still recommend running the [production](#production) task before deployment.
+Tailwind for compiles with the `npm run start` command along with the entire build process. If you want to only compile tailwind run `npm run watch`
 
-Images and svg files should be copied to src/img and src/img/svg. When running `npm run production` these will then be optimized and copied to /public/assets/images and /public/assets/images/svg respectively (if you don't want to run production, copy files to both locations)
+Have removed this when migrating from Laravel Mix. ~~Images and svg files should be copied to src/img and src/img/svg. When running `npm run production` these will then be optimized and copied to /public/assets/images and /public/assets/images/svg respectively (if you don't want to run production, copy files to both locations)~~
 
-You will need [NodeJS](https://nodejs.org/en/) version 14+. YOu can either update to 14+ or if you need multiple versions of node install the Node Version Manager [Windows](https://github.com/nvm-sh/nvm) / [Mac](https://github.com/coreybutle/nvm-windows).
+You will need [NodeJS](https://nodejs.org/en/) version 20+. YOu can either update to 20+ or if you need multiple versions of node install the Node Version Manager [Windows](https://github.com/nvm-sh/nvm) / [Mac](https://github.com/coreybutle/nvm-windows).
 
 1. run `npm install` or `npm i`
 
 Add any scripts or css you need by running `npm install <package-name> --save-dev`
-You can then have the required javascript or css files combined and minimized by adding paths to the correct files in `webpack.mix.js` on line 64-70(js) or line 74-78(css). when you run `npx mix watch` everything will be combined and output to `/public/assets/js` or `public/assets/css`
+You can then have the required javascript or css files combined and minimized by adding paths to the correct files in `package.json` In the scripts section for `concat:js` or `concat:css`. When you run `npm run start` everything will be combined and output to `/public/assets/js` or `public/assets/css`
 
-2. update the banner text that gets prepended to css on lines 75-85 of `webpack.mix.js` with your project info
-3. in `webpack.mix.js` update line 12  `const baseUrl = 'https://craft-starter.ddev.site'` with your local domain
+2. in `browsersync.config.js` update line 8  `const baseUrl = 'https://craft-starter.ddev.site'` with your local domain
 
-```javascript
-  .banner({
-    banner: (function () {
-        return [
-            '/**!',
-            ' * @project        Craft Starter Website',
-            ' * @author         Sean Smith, Caffeine Creations',
-            ' * @Copyright      Copyright (c) ' + moment().format("YYYY") + ', Caffeine Creations',
-            ' *',
-            ' */',
-            '',
-        ].join('\n');
-    })(),
-    raw: true,
-  })
-```
 
-4. run `npx mix watch` to have laravel mix compile tailwind, set up browser sync. and combine scripts.
-    1. To get your SSL working with browsersync and DDEV follow these instructions
-    * SSL-enabled for DDev. You have to copy the SSL cert to somewhere outside of Docker first. Run this at your project root [Stack Overflow](https://stackoverflow.com/questions/59730898/cant-connect-browsersync-with-ddev-nginx-server-because-ssl-error):
+4. run `npm run start` to tailwind, set up browser sync and combine scripts. **This worked for Laravel Mix, but is not currently working for NPM scripts** until I find a solution, will just work with unsecure url locally.
+    1. ~~To get your SSL working with browsersync and DDEV follow these instructions~~
+      * ~~SSL-enabled for DDev. You have to copy the SSL cert to somewhere outside of Docker first. Run this at your project root [Stack Overflow](https://stackoverflow.com/questions/59730898/cant-connect-browsersync-with-ddev-nginx-server-because-ssl-error):~~
 
+      ```
+      docker cp ddev-router:/etc/nginx/certs ~/tmp/certs
     ```
-    docker cp ddev-router:/etc/nginx/certs ~/tmp/certs
-    ```
-    2. you may need to create the tmp/certs directory in your OS users directory
-    3. You should only need to do this for 1 project and then everything should work on multiple projects.
+      2. ~~you may need to create the tmp/certs directory in your OS users directory~~
+      3. ~~You should only need to do this for 1 project and then everything should work on multiple projects.~~
 
-5. Tailwind Config Viewer is set up and uses the following commands. `npm run tw-config-viewer` will load up the viewer at localhost:4000 and `npm run export-tw-config` will export the viewer to `public/tw-viewer`
-
-6. Tailwind Container Queries plugin is installed. See the (documentation)[https://github.com/tailwindlabs/tailwindcss-container-queries]
+4. Tailwind Container Queries are now native and do not need a plugin. See the (documentation)[https://tailwindcss.com/docs/responsive-design#container-queries]
 
 Add a `@container` class to the a parent div and then use prefixes to target the container size like this `@lg:bg-pink-400`. Matrix blocks by default have a `@container` so it is easy to use containers out of the box.
 
@@ -134,58 +115,6 @@ Add a `@container` class to the a parent div and then use prefixes to target the
   </div>
 </div>
 ```
-
-### Production
-
-when you are ready to deploy your code run `npx mix -p` to optimize images in `/src/img/` optimized images will be output in `/public/assets/images`
-
-this will also run the critical css task which you can configure at line 143 by adding in an array of urls and templates
-
-```javascript
-  urls: [{
-      url: '',
-      template: 'home'
-    },
-    {
-      url: 'contact',
-      template: 'singles/contact'
-    },
-  ],
-
-```
-
----
-
-## Tailwind
-
-There is an empty tailwind.config.js file at the root of the repository. Add config settings as necessary but I do have some conventions that I use on all projects
-
-For colors use `colornameBrand` where colorname is `red`, `blue`, or whatever the color is. and for font family use the name of the font. Below you can seen an example taken from another project in the extend key.
-
-
-```javascript
-colors: {
-  redBrand: {
-    light: '#fce9e8',
-    default: '#de242b',
-    dark: '#990e3d',
-  },
-  grayBrand: {
-    light: '#f2f2f2',
-    default: '#637a84',
-  },
-  textBrand: {
-    light:'#334960',
-    default: '#3a4250',
-  },
-  blackBrand: '#041e26',
-},
-fontFamily: {
-  karla: ['Karla', 'sans-serif'],
-  montserrat: ['Montserrat', 'serif'],
-},
-```
-
 ## Accessibility
 
 I aim to ensure default templates pass accessibility tests - except for color contrast as that will need to be taken into account during the design phase.
@@ -334,18 +263,19 @@ if the image is empty uses a **fallback image** from **placeholder.com**  - this
 
 The following plugins are installed and ready to be used on the site. I prefer to keep plugin usage to a **minimum** so do **not** install a plugin unless absolutely necessary. If it can be done natively, it should be done natively.
 
-1. Environment Label - adds a color bar across the control panel indicating current environmen
-2. Minify - minifies html/css/js on production
-3. CKEditor - Rich Text Editor
-4. Retcon - extra twig filters
-5. SEOmatic - used for all SEO.
-6. Control Panel CSS - add custom styles to the CP
-7. Hyper - used for buttons and other linkks
-8. ~~User Manual - in CP user manual ~~ removed until a Craft 5 version is available
-9. Knock Knock - password protect staging site (pass: **letmein**)
-10. Typogrify
+1. AssetRev - link to css and js files with manifest.json file names
+2. CKEditor - Rich Text Editor
+3. Contact Form
+4. Control Panel CSS - add custom styles to the CP
+5. Environment Label - adds a color bar across the control panel indicating current environment
+6. Hyper - used for buttons and other links
+7. Knock Knock - password protect staging site (pass: **letmein**)
+8. Minify - minifies html/css/js on production
+9. Retcon - extra twig filters
+10. SEOmatic - used for all SEO.
 11. Sprig - Reactive components
-12. AssetRev - link to css and js files with manifest.json file names
+12. Typogrify
+13. ~~User Manual - in CP user manual~~ removed until a Craft 5 version is available
 
 
 ## Typogrify
@@ -363,29 +293,6 @@ Additionally **NOTE** that sprig will only reload components once when using the
 ## Contact Form
 
 The contact form is powered by the first party [contact form plugin](https://github.com/craftcms/contact-form) and Sprig. be sure to update the Email varaibles in dotenv so that email works correctly. Go to `plugins > contact form` and update the Sender Text and Subject text of your emails.
-
-
-## Styleguide
-
-The style guide will automatically create the color palatte from your tailwind config. **Note:** - it only works with custom colors not tailwind colors. Additionally custom colors need to be added before any tailwind colors and be in this format:
-
-```json
-  grayBrand: {
-    light: '#DADADA',
-    DEFAULT: '#373F41',
-  },
-```
-using tailwind dot notation does not work if you have a color that does not have other options be sure to use the above format with `DEFAULT` as the key.
-
-Each time you update the colors you will need to run the following command
-
-```
-npm run export-tailwind-config
-```
-
-Which will export a json list in `templates/_tw-config`. Also see the **comments** in `templates/styleguide`.
-
-Uncomment block with `.testing` class and then copy/paste the generated classes into the `templates/_whitelist.twig` file.
 
 ## Content
 

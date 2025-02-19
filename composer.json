@@ -21,6 +21,7 @@
     "nystudio107/craft-seomatic": "^5.0.0-beta.8",
     "nystudio107/craft-typogrify": "^5.0.0-beta.2",
     "putyourlightson/craft-sprig": "^3.0.0-beta.2",
+    "topshelfcraft/environment-label": "^5.0.0",
     "verbb/hyper": "^2.0.0-beta.7",
     "verbb/knock-knock": "^3.0.0-beta.1",
     "vlucas/phpdotenv": "^5.4.0"

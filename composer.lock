@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ed887d1a5d7b0b91d2251623db77df5",
+    "content-hash": "207dc773a4dfecff71e9ccf06216326e",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -7938,6 +7938,88 @@
                 "source": "https://github.com/theiconic/name-parser/tree/v1.2.11"
             },
             "time": "2019-11-14T14:08:48+00:00"
+        },
+        {
+            "name": "topshelfcraft/base",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TopShelfCraft/base.git",
+                "reference": "5e0376d39a2b84a0cc1b661c2ed2dd3742077f87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TopShelfCraft/base/zipball/5e0376d39a2b84a0cc1b661c2ed2dd3742077f87",
+                "reference": "5e0376d39a2b84a0cc1b661c2ed2dd3742077f87",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TopShelfCraft\\base\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Base metal for Top Shelf Craft modules and plugins.",
+            "support": {
+                "issues": "https://github.com/TopShelfCraft/base/issues",
+                "source": "https://github.com/TopShelfCraft/base/tree/4.0.2"
+            },
+            "time": "2022-12-20T02:05:36+00:00"
+        },
+        {
+            "name": "topshelfcraft/environment-label",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TopShelfCraft/Environment-Label.git",
+                "reference": "a363c43ba42cf23b759881bd1f542a0a31a56995"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TopShelfCraft/Environment-Label/zipball/a363c43ba42cf23b759881bd1f542a0a31a56995",
+                "reference": "a363c43ba42cf23b759881bd1f542a0a31a56995",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0",
+                "topshelfcraft/base": "^4.0.1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Environment Label",
+                "class": "TopShelfCraft\\EnvironmentLabel\\EnvironmentLabel",
+                "handle": "environment-label"
+            },
+            "autoload": {
+                "psr-4": {
+                    "TopShelfCraft\\EnvironmentLabel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Top Shelf Craft (Michael Rog)",
+                    "homepage": "https://topshelfcraft.com"
+                }
+            ],
+            "description": "...so you don't forget where you are.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "environment label"
+            ],
+            "support": {
+                "docs": "https://github.com/TopShelfCraft/Environment-Label",
+                "issues": "https://github.com/TopShelfCraft/Environment-Label/issues",
+                "source": "https://github.com/TopShelfCraft/Environment-Label/tree/5.0.0"
+            },
+            "time": "2024-05-24T01:47:15+00:00"
         },
         {
             "name": "tubalmartin/cssmin",
