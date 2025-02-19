@@ -1767,9 +1767,6 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
   .bg-current {
     background-color: currentColor;
   }
@@ -1846,9 +1843,6 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  }
-  .p-24 {
-    padding: calc(var(--spacing) * 24);
   }
   .section-no-padding {
     padding: calc(var(--spacing) * 0);
@@ -2003,9 +1997,6 @@
   }
   .text-black {
     color: var(--color-black);
-  }
-  .text-gray-50 {
-    color: var(--color-gray-50);
   }
   .text-gray-100 {
     color: var(--color-gray-100);
