@@ -110,7 +110,7 @@ Add a `@container` class to the a parent div and then use prefixes to target the
 
 ## Updating build process on an existing site
 
-If you have a site built with an earlier version of this starter project and want to update the build process to use the new approach. Follow the (instructions here)[update-build-process.md].
+If you have a site built with an earlier version of this starter project and want to update the build process to use the new approach. Follow the [instructions here](update-build-process.md).
 
 
 ```html

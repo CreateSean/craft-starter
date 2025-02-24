@@ -6,9 +6,9 @@
 
 ```json
 {
-  "name": "Seans-photos",
+  "name": "Craft-Starter",
   "version": "2.0.0",
-  "description": "Seans Photos",
+  "description": "Craft Starter",
   "author": "Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>",
   "copyright": "",
   "license": "UNLICENSED",
@@ -51,52 +51,6 @@
 }
 ```
 
-```json
-{
-  "name": "Seans-photos",
-  "version": "2.0.0",
-  "description": "Seans Photos",
-  "author": "Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>",
-  "copyright": "",
-  "license": "UNLICENSED",
-  "private": true,
-  "devDependencies": {
-    "@babel/preset-env": "^7.15.6",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/line-clamp": "^0.4.4",
-    "@tailwindcss/typography": "^0.5.9",
-    "@tailwindcss/container-queries": "^0.1.1",
-    "cpy": "^11.1.0",
-    "cpy-cli": "^5.0.0",
-    "tailwind-config-viewer": "^1.7.2",
-    "tailwindcss": "^3.3.2"
-  },
-  "dependencies": {
-    "@alpinejs/collapse": "^3.12.1",
-    "@alpinejs/focus": "^3.12.1",
-    "@alpinejs/intersect": "^3.12.1",
-    "@alpinejs/persist": "^3.12.1",
-    "alpinejs": "^3.12.1",
-    "browser-sync": "^3.0.3",
-    "concat": "^1.0.3",
-    "npm-run-all": "^4.1.5",
-    "plyr": "^3.7.8",
-    "swiper": "^11.2.4"
-  },
-  "browserslist": [
-    "> .5% or last 2 versions"
-  ],
-  "scripts": {
-    "copy": "npx cpy-cli ./node_modules/plyr/dist/plyr.min.js ./public/assets/js/ --flat",
-    "concat:js": "concat ./node_modules/swiper/swiper-bundle.min.js ./node_modules/@alpinejs/persist/dist/cdn.min.js ./node_modules/@alpinejs/collapse/dist/cdn.min.js ./node_modules/@alpinejs/focus/dist/cdn.min.js ./node_modules/@alpinejs/intersect/dist/cdn.min.js ./node_modules/alpinejs/dist/cdn.min.js src/js/app.js  > ./public/assets/js/app.js ",
-    "concat:css": "concat ./node_modules/plyr/dist/plyr.css ./node_modules/swiper/swiper-bundle.min.css  > ./public/assets/css/vendor.combined.css ",
-    "watch": "tailwindcss -i ./src/css/app.css -o ./public/assets/css/app.css --watch",
-    "serve": "browser-sync start --config browsersync.config.js --https",
-    "start": "npm-run-all --parallel watch copy concat:js concat:css serve"
-  }
-}
-```
 
 1. run `npm install`.
 2. delete or rename `/assets/mix-manifest.json` so that it is not picked up anymore.
