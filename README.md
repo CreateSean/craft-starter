@@ -18,6 +18,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Local Development](#local-development)
   * [To Do](#to-do)
   * [Build Process](#build-process)
+  * [Updating build process on an existing site](#build-process)
   * [Tailwind](#tailwind)
   * [Accessibility](#accessibility)
   * [Dark Mode](#dark-mode)
@@ -106,6 +107,11 @@ You can then have the required javascript or css files combined and minimized by
 4. Tailwind Container Queries are now native and do not need a plugin. See the (documentation)[https://tailwindcss.com/docs/responsive-design#container-queries]
 
 Add a `@container` class to the a parent div and then use prefixes to target the container size like this `@lg:bg-pink-400`. Matrix blocks by default have a `@container` so it is easy to use containers out of the box.
+
+## Updating build process on an existing site
+
+If you have a site built with an earlier version of this starter project and want to update the build process to use the new approach. Follow the (instructions here)[update-build-process.md].
+
 
 ```html
 <div class="@container">

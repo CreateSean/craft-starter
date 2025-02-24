@@ -19,6 +19,7 @@ upload_dirs:
     - ..dbs
 host_db_port: "32221"
 use_dns_when_possible: true
+nodejs_version: "20"
 composer_version: ""
 web_environment: []
 corepack_enable: false

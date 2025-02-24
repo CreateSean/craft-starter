@@ -6,6 +6,7 @@ const homedir = require('os').homedir();
 
 module.exports = {
   proxy: 'https://craft-starter.ddev.site',
+  host: '0.0.0.0',
   files: [
     './templates/**/*.{html,twig}',
     './src/**/*.{css,js}',
