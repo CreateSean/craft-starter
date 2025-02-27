@@ -1,7 +1,8 @@
 {
   "js/app.js": "js/app.js?v=b75450f7",
+  "js/app.min.js": "js/app.min.js?v=c01f82c2",
   "js/plyr.min.js": "js/plyr.min.js?v=4fb2ab36",
-  "css/app.css": "css/app.css?v=aa462d6a",
+  "css/app.css": "css/app.css?v=85da0f61",
   "css/cp-css.css": "css/cp-css.css?v=4640657e",
   "css/vendor.combined.css": "css/vendor.combined.css?v=387c74ea"
 }

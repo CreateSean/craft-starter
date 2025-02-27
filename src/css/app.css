@@ -7,6 +7,9 @@
 
 /* @config '../../tailwind.config.js'; */
 
+/* https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* fonts */
   --font-default: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
