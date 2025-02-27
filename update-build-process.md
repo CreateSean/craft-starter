@@ -8,7 +8,7 @@
 {
   "name": "Craft-Starter",
   "version": "2.0.0",
-  "description": "Craft Starter",
+  "description": "Craft Starter Website",
   "author": "Sean Smith, Caffeine Creations <sean@caffeinecreations.ca>",
   "copyright": "",
   "license": "UNLICENSED",
@@ -18,19 +18,19 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "@tailwindcss/typography": "^0.5.9",
-    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/typography": "^0.5.16",
     "cpy": "^11.1.0",
     "cpy-cli": "^5.0.0",
-    "tailwind-config-viewer": "^1.7.2",
-    "tailwindcss": "^3.3.2"
+    "nodemon": "^3.0.2",
+    "tailwindcss": "^4.0.7",
+    "terser": "^5.39.0"
   },
   "dependencies": {
-    "@alpinejs/collapse": "^3.14.8",
-    "@alpinejs/focus": "^3.14.8",
-    "@alpinejs/intersect": "^3.14.8",
-    "@alpinejs/persist": "^3.14.8",
-    "alpinejs": "^3.14.8",
+    "@alpinejs/collapse": "^3.14.1",
+    "@alpinejs/focus": "^3.14.1",
+    "@alpinejs/intersect": "^3.14.1",
+    "@alpinejs/persist": "^3.14.1",
+    "alpinejs": "^3.14.1",
     "browser-sync": "^3.0.3",
     "concat": "^1.0.3",
     "npm-run-all": "^4.1.5",
@@ -42,11 +42,13 @@
   ],
   "scripts": {
     "copy": "npx cpy-cli ./node_modules/plyr/dist/plyr.min.js ./public/assets/js/ --flat",
-    "concat:js": "concat ./node_modules/swiper/swiper-bundle.min.js ./node_modules/@alpinejs/persist/dist/cdn.min.js ./node_modules/@alpinejs/collapse/dist/cdn.min.js ./node_modules/@alpinejs/focus/dist/cdn.min.js ./node_modules/@alpinejs/intersect/dist/cdn.min.js ./node_modules/alpinejs/dist/cdn.min.js src/js/app.js  > ./public/assets/js/app.js ",
-    "concat:css": "concat ./node_modules/plyr/dist/plyr.css ./node_modules/swiper/swiper-bundle.min.css  > ./public/assets/css/vendor.combined.css ",
-    "watch": "tailwindcss -i ./src/css/app.css -o ./public/assets/css/app.css --watch",
+    "concat:js": "concat ./node_modules/swiper/swiper-bundle.min.js ./node_modules/@alpinejs/persist/dist/cdn.min.js ./node_modules/@alpinejs/collapse/dist/cdn.min.js ./node_modules/@alpinejs/focus/dist/cdn.min.js ./node_modules/@alpinejs/intersect/dist/cdn.min.js ./node_modules/alpinejs/dist/cdn.min.js src/js/app.js  > ./public/assets/js/app.js && npx terser ./public/assets/js/app.js -o ./public/assets/js/app.min.js",
+    "concat:css": "concat ./node_modules/plyr/dist/plyr.css ./node_modules/swiper/swiper-bundle.min.css  > ./public/assets/css/vendor.combined.css",
+    "compile:css": "npx @tailwindcss/cli -i ./src/css/app.css -o ./public/assets/css/app.css --watch --minify",
+    "watch:manifest": "nodemon --watch public/assets/js --watch public/assets/css -e js,css src/js/generate-manifest.js",
     "serve": "browser-sync start --config browsersync.config.js",
-    "start": "npm-run-all --parallel watch copy concat:js concat:css serve"
+    "build": "npm-run-all copy concat:js concat:css \"watch:css -- --no-watch --minify\" && node src/js/generate-manifest.js",
+    "start": "npm-run-all --parallel compile:css watch:manifest copy concat:js concat:css serve"
   }
 }
 ```
