@@ -45,7 +45,7 @@
     "concat:js": "concat ./node_modules/swiper/swiper-bundle.min.js ./node_modules/@alpinejs/persist/dist/cdn.min.js ./node_modules/@alpinejs/collapse/dist/cdn.min.js ./node_modules/@alpinejs/focus/dist/cdn.min.js ./node_modules/@alpinejs/intersect/dist/cdn.min.js ./node_modules/alpinejs/dist/cdn.min.js src/js/app.js  > ./public/assets/js/app.js ",
     "concat:css": "concat ./node_modules/plyr/dist/plyr.css ./node_modules/swiper/swiper-bundle.min.css  > ./public/assets/css/vendor.combined.css ",
     "watch": "tailwindcss -i ./src/css/app.css -o ./public/assets/css/app.css --watch",
-    "serve": "browser-sync start --config browsersync.config.js --https",
+    "serve": "browser-sync start --config browsersync.config.js",
     "start": "npm-run-all --parallel watch copy concat:js concat:css serve"
   }
 }
