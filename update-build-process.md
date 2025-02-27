@@ -174,7 +174,13 @@ generateManifest();
 ```
 
 14. Add this `@plugin "@tailwindcss/typography";`  and other plugins from the original `tailwind.config.js` to the top of the CSS file below any `@source` .
-15. If there are errors in tailwind migrate colors, fonts etc to css file and out of tailwind.config.js into the theme option like this:
+15. add the following to the top of the css to get dark mode to continue to work:
+
+```css
+/* https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually */
+@custom-variant dark (&:where(.dark, .dark *));
+```
+16. If there are errors in tailwind migrate colors, fonts etc to css file and out of tailwind.config.js into the theme option like this:
 
 ```css
 @theme {
@@ -191,7 +197,7 @@ generateManifest();
 }
 ```
 
-16. open `config/assetrev.php` and update line 27 to this:  `'manifestPath' => 'public/assets/manifest.json',`.
+17. open `config/assetrev.php` and update line 27 to this:  `'manifestPath' => 'public/assets/manifest.json',`.
 17. run `npm run start`.
 18. **Note** some buttons may need to have the `cursor-pointer` class added.
 19. Note about container padding: See [https://tailwindcss.com/docs/upgrade-guide#container-configuration](https://tailwindcss.com/docs/upgrade-guide#container-configuration) look at `tailwind.config.js` theme container key and replicate in `src/app.css` like this:
@@ -204,7 +210,7 @@ generateManifest();
 }
 ```
 
-20. Any components in your `src/app.css` file may need to be moved into `@layer components { insert classes here }` in order for template overrides to work. Like this:
+21. Any components in your `src/app.css` file may need to be moved into `@layer components { insert classes here }` in order for template overrides to work. Like this:
 
 ```css
 @layer components {
@@ -216,7 +222,7 @@ generateManifest();
   }
 ```
 
-21. **Double check**  for any CSS that gets removed such as and re-add to the `@layer components block`.
+22. **Double check**  for any CSS that gets removed such as and re-add to the `@layer components block`.
 
 ```css
 h1, h2, h3, h4, h5, h6, .h4, .h5 {
@@ -224,7 +230,5 @@ h1, h2, h3, h4, h5, h6, .h4, .h5 {
 }
 ```
 
-22. if the Skip to main content accessibility button is visible on the front end, open src/app.css and move the block starting `@utility skip-main { more code here }`. into `@layer components { more styles here}` and remove `@utlity`.
-2. Typography plugin customizations requires the tailwind.config.js file to not be commented out.
-
-[Discord - Group Chat That’s All Fun & Games](https://discord.com/channels/456442477667418113/456448946764513301/1338466991220068456)
+23. if the Skip to main content accessibility button is visible on the front end, open src/app.css and move the block starting `@utility skip-main { more code here }`. into `@layer components { more styles here}` and remove `@utlity`.
+24. Typography plugin customizations requires the tailwind.config.js file to not be commented out.
