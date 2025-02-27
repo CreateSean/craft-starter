@@ -94,15 +94,9 @@ You can then have the required javascript or css files combined and minimized by
 2. in `browsersync.config.js` update line 8  `const baseUrl = 'https://craft-starter.ddev.site'` with your local domain
 
 
-4. run `npm run start` to tailwind, set up browser sync and combine scripts. **This worked for Laravel Mix, but is not currently working for NPM scripts** until I find a solution, will just work with unsecure url locally.
-    1. ~~To get your SSL working with browsersync and DDEV follow these instructions~~
-      * ~~SSL-enabled for DDev. You have to copy the SSL cert to somewhere outside of Docker first. Run this at your project root [Stack Overflow](https://stackoverflow.com/questions/59730898/cant-connect-browsersync-with-ddev-nginx-server-because-ssl-error):~~
+4. run `npm run start` to tailwind, set up browser sync and combine scripts.
 
-      ```
-      docker cp ddev-router:/etc/nginx/certs ~/tmp/certs
-    ```
-      2. ~~you may need to create the tmp/certs directory in your OS users directory~~
-      3. ~~You should only need to do this for 1 project and then everything should work on multiple projects.~~
+5. run `npm run build` when ready for production. This will minify css.
 
 4. Tailwind Container Queries are now native and do not need a plugin. See the (documentation)[https://tailwindcss.com/docs/responsive-design#container-queries]
 
