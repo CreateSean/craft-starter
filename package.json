@@ -38,7 +38,7 @@
     "concat:css": "concat ./node_modules/plyr/dist/plyr.css ./node_modules/swiper/swiper-bundle.min.css  > ./public/assets/css/vendor.combined.css",
     "watch:css": "npx @tailwindcss/cli -i ./src/css/app.css -o ./public/assets/css/app.css --watch",
     "watch:manifest": "nodemon --watch public/assets/js --watch public/assets/css -e js,css src/js/generate-manifest.js",
-    "serve": "browser-sync start --config browsersync.config.js --https",
+    "serve": "browser-sync start --config browsersync.config.js",
     "build": "npm-run-all copy concat:js concat:css \"watch:css -- --no-watch\" && node src/js/generate-manifest.js",
     "start": "npm-run-all --parallel watch:css watch:manifest copy concat:js concat:css serve"
   }
