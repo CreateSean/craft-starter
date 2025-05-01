@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - 5bca37e0-a30f-48fd-9fde-3105fb9d9738 # Notice Bar
 handle: noticeBar
+maxAuthors: 1
 name: 'Notice Bar'
 previewTargets:
   -

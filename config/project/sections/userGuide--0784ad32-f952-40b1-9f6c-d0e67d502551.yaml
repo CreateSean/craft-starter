@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - 475a351b-2442-4767-8ab6-1b39216d0c61 # User Guide
 handle: userGuide
+maxAuthors: 1
 name: 'User Guide'
 propagationMethod: all
 siteSettings:

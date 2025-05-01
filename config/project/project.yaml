@@ -1,4 +1,4 @@
-dateModified: 1739983483
+dateModified: 1746105338
 elementSources:
   craft\elements\Entry:
     -
@@ -210,7 +210,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 0F9VOPZ558WMQISLHBLYMB51
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
@@ -269,5 +269,5 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.7.0.3
   timeZone: America/Toronto

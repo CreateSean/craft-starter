@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - b312d78c-b490-46da-aeff-70a1be5a5505 # Error 404
 handle: error404
+maxAuthors: 1
 name: 'Error 404'
 previewTargets:
   -

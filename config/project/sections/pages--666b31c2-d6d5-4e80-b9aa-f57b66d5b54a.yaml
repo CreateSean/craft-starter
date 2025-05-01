@@ -6,6 +6,7 @@ entryTypes:
   - e3dea9df-426f-43a5-96fd-927882533aa9 # News Listing
   - ea7fe716-adee-4200-a8ca-15362418cd97 # Home
 handle: pages
+maxAuthors: 1
 name: Pages
 previewTargets:
   -

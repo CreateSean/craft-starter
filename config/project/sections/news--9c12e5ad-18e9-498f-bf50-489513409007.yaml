@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - 51b9c3fc-be2a-4ef3-9f2c-66372327c604 # News
 handle: news
+maxAuthors: 1
 name: News
 previewTargets:
   -
