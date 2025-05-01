@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "207dc773a4dfecff71e9ccf06216326e",
+    "content-hash": "114d50f5c7cb03752abf3d1144f8b3bd",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -8301,6 +8301,64 @@
                 }
             ],
             "time": "2024-11-17T15:59:19+00:00"
+        },
+        {
+            "name": "vardump/recentchanges",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vardump-de/recentchanges.git",
+                "reference": "026a204027830e17e6edcd6d84d87dff83145947"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vardump-de/recentchanges/zipball/026a204027830e17e6edcd6d84d87dff83145947",
+                "reference": "026a204027830e17e6edcd6d84d87dff83145947",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0",
+                "php": "^8.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Recentchanges",
+                "class": "vardump\\recentchanges\\Plugin",
+                "handle": "recentchanges",
+                "changelogUrl": "https://raw.githubusercontent.com/vardump-de/recentchanges/craft4/CHANGELOG.md",
+                "hasCpSection": false,
+                "hasCpSettings": false
+            },
+            "autoload": {
+                "psr-4": {
+                    "vardump\\recentchanges\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "rmdev",
+                    "homepage": "https://github.com/rmdev"
+                }
+            ],
+            "description": "A Widget showing the last updated entries.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "recentchanges",
+                "widget"
+            ],
+            "support": {
+                "docs": "https://github.com/vardump-de/recentchanges/blob/master/README.md",
+                "issues": "https://github.com/vardump-de/recentchanges/issues",
+                "source": "https://github.com/vardump-de/recentchanges/tree/3.0.1"
+            },
+            "time": "2024-10-04T07:37:30+00:00"
         },
         {
             "name": "verbb/base",
