@@ -6,18 +6,22 @@ searchable: true
 settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
     -
       __assoc__:
         -
           - uid
           - d399ecfb-7ec8-47d8-84ed-b8447e779a67 # Slide
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: 5
   minEntries: null
   pageSize: 50
   propagationKeyFormat: null
-  propagationMethod: all
+  propagationMethod: none
   showCardsInGrid: false
   viewMode: cards
 translationKeyFormat: null

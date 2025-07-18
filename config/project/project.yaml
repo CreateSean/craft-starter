@@ -1,4 +1,4 @@
-dateModified: 1752846568
+dateModified: 1752846980
 elementSources:
   craft\elements\Entry:
     -
@@ -145,7 +145,7 @@ meta:
     c951c9a0-1cca-4210-bef8-2d3d0446e841: 'Related Entries' # Related Entries
     c4527788-b877-44f3-9a2d-071f696877fa: 'YouTube Video (user guide)' # YouTube Video (user guide)
     cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f: 'Background Image' # Background Image
-    ce14c790-b25f-464b-8ce8-0e949adc707b: 'Light Switchh' # Light Switchh
+    ce14c790-b25f-464b-8ce8-0e949adc707b: 'Light Switch' # Light Switch
     ce27286a-7635-4494-9c9c-77f2d73352f4: Fragments # Fragments
     d5f8da04-ca55-4c9f-8605-e7f8779e82b8: Image # Image
     d19b4314-0267-4e95-9e63-2462a334eea1: 'User Guide' # User Guide

@@ -1,42 +1,15 @@
 color: null
+description: null
 fieldLayouts:
   cd7a8b0c-f1dc-4657-98cc-8b2e9c46c04f:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-10-23T17:27:42+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 8d8d3cd3-3546-41c5-a3f7-2c9ef34fb971
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-10-23T17:31:19+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: b2f53aa5-81a3-466c-af2d-e30dab4ed3d8 # Image
             handle: image
@@ -53,6 +26,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-10-23T17:31:19+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: slideTitle
@@ -69,6 +43,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-10-23T17:31:19+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
             handle: null
@@ -85,6 +60,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-10-23T17:31:19+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b # Button
             handle: null
@@ -108,8 +84,8 @@ icon: gallery-thumbnails
 name: Slide
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: '{slideTitle}'
-titleTranslationKeyFormat: ''
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
