@@ -1,7 +1,22 @@
 #!/usr/bin/env bash                           # Portable shebang - finds bash anywhere
 ## Description: Launch Craft CMS Control Panel and site homepage (reads CRAFT_CP_TRIGGER from .env)
 ## Usage: launch-site [path]
-## Example: "ddev launch-site" or "ddev launch-site about"
+## Example: "ddev launch-site" or "ddev launch-site about" or "ddev launch-site styleguide"
+
+# Handle help flag
+if [[ "$1" == "-h" ]] || [[ "$1" == "--help" ]]; then
+  echo "Launch a browser with the Craft CMS Control Panel and site homepage"
+  echo ""
+  echo "Usage:"
+  echo "  ddev launch-site [path]"
+  echo ""
+  echo "Examples:"
+  echo "  \"ddev launch-site\" - Opens Control Panel and homepage"
+  echo "  \"ddev launch-site about\" - Opens Control Panel and /about"
+  echo ""
+  echo "The Control Panel URL is determined by the CRAFT_CP_TRIGGER value in your .env file"
+  exit 0
+fi
 
 CP_TRIGGER="admin"
 
