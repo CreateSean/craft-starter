@@ -16,6 +16,7 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
 ## Table of Contents
 
   * [Local Development](#local-development)
+  * [DDEV Custom Command](#ddev-custom-command)
   * [To Do](#to-do)
   * [Build Process](#build-process)
   * [Updating build process on an existing site](#build-process)
@@ -34,6 +35,19 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Composer nuke](#composer-nuke)
 
 ---
+
+## DDEV Custom Command
+Added a custom ddev command that will open both the control panel and the homepage. Optionally pass in a `path` and instead of the homepage it open that page instead.
+
+`ddev launch-site` opens:
+
+`https://craft-starter.ddev.site/access/` and `https://craft-starter.ddev.site`
+
+`ddev launch-site contact` opens:
+`https://craft-starter.ddev.site/access/` and `https://craft-starter.ddev.site/contact`
+
+The site url comse from your ddev hostname and cp trigger come from your dotenv variable: `CRAFT_CP_TRIGGER`
+
 
 ## Local Development
 

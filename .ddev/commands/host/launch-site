@@ -1,0 +1,53 @@
+#!/usr/bin/env bash                           # Portable shebang - finds bash anywhere
+## Description: Launch Craft CMS Control Panel and site homepage (reads CRAFT_CP_TRIGGER from .env)
+## Usage: launch-site [path]
+## Example: "ddev launch-site" or "ddev launch-site /about" or "ddev launch-site styleguide"
+
+CP_TRIGGER="admin"
+
+if [ -f ".env" ]; then
+  ENV_CP_TRIGGER=$(grep '^CRAFT_CP_TRIGGER=' .env | cut -d '=' -f2 | tr -d '"' | tr -d '"')
+  if [ -n "$ENV_CP_TRIGGER" ]; then
+    CP_TRIGGER="$ENV_CP_TRIGGER"
+  fi
+fi
+
+# Get optional path argument
+CUSTOM_PATH="${1}"
+
+# Build URLs
+URL="https://${DDEV_HOSTNAME}/${CP_TRIGGER}"
+
+# Handle custom path if provided
+if [ -n "$CUSTOM_PATH" ]; then
+  # Remove leading slash if present (we'll add it)
+  CUSTOM_PATH="${CUSTOM_PATH#/}"
+  HOME_URL="https://${DDEV_HOSTNAME}/${CUSTOM_PATH}"
+else
+  HOME_URL="https://${DDEV_HOSTNAME}/"
+fi
+
+# Function to open URL in browser (cross-platform)
+open_browser() {
+  local url="$1"
+  if command -v start > /dev/null 2>&1; then
+    # Windows (Git Bash, MSYS2, Cygwin)
+    start "$url" 2>/dev/null || cmd.exe /c start "$url"
+  elif command -v open > /dev/null 2>&1; then
+    # macOS
+    open "$url"
+  elif command -v xdg-open > /dev/null 2>&1; then
+    # Linux
+    xdg-open "$url"
+  else
+    echo "Could not find browser launch command."
+    echo "Please open your browser and navigate to: $url"
+    return 1
+  fi
+}
+
+echo "Launching Control Panel: $URL"
+open_browser "$URL"
+
+echo "Launching Homepage: $HOME_URL"
+open_browser "$HOME_URL"
