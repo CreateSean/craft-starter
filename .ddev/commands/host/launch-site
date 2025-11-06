@@ -1,7 +1,7 @@
 #!/usr/bin/env bash                           # Portable shebang - finds bash anywhere
 ## Description: Launch Craft CMS Control Panel and site homepage (reads CRAFT_CP_TRIGGER from .env)
 ## Usage: launch-site [path]
-## Example: "ddev launch-site" or "ddev launch-site /about" or "ddev launch-site styleguide"
+## Example: "ddev launch-site" or "ddev launch-site about"
 
 CP_TRIGGER="admin"
 
