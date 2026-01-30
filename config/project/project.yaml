@@ -1,4 +1,4 @@
-dateModified: 1752846980
+dateModified: 1769802275
 elementSources:
   craft\elements\Entry:
     -
@@ -192,7 +192,6 @@ plugins:
   hyper:
     edition: standard
     enabled: true
-    licenseKey: KJD0ZOPA01HM1YYCNCJ3ZA2Z
     schemaVersion: 1.0.0
   knock-knock:
     edition: standard
@@ -213,7 +212,6 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: 0F9VOPZ558WMQISLHBLYMB51
     schemaVersion: 3.0.13
     settings:
       addHrefLang: true
