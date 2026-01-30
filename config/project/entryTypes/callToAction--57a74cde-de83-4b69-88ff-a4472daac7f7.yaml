@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: sectionTitle
-            includeInCards: false
             instructions: null
             label: 'Section Title'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -35,10 +33,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b # Button
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -57,10 +53,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: cc618569-5c0e-4ff7-9b4a-2fe9ed27af1f # Background Image
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Background Image'
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -79,10 +73,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
             handle: null
-            includeInCards: true
             instructions: null
             label: Padding
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -93,6 +85,7 @@ fieldLayouts:
         name: Options
         uid: 20860368-2cde-47b2-8a45-468b6f3b4fc0
         userCondition: null
+    thumbFieldKey: 'layoutElement:4c36cc61-1f7c-4373-91f1-16aa37ce2c5b'
 handle: callToAction
 hasTitleField: false
 icon: link

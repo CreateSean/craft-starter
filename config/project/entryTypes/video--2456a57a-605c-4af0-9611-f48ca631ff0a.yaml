@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   e426ad6b-03b0-4220-8668-3337284b7c5d:
+    cardView:
+      - 'layoutElement:ac42c12f-111d-4cbb-883c-553898e51e5a'
     tabs:
       -
         elementCondition: null
@@ -10,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 127f0d67-cfaf-4e5d-b3f8-111b7fda6f64 # Padding
             handle: null
-            includeInCards: true
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -26,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: videoLink
-            includeInCards: false
             instructions: 'YouTube or Vimeo'
             label: 'Video Link'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

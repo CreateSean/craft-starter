@@ -21,7 +21,7 @@ settings:
       __assoc__:
         -
           - uid
-          - b4d947dc-370e-4404-807b-b165534a1503
+          - b4d947dc-370e-4404-807b-b165534a1503 # Basic Hero
   includeTableView: false
   maxEntries: 1
   minEntries: 1

@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   dc49b215-dcb8-4177-9ecd-36ece2b038a7:
+    cardView:
+      - 'layoutElement:2d611c9f-ce5d-4fb3-89b7-6cbbac684b4a'
     tabs:
       -
         elementCondition: null
@@ -10,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: heroTitle
-            includeInCards: true
             instructions: 'If empty page title will be used'
             label: 'Hero Title'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

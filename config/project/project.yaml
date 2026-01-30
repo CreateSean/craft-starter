@@ -1,29 +1,64 @@
-dateModified: 1769802275
+dateModified: 1769802647
 elementSources:
   craft\elements\Entry:
     -
       heading: Structures
+      key: 'heading:2254bdf8-dd3a-4b69-b6a4-eb48ba712006'
+      page: Entries
       type: heading
     -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
       disabled: false
       key: 'section:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
+      page: Entries
       tableAttributes:
         - postDate
         - expiryDate
-        - author
         - link
       type: native
     -
-      heading: Channels
+      heading: 'Supporting Content'
+      key: 'heading:446fa0aa-fc4b-4961-bb0b-97a1b0427ffb'
+      page: Entries
       type: heading
     -
-      key: 'section:9c12e5ad-18e9-498f-bf50-489513409007' # News
+      key: '*'
+      page: Entries
       type: native
     -
-      heading: 'Supporting Content'
+      heading: 'User Guide'
+      key: 'heading:b553e8c3-685d-4f21-a7fd-3bb4bd4abab1'
+      page: Entries
       type: heading
     -
+      key: 'section:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
+      page: Entries
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:9c12e5ad-18e9-498f-bf50-489513409007' # News
+      page: News
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      key: 'section:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
+      page: News
+      type: native
+    -
       key: singles
+      page: 'Supporting Content'
       tableAttributes:
         - link
       type: native
@@ -33,30 +68,19 @@ elementSources:
         - desc
       disabled: false
       key: 'section:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+      page: 'Supporting Content'
       tableAttributes:
         - postDate
         - expiryDate
         - author
         - link
       type: native
-    -
-      heading: ''
-      type: heading
-    -
-      key: '*'
-      type: native
-    -
-      heading: 'User Guide'
-      type: heading
-    -
-      key: 'section:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
-      type: native
-    -
-      heading: Categories
-      type: heading
-    -
-      key: 'section:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
-      type: native
+elementSourcesPages:
+  craft\elements\Entry:
+    News:
+      icon: typewriter
+    'Supporting Content':
+      icon: circle-question
 email:
   fromEmail: $SYSTEM_EMAIL
   fromName: $SENDER_NAME
@@ -121,7 +145,9 @@ meta:
     666b31c2-d6d5-4e80-b9aa-f57b66d5b54a: Pages # Pages
     0784ad32-f952-40b1-9f6c-d0e67d502551: 'User Guide' # User Guide
     0878c4de-b946-4c8e-bcce-fe18cd77a73e: 'Site Admin' # Site Admin
+    2456a57a-605c-4af0-9611-f48ca631ff0a: Video # Video
     4116f227-348c-4509-bc7a-6767a28fd40c: 'Contact Page' # Contact Page
+    4427e835-20ed-496b-9469-831bb0882185: Image # Image
     5026b221-a48f-4868-9f48-07428068e77e: 'Related Entries' # Related Entries
     5489ed3b-28c1-4a26-ac7e-97b0182e6652: 'Enable Notice Bar' # Enable Notice Bar
     8084d027-d1a0-424e-930b-a4217b9862f2: 'Public Schema' # Public Schema
@@ -135,6 +161,7 @@ meta:
     aac80dd6-df34-4cd2-a92f-14debb37b911: Fragment # Fragment
     ab8abc7e-2a4d-4858-98ea-9a6954a434da: Hero # Hero
     b2f53aa5-81a3-466c-af2d-e30dab4ed3d8: Image # Image
+    b4d947dc-370e-4404-807b-b165534a1503: 'Basic Hero' # Basic Hero
     b9d8d694-0313-4709-a12e-06b36b2333c7: Simple # Simple
     b9fdef79-5b63-4932-a9aa-8d18f937e6d9: Français # Français
     b312d78c-b490-46da-aeff-70a1be5a5505: 'Error 404' # Error 404
@@ -192,6 +219,7 @@ plugins:
   hyper:
     edition: standard
     enabled: true
+    licenseKey: 7YK7ZBOK9V81AVHB0O8MXX8S
     schemaVersion: 1.0.0
   knock-knock:
     edition: standard
@@ -212,6 +240,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
+    licenseKey: HMMRBD5VHMCOOQEXNEY5ZBD4
     schemaVersion: 3.0.13
     settings:
       addHrefLang: true
@@ -271,5 +300,5 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.9.0.8
   timeZone: America/Toronto

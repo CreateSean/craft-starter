@@ -14,7 +14,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +22,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -40,10 +38,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 8c583e9a-a56d-486d-8550-e7eae61c8088 # Slides
             handle: null
-            includeInCards: false
             instructions: null
             label: Slides
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

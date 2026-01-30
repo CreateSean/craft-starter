@@ -83,3 +83,5 @@ permissions:
   - 'viewpeerentrydrafts:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
   - 'viewpeerentrydrafts:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'viewpeerentrydrafts:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'changeauthorforpeerentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'changeauthorforpeerentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages

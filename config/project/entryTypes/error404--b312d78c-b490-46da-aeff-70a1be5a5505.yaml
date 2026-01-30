@@ -13,7 +13,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -22,7 +21,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -39,10 +37,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: da3d7ec4-1d85-47ba-a517-6c81d94cc9d2 # Copy Basic
             handle: text
-            includeInCards: false
             instructions: null
             label: Text
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

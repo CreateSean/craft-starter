@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: sectionTitle
-            includeInCards: true
             instructions: null
             label: 'Section Title'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c161a9a5-2cf6-4cc3-b0d8-3c8a30395dde # Input
             handle: sectionsubtitle2
-            includeInCards: false
             instructions: null
             label: SectionSubtitle
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +40,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6f74be98-1b1b-470e-a96a-727b01e0b225 # Video Upload
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Video Upload'
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -58,6 +52,7 @@ fieldLayouts:
         name: Content
         uid: 56c54d1a-0bc9-493a-a342-789511c65600
         userCondition: null
+    thumbFieldKey: 'layoutElement:4f452736-a434-4ee7-b2d8-a1bd8f95e768'
 handle: video2
 hasTitleField: false
 icon: null

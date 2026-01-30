@@ -12,10 +12,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: aac80dd6-df34-4cd2-a92f-14debb37b911 # Fragment
             handle: null
-            includeInCards: true
             instructions: null
             label: Fragment
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
