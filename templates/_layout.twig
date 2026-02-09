@@ -50,6 +50,13 @@
     {% set siteName = getenv('SITE_NAME_FR') %}
   {% endif %}
 
+
+    <a
+      href="#main-content"
+      aria-label="Skip to main content"
+      class="flex flex-col justify-center skip-main"
+      style="height:40px;">Skip to main content</a><!-- /.skip-main -->
+
 <header>
 {#
  // use below header for sticky header that disappears on scroll down but reappears on scroll up
@@ -89,10 +96,6 @@
     'transform translate-y-0 top-0': visible }"
   class="fixed left-0 right-0 z-50 transition-all duration-500 ease-in-out bg-white"
 > #}
-
-
-
-    <a href="#main-content" role="button"  aria-label="Skip to main content" class="flex flex-col justify-center skip-main" style="height:40px;">Skip to main content</a><!-- /.skip-main -->
 
     {% include "_includes/notice-bar" %}
 
