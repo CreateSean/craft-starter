@@ -8,15 +8,108 @@ settings:
   availableTransforms: ''
   availableVolumes:
     - 70f5d47b-4830-4d51-95fe-bc0f7ccc0670 # Uploads
-  ckeConfig: 12f17257-6f1c-4e4c-837e-17ad76241a60 # Site
   columnType: text
+  css: null
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
+  fullGraphqlData: false
+  headingLevels:
+    - 2
+    - 3
+  js: null
+  options:
+    __assoc__:
+      -
+        - code
+        -
+          __assoc__:
+            -
+              - indentSequence
+              - '  '
+      -
+        - link
+        -
+          __assoc__:
+            -
+              - addTargetToExternalLinks
+              - false
+            -
+              - decorators
+              -
+                __assoc__:
+                  -
+                    - openInNewTab
+                    -
+                      __assoc__:
+                        -
+                          - attributes
+                          -
+                            __assoc__:
+                              -
+                                - rel
+                                - 'noopener noreferrer'
+                              -
+                                - target
+                                - _blank
+                        -
+                          - label
+                          - 'Open in a new tab'
+                        -
+                          - mode
+                          - manual
+      -
+        - style
+        -
+          __assoc__:
+            -
+              - definitions
+              -
+                -
+                  __assoc__:
+                    -
+                      - classes
+                      -
+                        - mb-20
+                    -
+                      - element
+                      - span
+                    -
+                      - name
+                      - 'Extra Bottom Margin'
+                -
+                  __assoc__:
+                    -
+                      - classes
+                      -
+                        - mt-1
+                        - mb-0
+                        - leading-tight
+                    -
+                      - element
+                      - p
+                    -
+                      - name
+                      - 'Tight Paragraphs'
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: true
+  toolbar:
+    - sourceEditing
+    - '|'
+    - heading
+    - '|'
+    - style
+    - '|'
+    - bold
+    - italic
+    - bulletedList
+    - numberedList
+    - outdent
+    - indent
+    - link
+    - alignment
   wordLimit: null
 translationKeyFormat: null
 translationMethod: site

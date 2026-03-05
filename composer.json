@@ -12,7 +12,7 @@
   "minimum-stability": "beta",
   "require": {
     "clubstudioltd/craft-asset-rev": "^8.0.0",
-    "craftcms/ckeditor": "^4.0.3",
+    "craftcms/ckeditor": "^5.0.0",
     "craftcms/cms": "^5.0.0",
     "craftcms/contact-form": "^3.1.0",
     "doublesecretagency/craft-cpcss": "^3.0.0",

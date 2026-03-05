@@ -6,9 +6,57 @@ searchable: true
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: 3e09420e-30db-49dd-9520-4775f6667303 # Site Basic
-  createButtonLabel: null
+  css: null
   defaultTransform: null
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  js: null
+  options:
+    __assoc__:
+      -
+        - code
+        -
+          __assoc__:
+            -
+              - indentSequence
+              - '  '
+      -
+        - link
+        -
+          __assoc__:
+            -
+              - addTargetToExternalLinks
+              - false
+            -
+              - decorators
+              -
+                __assoc__:
+                  -
+                    - openInNewTab
+                    -
+                      __assoc__:
+                        -
+                          - attributes
+                          -
+                            __assoc__:
+                              -
+                                - rel
+                                - 'noopener noreferrer'
+                              -
+                                - target
+                                - _blank
+                        -
+                          - label
+                          - 'Open in a new tab'
+                        -
+                          - mode
+                          - manual
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
@@ -16,6 +64,9 @@ settings:
   showWordCount: true
   sourceEditingGroups:
     - __ADMINS__
+  toolbar:
+    - sourceEditing
+    - bold
   wordLimit: null
 translationKeyFormat: null
 translationMethod: site
