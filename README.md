@@ -32,7 +32,6 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
   * [Sprig](#sprig)
   * [Contact Form](#contact-form)
   * [Content](#content)
-  * [Claude Code Commands](#claude-code-commands)
   * [Composer nuke](#composer-nuke)
 
 ---
@@ -289,7 +288,8 @@ The following plugins are installed and ready to be used on the site. I prefer t
 10. SEOmatic - used for all SEO.
 11. Sprig - Reactive components
 12. Typogrify
-13. ~~User Manual - in CP user manual~~ removed until a Craft 5 version is available
+13. Recent Changes - CP dashboard widget showing recently modified entries
+14. ~~User Manual - in CP user manual~~ removed until a Craft 5 version is available
 
 
 ## Typogrify
@@ -319,16 +319,6 @@ A hero component is available with three options:
 - **Slider Hero** - same as standard but operates as a slider - maximum 5 slides
 
 There is also a basic matrix field for a content builder. Once I have more time I will create a longform content CKEditor field to replace the matrix content builder.
-
-## Claude Code Commands
-
-Shorthand triggers for use when prompting Claude Code:
-
-- **`sdu`** (Show Don't Touch) — explain and show example code but do not edit or create any files. Can be placed anywhere in the prompt.
-
-Example: `sdt how would I add pagination to the news listing?`
-
----
 
 ## Composer nuke
 
