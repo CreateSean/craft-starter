@@ -30,7 +30,7 @@ Opinionated Craft CMS 5 starter by Caffeine Creations. Used as a boilerplate for
 AssetRev, CKEditor, Contact Form, Control Panel CSS, Environment Label, Hyper, Knock Knock, Minify, Retcon, SEOmatic, Sprig, Typogrify
 
 ## Shorthand Commands
-- **`sdu`** (Show Don't Touch) — when included anywhere in a prompt, explain the concept and show example code, but do NOT edit or create any files. Read-only mode for that request.
+- **`sdu`** (Show Don't Update) — when included anywhere in a prompt, explain the concept and show example code, but do NOT edit or create any files. Read-only mode for that request.
 
 ## Rules
 - Prefer editing existing files over creating new ones
