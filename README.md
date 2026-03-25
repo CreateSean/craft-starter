@@ -39,11 +39,11 @@ To install with Craft 3 version run `composer create-project createsean/craft-st
 ## DDEV Custom Command
 Added a custom ddev command that will open both the control panel and the homepage. Optionally pass in a `path` and instead of the homepage it open that page instead.
 
-`ddev launch-site` opens:
+`ddev lp` opens:
 
 `https://craft-starter.ddev.site/access/` and `https://craft-starter.ddev.site`
 
-`ddev launch-site contact` opens:
+`ddev lp contact` opens:
 `https://craft-starter.ddev.site/access/` and `https://craft-starter.ddev.site/contact`
 
 The site url comse from your ddev hostname and cp trigger come from your dotenv variable: `CRAFT_CP_TRIGGER`
